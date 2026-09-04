@@ -1,0 +1,1058 @@
+{
+  "schema_version": "2.0",
+  "title": "明代京师中枢机构：制度关系与空间提示",
+  "generated_at": "2026-09-04",
+  "language": "zh-CN",
+  "scope_note": "本数据只表达明代中枢机构的制度关系、工作联系和可被史料支持的宽泛空间分区，不把功能关系伪装成精确建筑坐标。洪武前期以南京为国都；北京官署图默认采用正统七至八年（1442—1443）以后才大体定型的格局。",
+  "reading_rules": [
+    "solid_hierarchy 只用于有制度依据的直接统属；workflow 只表示章奏、票拟、监察、复核或调兵流程。",
+    "position_hint 是 broad_zone，不是经纬度、地块边界或单栋建筑复原。",
+    "内阁不是中书省的法定恢复，也不是六部的法定上级。",
+    "三法司、九卿、五军都督府集合标签均不得画成另一个统领成员的实体衙门。",
+    "宫内表示紫禁城宫墙内；宫门外近区表示午门、承天门以南的千步廊及其两侧官署区；两者不可合并。"
+  ],
+  "era_models": [
+    {
+      "id": "hongwu_early_nanjing",
+      "label": "洪武前期·南京",
+      "period": "1368—1379",
+      "capital_status": "南京为京师；北京尚不是全国中枢地图的底图",
+      "institutional_snapshot": "中书省统六部；御史台监察；大都督府掌军；通政使司自1377年出现。",
+      "spatial_snapshot": "南京早期中央官署精确址多不可考，宜只画宫城与官署宽区。",
+      "default_map_precision": "institutional_only"
+    },
+    {
+      "id": "hongwu_reform_transition",
+      "label": "洪武改制",
+      "period": "1380—1401",
+      "capital_status": "南京为京师",
+      "institutional_snapshot": "1380年废中书省，六部改为直接承皇帝；大都督府分为五军都督府；御史台同年撤销，之后置都察院；1382年设殿阁大学士作为低品级顾问。",
+      "spatial_snapshot": "以制度时间线为主，不宜假定后来北京千步廊的官署位置。",
+      "default_map_precision": "institutional_only"
+    },
+    {
+      "id": "yongle_beijing_transition",
+      "label": "永乐迁都与北京官署过渡",
+      "period": "1402—1442",
+      "capital_status": "1403年北京称行在；1421年正式迁都；1425年后北京一度又称行在，但朝廷实际仍驻北京；1441年再定为京师",
+      "institutional_snapshot": "1402年翰林官入文渊阁参预机务，通常视为内阁制度的形成起点；六部、都察院、通政使司、大理寺与五军都督府仍是各自直接对皇帝负责的中枢机关。",
+      "spatial_snapshot": "紫禁城和北京城虽在1420年前后建成，但永乐期多数衙署仍沿用元代旧署或分散安置；不可直接套用正统年间完成的整齐官署图。",
+      "default_map_precision": "timeline_plus_provisional_zones"
+    },
+    {
+      "id": "beijing_zhengtong_mature",
+      "label": "正统定制·北京",
+      "period": "1443—1644",
+      "capital_status": "北京为京师",
+      "institutional_snapshot": "皇帝居法定最高位；内阁在宫内参预机务、票拟；六部等外廷衙门分立；三法司协同审谳；兵部与五军都督府形成文武分掌。",
+      "spatial_snapshot": "正统七至八年集中营建后，五部和多种文职机关聚于千步廊东侧，五军都督府、通政使司等在西侧；刑部、都察院、大理寺组成的司法官署区更偏西。",
+      "default_map_precision": "broad_zone"
+    }
+  ],
+  "two_state_switch_recommendation": {
+    "preferred": "three_state",
+    "preferred_states": [
+      "洪武前期·南京（1368—1379）",
+      "洪武改制至迁都过渡（1380—1442）",
+      "正统定制·北京（1443—1644）"
+    ],
+    "if_only_two_tabs": [
+      {
+        "tab": "洪武前期·南京",
+        "subtitle": "1368—1379：中书省统六部",
+        "map_behavior": "显示南京抽象宫城与中枢关系，不给官署精确坐标。"
+      },
+      {
+        "tab": "永乐以后·北京",
+        "subtitle": "制度从1402年起；官署底图默认采用1443年以后定型格局",
+        "map_behavior": "先显示迁都/营建时间带，再加载正统定制宽区；常驻警示：本图不代表永乐初年各衙署已全部就位。"
+      }
+    ],
+    "transition_markers": [
+      "1380：废中书省；六部直承皇帝；大都督府分五府",
+      "1381/1382：都察院置年有史源分歧",
+      "1382：殿阁大学士出现，但尚非成熟内阁",
+      "1402：文渊阁参预机务，通常作为内阁形成起点",
+      "1421：正式迁都北京",
+      "1441：北京再定为京师",
+      "1442—1443：千步廊两侧主要官署集中营建，空间格局大体定型"
+    ],
+    "visual_encoding": {
+      "hierarchy": "实线；仅法定直接统属",
+      "workflow": "虚线；票拟、章奏、监察、复核、调兵等",
+      "spatial_membership": "半透明宽区，不与组织树连线混用",
+      "certainty_badges": [
+        "史料明确",
+        "复原推定",
+        "有争议"
+      ]
+    }
+  },
+  "spatial_zones": [
+    {
+      "id": "nanjing_palace_core",
+      "label": "南京宫城内",
+      "palace_relation": "inside_palace",
+      "precision": "broad_zone",
+      "description": "皇帝与宫廷决策核心所在。"
+    },
+    {
+      "id": "nanjing_central_offices_unknown",
+      "label": "南京中央官署宽区（精确址不可考）",
+      "palace_relation": "outside_or_near_palace_uncertain",
+      "precision": "inference_only",
+      "description": "早期中书省、御史台和大都督府在南京的精确位置缺少直接记录；只能参考中都制度作宽泛推定，不宜落单栋建筑。"
+    },
+    {
+      "id": "beijing_forbidden_city_palace_core",
+      "label": "北京紫禁城内·宫廷决策核心",
+      "palace_relation": "inside_forbidden_city",
+      "precision": "broad_zone",
+      "description": "用于表达皇帝在宫城内的最高裁决位置；不把权力节点固定为一座殿宇。"
+    },
+    {
+      "id": "beijing_forbidden_city_outer_court",
+      "label": "北京紫禁城内·外朝东南宽区",
+      "palace_relation": "inside_forbidden_city",
+      "precision": "broad_zone_and_contested",
+      "description": "用于表达内阁在宫内办事；文渊阁、奉天门、东角门等具体使用随年代变化，明代文渊阁也不可与现存清代文渊阁混同。"
+    },
+    {
+      "id": "beijing_qianbu_east",
+      "label": "北京宫门外·千步廊东侧官署区",
+      "palace_relation": "outside_forbidden_city_near_southern_gates",
+      "precision": "broad_zone",
+      "description": "在大明门—承天门轴线东侧的外廷官署区。正统定制后主要见吏、户、礼、兵、工五部及宗人府、鸿胪寺、钦天监、太医院等。"
+    },
+    {
+      "id": "beijing_qianbu_west",
+      "label": "北京宫门外·千步廊西侧官署区",
+      "palace_relation": "outside_forbidden_city_near_southern_gates",
+      "precision": "broad_zone",
+      "description": "正统定制后主要见五军都督府、通政使司、太常寺、锦衣卫等；各衙署具体地块依复原图而定。"
+    },
+    {
+      "id": "beijing_west_judicial",
+      "label": "北京皇城以西·三法司官署宽区",
+      "palace_relation": "outside_forbidden_city_and_west_of_imperial_city",
+      "precision": "broad_zone",
+      "description": "刑部、都察院、大理寺在西长安街以西一带形成司法官署区，后称刑部街附近；不可用清代把三法司移入千步廊西侧后的格局替代。"
+    },
+    {
+      "id": "empirewide_military_network",
+      "label": "京外都司卫所网络",
+      "palace_relation": "not_a_capital_site",
+      "precision": "network",
+      "description": "表示五军都督府所领的地域性都司、卫所名籍与管理网络，不是京城内的一栋建筑。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "hw_emperor",
+      "name": "皇帝",
+      "era": "洪武前期（1368—1379；南京）",
+      "parent": null,
+      "function": "国家最高决策、任免与军政裁断中心。",
+      "position_hint": "南京宫城内；仅标宫廷核心，不指定某一殿座。",
+      "caveat": "这是权力顶点而非普通衙署；空间点与制度节点应采用不同符号。",
+      "node_kind": "sovereign",
+      "spatial_zone_id": "nanjing_palace_core",
+      "confidence": "high",
+      "source_ids": ["mingshi_72", "minghuiyao_offices"]
+    },
+    {
+      "id": "hw_central_secretariat",
+      "name": "中书省",
+      "era": "洪武前期（1368—1379；南京）",
+      "parent": "皇帝",
+      "function": "以左右丞相为长官，总理政务并统辖六部。",
+      "position_hint": "南京宫城外或近宫城的中央官署宽区；精确旧址不作确定。",
+      "caveat": "洪武十三年（1380）胡惟庸案后被废，不得延伸到永乐北京图，也不得把内阁当作其法定继承机关。",
+      "node_kind": "civil_executive",
+      "spatial_zone_id": "nanjing_central_offices_unknown",
+      "confidence": "institution_high_location_low",
+      "source_ids": ["wiki_zh_zhongshusheng", "mingshi_72", "minghuiyao_offices", "ntu_nanjing_capital"]
+    },
+    {
+      "id": "hw_personnel",
+      "name": "吏部",
+      "era": "洪武前期（1368—1379；南京）",
+      "parent": "中书省",
+      "function": "文官选授、封勋、考课等人事事务。",
+      "position_hint": "南京中央官署宽区；不标精确地块。",
+      "caveat": "此 parent 只适用于1380年以前；废中书省后改为直接承皇帝。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "nanjing_central_offices_unknown",
+      "confidence": "institution_high_location_low",
+      "source_ids": ["minghuiyao_offices", "dpm_six_ministries"]
+    },
+    {
+      "id": "hw_revenue",
+      "name": "户部",
+      "era": "洪武前期（1368—1379；南京）",
+      "parent": "中书省",
+      "function": "户籍、田赋、财政、仓储等事务。",
+      "position_hint": "南京中央官署宽区；不标精确地块。",
+      "caveat": "此 parent 只适用于1380年以前。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "nanjing_central_offices_unknown",
+      "confidence": "institution_high_location_low",
+      "source_ids": ["minghuiyao_offices", "dpm_six_ministries"]
+    },
+    {
+      "id": "hw_rites",
+      "name": "礼部",
+      "era": "洪武前期（1368—1379；南京）",
+      "parent": "中书省",
+      "function": "礼仪、学校、科举、朝贡等事务。",
+      "position_hint": "南京中央官署宽区；不标精确地块。",
+      "caveat": "此 parent 只适用于1380年以前。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "nanjing_central_offices_unknown",
+      "confidence": "institution_high_location_low",
+      "source_ids": ["minghuiyao_offices", "dpm_six_ministries"]
+    },
+    {
+      "id": "hw_war",
+      "name": "兵部",
+      "era": "洪武前期（1368—1379；南京）",
+      "parent": "中书省",
+      "function": "武官选授、军令与军政文书等事务。",
+      "position_hint": "南京中央官署宽区；不标精确地块。",
+      "caveat": "军队实际统领与军籍管理还涉及大都督府；不可把兵部画成对大都督府的完整上下级。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "nanjing_central_offices_unknown",
+      "confidence": "institution_high_location_low",
+      "source_ids": ["minghuiyao_offices", "dpm_six_ministries", "mingshi_76"]
+    },
+    {
+      "id": "hw_justice",
+      "name": "刑部",
+      "era": "洪武前期（1368—1379；南京）",
+      "parent": "中书省",
+      "function": "刑名审判与刑罚政务。",
+      "position_hint": "南京中央官署宽区；不标精确地块。",
+      "caveat": "成熟的刑部—都察院—大理寺三法司分工是在后续改制中形成，不能整体前置到1368年。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "nanjing_central_offices_unknown",
+      "confidence": "institution_high_location_low",
+      "source_ids": ["minghuiyao_offices", "dpm_six_ministries", "mingshi_73"]
+    },
+    {
+      "id": "hw_works",
+      "name": "工部",
+      "era": "洪武前期（1368—1379；南京）",
+      "parent": "中书省",
+      "function": "营造、水利、道路与官营制造等事务。",
+      "position_hint": "南京中央官署宽区；不标精确地块。",
+      "caveat": "此 parent 只适用于1380年以前。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "nanjing_central_offices_unknown",
+      "confidence": "institution_high_location_low",
+      "source_ids": ["minghuiyao_offices", "dpm_six_ministries"]
+    },
+    {
+      "id": "hw_censorate",
+      "name": "御史台",
+      "era": "洪武前期（1368—1379；南京）",
+      "parent": "皇帝",
+      "function": "监察百官、纠劾违法。",
+      "position_hint": "南京中央官署宽区；精确旧址不可确指。",
+      "caveat": "洪武十三年（1380）撤销；后来都察院不是名称不变的连续节点。",
+      "node_kind": "oversight",
+      "spatial_zone_id": "nanjing_central_offices_unknown",
+      "confidence": "institution_high_location_low",
+      "source_ids": ["mingshi_73", "cssn_censorate", "ntu_nanjing_capital"]
+    },
+    {
+      "id": "hw_grand_commandery",
+      "name": "大都督府",
+      "era": "洪武前期（1368—1379；南京）",
+      "parent": "皇帝",
+      "function": "全国性最高军事统辖机关之一，掌军旅与军官等事务。",
+      "position_hint": "南京中央官署宽区；精确旧址不可确指。",
+      "caveat": "洪武十三年（1380）分置中、左、右、前、后五军都督府；不可把后来五府画成中书省下属。",
+      "node_kind": "military_administration",
+      "spatial_zone_id": "nanjing_central_offices_unknown",
+      "confidence": "institution_high_location_low",
+      "source_ids": ["mingshi_76", "wiki_zh_five_commissions", "ntu_nanjing_capital"]
+    },
+    {
+      "id": "tongzheng_early",
+      "name": "通政使司",
+      "era": "洪武十年起（1377—1401；南京）",
+      "parent": "皇帝",
+      "function": "受纳、检验并转呈内外章奏，承担上下沟通。",
+      "position_hint": "南京中央官署宽区；不标精确地块。",
+      "caveat": "前身察言司在洪武三年短暂设置；主图若取1368快照则不应显示，取1377—1379才显示。",
+      "node_kind": "memorial_transmission",
+      "spatial_zone_id": "nanjing_central_offices_unknown",
+      "confidence": "institution_high_location_low",
+      "source_ids": ["mingshi_73", "dpm_tongzheng"]
+    },
+    {
+      "id": "transition_hall_grand_secretaries",
+      "name": "殿阁大学士",
+      "era": "洪武十五年至建文末（1382—1402前）",
+      "parent": "皇帝",
+      "function": "备顾问、辅导与文翰，品秩较低。",
+      "position_hint": "南京宫廷内的顾问活动范围；没有等同后来内阁衙署的固定精确位置。",
+      "caveat": "职位出现不等于成熟内阁已经成立；也不恢复丞相权力。",
+      "node_kind": "court_advisory",
+      "spatial_zone_id": "nanjing_palace_core",
+      "confidence": "high",
+      "source_ids": ["wiki_zh_grand_secretariat", "dpm_grand_secretariat", "dpm_grand_secretary"]
+    },
+    {
+      "id": "post_emperor",
+      "name": "皇帝",
+      "era": "永乐以后（北京视图以1443—1644为定型快照）",
+      "parent": null,
+      "function": "法定最高决策者；六部、都察院、通政使司、大理寺、五军都督府等中枢分别对皇帝负责。",
+      "position_hint": "紫禁城宫廷核心；不以单一殿座固定表示。",
+      "caveat": "内阁票拟不取代皇帝裁决，司礼监批红等宫廷机制也会影响实际政务流程；简图不等于权力全貌。",
+      "node_kind": "sovereign",
+      "spatial_zone_id": "beijing_forbidden_city_palace_core",
+      "confidence": "high",
+      "source_ids": ["mingshi_72", "dpm_cabinet_pdf"]
+    },
+    {
+      "id": "post_grand_secretariat",
+      "name": "内阁",
+      "era": "永乐即位后起（通常以1402为形成起点；成熟权力渐成）",
+      "parent": "皇帝",
+      "function": "宫内参预机务、顾问并逐渐承担题奏票拟；通过文书流程协调外廷。",
+      "position_hint": "紫禁城内外朝东南宽区；永乐初活动或在奉天门、东角门等处，后来文渊阁办公更稳定。",
+      "caveat": "不是法定宰相府、不是中书省复设、没有法定统辖六部的命令链。明代文渊阁位置和办公时段有争议，且不可指向现存清代文渊阁。",
+      "node_kind": "inner_advisory",
+      "spatial_zone_id": "beijing_forbidden_city_outer_court",
+      "confidence": "institution_high_location_contested",
+      "source_ids": ["wiki_zh_grand_secretariat", "dpm_grand_secretariat", "dpm_grand_secretary", "dpm_cabinet_pdf", "scholarly_capital_system"]
+    },
+    {
+      "id": "post_personnel",
+      "name": "吏部",
+      "era": "洪武十三年改制后；北京定型图为1443—1644",
+      "parent": "皇帝（制度上直接承命；内阁不是法定上级）",
+      "function": "文官选授、封勋、考课等人事事务。",
+      "position_hint": "北京宫门外，千步廊东侧官署宽区。",
+      "caveat": "与内阁存在票拟和政务往来，但不应画为内阁子节点；具体院落按复原图而非精确测绘。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "beijing_qianbu_east",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_72", "dpm_six_ministries", "dpm_architecture_pdf", "scholarly_capital_system"]
+    },
+    {
+      "id": "post_revenue",
+      "name": "户部",
+      "era": "洪武十三年改制后；北京定型图为1443—1644",
+      "parent": "皇帝（制度上直接承命；内阁不是法定上级）",
+      "function": "户籍、田赋、财政、仓储等事务。",
+      "position_hint": "北京宫门外，千步廊东侧官署宽区。",
+      "caveat": "具体院落按复原图表达；不把与内阁的文书往来画成直属。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "beijing_qianbu_east",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_72", "dpm_six_ministries", "dpm_architecture_pdf", "scholarly_capital_system"]
+    },
+    {
+      "id": "post_rites",
+      "name": "礼部",
+      "era": "洪武十三年改制后；北京定型图为1443—1644",
+      "parent": "皇帝（制度上直接承命；内阁不是法定上级）",
+      "function": "礼仪、学校、科举与朝贡等事务。",
+      "position_hint": "北京宫门外，千步廊东侧官署宽区。",
+      "caveat": "具体院落按复原图表达；礼仪关联不等于对相关寺监的全面法定隶属。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "beijing_qianbu_east",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_72", "dpm_six_ministries", "dpm_architecture_pdf", "scholarly_capital_system"]
+    },
+    {
+      "id": "post_war",
+      "name": "兵部",
+      "era": "洪武十三年改制后；北京定型图为1443—1644",
+      "parent": "皇帝（制度上直接承命；内阁不是法定上级）",
+      "function": "武官铨选、军令、调发、关津驿传等军政事务；奉旨发出调兵与政令文书。",
+      "position_hint": "北京宫门外，千步廊东侧官署宽区。",
+      "caveat": "与五军都督府是文武分掌和调兵流程关系，不是简单上下级；兵部不等于直接日常掌握全部卫所军籍。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "beijing_qianbu_east",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_72", "mingshi_76", "dpm_six_ministries", "dpm_weisuo", "dpm_architecture_pdf"]
+    },
+    {
+      "id": "post_justice",
+      "name": "刑部",
+      "era": "洪武十三年改制后；北京定型图为1443—1644",
+      "parent": "皇帝（制度上直接承命；内阁不是法定上级）",
+      "function": "刑名审判、定罪量刑与刑政；与都察院、大理寺会审重大案件。",
+      "position_hint": "北京皇城以西的三法司官署宽区，而非千步廊东侧五部群。",
+      "caveat": "刑部是六部之一却在空间上与另外五部错开；清代三法司位置不可回套明代。",
+      "node_kind": "ministry_and_judicial",
+      "spatial_zone_id": "beijing_west_judicial",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_72", "mingshi_73", "dpm_six_ministries", "dpm_architecture_pdf", "scholarly_capital_system"]
+    },
+    {
+      "id": "post_works",
+      "name": "工部",
+      "era": "洪武十三年改制后；北京定型图为1443—1644",
+      "parent": "皇帝（制度上直接承命；内阁不是法定上级）",
+      "function": "营造、水利、道路、器物制造与工程政务。",
+      "position_hint": "北京宫门外，千步廊东侧官署宽区。",
+      "caveat": "具体院落按复原图表达，不给现代坐标式确定。",
+      "node_kind": "ministry",
+      "spatial_zone_id": "beijing_qianbu_east",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_72", "dpm_six_ministries", "dpm_architecture_pdf", "scholarly_capital_system"]
+    },
+    {
+      "id": "post_censorate",
+      "name": "都察院",
+      "era": "洪武十四或十五年起；北京定型图为1443—1644",
+      "parent": "皇帝",
+      "function": "监察、纠劾百官，并参与重大案件会审。",
+      "position_hint": "北京皇城以西的三法司官署宽区。",
+      "caveat": "置院年份有1381与1382两说；主时间线采用《明太祖实录》《明史》所载1382，同时显示异说标记。",
+      "node_kind": "oversight_and_judicial",
+      "spatial_zone_id": "beijing_west_judicial",
+      "confidence": "institution_high_date_disputed_location_broad",
+      "source_ids": ["mingshi_3", "mingshi_73", "cssn_censorate", "bai_shouyi_censorate_date", "dpm_censorate", "dpm_architecture_pdf"]
+    },
+    {
+      "id": "post_dali_court",
+      "name": "大理寺",
+      "era": "洪武十四年复置后（其后尚有短期裁并）；北京定型图为1443—1644",
+      "parent": "皇帝",
+      "function": "复核、平反和驳正刑狱，与刑部、都察院构成三法司审谳流程。",
+      "position_hint": "北京皇城以西的三法司官署宽区。",
+      "caveat": "不能仅用现代“最高法院”替代其复核驳正职能；洪武年间曾多次设置、裁撤或合并，时间线宜保留。",
+      "node_kind": "judicial_review",
+      "spatial_zone_id": "beijing_west_judicial",
+      "confidence": "high_broad_zone",
+      "source_ids": ["wiki_zh_dali_court", "mingshi_73", "dpm_dali_court", "dpm_architecture_pdf"]
+    },
+    {
+      "id": "post_tongzheng",
+      "name": "通政使司",
+      "era": "洪武十年起；北京定型图为1443—1644",
+      "parent": "皇帝",
+      "function": "收受、检验、登记并转呈章奏，使内外信息上达。",
+      "position_hint": "北京宫门外，千步廊西侧官署宽区。",
+      "caveat": "章奏传递并不意味着隶属于内阁；其在复原图中的具体院落位置应标为复原推定。",
+      "node_kind": "memorial_transmission",
+      "spatial_zone_id": "beijing_qianbu_west",
+      "confidence": "institution_high_location_reconstructed",
+      "source_ids": ["mingshi_73", "dpm_tongzheng", "dpm_architecture_pdf", "scholarly_capital_system"]
+    },
+    {
+      "id": "post_five_commissions_group",
+      "name": "五军都督府（集合标签）",
+      "era": "洪武十三年起；北京定型图为1443—1644",
+      "parent": "皇帝（仅视觉分组；不存在统领五府的另一个“五军都督府衙门”）",
+      "function": "中、左、右、前、后五府的合称；分领都司、卫所军籍与军政管理。",
+      "position_hint": "五府官署总体位于北京宫门外千步廊西侧宽区。",
+      "caveat": "五府彼此平行；集合框应为虚线分组，不得画为成员的实体上级。",
+      "node_kind": "display_group",
+      "spatial_zone_id": "beijing_qianbu_west",
+      "confidence": "high_broad_zone",
+      "source_ids": ["wiki_zh_five_commissions", "mingshi_76", "dpm_five_commissions", "dpm_weisuo", "dpm_architecture_pdf"]
+    },
+    {
+      "id": "post_central_commission",
+      "name": "中军都督府",
+      "era": "洪武十三年起；北京定型图为1443—1644",
+      "parent": "皇帝",
+      "function": "五府之一，分领其辖区都司卫所的军籍与军政。",
+      "position_hint": "北京宫门外千步廊西侧官署宽区。",
+      "caveat": "与其余四府平行；具体院落次序采用复原图，不表示对兵部隶属。",
+      "node_kind": "military_commission",
+      "spatial_zone_id": "beijing_qianbu_west",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_76", "dpm_five_commissions", "dpm_architecture_pdf"]
+    },
+    {
+      "id": "post_left_commission",
+      "name": "左军都督府",
+      "era": "洪武十三年起；北京定型图为1443—1644",
+      "parent": "皇帝",
+      "function": "五府之一，分领其辖区都司卫所的军籍与军政。",
+      "position_hint": "北京宫门外千步廊西侧官署宽区。",
+      "caveat": "与其余四府平行；具体院落次序采用复原图，不表示对兵部隶属。",
+      "node_kind": "military_commission",
+      "spatial_zone_id": "beijing_qianbu_west",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_76", "dpm_five_commissions", "dpm_architecture_pdf"]
+    },
+    {
+      "id": "post_right_commission",
+      "name": "右军都督府",
+      "era": "洪武十三年起；北京定型图为1443—1644",
+      "parent": "皇帝",
+      "function": "五府之一，分领其辖区都司卫所的军籍与军政。",
+      "position_hint": "北京宫门外千步廊西侧官署宽区。",
+      "caveat": "与其余四府平行；具体院落次序采用复原图，不表示对兵部隶属。",
+      "node_kind": "military_commission",
+      "spatial_zone_id": "beijing_qianbu_west",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_76", "dpm_five_commissions", "dpm_architecture_pdf"]
+    },
+    {
+      "id": "post_front_commission",
+      "name": "前军都督府",
+      "era": "洪武十三年起；北京定型图为1443—1644",
+      "parent": "皇帝",
+      "function": "五府之一，分领其辖区都司卫所的军籍与军政。",
+      "position_hint": "北京宫门外千步廊西侧官署宽区。",
+      "caveat": "与其余四府平行；具体院落次序采用复原图，不表示对兵部隶属。",
+      "node_kind": "military_commission",
+      "spatial_zone_id": "beijing_qianbu_west",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_76", "dpm_five_commissions", "dpm_architecture_pdf"]
+    },
+    {
+      "id": "post_rear_commission",
+      "name": "后军都督府",
+      "era": "洪武十三年起；北京定型图为1443—1644",
+      "parent": "皇帝",
+      "function": "五府之一，分领其辖区都司卫所的军籍与军政。",
+      "position_hint": "北京宫门外千步廊西侧官署宽区。",
+      "caveat": "与其余四府平行；具体院落次序采用复原图，不表示对兵部隶属。",
+      "node_kind": "military_commission",
+      "spatial_zone_id": "beijing_qianbu_west",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_76", "dpm_five_commissions", "dpm_architecture_pdf"]
+    },
+    {
+      "id": "post_three_judicial_offices_group",
+      "name": "三法司（集合标签）",
+      "era": "明代中后期制度展示；北京定型图为1443—1644",
+      "parent": null,
+      "function": "刑部、都察院、大理寺在重大刑狱中的分工与会审组合。",
+      "position_hint": "北京皇城以西三法司官署宽区。",
+      "caveat": "这是功能合称，不是另设的上级机关；三成员各自直接对皇帝负责。",
+      "node_kind": "workflow_group",
+      "spatial_zone_id": "beijing_west_judicial",
+      "confidence": "high_broad_zone",
+      "source_ids": ["mingshi_72", "mingshi_73", "dpm_dali_court"]
+    },
+    {
+      "id": "post_nine_chiefs_group",
+      "name": "九卿（集合标签）",
+      "era": "明代制度性合称",
+      "parent": null,
+      "function": "通常指六部尚书、都御史、通政使、大理寺卿等九位长官的合称，用于廷议等场景。",
+      "position_hint": "非空间实体；成员分处宫门外东、西及皇城以西。",
+      "caveat": "不是常设统属机关，也没有可被画成单一衙署的精确位置。",
+      "node_kind": "deliberative_label",
+      "spatial_zone_id": null,
+      "confidence": "high",
+      "source_ids": ["mingshi_72"]
+    },
+    {
+      "id": "post_jinyi_guard_context",
+      "name": "锦衣卫（空间参照节点）",
+      "era": "洪武十五年改制后；北京定型图为1443—1644",
+      "parent": "皇帝",
+      "function": "亲军与侍卫、侦缉等职责；这里只作为千步廊西侧复原图的参照。",
+      "position_hint": "北京宫门外千步廊西侧官署宽区。",
+      "caveat": "亲军卫并非都归五军都督府；本节点不可并入五府层级。",
+      "node_kind": "imperial_guard_context",
+      "spatial_zone_id": "beijing_qianbu_west",
+      "confidence": "broad_zone",
+      "source_ids": ["mingshi_76", "dpm_architecture_pdf"]
+    },
+    {
+      "id": "post_guard_network",
+      "name": "都司—卫所系统（网络节点）",
+      "era": "明代",
+      "parent": "五军都督府分别分领（并非所有亲军卫皆如此）",
+      "function": "京外军事编制、军籍和地方守御网络。",
+      "position_hint": "全国网络，不落在北京官署图的单一位置。",
+      "caveat": "地图连线表示军籍/管理网络，不等于五府可自行决定所有调兵行动。",
+      "node_kind": "external_network",
+      "spatial_zone_id": "empirewide_military_network",
+      "confidence": "high",
+      "source_ids": ["mingshi_76", "dpm_weisuo"]
+    }
+  ],
+  "relations": [
+    {
+      "from": "hw_emperor",
+      "to": "hw_central_secretariat",
+      "era": "1368—1379",
+      "type": "solid_hierarchy",
+      "label": "任命、裁决"
+    },
+    {
+      "from": "hw_central_secretariat",
+      "to": "hw_personnel|hw_revenue|hw_rites|hw_war|hw_justice|hw_works",
+      "era": "1368—1379",
+      "type": "solid_hierarchy",
+      "label": "统辖六部"
+    },
+    {
+      "from": "post_emperor",
+      "to": "post_personnel|post_revenue|post_rites|post_war|post_justice|post_works|post_censorate|post_dali_court|post_tongzheng|post_central_commission|post_left_commission|post_right_commission|post_front_commission|post_rear_commission",
+      "era": "1380年改制后；北京视图",
+      "type": "solid_hierarchy",
+      "label": "直接负责"
+    },
+    {
+      "from": "post_emperor",
+      "to": "post_grand_secretariat",
+      "era": "1402以后",
+      "type": "solid_hierarchy",
+      "label": "入值、顾问与票拟"
+    },
+    {
+      "from": "post_grand_secretariat",
+      "to": "post_personnel|post_revenue|post_rites|post_war|post_justice|post_works",
+      "era": "永乐以后，实际影响随年代变化",
+      "type": "workflow",
+      "label": "票拟、文书协调；非统属"
+    },
+    {
+      "from": "post_tongzheng",
+      "to": "post_emperor",
+      "era": "1377以后",
+      "type": "workflow",
+      "label": "章奏受纳与上达"
+    },
+    {
+      "from": "post_censorate",
+      "to": "post_personnel|post_revenue|post_rites|post_war|post_justice|post_works|post_central_commission|post_left_commission|post_right_commission|post_front_commission|post_rear_commission",
+      "era": "明代",
+      "type": "workflow",
+      "label": "监察、纠劾；非统属"
+    },
+    {
+      "from": "post_justice",
+      "to": "post_dali_court|post_censorate",
+      "era": "明代",
+      "type": "workflow",
+      "label": "三法司审谳、复核或会审；非统属"
+    },
+    {
+      "from": "post_war",
+      "to": "post_central_commission|post_left_commission|post_right_commission|post_front_commission|post_rear_commission",
+      "era": "明代",
+      "type": "workflow",
+      "label": "奉旨调发与军政文书；非统属"
+    },
+    {
+      "from": "post_central_commission|post_left_commission|post_right_commission|post_front_commission|post_rear_commission",
+      "to": "post_guard_network",
+      "era": "明代",
+      "type": "network_administration",
+      "label": "分领都司卫所军籍与军政"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "1368",
+      "event": "明建国，以南京为京师；六部置于中书省之下。",
+      "source_ids": ["minghuiyao_offices", "mingshi_72", "beijing_city_history"]
+    },
+    {
+      "year": "1377",
+      "event": "置通政使司，承担章奏受纳与上达。",
+      "source_ids": ["mingshi_73", "dpm_tongzheng"]
+    },
+    {
+      "year": "1380",
+      "event": "胡惟庸案后废中书省，六部直接承皇帝；大都督府分为五军都督府；御史台撤销。",
+      "source_ids": ["mingshi_72", "mingshi_73", "mingshi_76", "wiki_zh_zhongshusheng"]
+    },
+    {
+      "year": "1381",
+      "event": "大理寺复置；《明会典》及部分研究将都察院设置系于本年。",
+      "source_ids": ["mingshi_73", "bai_shouyi_censorate_date"]
+    },
+    {
+      "year": "1382",
+      "event": "《明太祖实录》《明史》系都察院设置于本年；同年置殿阁大学士，品秩低、备顾问。",
+      "source_ids": ["mingshi_3", "cssn_censorate", "wiki_zh_grand_secretariat", "dpm_grand_secretary"]
+    },
+    {
+      "year": "1402",
+      "event": "永乐帝命翰林官入文渊阁参预机务，通常视为明代内阁形成起点。",
+      "source_ids": ["wiki_zh_grand_secretariat", "dpm_grand_secretariat", "dpm_cabinet_pdf"]
+    },
+    {
+      "year": "1403",
+      "event": "北平改北京，称行在。",
+      "source_ids": ["beijing_capital_naming", "wiki_zh_north_zhili"]
+    },
+    {
+      "year": "1420—1421",
+      "event": "北京宫城、都城工程大体告成；1421年正式迁都北京。",
+      "source_ids": ["beijing_city_history", "dpm_yongle_emperor", "wiki_zh_yongle_move"]
+    },
+    {
+      "year": "1425",
+      "event": "洪熙朝恢复南京京师名义、北京再称行在，但朝廷实际仍驻北京。",
+      "source_ids": ["beijing_capital_naming", "dpm_xuande_capital"]
+    },
+    {
+      "year": "1441",
+      "event": "正统六年，北京再正式定为京师。",
+      "source_ids": ["beijing_capital_naming", "wiki_zh_north_zhili"]
+    },
+    {
+      "year": "1442—1443",
+      "event": "正统七至八年集中营建千步廊东西两侧及西部三法司等官署，后世熟悉的北京中枢官署空间格局大体定型。",
+      "source_ids": ["scholarly_capital_system", "counsellor_fu_xinian", "dpm_architecture_pdf", "beijing_history_excerpt"]
+    }
+  ],
+  "disputed_points": [
+    {
+      "topic": "都察院置年",
+      "main_display": "1382（洪武十五）",
+      "alternative": "1381（洪武十四）",
+      "evidence_note": "《明太祖实录》《明史》支持1382；《明会典》及部分学者据相关任官材料支持1381。界面应保留争议徽标，不写成毫无异议的单一事实。",
+      "source_ids": ["mingshi_3", "cssn_censorate", "bai_shouyi_censorate_date"]
+    },
+    {
+      "topic": "内阁的“成立年”",
+      "main_display": "1402作为通常所称形成起点",
+      "alternative": "1382已有殿阁大学士，但性质与成熟内阁不同；仁宣以后权力继续发展",
+      "evidence_note": "应区分职位首设、入阁参预机务和后来票拟权成熟，避免一条年份替代制度演化。",
+      "source_ids": ["wiki_zh_grand_secretariat", "dpm_grand_secretariat", "dpm_grand_secretary", "dpm_cabinet_pdf"]
+    },
+    {
+      "topic": "永乐初内阁办公地点",
+      "main_display": "宫内外朝东南宽区",
+      "alternative": "文渊阁、奉天门、东角门等记载反映不同阶段或不同活动",
+      "evidence_note": "“直文渊阁”不必然证明所有议政均在一座固定阁内；明代文渊阁也不是现存清代文渊阁。",
+      "source_ids": ["dpm_cabinet_pdf", "dpm_grand_secretariat", "scholarly_capital_system"]
+    },
+    {
+      "topic": "洪武南京中枢官署精确位置",
+      "main_display": "不定位，仅给南京宫城外/近宫城宽区",
+      "alternative": "可参考中都中书省在午门东、大都督府与御史台在西的布局作制度性推测",
+      "evidence_note": "南京本身的直接方位记载不足；推测不能升级为确定建筑点。",
+      "source_ids": ["ntu_nanjing_capital"]
+    },
+    {
+      "topic": "北京官署图的年代",
+      "main_display": "正统八年（1443）以后定型格局",
+      "alternative": "把它笼统标为“永乐北京”",
+      "evidence_note": "永乐期多机构仍利用元代旧署或分散安置，集中营建主要发生在正统七至八年；因此后者会制造年代错误。",
+      "source_ids": ["scholarly_capital_system", "counsellor_fu_xinian", "dpm_architecture_pdf"]
+    },
+    {
+      "topic": "“内阁统六部”的简化",
+      "main_display": "皇帝—六部为法定直承；内阁—六部为虚线工作联系",
+      "alternative": "内阁作为六部实体上级",
+      "evidence_note": "内阁实际影响可能很强，但并无中书省式法定统属，且大学士起初品级低、无完整法定衙署配置。",
+      "source_ids": ["mingshi_72", "dpm_grand_secretariat", "dpm_cabinet_pdf"]
+    },
+    {
+      "topic": "兵部与五军都督府关系",
+      "main_display": "文武分掌、奉旨调发的流程关系",
+      "alternative": "兵部直接统辖五府，或五府可独立调动全国军队",
+      "evidence_note": "五府分领军籍与军政，兵部掌武选、军令与调发，重大调兵归皇帝裁决。",
+      "source_ids": ["mingshi_76", "dpm_weisuo", "dpm_five_commissions"]
+    },
+    {
+      "topic": "宫门外官署是否算“宫内”",
+      "main_display": "内阁为紫禁城内；千步廊两侧官署均为宫门外",
+      "alternative": "因皇城外郛或T形围合术语而把千步廊官署画进紫禁城",
+      "evidence_note": "可以说明千步廊处在皇城南部外郛/近宫廷围合空间，但必须明确它在午门、承天门之外，不是紫禁城内廷或外朝建筑。",
+      "source_ids": ["wiki_zh_beijing_imperial_city", "beijing_imperial_city_planning", "dpm_architecture_pdf"]
+    },
+    {
+      "topic": "明清官署格局混用",
+      "main_display": "明代刑部、都察院、大理寺置于皇城以西的司法区",
+      "alternative": "把清代三法司移入千步廊西侧后的地图当作明代",
+      "evidence_note": "复原图应显示朝代和年份，不能只标“古代北京中央官署”。",
+      "source_ids": ["scholarly_capital_system", "dpm_architecture_pdf", "beijing_history_excerpt"]
+    }
+  ],
+  "source_catalog": [
+    {
+      "id": "wiki_zh_zhongshusheng",
+      "title": "维基百科：中书省",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E4%B9%A6%E7%9C%81",
+      "kind": "wikipedia_entry",
+      "non_wikipedia_crosscheck": false,
+      "supports": ["洪武初中书省", "1380废省入口索引"]
+    },
+    {
+      "id": "wiki_zh_ming_offices",
+      "title": "维基百科：明朝官职表",
+      "url": "https://zh.wikipedia.org/wiki/%E6%98%8E%E6%9C%9D%E5%AE%98%E8%81%B7%E8%A1%A8",
+      "kind": "wikipedia_entry",
+      "non_wikipedia_crosscheck": false,
+      "supports": ["中枢机构索引"]
+    },
+    {
+      "id": "wiki_en_ming_government",
+      "title": "Wikipedia: Government of the Ming dynasty",
+      "url": "https://en.wikipedia.org/wiki/Government_of_the_Ming_dynasty",
+      "kind": "wikipedia_entry",
+      "non_wikipedia_crosscheck": false,
+      "supports": ["英文术语与概览交叉入口"]
+    },
+    {
+      "id": "wiki_zh_grand_secretariat",
+      "title": "维基百科：明朝内阁",
+      "url": "https://zh.wikipedia.org/wiki/%E6%98%8E%E6%9C%9D%E5%86%85%E9%98%81",
+      "kind": "wikipedia_entry",
+      "non_wikipedia_crosscheck": false,
+      "supports": ["1382殿阁大学士", "1402内阁形成入口", "票拟"]
+    },
+    {
+      "id": "wiki_zh_five_commissions",
+      "title": "维基百科：五军都督府",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%94%E8%BB%8D%E9%83%BD%E7%9D%A3%E5%BA%9C",
+      "kind": "wikipedia_entry",
+      "non_wikipedia_crosscheck": false,
+      "supports": ["1380分五府", "五府名称"]
+    },
+    {
+      "id": "wiki_zh_dali_court",
+      "title": "维基百科：大理寺",
+      "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E7%90%86%E5%AF%BA",
+      "kind": "wikipedia_entry",
+      "non_wikipedia_crosscheck": false,
+      "supports": ["大理寺概览"]
+    },
+    {
+      "id": "wiki_zh_beijing_imperial_city",
+      "title": "维基百科：北京皇城",
+      "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E7%9A%87%E5%9F%8E",
+      "kind": "wikipedia_entry",
+      "non_wikipedia_crosscheck": false,
+      "supports": ["皇城、紫禁城与南部外郛层次"]
+    },
+    {
+      "id": "wiki_zh_yongle_move",
+      "title": "维基百科：永乐迁都",
+      "url": "https://zh.wikipedia.org/wiki/%E6%B0%B8%E4%B9%90%E8%BF%81%E9%83%BD",
+      "kind": "wikipedia_entry",
+      "non_wikipedia_crosscheck": false,
+      "supports": ["1421迁都入口"]
+    },
+    {
+      "id": "wiki_zh_north_zhili",
+      "title": "维基百科：北直隶",
+      "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E7%9B%B4%E9%9A%B6",
+      "kind": "wikipedia_entry",
+      "non_wikipedia_crosscheck": false,
+      "supports": ["北京行在与京师名称变化入口"]
+    },
+    {
+      "id": "mingshi_72",
+      "title": "《明史》卷七十二·职官一",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B7072",
+      "kind": "primary_dynastic_history",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["废中书省", "六部直承", "中枢并列关系", "九卿"]
+    },
+    {
+      "id": "mingshi_73",
+      "title": "《明史》卷七十三·职官二",
+      "url": "https://zh.wikisource.org/zh-hant/%E6%98%8E%E5%8F%B2/%E5%8D%B773",
+      "kind": "primary_dynastic_history",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["都察院", "通政使司", "大理寺", "三法司职掌"]
+    },
+    {
+      "id": "mingshi_76",
+      "title": "《明史》卷七十六·职官五",
+      "url": "https://zh.wikisource.org/zh-hans/%E6%98%8E%E5%8F%B2/%E5%8D%B776",
+      "kind": "primary_dynastic_history",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["五军都督府", "卫所", "兵部与五府分掌"]
+    },
+    {
+      "id": "mingshi_3",
+      "title": "《明史》卷三·太祖本纪三",
+      "url": "https://zh.wikisource.org/zh-hant/%E6%98%8E%E5%8F%B2/%E5%8D%B73",
+      "kind": "primary_dynastic_history",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["洪武十五年置都察院的主流纪年"]
+    },
+    {
+      "id": "minghuiyao_offices",
+      "title": "《明会要》职官：洪武元年六部属中书省",
+      "url": "https://ctext.org/wiki.pl?chapter=795954&if=gb",
+      "kind": "historical_compilation",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["洪武初中书省与六部关系"]
+    },
+    {
+      "id": "dpm_grand_secretariat",
+      "title": "故宫博物院：内阁",
+      "url": "https://www.dpm.org.cn/court/system/236394.html",
+      "kind": "museum_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["内阁沿革", "非正式宰相机构", "宫内位置"]
+    },
+    {
+      "id": "dpm_grand_secretary",
+      "title": "故宫博物院：大学士",
+      "url": "https://www.dpm.org.cn/court/system/236407.html",
+      "kind": "museum_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["1382殿阁大学士", "永乐入值"]
+    },
+    {
+      "id": "dpm_six_ministries",
+      "title": "故宫博物院：六部",
+      "url": "https://www.dpm.org.cn/court/system/236422.html",
+      "kind": "museum_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["六部职掌", "废中书省后直承"]
+    },
+    {
+      "id": "dpm_censorate",
+      "title": "故宫博物院：都察院",
+      "url": "https://www.dpm.org.cn/court/system/236392.html",
+      "kind": "museum_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["都察院监察职掌"]
+    },
+    {
+      "id": "dpm_dali_court",
+      "title": "故宫博物院：大理寺",
+      "url": "https://www.dpm.org.cn/court/system/236398.html",
+      "kind": "museum_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["复核刑狱", "三法司"]
+    },
+    {
+      "id": "dpm_tongzheng",
+      "title": "故宫博物院：通政使司",
+      "url": "https://www.dpm.org.cn/court/system/236396.html",
+      "kind": "museum_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["章奏受纳与上达"]
+    },
+    {
+      "id": "dpm_five_commissions",
+      "title": "故宫博物院：五军都督府",
+      "url": "https://www.dpm.org.cn/lemmas/242910.html",
+      "kind": "museum_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["五府沿革与职掌"]
+    },
+    {
+      "id": "dpm_weisuo",
+      "title": "故宫博物院：卫所制度",
+      "url": "https://www.dpm.org.cn/court/system/236399.html",
+      "kind": "museum_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["兵部、五府、都司卫所关系"]
+    },
+    {
+      "id": "dpm_cabinet_pdf",
+      "title": "故宫博物院院刊：明朝的内阁和清朝的军机处",
+      "url": "https://www.dpm.org.cn/Uploads/File/pdf/4b/64/f3/4b64f345cf5f656b625bc4a00c1b7858.pdf",
+      "kind": "museum_academic_pdf",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["内阁不是六部法定上级", "早期内阁办公地点争议", "票拟与批红"]
+    },
+    {
+      "id": "dpm_architecture_pdf",
+      "title": "故宫博物院院刊：紫禁城文武建筑布局与文德光华",
+      "url": "https://www.dpm.org.cn/Uploads/File/2024/07/22/u669dd3cf8e5fa.pdf",
+      "kind": "museum_academic_pdf",
+      "non_wikipedia_crosscheck": true,
+      "locator": "PDF第7页（刊物页035），图8“明北京城中央官署机构分布图”",
+      "supports": ["明北京中央官署复原图", "千步廊东西官署分区", "宫内外区别"]
+    },
+    {
+      "id": "cssn_censorate",
+      "title": "中国社会科学院法学研究所：明代都察院司法职能考论",
+      "url": "https://iolaw.cssn.cn/zxzp/202212/t20221202_5568148.shtml",
+      "kind": "academic_institute",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["1382置都察院", "监察与司法职能"]
+    },
+    {
+      "id": "bai_shouyi_censorate_date",
+      "title": "白寿彝总主编《中国通史》第九卷：都察院置年辨析节选",
+      "url": "https://ixdzs.hk/read/597/p181.html",
+      "kind": "modern_scholarly_history",
+      "non_wikipedia_crosscheck": true,
+      "access_note": "作者与书目属于学术史著；当前直链为非机构镜像，争议判断仍须与《明史》《明实录》及故宫资料并读。",
+      "supports": ["1381与1382置院异说"]
+    },
+    {
+      "id": "ntu_nanjing_capital",
+      "title": "国立台湾大学建筑与城乡研究学报：明初南京宫城与官署空间研究（PDF）",
+      "url": "https://bp.ntu.edu.tw/001/Upload/1352/ckfile/506cade7-2d9e-4514-b281-0d22427b1c80.pdf",
+      "kind": "academic_pdf",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["南京早期官署精确位置失载", "中都布局只能辅助推定"]
+    },
+    {
+      "id": "scholarly_capital_system",
+      "title": "中国古代都城制度史研究：明北京中央官署营建与布局节选",
+      "url": "https://src.wenyuange.org/get/extract/23429/OEBPS/Text/part0029.xhtml",
+      "kind": "scholarly_book_excerpt",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["永乐期官署分散", "宣德至正统营建", "1442—1443定型", "东西官署分区"]
+    },
+    {
+      "id": "counsellor_fu_xinian",
+      "title": "国务院参事室：傅熹年谈明北京城与正统七年官署营建",
+      "url": "https://www.counsellor.gov.cn/2009-10/23/c_1210743208.htm",
+      "kind": "government_expert_article",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["正统七年集中建设衙署", "北京城市轴线与官署"]
+    },
+    {
+      "id": "beijing_history_excerpt",
+      "title": "新京报书评周刊：《北京史》授权节选及明北京官署图",
+      "url": "https://m.bjnews.com.cn/detail/1691996472168995.html",
+      "kind": "published_history_excerpt",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["明北京官署空间图", "正统定制后的分区"]
+    },
+    {
+      "id": "beijing_city_history",
+      "title": "北京市人民政府：北京建城史与明代迁都",
+      "url": "https://www.beijing.gov.cn/renwen/sy/whkb/201810/t20181025_1864688.html",
+      "kind": "government_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["明初南京为都", "1420营建", "1421迁都"]
+    },
+    {
+      "id": "beijing_imperial_city_planning",
+      "title": "北京市规划和自然资源委员会：北京皇城与中轴空间",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zxzt/wsghs/2021dyj/d3j/202102/t20210203_2252076.html",
+      "kind": "government_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["皇城、宫城、千步廊与中轴空间层次"]
+    },
+    {
+      "id": "beijing_capital_naming",
+      "title": "北京市文物局：明代北京行在、京师称谓沿革",
+      "url": "https://wwj.beijing.gov.cn/bjww/wwjzz/wwjapp/zzbsy/wwgs90/326000060/index.html",
+      "kind": "government_cultural_heritage",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["1403行在", "1421迁都", "1425称谓回摆", "1441再定京师"]
+    },
+    {
+      "id": "dpm_yongle_emperor",
+      "title": "故宫博物院：明成祖朱棣",
+      "url": "https://www.dpm.org.cn/court/lineage/226257.html",
+      "kind": "museum_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["北京营建与迁都"]
+    },
+    {
+      "id": "dpm_xuande_capital",
+      "title": "故宫博物院：宣德时期两京与北京宫廷",
+      "url": "https://www.dpm.org.cn/court/culture/166796.html",
+      "kind": "museum_official",
+      "non_wikipedia_crosscheck": true,
+      "supports": ["洪熙宣德间北京实际政治中心与称谓变化"]
+    }
+  ]
+}
