@@ -1,0 +1,1306 @@
+{
+  "audit_date": "2026-09-05",
+  "scope": "official-0349..0368,0464..0532,0536..0542",
+  "record_count": 96,
+  "status_counts": {
+    "verified": 61,
+    "qualified": 25,
+    "corrected": 4,
+    "unresolved": 6
+  },
+  "method": "逐项比对明史卷74、75、76与万历大明会典卷10、118、122；明史缺注品级处不自动判未入流。原典有时代差异或文本歧异保留；差遣与本官、已革机构与万历十年现行机构分开。网页为古籍公开转录，OCR异常处不当作已核实。",
+  "source_catalog": [
+    {
+      "url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "title": "明史卷75·职官四·王府长史司"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "title": "明史卷76·职官五·五军、京卫、仪卫、总兵、都司、留守、卫所"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "title": "明史卷74·职官三·宦官"
+    },
+    {
+      "url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "title": "万历大明会典卷10·稽勋·资格"
+    },
+    {
+      "url": "https://www.shidianguji.com/book/CADAL02088024/chapter/1lddgfmqr1dzj",
+      "title": "万历大明会典卷118·兵部·武官额员及资格、铨选"
+    },
+    {
+      "url": "https://www.guoxuemi.com/a/1836h/104879t.html",
+      "title": "万历大明会典卷122·兵部·优给、贴黄、诰敕封赠"
+    },
+    {
+      "url": "https://www.xuoda.com/ls/mingshi/2499.htm",
+      "title": "明史五城兵马司专条（学达书库转录）"
+    },
+    {
+      "url": "https://ctext.org/wiki.pl?chapter=435241&if=en",
+      "title": "明宪宗实录卷228·掌镇抚司事指挥使季成事例"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "official-0349",
+      "institution": "王府长史司",
+      "title": "左、右长史",
+      "original_rank": "正五品",
+      "verified_rank": "正五品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "左、右長史各一人，正五品。",
+      "note": "每府左右长史各一人；洪武十三年以后长史司定制。早期王相府左右相正二品不是此职。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0350",
+      "institution": "王府长史司",
+      "title": "典簿",
+      "original_rank": "正九品",
+      "verified_rank": "正九品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "其屬典簿一人，正九品。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0351",
+      "institution": "王府长史司",
+      "title": "审理",
+      "original_rank": "正六品",
+      "verified_rank": "正六品（审理正；副为正七品）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "審理正一人，正六品；副一人，正七品。",
+      "note": "原表把“审理正”简写成“审理”，容易与副官混淆。各所副官嘉靖四十四年（1565）并革，万历十年场景应仅显示正官。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+          "locator": "官品资格表：对应正、副职分列"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0352",
+      "institution": "王府长史司",
+      "title": "典膳",
+      "original_rank": "正八品",
+      "verified_rank": "正八品（典膳正；副为从八品）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "典膳正一人，正八品；副一人，從八品。",
+      "note": "原表把“典膳正”简写成“典膳”，容易与副官混淆。各所副官嘉靖四十四年（1565）并革，万历十年场景应仅显示正官。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+          "locator": "官品资格表：对应正、副职分列"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0353",
+      "institution": "王府长史司",
+      "title": "奉祠",
+      "original_rank": "正八品",
+      "verified_rank": "正八品（奉祠正；副为从八品）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "奉祠正一人，正八品；副一人，從八品。",
+      "note": "原表把“奉祠正”简写成“奉祠”，容易与副官混淆。各所副官嘉靖四十四年（1565）并革，万历十年场景应仅显示正官。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+          "locator": "官品资格表：对应正、副职分列"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0354",
+      "institution": "王府长史司",
+      "title": "典乐",
+      "original_rank": "正九品",
+      "verified_rank": "正九品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "典樂一人，正九品。",
+      "note": "属奉祠所；不是典膳或乐户身份。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0355",
+      "institution": "王府长史司",
+      "title": "典宝",
+      "original_rank": "正八品",
+      "verified_rank": "正八品（典宝正；副为从八品）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "典寶正一人，正八品；副一人，從八品。",
+      "note": "原表把“典宝正”简写成“典宝”，容易与副官混淆。各所副官嘉靖四十四年（1565）并革，万历十年场景应仅显示正官。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+          "locator": "官品资格表：对应正、副职分列"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0356",
+      "institution": "王府长史司",
+      "title": "纪善",
+      "original_rank": "正八品",
+      "verified_rank": "正八品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "紀善所，紀善二人，正八品。",
+      "note": "洪武早期曾正七品；此为后续定制。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0357",
+      "institution": "王府长史司",
+      "title": "良医",
+      "original_rank": "正八品",
+      "verified_rank": "正八品（良医正；副为从八品）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "良醫正一人，正八品；副一人，從八品。",
+      "note": "原表把“良医正”简写成“良医”，容易与副官混淆。各所副官嘉靖四十四年（1565）并革，万历十年场景应仅显示正官。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+          "locator": "官品资格表：对应正、副职分列"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0358",
+      "institution": "王府长史司",
+      "title": "典仪",
+      "original_rank": "正九品",
+      "verified_rank": "正九品（典仪正；副为从九品）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "典儀正一人，正九品；副一人，從九品。",
+      "note": "原表把“典仪正”简写成“典仪”，容易与副官混淆。各所副官嘉靖四十四年（1565）并革，万历十年场景应仅显示正官。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+          "locator": "官品资格表：对应正、副职分列"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0359",
+      "institution": "王府长史司",
+      "title": "工正",
+      "original_rank": "正八品",
+      "verified_rank": "正八品（工正；副为从八品）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "工正所，工正一人，正八品；副一人，從八品。",
+      "note": "工正本品可确认；副官嘉靖四十四年（1565）裁革，勿以一个品阶覆盖正副。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0360",
+      "institution": "王府长史司",
+      "title": "伴读",
+      "original_rank": "从九品",
+      "verified_rank": "从九品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "伴讀四人，從九品，後止設一人。",
+      "note": "定员先四后一；品级为从九品。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0361",
+      "institution": "王府长史司",
+      "title": "教授",
+      "original_rank": "从九品",
+      "verified_rank": "从九品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "教授無定員，從九品。",
+      "note": "王府教授与地方州、县儒学教官不能仅凭“教授”近义统套品阶。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0362",
+      "institution": "王府长史司",
+      "title": "引礼舍",
+      "original_rank": "未入流",
+      "verified_rank": "未入流（引礼舍人）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "evidence": "未入流……王府引禮舍人。",
+      "note": "原表“引礼舍”应补全为“引礼舍人”。明史记引礼舍后有裁革，应记录时段，不能作为所有王府的万历固定员额。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷75",
+          "locator": "王府长史司：引礼舍及沿革"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0363",
+      "institution": "王府长史司",
+      "title": "仓大使",
+      "original_rank": "未入流",
+      "verified_rank": "未入流",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "evidence": "未入流……長史司倉庫大使　副使。",
+      "note": "王府长史司仓大使；勿与京府军储仓等从九品官混用。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0364",
+      "institution": "王府长史司",
+      "title": "副使",
+      "original_rank": "未入流",
+      "verified_rank": "未入流（仓副使；后裁）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "evidence": "未入流……長史司倉庫大使　副使。",
+      "note": "结合原表前一条应为仓副使；明史记“仓、库副使后俱革”，万历场景不宜固定设此员。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷75",
+          "locator": "王府长史司：仓、库副使后俱革"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0365",
+      "institution": "王府长史司",
+      "title": "库大使",
+      "original_rank": "未入流",
+      "verified_rank": "未入流",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "evidence": "未入流……長史司倉庫大使　副使。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0366",
+      "institution": "郡王府",
+      "title": "教授",
+      "original_rank": "从九品",
+      "verified_rank": "从九品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "郡王府，教授一人，從九品。",
+      "note": "明史另记万历郡王府增教授一人；数量有时代差异，品阶本身确定。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0367",
+      "institution": "郡王府",
+      "title": "典膳",
+      "original_rank": "正八品",
+      "verified_rank": "正八品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "郡王府……典膳一人，正八品。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0368",
+      "institution": "镇国将军府",
+      "title": "教授",
+      "original_rank": "从九品",
+      "verified_rank": "从九品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷75",
+      "evidence": "鎮國將軍教授一人，從九品。",
+      "note": "这里的镇国将军是宗室封爵者府署，不能与同名武散阶混为一谈。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0464",
+      "institution": "都指挥使司",
+      "title": "都指挥使",
+      "original_rank": "正二品",
+      "verified_rank": "正二品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "都指揮使一人，正二品。",
+      "note": "明史卷76都司定制；行都司设官与都司同。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0465",
+      "institution": "都指挥使司",
+      "title": "都指挥同知",
+      "original_rank": "从二品",
+      "verified_rank": "从二品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "都指揮同知二人，從二品。",
+      "note": "明史卷76都司定制；行都司设官与都司同。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0466",
+      "institution": "都指挥使司",
+      "title": "都指挥佥事",
+      "original_rank": "正三品",
+      "verified_rank": "正三品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "都指揮僉事四人，正三品。",
+      "note": "明史卷76都司定制；行都司设官与都司同。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0467",
+      "institution": "都指挥使司",
+      "title": "经历",
+      "original_rank": "正六品",
+      "verified_rank": "正六品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "經歷司，經歷，正六品。",
+      "note": "明史卷76都司定制；行都司设官与都司同。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0468",
+      "institution": "都指挥使司",
+      "title": "都事",
+      "original_rank": "正七品",
+      "verified_rank": "正七品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "都事，正七品。",
+      "note": "明史卷76都司定制；行都司设官与都司同。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0469",
+      "institution": "都指挥使司",
+      "title": "断事",
+      "original_rank": "正六品",
+      "verified_rank": "正六品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "斷事司，斷事，正六品。",
+      "note": "明史卷76都司定制；行都司设官与都司同。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0470",
+      "institution": "都指挥使司",
+      "title": "副断事",
+      "original_rank": "正七品",
+      "verified_rank": "正七品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "副斷事，正七品。",
+      "note": "明史卷76都司定制；行都司设官与都司同。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0471",
+      "institution": "都指挥使司",
+      "title": "吏目",
+      "original_rank": "未入流",
+      "verified_rank": "未入流",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "evidence": "未入流……都司斷事司吏目。",
+      "note": "原表部门只写都司，宜补“断事司”。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0472",
+      "institution": "都指挥使司",
+      "title": "司狱",
+      "original_rank": "从九品",
+      "verified_rank": "从九品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "司獄司，司獄，從九品。",
+      "note": "明史卷76都司定制；行都司设官与都司同。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0473",
+      "institution": "卫指挥使司",
+      "title": "指挥使",
+      "original_rank": "正三品",
+      "verified_rank": "正三品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "指揮使一人，正三品。衛指揮使司，設官如京衛。品秩並同。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0474",
+      "institution": "卫指挥使司",
+      "title": "指挥同知",
+      "original_rank": "从三品",
+      "verified_rank": "从三品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "指揮同知二人，從三品。衛指揮使司，設官如京衛。品秩並同。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0475",
+      "institution": "卫指挥使司",
+      "title": "指挥佥事",
+      "original_rank": "正四品",
+      "verified_rank": "正四品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "指揮僉事四人，正四品。衛指揮使司，設官如京衛。品秩並同。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0476",
+      "institution": "卫指挥使司",
+      "title": "镇抚",
+      "original_rank": "从五品",
+      "verified_rank": "从五品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "鎮撫司，鎮撫二人，從五品。衛指揮使司，設官如京衛。品秩並同。",
+      "note": "卫镇抚从五品；所镇抚另列，不能合并。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0477",
+      "institution": "卫指挥使司",
+      "title": "经历",
+      "original_rank": "从七品",
+      "verified_rank": "从七品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "經歷司，經歷，從七品。衛指揮使司，設官如京衛。品秩並同。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0478",
+      "institution": "卫指挥使司",
+      "title": "知事",
+      "original_rank": "正八品",
+      "verified_rank": "正八品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "知事，正八品。衛指揮使司，設官如京衛。品秩並同。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0479",
+      "institution": "卫指挥使司",
+      "title": "吏目",
+      "original_rank": "从九品",
+      "verified_rank": "从九品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "吏目，從九品。衛指揮使司，設官如京衛。品秩並同。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0480",
+      "institution": "卫指挥使司",
+      "title": "仓大使",
+      "original_rank": "未入流",
+      "verified_rank": "未入流",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "evidence": "未入流……各州縣衛倉大使　副使。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0481",
+      "institution": "卫指挥使司",
+      "title": "副使",
+      "original_rank": "未入流",
+      "verified_rank": "未入流",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "evidence": "未入流……各州縣衛倉大使　副使。",
+      "note": "结合前一条仓大使，名称应明确为仓副使，非卫指挥副职。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0482",
+      "institution": "所",
+      "title": "正千户",
+      "original_rank": "正五品",
+      "verified_rank": "正五品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "正千戶一人，正五品。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0483",
+      "institution": "所",
+      "title": "副千户",
+      "original_rank": "从五品",
+      "verified_rank": "从五品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "副千戶二人，從五品。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0484",
+      "institution": "所",
+      "title": "镇抚",
+      "original_rank": "正六品",
+      "verified_rank": "从六品（明史定制）；明初曾正六品",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "鎮撫二人，從六品。……明初……鎮撫、百戶，正六品。",
+      "note": "原表正六品对应明初沿革，不宜无年代套入万历场景。应标为所镇抚，区别卫镇抚从五品。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0485",
+      "institution": "所",
+      "title": "百户",
+      "original_rank": "从六品",
+      "verified_rank": "正六品",
+      "status": "corrected",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "所轄百戶所凡十，共百戶十人，正六品。",
+      "note": "原表从六品误；实授百户与试百户、所镇抚要分开。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0486",
+      "institution": "五军都督府",
+      "title": "左右都督",
+      "original_rank": "正一品",
+      "verified_rank": "正一品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "每府左、右都督，正一品。",
+      "note": "五军各府职衔本品；掌印、佥书为所充职事，常由勋爵任，不能据职权再擅自换品。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0487",
+      "institution": "五军都督府",
+      "title": "都督同知",
+      "original_rank": "从一品",
+      "verified_rank": "从一品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "都督同知，從一品。",
+      "note": "五军各府职衔本品；掌印、佥书为所充职事，常由勋爵任，不能据职权再擅自换品。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0488",
+      "institution": "五军都督府",
+      "title": "都督佥事",
+      "original_rank": "正二品",
+      "verified_rank": "正二品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "都督僉事，正二品。",
+      "note": "五军各府职衔本品；掌印、佥书为所充职事，常由勋爵任，不能据职权再擅自换品。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0489",
+      "institution": "五军都督府",
+      "title": "经历",
+      "original_rank": "从五品",
+      "verified_rank": "从五品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "經歷司，經歷，從五品。",
+      "note": "五军各府职衔本品；掌印、佥书为所充职事，常由勋爵任，不能据职权再擅自换品。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0490",
+      "institution": "五军都督府",
+      "title": "都事",
+      "original_rank": "从七品",
+      "verified_rank": "从七品（明史）；正七品（会典资格表）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "其屬……都事，從七品。",
+      "note": "原典有歧异：万历会典卷10将“五军都督府经历司都事”列在正七品；明史卷76定制列从七品。须标明分歧并查刊本/沿革，不可静默选一个改写成唯一值。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+          "locator": "正七品：五军都督府经历司都事"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0491",
+      "institution": "五城兵马指挥司",
+      "title": "指挥",
+      "original_rank": "正六品",
+      "verified_rank": "正六品",
+      "status": "verified",
+      "source_url": "https://www.xuoda.com/ls/mingshi/2499.htm",
+      "evidence": "各指揮一人，（正六品）",
+      "note": "五城兵马司虽名称含兵马，但隶巡城御史，属于城市治安民政官，不应画入五军武职序列。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0492",
+      "institution": "五城兵马指挥司",
+      "title": "副指挥",
+      "original_rank": "正七品",
+      "verified_rank": "正七品",
+      "status": "verified",
+      "source_url": "https://www.xuoda.com/ls/mingshi/2499.htm",
+      "evidence": "副指揮四人，（正七品）",
+      "note": "京师与南京副指挥员额不同；品阶可确认。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0493",
+      "institution": "五城兵马指挥司",
+      "title": "吏目",
+      "original_rank": "未入流",
+      "verified_rank": "未入流",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "evidence": "未入流……兵馬指揮司吏目。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0494",
+      "institution": "京卫指挥使司",
+      "title": "指挥使",
+      "original_rank": "正三品",
+      "verified_rank": "正三品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "指揮使一人，正三品。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0495",
+      "institution": "京卫指挥使司",
+      "title": "指挥同知",
+      "original_rank": "从四品",
+      "verified_rank": "从三品",
+      "status": "corrected",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "京衛指揮使司……指揮同知二人，從三品。",
+      "note": "原表从四品误。京卫、外卫品秩并同。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0496",
+      "institution": "京卫指挥使司",
+      "title": "指挥佥事",
+      "original_rank": "正四品",
+      "verified_rank": "正四品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "指揮僉事四人，正四品。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0497",
+      "institution": "京卫指挥使司",
+      "title": "镇抚",
+      "original_rank": "从五品",
+      "verified_rank": "从五品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "鎮撫司，鎮撫二人，從五品。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0498",
+      "institution": "京卫指挥使司",
+      "title": "经历",
+      "original_rank": "从七品",
+      "verified_rank": "从七品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "經歷司，經歷，從七品。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0499",
+      "institution": "京卫指挥使司",
+      "title": "知事",
+      "original_rank": "正八品",
+      "verified_rank": "正八品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "知事，正八品。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0500",
+      "institution": "京卫指挥使司",
+      "title": "吏目",
+      "original_rank": "从九品",
+      "verified_rank": "从九品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "吏目，從九品。",
+      "note": "",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0501",
+      "institution": "京卫指挥使司",
+      "title": "仓大使",
+      "original_rank": "未入流",
+      "verified_rank": "未入流",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "evidence": "未入流……各州縣衛倉大使　副使。",
+      "note": "明史卷76记京卫仓大使、副使，品阶用会典资格表补核。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0502",
+      "institution": "京卫指挥使司",
+      "title": "副使",
+      "original_rank": "未入流",
+      "verified_rank": "未入流",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+      "evidence": "未入流……各州縣衛倉大使　副使。",
+      "note": "结合前一条名称应补为仓副使。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0503",
+      "institution": "王府仪卫司",
+      "title": "仪卫正",
+      "original_rank": "正五品",
+      "verified_rank": "正五品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "儀衛正一人，正五品。",
+      "note": "王府仪卫司，区别文职长史司与护卫指挥使司。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0504",
+      "institution": "王府仪卫司",
+      "title": "仪卫副",
+      "original_rank": "从五品",
+      "verified_rank": "从五品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "儀衛副二人，從五品。",
+      "note": "王府仪卫司，区别文职长史司与护卫指挥使司。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0505",
+      "institution": "王府仪卫司",
+      "title": "典仗",
+      "original_rank": "正六品",
+      "verified_rank": "正六品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "典仗六人，正六品。",
+      "note": "王府仪卫司，区别文职长史司与护卫指挥使司。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0506",
+      "institution": "留守司",
+      "title": "正留守",
+      "original_rank": "正二品",
+      "verified_rank": "正二品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "正留守一人，正二品。",
+      "note": "留守司定制，掌中都、兴都防护；非南京守备差遣。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0507",
+      "institution": "留守司",
+      "title": "副留守",
+      "original_rank": "正三品",
+      "verified_rank": "正三品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "副留守一人，正三品。",
+      "note": "留守司定制，掌中都、兴都防护；非南京守备差遣。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0508",
+      "institution": "留守司",
+      "title": "指挥同知",
+      "original_rank": "从三品",
+      "verified_rank": "从三品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "指揮同知二人，從三品。",
+      "note": "留守司定制，掌中都、兴都防护；非南京守备差遣。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0509",
+      "institution": "留守司",
+      "title": "经历",
+      "original_rank": "正六品",
+      "verified_rank": "正六品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "經歷司，經歷，正六品。",
+      "note": "留守司定制，掌中都、兴都防护；非南京守备差遣。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0510",
+      "institution": "留守司",
+      "title": "都事",
+      "original_rank": "正七品",
+      "verified_rank": "正七品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "都事，正七品。",
+      "note": "留守司定制，掌中都、兴都防护；非南京守备差遣。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0511",
+      "institution": "留守司",
+      "title": "断事",
+      "original_rank": "正六品",
+      "verified_rank": "正六品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "斷事司，斷事，正六品。",
+      "note": "留守司定制，掌中都、兴都防护；非南京守备差遣。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0512",
+      "institution": "留守司",
+      "title": "副断事",
+      "original_rank": "正七品",
+      "verified_rank": "正七品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "副斷事，正七品。",
+      "note": "留守司定制，掌中都、兴都防护；非南京守备差遣。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0513",
+      "institution": "留守司",
+      "title": "吏目",
+      "original_rank": "未入流",
+      "verified_rank": "待核实（原表未入流）",
+      "status": "unresolved",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "斷事司，斷事，正六品；副斷事，正七品，吏目各一人。",
+      "note": "此段吏目未单注品。会典10未入流条明确“都司断事司吏目”但未在已见文本中明确留守司吏目；不能仅由未注品或类比宣布已核实。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0514",
+      "institution": "锦衣卫",
+      "title": "指挥使",
+      "original_rank": "正三品",
+      "verified_rank": "正三品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "十七年，改錦衣衛指揮使為正三品。",
+      "note": "这是指挥使职衔本品。实际掌卫者明史称恒以勋戚都督领之，可能有更高本官/加衔，不等于所有锦衣卫最高负责人都正三品。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0515",
+      "institution": "锦衣卫",
+      "title": "指挥同知",
+      "original_rank": "从三品",
+      "verified_rank": "从三品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "京衛……指揮同知二人，從三品。京衛有上直衛……品秩並同。",
+      "note": "锦衣卫属上直亲军卫；指挥同知本品从三。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0516",
+      "institution": "锦衣卫",
+      "title": "指挥佥事",
+      "original_rank": "正四品",
+      "verified_rank": "正四品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "京衛……指揮僉事四人，正四品。京衛有上直衛……品秩並同。",
+      "note": "本品正四；原表固定二人并非京卫定额四人的完整制度，恩荫寄禄实际人数亦无常。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0517",
+      "institution": "锦衣卫",
+      "title": "镇抚使",
+      "original_rank": "从四品",
+      "verified_rank": "卫镇抚本秩从五品；掌南北司事随本官",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "鎮撫司，鎮撫二人，從五品。……京衛有上直衛……品秩並同。",
+      "note": "原表“镇抚使从四品”没有在所见原典取得支持。卫镇抚职衔与“掌南/北镇抚司事”差遣不可合并。明宪宗实录有“锦衣卫掌镇抚司事指挥使季成”，足证掌司者可能以较高本官任事。",
+      "additional_sources": [
+        {
+          "url": "https://ctext.org/wiki.pl?chapter=435241&if=en",
+          "locator": "明宪宗纯皇帝实录卷228：锦衣卫掌镇抚司事指挥使季成"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0518",
+      "institution": "锦衣卫",
+      "title": "十四所千户",
+      "original_rank": "正五品",
+      "verified_rank": "正五品（千户）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "正千戶一人，正五品。",
+      "note": "千户品阶可确认；“十四所”是机构数描述，应单独标年代。明史锦衣卫专条写“统所凡十有七”，不能把十四所作为全明固定布局。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0519",
+      "institution": "锦衣卫",
+      "title": "副千户",
+      "original_rank": "从五品",
+      "verified_rank": "从五品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "副千戶二人，從五品。",
+      "note": "按卫所同品制核实锦衣卫副千户本品。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0520",
+      "institution": "锦衣卫",
+      "title": "百户",
+      "original_rank": "正六品",
+      "verified_rank": "正六品",
+      "status": "verified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "所轄百戶所凡十，共百戶十人，正六品。",
+      "note": "按卫所同品制核实锦衣卫实授百户本品。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0521",
+      "institution": "锦衣卫",
+      "title": "试百户",
+      "original_rank": "从六品",
+      "verified_rank": "试职；从六品尚待直接品秩证据",
+      "status": "unresolved",
+      "source_url": "https://www.shidianguji.com/book/CADAL02088024/chapter/1lddgfmqr1dzj",
+      "evidence": "百戶、所鎮撫各有試職。試職起永樂十五年，作一級，支半俸。",
+      "note": "可以确认试百户是正式百户以下的试职，不能仅凭通俗官阶表宣布从六品已核实。已见原典此条规定试职、署职、俸制，未直接注从六品；保留待核，不擅改成正六或无品。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0522",
+      "institution": "锦衣卫",
+      "title": "总旗",
+      "original_rank": "正七品",
+      "verified_rank": "旗役，无官品（非正从七品）",
+      "status": "corrected",
+      "source_url": "https://www.shidianguji.com/book/CADAL02088024/chapter/1lddgfmqr1dzj",
+      "evidence": "武官原無七八品，土官有從七品，亦不支俸。",
+      "note": "原表给锦衣卫总旗/小旗套正七或从七品，与会典武职资格及旗役条不符。作为百户以下军事编组职位显示；若具体个人另有官衔，单记其本官。",
+      "additional_sources": [
+        {
+          "url": "https://www.guoxuemi.com/a/1836h/104879t.html",
+          "locator": "封赠：若代妻父总小旗役、后自得官者，当封赠父母"
+        },
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷76",
+          "locator": "各所：总旗、小旗统率层级，未列为有品武官"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0523",
+      "institution": "锦衣卫",
+      "title": "小旗",
+      "original_rank": "从七品",
+      "verified_rank": "旗役，无官品（非正从七品）",
+      "status": "corrected",
+      "source_url": "https://www.shidianguji.com/book/CADAL02088024/chapter/1lddgfmqr1dzj",
+      "evidence": "武官原無七八品，土官有從七品，亦不支俸。",
+      "note": "原表给锦衣卫总旗/小旗套正七或从七品，与会典武职资格及旗役条不符。作为百户以下军事编组职位显示；若具体个人另有官衔，单记其本官。",
+      "additional_sources": [
+        {
+          "url": "https://www.guoxuemi.com/a/1836h/104879t.html",
+          "locator": "封赠：若代妻父总小旗役、后自得官者，当封赠父母"
+        },
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷76",
+          "locator": "各所：总旗、小旗统率层级，未列为有品武官"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0524",
+      "institution": "东厂",
+      "title": "东厂掌印太监（厂公）",
+      "original_rank": "从四品",
+      "verified_rank": "提督差遣；太监本秩正四品（洪武旧制）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "evidence": "提督東廠，掌印太監一員……後專用司禮、秉筆第二人或第三人為之。",
+      "note": "不能固定写从四品。明史十二监旧制太监正四、少监从四；东厂提督由内官兼差，万历的具体任官、加衔、地位需另记，勿把职权当官品。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷74",
+          "locator": "十二监：每监各太监一员正四品、左右少监从四品，此洪武旧制也"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0525",
+      "institution": "东厂",
+      "title": "掌刑千户",
+      "original_rank": "正五品",
+      "verified_rank": "本官千户正五品；东厂贴刑随本官",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "evidence": "其貼刑官，則用錦衣衛千百戶為之。",
+      "note": "明史确证锦衣卫千百户任东厂贴刑。原表“掌刑千户”可作职事说明，但千户本品与后续加升不能混为固定厂职品阶。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷76",
+          "locator": "各所：正千户正五品"
+        },
+        {
+          "url": "https://www.shidianguji.com/book/CADAL02088024/chapter/1lddgfmqr1dzj",
+          "locator": "凡东厂理刑：嘉靖十六年令东厂理刑升级，官只照常带俸"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0526",
+      "institution": "东厂",
+      "title": "理刑百户",
+      "original_rank": "正六品",
+      "verified_rank": "本官百户正六品；东厂贴刑随本官",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "evidence": "其貼刑官，則用錦衣衛千百戶為之。",
+      "note": "与前条同理：正六是实授百户本秩，不能据此规定所有东厂理刑差遣均正六。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷76",
+          "locator": "各所：百户正六品"
+        },
+        {
+          "url": "https://www.shidianguji.com/book/CADAL02088024/chapter/1lddgfmqr1dzj",
+          "locator": "凡东厂理刑：升级只照常带俸"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0527",
+      "institution": "西厂",
+      "title": "西厂掌印太监（厂公）",
+      "original_rank": "从四品",
+      "verified_rank": "提督差遣；太监本秩正四品（洪武旧制）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "evidence": "提督西廠，不常設，惟汪直、穀大用置之。劉瑾又設西內廠。尋俱罷革。",
+      "note": "西厂并非万历十年现行机构。原表从四品未见原典支持；提督/掌厂是内官差遣，需保留任职者本官。内行厂在明史此处称西内厂，不应把三个厂编成永久平行组织。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷74",
+          "locator": "十二监：太监正四，少监从四，洪武旧制"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0528",
+      "institution": "西厂",
+      "title": "掌刑千户",
+      "original_rank": "正五品",
+      "verified_rank": "未核实固定设职与独立品阶",
+      "status": "unresolved",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "evidence": "提督西廠，不常設……劉瑾又設西內廠。尋俱罷革。",
+      "note": "所见明史只明列东厂“贴刑二员用锦衣卫千百户”，未明证本条在西厂/内行厂各固定设置一人。不能把东厂配置复制过去后再以千户正五/百户正六宣布整条已核实；即有具体千百户任事，仍应按本官与任命逐人核对。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0529",
+      "institution": "西厂",
+      "title": "理刑百户",
+      "original_rank": "正六品",
+      "verified_rank": "未核实固定设职与独立品阶",
+      "status": "unresolved",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "evidence": "提督西廠，不常設……劉瑾又設西內廠。尋俱罷革。",
+      "note": "所见明史只明列东厂“贴刑二员用锦衣卫千百户”，未明证本条在西厂/内行厂各固定设置一人。不能把东厂配置复制过去后再以千户正五/百户正六宣布整条已核实；即有具体千百户任事，仍应按本官与任命逐人核对。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0530",
+      "institution": "内行厂",
+      "title": "内行厂掌印太监（厂公）",
+      "original_rank": "从四品",
+      "verified_rank": "提督差遣；太监本秩正四品（洪武旧制）",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "evidence": "提督西廠，不常設，惟汪直、穀大用置之。劉瑾又設西內廠。尋俱罷革。",
+      "note": "内行厂并非万历十年现行机构。原表从四品未见原典支持；提督/掌厂是内官差遣，需保留任职者本官。内行厂在明史此处称西内厂，不应把三个厂编成永久平行组织。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷74",
+          "locator": "十二监：太监正四，少监从四，洪武旧制"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0531",
+      "institution": "内行厂",
+      "title": "掌刑千户",
+      "original_rank": "正五品",
+      "verified_rank": "未核实固定设职与独立品阶",
+      "status": "unresolved",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "evidence": "提督西廠，不常設……劉瑾又設西內廠。尋俱罷革。",
+      "note": "所见明史只明列东厂“贴刑二员用锦衣卫千百户”，未明证本条在西厂/内行厂各固定设置一人。不能把东厂配置复制过去后再以千户正五/百户正六宣布整条已核实；即有具体千百户任事，仍应按本官与任命逐人核对。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0532",
+      "institution": "内行厂",
+      "title": "理刑百户",
+      "original_rank": "正六品",
+      "verified_rank": "未核实固定设职与独立品阶",
+      "status": "unresolved",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "evidence": "提督西廠，不常設……劉瑾又設西內廠。尋俱罷革。",
+      "note": "所见明史只明列东厂“贴刑二员用锦衣卫千百户”，未明证本条在西厂/内行厂各固定设置一人。不能把东厂配置复制过去后再以千户正五/百户正六宣布整条已核实；即有具体千百户任事，仍应按本官与任命逐人核对。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0536",
+      "institution": "军事系统",
+      "title": "总兵官",
+      "original_rank": "无品级",
+      "verified_rank": "差遣无独立品级；官品随本官或爵位",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "總兵官、副總兵、參將、遊擊將軍、守備、把總，無品級，無定員。",
+      "note": "原“无品级”指统兵职事本身，不等于任官者是无品官。公侯伯、都督等本爵/本官照记。总兵率以公侯伯都督充，参游亦有勋戚都督充任；不宜用统一品阶排序。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0537",
+      "institution": "军事系统",
+      "title": "副总兵",
+      "original_rank": "无品级",
+      "verified_rank": "差遣无独立品级；官品随本官或爵位",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "總兵官、副總兵、參將、遊擊將軍、守備、把總，無品級，無定員。",
+      "note": "原“无品级”指统兵职事本身，不等于任官者是无品官。公侯伯、都督等本爵/本官照记。总兵率以公侯伯都督充，参游亦有勋戚都督充任；不宜用统一品阶排序。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0538",
+      "institution": "军事系统",
+      "title": "参将",
+      "original_rank": "无品级",
+      "verified_rank": "差遣无独立品级；官品随本官或爵位",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "總兵官、副總兵、參將、遊擊將軍、守備、把總，無品級，無定員。",
+      "note": "原“无品级”指统兵职事本身，不等于任官者是无品官。公侯伯、都督等本爵/本官照记。总兵率以公侯伯都督充，参游亦有勋戚都督充任；不宜用统一品阶排序。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0539",
+      "institution": "军事系统",
+      "title": "游击将军",
+      "original_rank": "无品级",
+      "verified_rank": "差遣无独立品级；官品随本官或爵位",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "總兵官、副總兵、參將、遊擊將軍、守備、把總，無品級，無定員。",
+      "note": "原“无品级”指统兵职事本身，不等于任官者是无品官。公侯伯、都督等本爵/本官照记。总兵率以公侯伯都督充，参游亦有勋戚都督充任；不宜用统一品阶排序。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0540",
+      "institution": "军事系统",
+      "title": "守备",
+      "original_rank": "无品级",
+      "verified_rank": "差遣无独立品级；官品随本官或爵位",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "總兵官、副總兵、參將、遊擊將軍、守備、把總，無品級，無定員。",
+      "note": "原“无品级”指统兵职事本身，不等于任官者是无品官。公侯伯、都督等本爵/本官照记。总兵率以公侯伯都督充，参游亦有勋戚都督充任；不宜用统一品阶排序。",
+      "additional_sources": []
+    },
+    {
+      "record_id": "official-0541",
+      "institution": "军事系统",
+      "title": "提督",
+      "original_rank": "无品级",
+      "verified_rank": "多种提督职事；无统一独立品阶",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷76",
+      "evidence": "又有提督、提調、巡視、備禦、領班、備倭等名。",
+      "note": "提督是职事性称谓。京营有提督总兵官，也曾设右都御史提督；提督军务可由文官兼领。原说明“通常总兵兼任”的口径过窄，必须以任命全衔分开。",
+      "additional_sources": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷76",
+          "locator": "京营：提督总兵官；隆庆四年各设右都御史二员提督之"
+        }
+      ]
+    },
+    {
+      "record_id": "official-0542",
+      "institution": "军事系统",
+      "title": "镇守太监",
+      "original_rank": "无品级",
+      "verified_rank": "镇守差遣；本官品秩另记",
+      "status": "qualified",
+      "source_url": "https://zh.wikisource.org/wiki/明史/卷74",
+      "evidence": "鎮守太監始於洪熙，遍設於正統……至嘉靖八年後始革。",
+      "note": "不是统一无品官。应记录内官本职/本秩和镇守差遣；嘉靖以后裁革，万历十年不能据跨朝表把各镇镇守太监全部画为固定在任。",
+      "additional_sources": []
+    }
+  ]
+}

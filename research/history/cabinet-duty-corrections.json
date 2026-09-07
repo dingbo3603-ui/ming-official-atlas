@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "generated_on": "2026-09-06",
+    "input_file": "E:\\360MoveData\\Users\\Administrator\\Desktop\\小项目\\ming-official-atlas\\work\\history-import.json",
+    "input_sha256": "422e5b8231311e92bcbbc5eb10beb5fc2839697d9c07b10bf35f0ac143e15359",
+    "scope": "仅16位与既有人工包已明确同人的CBDB补充；只审查人工已有界内阁任期内的六部官衔。未扩展新人物或机构研究。",
+    "stats": {
+      "known_manual_people_with_cbdb": 16,
+      "bounded_manual_cabinet_segments": 9,
+      "ministry_title_candidates": 6,
+      "record_patches": 3,
+      "delegated_zhang_records": 3,
+      "explicit_manual_duty_exceptions_preserved": 5
+    },
+    "apply_instruction": "本包record_patches为最终覆盖层，在普通office映射和机构推断之后按id覆盖；institution、institution_ids、office_ids必须一起更新，不取并集。张居正3条由history-zhang-cbdb-corrections.json单独处理，本包不覆写，以保留阁前事件及跨西历年校正。",
+    "blocking_rule": "原注没有兼字不是实掌部务证据。遇有界人工内阁阶段，部衔不得自动建立ministry membership；只有原典明确实掌对应部务的例外可保留。入阁同年也不视为全年在阁。",
+    "date_policy": "本包3条不改CBDB首末或年度，只改职事归属与展示；李春芳/徐阶的离阁年份仅表示年内已证片段，不能当全年在阁。",
+    "unmodified": "不修改任何人工核证记录，不删除原CBDB记录及来源，不编辑repo。"
+  },
+  "record_patches": [
+    {
+      "id": "cbdb-point-70658-1567-463e87d6756e",
+      "person_id": "li-chunfang",
+      "office_title": "吏部尚书（内阁兼衔）",
+      "institution": "内阁",
+      "institution_ids": [
+        "cabinet"
+      ],
+      "office_ids": [],
+      "year_office_ids": {},
+      "titular_office_ids": [],
+      "duty_title": "阁臣",
+      "membership_basis": "manual_bounded_cabinet_service_not_ministry_title",
+      "mapping_status": "cabinet_title_no_ministry_duty",
+      "mapping_note": "人工原典已核李春芳1565四月入阁、1568七月以后居首、1571五月致仕；1566晋吏部尚书只是阁衔，没有兼掌吏部明文。本条库载吏部尚书资料年落在该有界阁中阶段，不据原注缺少“兼”字反推掌吏部。仅保留库载年度官衔资料点，不延伸任期，不另指定殿阁衔。",
+      "source_ids": [
+        "cbdb-rank-official-0051",
+        "cbdb-release-20260829",
+        "cbdb-text-9602",
+        "people-ms110",
+        "people-ms18",
+        "people-ms193"
+      ]
+    },
+    {
+      "id": "cbdb-point-70658-1571-326cbef2dd9c",
+      "person_id": "li-chunfang",
+      "office_title": "吏部尚书（内阁兼衔）",
+      "institution": "内阁",
+      "institution_ids": [
+        "cabinet"
+      ],
+      "office_ids": [],
+      "year_office_ids": {},
+      "titular_office_ids": [],
+      "duty_title": "首辅",
+      "membership_basis": "manual_bounded_cabinet_service_not_ministry_title",
+      "mapping_status": "cabinet_title_no_ministry_duty",
+      "mapping_note": "人工原典已核李春芳1565四月入阁、1568七月以后居首、1571五月致仕；1566晋吏部尚书只是阁衔，没有兼掌吏部明文。本条库载吏部尚书资料年落在该有界阁中阶段，不据原注缺少“兼”字反推掌吏部。仅保留库载年度官衔资料点，不延伸任期，不另指定殿阁衔。",
+      "source_ids": [
+        "cbdb-rank-official-0051",
+        "cbdb-release-20260829",
+        "cbdb-text-9602",
+        "people-ms110",
+        "people-ms193",
+        "people-ms213"
+      ]
+    },
+    {
+      "id": "cbdb-point-70658-1568-3bdc020c0e19",
+      "person_id": "xu-jie",
+      "office_title": "吏部尚书（内阁兼衔）",
+      "institution": "内阁",
+      "institution_ids": [
+        "cabinet"
+      ],
+      "office_ids": [],
+      "year_office_ids": {},
+      "titular_office_ids": [],
+      "duty_title": "首辅",
+      "membership_basis": "manual_bounded_cabinet_service_not_ministry_title",
+      "mapping_status": "cabinet_title_no_ministry_duty",
+      "mapping_note": "人工原典已核徐阶1562至1568在阁居首、1568七月致仕；CBDB原注亦明写吏部尚书（兼）。礼部实际掌部仅另记1549至1552交接段，本条1568吏部尚书不属实掌吏部证据。原institution仍为吏部会在成员关系重新计算时反弹，应一并改正。仅保留库载年度官衔资料点，不延伸任期，不另指定殿阁衔。",
+      "source_ids": [
+        "cbdb-rank-official-0051",
+        "cbdb-release-20260829",
+        "cbdb-text-9602",
+        "people-ms110",
+        "people-ms18",
+        "people-ms213"
+      ]
+    }
+  ],
+  "audit_decisions": [
+    {
+      "id": "cbdb-point-70658-1567-463e87d6756e",
+      "person_id": "li-chunfang",
+      "decision": "correct_ministry_to_cabinet_title",
+      "original_institution": "吏部",
+      "original_institution_ids": [
+        "ministry-personnel"
+      ],
+      "original_office_ids": [
+        "official-0051"
+      ],
+      "attested_year": 1567,
+      "reason": "人工原典已核李春芳1565四月入阁、1568七月以后居首、1571五月致仕；1566晋吏部尚书只是阁衔，没有兼掌吏部明文。本条库载吏部尚书资料年落在该有界阁中阶段，不据原注缺少“兼”字反推掌吏部。",
+      "supporting_manual_record_ids": [
+        "people-li-cabinet"
+      ]
+    },
+    {
+      "id": "cbdb-point-70658-1571-326cbef2dd9c",
+      "person_id": "li-chunfang",
+      "decision": "correct_ministry_to_cabinet_title",
+      "original_institution": "吏部",
+      "original_institution_ids": [
+        "ministry-personnel"
+      ],
+      "original_office_ids": [
+        "official-0051"
+      ],
+      "attested_year": 1571,
+      "reason": "人工原典已核李春芳1565四月入阁、1568七月以后居首、1571五月致仕；1566晋吏部尚书只是阁衔，没有兼掌吏部明文。本条库载吏部尚书资料年落在该有界阁中阶段，不据原注缺少“兼”字反推掌吏部。",
+      "supporting_manual_record_ids": [
+        "people-li-chief"
+      ]
+    },
+    {
+      "id": "cbdb-point-70658-1568-3bdc020c0e19",
+      "person_id": "xu-jie",
+      "decision": "correct_ministry_to_cabinet_title",
+      "original_institution": "吏部",
+      "original_institution_ids": [],
+      "original_office_ids": [],
+      "attested_year": 1568,
+      "reason": "人工原典已核徐阶1562至1568在阁居首、1568七月致仕；CBDB原注亦明写吏部尚书（兼）。礼部实际掌部仅另记1549至1552交接段，本条1568吏部尚书不属实掌吏部证据。原institution仍为吏部会在成员关系重新计算时反弹，应一并改正。",
+      "supporting_manual_record_ids": [
+        "people-xu-chief"
+      ]
+    },
+    {
+      "id": "cbdb-point-70671-1567-6ac208532cba",
+      "person_id": "zhang-juzheng",
+      "decision": "handled_by_zhang_specific_patch",
+      "reason": "1567二月吏部左侍郎兼东阁入阁；由张居正专门补丁改作内阁阁衔。",
+      "patch_file": "../history-zhang-cbdb-corrections.json",
+      "supporting_manual_record_ids": [
+        "people-zhang-cabinet"
+      ]
+    },
+    {
+      "id": "cbdb-point-70633-1567-4f6e84a92f7d",
+      "person_id": "zhang-juzheng",
+      "decision": "handled_by_zhang_specific_patch",
+      "reason": "1567正月礼部右侍郎兼翰林院学士是入阁前升授事件；不提前归内阁，不据兼学士判断掌院，部务未证。",
+      "patch_file": "../history-zhang-cbdb-corrections.json",
+      "supporting_manual_record_ids": [
+        "people-zhang-cabinet"
+      ]
+    },
+    {
+      "id": "cbdb-point-70658-1570-179f0543a239",
+      "person_id": "zhang-juzheng",
+      "decision": "handled_by_zhang_specific_patch",
+      "reason": "吏部尚书属内阁兼衔；专门补丁同时将隆庆四年十二月庚戌校至西历1571年1月12日，不沿用库载1570年。",
+      "patch_file": "../history-zhang-cbdb-corrections.json",
+      "supporting_manual_record_ids": [
+        "people-zhang-cabinet"
+      ]
+    }
+  ],
+  "preserved_manual_exceptions": [
+    {
+      "id": "people-gao-cabinet-return",
+      "person_id": "gao-gong",
+      "office_title": "内阁大学士兼掌吏部事",
+      "institution": "内阁、吏部",
+      "start_year": 1569,
+      "end_year": 1572,
+      "date_note": "隆庆三年十二月召还兼掌吏部事；六年六月罢。此处有兼掌部事明文，属于实际兼任；首辅地位在李春芳1571年去后形成。",
+      "source_ids": [
+        "people-ms110",
+        "people-ms112",
+        "people-ms213"
+      ],
+      "policy": "保留人工明确实掌及年内交接片段；例外只适用于所列部务、日期范围与原注，不能扩大为该人在阁期间所有部衔。"
+    },
+    {
+      "id": "people-xu-libu-shangshu",
+      "person_id": "xu-jie",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "start_year": 1549,
+      "end_year": 1552,
+      "date_note": "《七卿年表》嘉靖二十八年二月任；三十一年三月入阁仍管部事，同年十月欧阳德任礼部尚书。实掌部务范围止于该交接年，尚书名衔延续另计。",
+      "source_ids": [
+        "people-ms112",
+        "people-ms213"
+      ],
+      "policy": "保留人工明确实掌及年内交接片段；例外只适用于所列部务、日期范围与原注，不能扩大为该人在阁期间所有部衔。"
+    },
+    {
+      "id": "people-gao-libu-shangshu",
+      "person_id": "gao-gong",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "start_year": 1565,
+      "end_year": 1566,
+      "date_note": "《七卿年表》嘉靖四十四年七月任，四十五年三月入阁；四月高仪任礼部尚书。只把入阁前与交接期列为部务实任。\n补充史料：北京礼部实掌任期。嘉靖四十四年七月任；四十五年三月入阁，四月高仪接任。入阁后的尚书兼衔不视为继续主持礼部。月份均为原典旧历。",
+      "source_ids": [
+        "people-ms112",
+        "people-ms18",
+        "ministers-ms-112-qiqing",
+        "ministers-ms-213"
+      ],
+      "policy": "保留人工明确实掌及年内交接片段；例外只适用于所列部务、日期范围与原注，不能扩大为该人在阁期间所有部衔。"
+    },
+    {
+      "id": "people-li-libu",
+      "person_id": "li-chunfang",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "start_year": 1563,
+      "end_year": 1565,
+      "date_note": "嘉靖四十二年三月任；四十四年四月入阁，同月董份接任礼部尚书。",
+      "source_ids": [
+        "people-ms112",
+        "people-ms193"
+      ],
+      "policy": "保留人工明确实掌及年内交接片段；例外只适用于所列部务、日期范围与原注，不能扩大为该人在阁期间所有部衔。"
+    },
+    {
+      "id": "people-guo-libupersonnel-return",
+      "person_id": "guo-pu",
+      "office_title": "吏部尚书（起复掌部）",
+      "institution": "吏部",
+      "start_year": 1565,
+      "end_year": 1566,
+      "date_note": "嘉靖四十四年四月召起原官；四十五年三月入阁，四月胡松接掌吏部。不能将保留的尚书衔延长成掌部任期。\n补充史料：北京吏部实掌任期。嘉靖四十四年四月召复原官；四十五年三月入阁，四月胡松接任。入阁后所带尚书衔不据此延长吏部实掌任期。月份均为原典旧历。",
+      "source_ids": [
+        "people-ms112",
+        "people-ms213",
+        "ministers-ms-112-qiqing",
+        "ministers-ms-213"
+      ],
+      "policy": "保留人工明确实掌及年内交接片段；例外只适用于所列部务、日期范围与原注，不能扩大为该人在阁期间所有部衔。"
+    }
+  ],
+  "scope_people": [
+    {
+      "id": "chen-yiqin",
+      "name": "陈以勤"
+    },
+    {
+      "id": "gao-gong",
+      "name": "高拱"
+    },
+    {
+      "id": "gao-yi-qiantang",
+      "name": "高仪"
+    },
+    {
+      "id": "guo-pu",
+      "name": "郭朴"
+    },
+    {
+      "id": "hu-song-chuzhou",
+      "name": "胡松"
+    },
+    {
+      "id": "hu-zongxian",
+      "name": "胡宗宪"
+    },
+    {
+      "id": "li-chunfang",
+      "name": "李春芳"
+    },
+    {
+      "id": "liu-tiqian",
+      "name": "刘体乾"
+    },
+    {
+      "id": "mao-kai",
+      "name": "毛恺"
+    },
+    {
+      "id": "qi-jiguang",
+      "name": "戚继光"
+    },
+    {
+      "id": "wang-ting-nanchong",
+      "name": "王廷"
+    },
+    {
+      "id": "xu-jie",
+      "name": "徐阶"
+    },
+    {
+      "id": "yang-bo-puzhou",
+      "name": "杨博"
+    },
+    {
+      "id": "zhang-juzheng",
+      "name": "张居正"
+    },
+    {
+      "id": "zhang-yongming-wucheng",
+      "name": "张永明"
+    },
+    {
+      "id": "zhao-bingran-jianzhou",
+      "name": "赵炳然"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cbdb-rank-official-0051",
+      "title": "《明史》职官志：吏部品级核查",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷72",
+      "evidence": "吏部：尚书，正二品。",
+      "note": "按《明史》该部首段设官品秩，并与《会典》卷10六部各清吏司表互证。"
+    },
+    {
+      "id": "cbdb-release-20260829",
+      "title": "中国历代人物传记资料库（CBDB），2026-08-29 SQLite发布版",
+      "url": "https://huggingface.co/datasets/cbdb/cbdb-sqlite/resolve/main/history/cbdb_202608/cbdb_20260829.zip",
+      "license": "CC BY-NC-SA 4.0",
+      "sha256": "f620ca1a4c794411b81d5039adf5756df129fb9aa0f4509b4c843bb66e0caa2a"
+    },
+    {
+      "id": "cbdb-text-9602",
+      "title": "人名權威資料（中央研究院歷史語言研究所）",
+      "url": "https://github.com/cbdb-project/cbdb_sqlite",
+      "cbdb_text_id": 9602,
+      "locator_note": "原文献定位见逐条source_locators；本链接为数据发布方，不冒称原典全文。"
+    },
+    {
+      "id": "ministers-ms-112-qiqing",
+      "title": "《明史》卷一百十二·七卿年表二（嘉靖三十七年至隆庆四年相关行）",
+      "url": "https://zh.wikisource.org/wiki/明史/卷112",
+      "bundle": "ministers",
+      "original_id": "ms-112-qiqing"
+    },
+    {
+      "id": "ministers-ms-213",
+      "title": "《明史》卷二百十三·高拱传附郭朴传",
+      "url": "https://zh.wikisource.org/wiki/明史/卷213",
+      "bundle": "ministers",
+      "original_id": "ms-213"
+    },
+    {
+      "id": "people-ms110",
+      "title": "《明史》卷一百十·宰辅年表二",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷110",
+      "bundle": "people",
+      "original_id": "ms110"
+    },
+    {
+      "id": "people-ms112",
+      "title": "《明史》卷一百十二·七卿年表二",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷112",
+      "bundle": "people",
+      "original_id": "ms112"
+    },
+    {
+      "id": "people-ms18",
+      "title": "《明史》卷十八·世宗本纪二",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷18",
+      "bundle": "people",
+      "original_id": "ms18"
+    },
+    {
+      "id": "people-ms193",
+      "title": "《明史》卷一百九十三·李春芳传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷193",
+      "bundle": "people",
+      "original_id": "ms193"
+    },
+    {
+      "id": "people-ms213",
+      "title": "《明史》卷二百十三·徐阶、高拱、郭朴、张居正传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷213",
+      "bundle": "people",
+      "original_id": "ms213"
+    }
+  ]
+}

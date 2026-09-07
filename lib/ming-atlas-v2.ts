@@ -15,6 +15,7 @@ export type GeographyCounty = {
   kind: '县' | '州治' | '卫所' | '其他';
   seat?: boolean;
   note?: string;
+  parentState?: { id: string; name: string };
 };
 
 export type GeographySubprefecture = {
@@ -110,7 +111,7 @@ export const capitalInstitutions: CapitalInstitution[] = [
     function: '成祖以后逐渐形成的皇帝咨询与票拟机构；并非法定宰相机关。',
     positionHint: '以文渊阁为制度锚点，置于宫城前朝东侧。',
     caveat: '内阁权力、大学士兼衔与首辅地位随时代变化。',
-    keywords: ['内阁', '大学士', '文渊阁', '制敕房', '诰敕房'],
+    keywords: ['内阁', '文渊阁', '制敕房', '诰敕房'],
   },
   {
     id: 'ministry-personnel', name: '吏部', era: 'both', zone: 'east',
@@ -172,6 +173,11 @@ export const capitalInstitutions: CapitalInstitution[] = [
     function: '掌制诰、史册、经筵等文翰事务，也是内阁大学士的重要来源。', positionHint: '列入东侧文教官署组。',
     keywords: ['翰林院', '翰林'],
   },
+  {
+    id: 'sili-jian', name: '司礼监', era: 'late-ming', zone: 'east',
+    function: '内廷掌章奏、御前勘合与礼仪事务。', positionHint: '洪武十七年置监，职事随时代演变。',
+    keywords: ['司礼监'],
+  },
 ];
 
 export const palaceAxis = [
@@ -223,5 +229,5 @@ export const wikipediaSources = [
   { title: '故宫博物院：明代紫禁城前朝与后廷', url: 'https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbaf1de828c.pdf' },
   { title: '故宫博物院：明代内阁研究', url: 'https://www.dpm.org.cn/Uploads/File/pdf/4b/64/f3/4b64f345cf5f656b625bc4a00c1b7858.pdf' },
   { title: '故宫博物院：北京中央官署复原图研究', url: 'https://www.dpm.org.cn/Uploads/File/2024/07/22/u669dd3cf8e5fa.pdf' },
-  { title: 'Wikimedia Commons：Ming China 1580 AD', url: 'https://commons.wikimedia.org/wiki/File:Ming_China_1580_AD.jpg' },
+  { title: 'Natural Earth：山川与省区几何底稿', url: 'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/' },
 ];

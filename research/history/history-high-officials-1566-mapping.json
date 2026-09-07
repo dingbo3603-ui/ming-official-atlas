@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-06",
+  "scope": "history-high-officials-1566.json 的25条1566任职点证映射；仅外部审查结果。",
+  "record_source": "ming-official-atlas/work/history-import.json offices",
+  "split_policy": "左右原合并项采用原record_id+'-left'或'-right'；部署前须由主任务确认拆分ID已生成。",
+  "mappings": [
+    {
+      "tenure_id": "high-1566-mao-libu-left",
+      "person_id": "mao-kai",
+      "year": 1566,
+      "office_title": "吏部左侍郎",
+      "institution": "吏部",
+      "office_ids": [
+        "official-0052-left"
+      ],
+      "base_record_ids": [
+        "official-0052"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-qin-zhanshi",
+      "person_id": "qin-minglei",
+      "year": 1566,
+      "office_title": "吏部左侍郎兼翰林院学士（掌詹事府事）",
+      "institution": "詹事府",
+      "office_ids": [],
+      "base_record_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "掌詹事府事的吏部左侍郎兼学士，不占吏部实际左侍郎；本官也不等于正式詹事或翰林院掌院学士。现表未见对应掌府差遣行，留空。"
+    },
+    {
+      "tenure_id": "high-1566-chenyi-libu-left",
+      "person_id": "chen-yiqin",
+      "year": 1566,
+      "office_title": "礼部左侍郎",
+      "institution": "礼部",
+      "office_ids": [
+        "official-0105-left"
+      ],
+      "base_record_ids": [
+        "official-0105"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-chenyi-zhanshi",
+      "person_id": "chen-yiqin",
+      "year": 1566,
+      "office_title": "吏部左侍郎兼翰林院学士（掌詹事府事）",
+      "institution": "詹事府",
+      "office_ids": [],
+      "base_record_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "掌詹事府事的吏部左侍郎兼学士，不占吏部实际左侍郎；本官也不等于正式詹事或翰林院掌院学士。现表未见对应掌府差遣行，留空。"
+    },
+    {
+      "tenure_id": "high-1566-pan-liburites-right",
+      "person_id": "pan-sheng",
+      "year": 1566,
+      "office_title": "礼部右侍郎",
+      "institution": "礼部",
+      "office_ids": [
+        "official-0105-right"
+      ],
+      "base_record_ids": [
+        "official-0105"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-pan-liburites-left",
+      "person_id": "pan-sheng",
+      "year": 1566,
+      "office_title": "礼部左侍郎",
+      "institution": "礼部",
+      "office_ids": [
+        "official-0105-left"
+      ],
+      "base_record_ids": [
+        "official-0105"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-qiu-liburites-right",
+      "person_id": "qiu-yue",
+      "year": 1566,
+      "office_title": "礼部右侍郎",
+      "institution": "礼部",
+      "office_ids": [
+        "official-0105-right"
+      ],
+      "base_record_ids": [
+        "official-0105"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "右侍郎职名明确；三月添注、五月填注，date_note保留由额外设置至实缺的变动，不排斥此前潘晟的同年右侍郎片段。"
+    },
+    {
+      "tenure_id": "high-1566-chi-xingbu-right",
+      "person_id": "chi-fengxiang",
+      "year": 1566,
+      "office_title": "刑部右侍郎",
+      "institution": "刑部",
+      "office_ids": [
+        "official-0136-right"
+      ],
+      "base_record_ids": [
+        "official-0136"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-chi-bingbu-left-jingying",
+      "person_id": "chi-fengxiang",
+      "year": 1566,
+      "office_title": "兵部左侍郎（协理京营戎政）",
+      "institution": "京营戎政",
+      "office_ids": [],
+      "base_record_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "明文协理京营戎政，不能映射普通兵部左侍郎管部。现表没有对应京营协理戎政差遣行，留空。"
+    },
+    {
+      "tenure_id": "high-1566-chenyao-xingbu-left",
+      "person_id": "chen-yao",
+      "year": 1566,
+      "office_title": "刑部左侍郎",
+      "institution": "刑部",
+      "office_ids": [
+        "official-0136-left"
+      ],
+      "base_record_ids": [
+        "official-0136"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-liu-xingbu-right",
+      "person_id": "liu-tiqian",
+      "year": 1566,
+      "office_title": "刑部右侍郎",
+      "institution": "刑部",
+      "office_ids": [
+        "official-0136-right"
+      ],
+      "base_record_ids": [
+        "official-0136"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-wangbengu-ducha-left-deputy",
+      "person_id": "wang-bengu",
+      "year": 1566,
+      "office_title": "左副都御史",
+      "institution": "都察院",
+      "office_ids": [
+        "official-0240-left"
+      ],
+      "base_record_ids": [
+        "official-0240"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-chenqixue-hubu-right",
+      "person_id": "chen-qixue",
+      "year": 1566,
+      "office_title": "户部右侍郎",
+      "institution": "户部",
+      "office_ids": [
+        "official-0063-right"
+      ],
+      "base_record_ids": [
+        "official-0063"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-xu-gongbu-right",
+      "person_id": "xu-gang",
+      "year": 1566,
+      "office_title": "工部右侍郎",
+      "institution": "工部",
+      "office_ids": [
+        "official-0166-right"
+      ],
+      "base_record_ids": [
+        "official-0166"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-li-gongbu-left",
+      "person_id": "li-dengyun",
+      "year": 1566,
+      "office_title": "工部左侍郎",
+      "institution": "工部",
+      "office_ids": [
+        "official-0166-left"
+      ],
+      "base_record_ids": [
+        "official-0166"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-zhanghan-dali-chief",
+      "person_id": "zhang-han",
+      "year": 1566,
+      "office_title": "大理寺卿",
+      "institution": "大理寺",
+      "office_ids": [
+        "official-0194"
+      ],
+      "base_record_ids": [
+        "official-0194"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-liu-tongzheng-chief",
+      "person_id": "liu-tiqian",
+      "year": 1566,
+      "office_title": "通政使",
+      "institution": "通政使司",
+      "office_ids": [
+        "official-0249"
+      ],
+      "base_record_ids": [
+        "official-0249"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-yang-tenghuang-right",
+      "person_id": "yang-yusun",
+      "year": 1566,
+      "office_title": "右通政（提督誊黄）",
+      "institution": "通政使司（提督誊黄）",
+      "office_ids": [
+        "official-0251"
+      ],
+      "base_record_ids": [
+        "official-0251"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "精确匹配现有誊黄右通政专行0251；不得映射普通右通政0250-right。"
+    },
+    {
+      "tenure_id": "high-1566-zhao-tenghuang-right",
+      "person_id": "zhao-tang",
+      "year": 1566,
+      "office_title": "右通政（提督誊黄）",
+      "institution": "通政使司（提督誊黄）",
+      "office_ids": [
+        "official-0251"
+      ],
+      "base_record_ids": [
+        "official-0251"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "精确匹配现有誊黄右通政专行0251；不得映射普通右通政0250-right。"
+    },
+    {
+      "tenure_id": "high-1566-jiang-tenghuang-right",
+      "person_id": "jiang-bao",
+      "year": 1566,
+      "office_title": "右通政（提督誊黄）",
+      "institution": "通政使司（提督誊黄）",
+      "office_ids": [
+        "official-0251"
+      ],
+      "base_record_ids": [
+        "official-0251"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "精确匹配现有誊黄右通政专行0251；不得映射普通右通政0250-right。"
+    },
+    {
+      "tenure_id": "high-1566-wangshihuai-taipu-deputy",
+      "person_id": "wang-shihuai",
+      "year": 1566,
+      "office_title": "太仆寺少卿",
+      "institution": "太仆寺",
+      "office_ids": [
+        "official-0224"
+      ],
+      "base_record_ids": [
+        "official-0224"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-wangshihuai-guanglu-deputy",
+      "person_id": "wang-shihuai",
+      "year": 1566,
+      "office_title": "光禄寺少卿",
+      "institution": "光禄寺",
+      "office_ids": [
+        "official-0214"
+      ],
+      "base_record_ids": [
+        "official-0214"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-wangtang-left-chunfang",
+      "person_id": "wang-tang",
+      "year": 1566,
+      "office_title": "左春坊左谕德兼翰林院侍读",
+      "institution": "左春坊",
+      "office_ids": [
+        "official-0017-left"
+      ],
+      "base_record_ids": [
+        "official-0017"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "左春坊左谕德可挂詹事府左谕德行；所兼侍读不是侍读学士，不能另挂学士。"
+    },
+    {
+      "tenure_id": "high-1566-wangtang-guozijian-chief",
+      "person_id": "wang-tang",
+      "year": 1566,
+      "office_title": "国子监祭酒",
+      "institution": "国子监",
+      "office_ids": [
+        "official-0291"
+      ],
+      "base_record_ids": [
+        "official-0291"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    },
+    {
+      "tenure_id": "high-1566-wu-guanglu-chief",
+      "person_id": "wu-sanle",
+      "year": 1566,
+      "office_title": "光禄寺卿",
+      "institution": "光禄寺",
+      "office_ids": [
+        "official-0213"
+      ],
+      "base_record_ids": [
+        "official-0213"
+      ],
+      "mapping_status": "matched",
+      "mapping_note": "官署与职名吻合。仅用于1566年内已证片段，须保留原date_note，不能推为全年在任。"
+    }
+  ]
+}

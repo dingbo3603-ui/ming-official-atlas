@@ -1,0 +1,611 @@
+{
+  "sources": [
+    {
+      "id": "high-szsl554",
+      "title": "《明世宗实录》卷五百五十四，嘉靖四十五年正月",
+      "url": "https://www.shidianguji.com/zh/book/LS0026/chapter/1k6tolb07q7n6"
+    },
+    {
+      "id": "high-szsl555",
+      "title": "《明世宗实录》卷五百五十五，嘉靖四十五年二月",
+      "url": "https://m.dushu.com/guoxue/102090/1081364.html"
+    },
+    {
+      "id": "high-szsl556",
+      "title": "《明世宗实录》卷五百五十六，嘉靖四十五年三月",
+      "url": "https://m.dushu.com/guoxue/102090/1081365.html"
+    },
+    {
+      "id": "high-szsl557",
+      "title": "《明世宗实录》卷五百五十七，嘉靖四十五年四月",
+      "url": "https://www.shidianguji.com/book/LS0026/chapter/1k6tolcmjs182"
+    },
+    {
+      "id": "high-szsl558",
+      "title": "《明世宗实录》卷五百五十八，嘉靖四十五年五月",
+      "url": "https://m.dushu.com/guoxue/102090/1081367.html"
+    },
+    {
+      "id": "high-szsl565",
+      "title": "《明世宗实录》卷五百六十五，嘉靖四十五年十一月",
+      "url": "https://m.dushu.com/guoxue/102090/1081374.html"
+    }
+  ],
+  "people": [
+    {
+      "id": "mao-kai",
+      "name": "毛恺",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年十一月，由吏部左侍郎升南京礼部尚书。",
+      "source_ids": [
+        "high-szsl565"
+      ]
+    },
+    {
+      "id": "qin-minglei",
+      "name": "秦鸣雷",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年以吏部左侍郎兼翰林院学士掌詹事府；四月奉命教习庶吉士，五月致仕。",
+      "source_ids": [
+        "high-szsl557",
+        "high-szsl558"
+      ]
+    },
+    {
+      "id": "chen-yiqin",
+      "name": "陈以勤",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年五月，由礼部左侍郎改吏部左侍郎兼翰林院学士，掌詹事府、校大典并教习庶吉士。",
+      "source_ids": [
+        "high-szsl558"
+      ]
+    },
+    {
+      "id": "pan-sheng",
+      "name": "潘晟",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年五月，由礼部右侍郎升本部左侍郎。",
+      "source_ids": [
+        "high-szsl558"
+      ]
+    },
+    {
+      "id": "qiu-yue",
+      "name": "丘岳",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年三月以修承天大志之功添注礼部右侍郎，五月填注本部右侍郎。",
+      "source_ids": [
+        "high-szsl556",
+        "high-szsl558"
+      ]
+    },
+    {
+      "id": "chi-fengxiang",
+      "name": "迟凤翔",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年二月，由刑部右侍郎升兵部左侍郎、协理京营戎政。",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "chen-yao",
+      "name": "陈尧",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年二月以刑部左侍郎因病乞归，获准。",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "liu-tiqian",
+      "name": "刘体乾",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年二月，由通政使升刑部右侍郎。",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "wang-bengu",
+      "name": "王本固",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年二月，由右佥都御史升左副都御史。",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "chen-qixue",
+      "name": "陈其学",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年三月由总督南京粮储右副都御史升户部右侍郎，四月改兵部左侍郎兼右佥都御史，总督陕西三边。",
+      "source_ids": [
+        "high-szsl556",
+        "high-szsl557"
+      ]
+    },
+    {
+      "id": "xu-gang",
+      "name": "徐纲",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年三月，由顺天府府尹升工部右侍郎。",
+      "source_ids": [
+        "high-szsl556"
+      ]
+    },
+    {
+      "id": "li-dengyun",
+      "name": "李登云",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年三月，实录载其以工部左侍郎奉命回籍听用。",
+      "source_ids": [
+        "high-szsl556"
+      ]
+    },
+    {
+      "id": "zhang-han",
+      "name": "张瀚",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年正月，实录载其由陕西巡抚升大理寺卿，并奉诏遵新命供职。",
+      "source_ids": [
+        "high-szsl554"
+      ]
+    },
+    {
+      "id": "yang-yusun",
+      "name": "杨豫孙",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年二月，以提督誊黄右通政升右佥都御史、巡抚湖广。",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "zhao-tang",
+      "name": "赵镗",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年二月获授提督誊黄右通政，同月又迁右佥都御史。",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "jiang-bao",
+      "name": "姜宝",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年三月，由南京太常寺少卿升提督誊黄右通政。",
+      "source_ids": [
+        "high-szsl556"
+      ]
+    },
+    {
+      "id": "wang-shihuai",
+      "name": "王时槐",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年二月，由太仆寺少卿降光禄寺少卿。",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "wang-tang",
+      "name": "汪镗",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年三月，由左春坊左谕德兼翰林院侍读升国子监祭酒；十一月升南京工部右侍郎。",
+      "source_ids": [
+        "high-szsl556",
+        "high-szsl565"
+      ]
+    },
+    {
+      "id": "wu-sanle",
+      "name": "吴三乐",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年四月，由山西左布政使升光禄寺卿。",
+      "source_ids": [
+        "high-szsl557"
+      ]
+    }
+  ],
+  "tenures": [
+    {
+      "id": "high-1566-mao-libu-left",
+      "person_id": "mao-kai",
+      "office_title": "吏部左侍郎",
+      "institution": "吏部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "嘉靖四十五年十一月壬戌升南京礼部尚书，反证迁出前为吏部左侍郎；本条仅表示本年迁出前片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl565"
+      ]
+    },
+    {
+      "id": "high-1566-qin-zhanshi",
+      "person_id": "qin-minglei",
+      "office_title": "吏部左侍郎兼翰林院学士（掌詹事府事）",
+      "institution": "詹事府",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "四月癸酉以此衔掌詹事府、教习庶吉士，五月庚子奉诏致仕。吏部左侍郎是兼衔，不据此认定掌吏部部务。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl557",
+        "high-szsl558"
+      ]
+    },
+    {
+      "id": "high-1566-chenyi-libu-left",
+      "person_id": "chen-yiqin",
+      "office_title": "礼部左侍郎",
+      "institution": "礼部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "五月丙午由此职改吏部左侍郎兼翰林院学士、掌詹事府；本条记录迁出前任职片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl558"
+      ]
+    },
+    {
+      "id": "high-1566-chenyi-zhanshi",
+      "person_id": "chen-yiqin",
+      "office_title": "吏部左侍郎兼翰林院学士（掌詹事府事）",
+      "institution": "詹事府",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "五月丙午改授，兼校大典、教习庶吉士。掌事官署为詹事府，不据吏部兼衔占用实际吏部左侍郎职位。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl558"
+      ]
+    },
+    {
+      "id": "high-1566-pan-liburites-right",
+      "person_id": "pan-sheng",
+      "office_title": "礼部右侍郎",
+      "institution": "礼部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "五月甲寅由右侍郎升本部左侍郎；此条仅为迁出前片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl558"
+      ]
+    },
+    {
+      "id": "high-1566-pan-liburites-left",
+      "person_id": "pan-sheng",
+      "office_title": "礼部左侍郎",
+      "institution": "礼部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "五月甲寅由礼部右侍郎升授。本条未推定完整任期。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl558"
+      ]
+    },
+    {
+      "id": "high-1566-qiu-liburites-right",
+      "person_id": "qiu-yue",
+      "office_title": "礼部右侍郎",
+      "institution": "礼部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "三月壬子添注礼部右侍郎管事；五月甲寅由添注转填注本部右侍郎。年内额外设置与补入实缺的区别保留于此。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl556",
+        "high-szsl558"
+      ]
+    },
+    {
+      "id": "high-1566-chi-xingbu-right",
+      "person_id": "chi-fengxiang",
+      "office_title": "刑部右侍郎",
+      "institution": "刑部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月辛巳由刑部右侍郎升兵部左侍郎、协理京营戎政；本条仅为迁出前片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "high-1566-chi-bingbu-left-jingying",
+      "person_id": "chi-fengxiang",
+      "office_title": "兵部左侍郎（协理京营戎政）",
+      "institution": "京营戎政",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月辛巳升授并明确协理京营戎政。此差遣不等同在兵部管部，本条不推至本年末。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "high-1566-chenyao-xingbu-left",
+      "person_id": "chen-yao",
+      "office_title": "刑部左侍郎",
+      "institution": "刑部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月丙戌以疾乞归获准，仅据离职条确认本年此前的任职。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "high-1566-liu-xingbu-right",
+      "person_id": "liu-tiqian",
+      "office_title": "刑部右侍郎",
+      "institution": "刑部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月丙戌由通政使升授。原文紧接的提督誊黄属于赵镗原职，不是刘体乾的新差遣。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "high-1566-wangbengu-ducha-left-deputy",
+      "person_id": "wang-bengu",
+      "office_title": "左副都御史",
+      "institution": "都察院",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月辛巳由右佥都御史升左副都御史，仅据本次任命确认当年片段，不补造全年任期。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "high-1566-chenqixue-hubu-right",
+      "person_id": "chen-qixue",
+      "office_title": "户部右侍郎",
+      "institution": "户部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "三月丁未由总督南京粮储右副都御史升授；四月己卯改兵部左侍郎兼右佥都御史、总督陕西三边，故不能列为全年户部在任。四月录文姓名“其李”为录入疑误，三月明确为陈其学。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl556",
+        "high-szsl557"
+      ]
+    },
+    {
+      "id": "high-1566-xu-gongbu-right",
+      "person_id": "xu-gang",
+      "office_title": "工部右侍郎",
+      "institution": "工部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "三月丁未由顺天府府尹升授。原文其后“总督南京粮储”修饰陈其学的旧职，不修饰徐纲。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl556"
+      ]
+    },
+    {
+      "id": "high-1566-li-gongbu-left",
+      "person_id": "li-dengyun",
+      "office_title": "工部左侍郎",
+      "institution": "工部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "三月戊戌奉命回籍听用，确认迁出前职；回籍听用不等于已经永久致仕。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl556"
+      ]
+    },
+    {
+      "id": "high-1566-zhanghan-dali-chief",
+      "person_id": "zhang-han",
+      "office_title": "大理寺卿",
+      "institution": "大理寺",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "正月卷载由陕西巡抚新升大理寺卿，并奉诏遵新命供职；未据此推定到任日或全年在京掌事。录文日干支疑误，暂只定位至月。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl554"
+      ]
+    },
+    {
+      "id": "high-1566-liu-tongzheng-chief",
+      "person_id": "liu-tiqian",
+      "office_title": "通政使",
+      "institution": "通政使司",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月丙戌由通政使升刑部右侍郎；此条仅确认迁出前职，不延伸至全年。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "high-1566-yang-tenghuang-right",
+      "person_id": "yang-yusun",
+      "office_title": "右通政（提督誊黄）",
+      "institution": "通政使司（提督誊黄）",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月乙丑由提督誊黄右通政升右佥都御史、巡抚湖广。保留誊黄差遣，不作通政使司日常掌事的证明。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "high-1566-zhao-tenghuang-right",
+      "person_id": "zhao-tang",
+      "office_title": "右通政（提督誊黄）",
+      "institution": "通政使司（提督誊黄）",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月庚辰新授，同月丙戌又升右佥都御史；“原任大理寺右少卿”不是本年在任大理少卿的证据。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "high-1566-jiang-tenghuang-right",
+      "person_id": "jiang-bao",
+      "office_title": "右通政（提督誊黄）",
+      "institution": "通政使司（提督誊黄）",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "三月丁未由南京太常寺少卿升授；保留誊黄差遣，不将旧职转作北京太常寺官。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl556"
+      ]
+    },
+    {
+      "id": "high-1566-wangshihuai-taipu-deputy",
+      "person_id": "wang-shihuai",
+      "office_title": "太仆寺少卿",
+      "institution": "太仆寺",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月丙子由太仆寺少卿降光禄寺少卿；此条以降调记载确认迁出前职。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "high-1566-wangshihuai-guanglu-deputy",
+      "person_id": "wang-shihuai",
+      "office_title": "光禄寺少卿",
+      "institution": "光禄寺",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月丙子降授，未核实到任日或完整任期。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl555"
+      ]
+    },
+    {
+      "id": "high-1566-wangtang-left-chunfang",
+      "person_id": "wang-tang",
+      "office_title": "左春坊左谕德兼翰林院侍读",
+      "institution": "左春坊",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "三月丁未由此职升国子监祭酒。左谕德为从五品；所兼侍读不能升级写成侍读学士。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl556"
+      ]
+    },
+    {
+      "id": "high-1566-wangtang-guozijian-chief",
+      "person_id": "wang-tang",
+      "office_title": "国子监祭酒",
+      "institution": "国子监",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "三月丁未升授，十一月壬戌又升南京工部右侍郎；两次迁转界定本年片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl556",
+        "high-szsl565"
+      ]
+    },
+    {
+      "id": "high-1566-wu-guanglu-chief",
+      "person_id": "wu-sanle",
+      "office_title": "光禄寺卿",
+      "institution": "光禄寺",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "四月乙丑由山西左布政使升授；仅据本次任命确认本年片段，未据此推断其后任职。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "high-szsl557"
+      ]
+    }
+  ]
+}

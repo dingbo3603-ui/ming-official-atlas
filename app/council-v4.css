@@ -1,0 +1,218 @@
+/* Readable institution diagrams and centered official cards. */
+.council-board { max-width: 2260px; margin: 0 auto; padding: 26px 32px 32px; border: 1px solid #84643f80; border-radius: 18px; background: radial-gradient(ellipse at 50% 0,#51402a50,transparent 48%),#1d1b16; box-shadow: 0 20px 60px #0004; }
+.council-heading { display:flex; justify-content:space-between; align-items:center; gap:24px; }
+.council-heading h2 { margin-top:8px; font:700 clamp(26px,1.8vw,34px)/1.35 var(--font-display); color:#f0dfbd; }
+.council-actions { display:flex; align-items:center; gap:14px; }
+.council-actions [data-slot='tabs-trigger'] { padding:10px 15px; min-height:44px; font-size:15px; }
+.council-actions [data-slot='tabs-list'] { height:auto; background:#12130f; border:1px solid #6c5438; }
+.council-secondary { display:flex; align-items:center; gap:9px; padding:11px 15px; border:1px solid #866943; border-radius:7px; font-size:15px; color:#dbc290; }
+.council-secondary:hover { background:#6b503033; }
+.council-canopy { position:relative; display:grid; grid-template-columns:1fr 1fr 1fr; gap:8%; align-items:center; width:min(100%,1100px); margin:32px auto 0; padding-bottom:32px; }
+.council-canopy::before { content:''; position:absolute; left:50%; bottom:0; height:33px; border-left:1px solid #bb985a; }
+.council-adviser { position:relative; display:flex; align-items:center; justify-content:center; gap:16px; padding:18px 16px; border:1px solid #9f824680; border-radius:7px; background:#3c36264d; color:#d6bd86; }
+.council-adviser::after { content:''; position:absolute; left:100%; top:50%; width:37%; border-top:1px dashed #b6996466; }
+.council-adviser b,.council-court-entry b { display:block; font:700 23px/1.5 var(--font-display); color:#ead5a6; }
+.council-adviser small,.council-court-entry small { display:block; font-size:14px; line-height:1.8; color:#bcae91; }
+.council-adviser:hover,.council-court-entry:hover { border-color:#ddb76d; background-color:#5f412b; }
+.council-sovereign { min-height:124px; padding:16px; display:flex; align-items:center; flex-direction:column; border:1px solid #d1a25b; outline:1px solid #956f3d; outline-offset:-5px; border-radius:4px; background:linear-gradient(135deg,#783829,#45271f); box-shadow:0 8px 40px #a1692420; color:#e1c27d; }
+.council-sovereign strong { font:700 30px/1.35 var(--font-display); letter-spacing:.25em; padding-left:.25em; color:#ffe4af; }
+.council-sovereign span { font-size:14px; margin-top:6px; }
+.council-court-entry { padding:18px 16px; display:flex; align-items:center; justify-content:center; gap:15px; border:1px solid #9b6b48; border-radius:7px; background:linear-gradient(120deg,#633327,#281e18); color:#e2bd79; }
+.council-early-link { display:flex; flex-direction:column; align-items:center; }
+.council-early-link button { padding:12px 38px; background:#49412c; color:#ead6a5; border:1px solid #b49254; font:700 23px var(--font-display); }
+.council-early-link small { font:14px sans-serif; margin-left:8px; }
+.council-early-link::after { content:''; height:30px; border-left:1px solid #bb985a; }
+.is-hongwu .council-adviser { visibility:hidden; }
+.ministries-scroll { overflow-x:auto; padding-bottom:10px; }
+.ministry-tree { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); min-width:1120px; gap:20px; position:relative; padding-top:25px; }
+.ministry-tree::before { content:''; position:absolute; top:0; left:calc(8.333% - 2px); right:calc(8.333% - 2px); height:1px; background:#af8b51; }
+.ministry-column { position:relative; min-width:0; }
+.ministry-column::before { content:''; position:absolute; top:-25px; left:50%; height:25px; border-left:1px solid #af8b51; }
+.ministry-node { display:flex; width:100%; align-items:center; gap:14px; padding:15px; border:1px solid #987541; border-radius:7px; text-align:left; color:#dfc792; background:linear-gradient(135deg,#453927,#29251b); }
+.ministry-node:hover { background:linear-gradient(135deg,#6b4c2c,#3b2e1f); border-color:#dfb968; }
+.ministry-seal { flex:none; width:45px; height:50px; display:grid; place-items:center; border:1px solid #c89a5066; background:#6c3226; font:700 27px var(--font-display); color:#efcf89; box-shadow:inset 0 0 0 3px #37261a; }
+.ministry-node strong { display:block; font:700 26px/1.4 var(--font-display); color:#f0ddb6; }
+.ministry-node small { display:block; font-size:14px; white-space:nowrap; color:#bdad8c; }
+.ministry-node > svg { margin-left:auto; flex:none; }
+.ministry-chief { display:flex; justify-content:center; flex-wrap:wrap; gap:5px; padding:13px 0 12px; color:#dbc295; font-size:15px; }
+.ministry-chief span { color:#b4a588; }
+.ministry-chief i { height:16px; width:1px; background:#80643d; margin:3px 4px 0; }
+.ministry-branches-label { position:relative; padding:10px 0; text-align:center; border-top:1px solid #84653b80; font-size:14px; color:#c2aa7b; }
+.ministry-branches-label::before { content:''; position:absolute; width:1px; height:10px; top:-10px; left:50%; background:#967744; }
+.ministry-branches { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+.ministry-branches button { display:flex; align-items:center; justify-content:space-between; gap:2px; min-height:45px; padding:9px 11px; border:1px solid #7b654450; border-radius:4px; font-size:16px; color:#e4d0a9; background:#37302070; }
+.ministry-branches button:hover { background:#6f4e2a; border-color:#c49a56; }
+.ministry-branches button svg { color:#ab8f59; flex:none; }
+.ministry-other { width:100%; display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:7px; padding:12px 5px; margin-top:10px; border:1px dashed #93704480; border-radius:4px; color:#c8af81; font-size:14px; }
+.ministry-other:hover { border-style:solid; background:#443522; }
+.ministry-early-note { padding:20px 8px; text-align:center; color:#b8a787; font-size:15px; line-height:1.9; }
+.ministry-early-note button { display:inline-flex; gap:5px; align-items:center; color:#e0bf83; margin-top:10px; }
+.council-period-note { display:flex; align-items:start; gap:10px; margin-top:18px; padding-top:18px; border-top:1px solid #735b393d; font-size:14px; line-height:1.8; color:#b8a98b; }
+.council-period-note svg { margin-top:4px; flex:none; }
+.council-period-note a { margin-left:auto; white-space:nowrap; display:flex; align-items:center; color:#dfbc7a; }
+.council-peers { margin-top:28px; }
+.council-peers header { display:flex; align-items:center; gap:14px; margin-bottom:15px; color:#d8bd85; font:700 19px var(--font-display); }
+.council-peers header::after { content:''; flex:1; height:1px; background:linear-gradient(90deg,#9f7b4260,transparent); }
+.council-peers header small { font:14px sans-serif; color:#af9e7d; }
+.council-peer-nodes { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:16px; }
+.council-peer-nodes button { position:relative; display:grid; grid-template-columns:38px 1fr; gap:8px 12px; padding:18px 14px; border:1px solid #97724350; border-radius:8px; background:#29271e; text-align:left; }
+.council-peer-nodes button:hover { border-color:#ba945a; background:#443726; }
+.peer-number { grid-row:span 2; height:38px; width:38px; border:1px solid #9f865c70; border-radius:50%; display:grid; place-items:center; font:20px var(--font-display); color:#ccb07a; }
+.council-peer-nodes strong { padding-right:16px; font:700 20px/1.35 var(--font-display); color:#e8d5b1; }
+.council-peer-nodes small { color:#b2a48a; font-size:14px; line-height:1.65; }
+.council-peer-nodes svg { position:absolute; right:10px; top:18px; color:#bc9b5d; }
+
+.institution-floating-card[data-slot='dialog-content'] { display:flex; flex-direction:column; gap:0; width:calc(100vw - 64px); max-width:1280px; max-height:calc(100dvh - 64px); padding:0; border:1px solid #b18a51; border-radius:16px; background:#211e17; color:#e3d3b3; box-shadow:0 25px 110px #000a; }
+[data-slot='dialog-overlay'] { background:#060704ad; backdrop-filter:blur(5px); }
+.floating-close { position:absolute; top:18px; right:18px; z-index:4; display:grid; place-items:center; width:44px; height:44px; border:1px solid #a4835266; border-radius:8px; color:#edd3a0; background:#2e271e; }
+.floating-close:hover { background:#744532; border-color:#d6ad70; }
+.institution-floating-heading { padding:28px 76px 24px 30px; background:linear-gradient(110deg,#493624,#28241a); border-bottom:1px solid #99744860; }
+.institution-floating-heading [data-slot='dialog-title'] { font:700 32px/1.3 var(--font-display); color:#f5deb0; }
+.institution-floating-heading [data-slot='dialog-description'] { color:#c5b79a; font-size:16px; line-height:1.7; }
+.institution-floating-scroll { overflow:auto; min-height:0; padding:24px 30px 30px; }
+.institution-branch-selector { display:flex; flex-wrap:wrap; gap:9px; }
+.institution-branch-selector button { padding:8px 13px; border:1px solid #806743; border-radius:5px; color:#d4c09a; font-size:15px; line-height:1.6; }
+.institution-branch-selector button:hover { background:#55412b; }
+.institution-branch-selector button.is-selected { background:#713a2a; border-color:#d3a25c; color:#ffe1a6; }
+.institution-branch-selector small { font-size:13px; margin-left:6px; color:#a79a80; }
+.institution-history-toggle { margin-top:13px; font-size:14px; color:#c6aa77; text-decoration:underline; text-underline-offset:4px; }
+.institution-context-note { padding:13px; color:#dfbc88; background:#623a2240; font-size:15px; margin-top:18px; line-height:1.8; }
+.floating-roster-heading { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; margin:24px 0 16px; font:700 20px var(--font-display); color:#ead3a4; }
+.floating-roster-heading small { margin-left:8px; font:14px sans-serif; color:#b6a488; }
+.floating-roster-heading input { width:240px; max-width:100%; padding:10px 13px; font:15px sans-serif; border:1px solid #896b44; border-radius:7px; background:#14150f; color:#ead9b3; }
+.floating-official-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.floating-official-card { min-height:174px; overflow:hidden; padding:0; display:flex; text-align:left; border:1px solid #92734666; border-radius:9px; background:linear-gradient(125deg,#3d3224,#272319); }
+.floating-official-card:hover { border-color:#d0a262; box-shadow:0 4px 18px #0003; background:linear-gradient(125deg,#59422b,#33281c); }
+.floating-official-portrait { flex:none; width:105px; position:relative; overflow:hidden; background:radial-gradient(ellipse at 50% 60%,#88704433,transparent 65%); }
+.floating-official-portrait img { position:absolute; width:auto; max-width:none; height:215px; left:50%; bottom:-27px; transform:translateX(-50%); }
+.floating-official-copy { position:relative; padding:18px 15px 15px 0; min-width:0; }
+.floating-official-copy strong { display:block; font:700 21px/1.45 var(--font-display); color:#f1dfb8; overflow-wrap:anywhere; }
+.floating-rank { display:inline-block; padding:2px 8px; margin-top:6px; border:1px solid #ad83434d; border-radius:4px; color:#e6be77; background:#a7802010; font-size:15px; }
+.floating-official-copy p { font-size:14px; line-height:1.6; color:#bdae93; margin-top:7px; overflow-wrap:anywhere; }
+.floating-official-copy small { display:flex; align-items:center; gap:5px; margin-top:8px; font-size:13px; color:#bda16f; }
+.floating-extra-role { min-height:174px; padding:20px; border:1px dashed #8a714f; border-radius:9px; }
+.floating-extra-role > span { color:#bba47c; font-size:13px; }
+.floating-extra-role strong { display:block; font:700 21px var(--font-display); margin-block:6px; }
+.floating-extra-role b { color:#e1bd7c; font-size:15px; }
+.floating-extra-role p,.floating-extra-role a { font-size:14px; line-height:1.7; color:#c1af90; margin-top:9px; }
+.floating-extra-role a { display:flex; align-items:center; }
+.institution-evidence { display:flex; gap:12px; margin-top:24px; padding:18px; border:1px solid #856c464d; border-radius:7px; background:#15160f70; font-size:15px; line-height:1.8; color:#bfb197; }
+.institution-evidence > svg { flex:none; color:#c8a46d; margin-top:4px; }
+.institution-evidence blockquote { margin-top:10px; border-left:2px solid #90723f; padding-left:12px; color:#dbc69d; }
+.institution-evidence a { display:inline-flex; align-items:center; gap:5px; margin-top:10px; color:#e2bd7d; }
+.floating-empty { text-align:center; padding:26px; color:#c2b08c; font-size:16px; }
+.official-detail-floating[data-slot='dialog-content'] { display:grid; grid-template-columns:230px minmax(0,1fr); gap:0; padding:0; width:calc(100vw - 48px); max-width:980px; max-height:calc(100dvh - 60px); overflow:auto; border:1px solid #ba9356; border-radius:15px; background:#211d16; color:#dfceb0; }
+.official-detail-floating .official-detail-portrait { position:sticky; top:0; height:100%; min-height:470px; border-right:1px solid #99724250; border-bottom:0; background:radial-gradient(ellipse at 50% 30%,#6b5940,#28241a 68%); }
+.official-detail-floating .official-detail-portrait > img { position:absolute; width:auto; max-width:none; height:470px; left:50%; top:28px; transform:translateX(-50%); }
+.official-detail-body { padding:34px 34px 30px; }
+.official-detail-body [data-slot='dialog-title'] { margin-right:32px; line-height:1.4; color:#f2deb5; }
+.official-detail-body [data-slot='dialog-description'] { font-size:16px; color:#c2b297; line-height:1.7; }
+.detail-return { display:flex; align-items:center; gap:7px; margin-bottom:24px; color:#daba81; font-size:15px; }
+
+.atlas-header h1 { font-size:24px; }
+.atlas-header p,.atlas-header h1 > span,.side-kicker,.header-stats,.atlas-breadcrumbs,.view-switcher button,.header-text-button,.search-trigger { font-size:16px; }
+.atlas-header { min-height:82px; }
+.atlas-breadcrumbs { flex-wrap:wrap; }
+.view-switcher button,.header-text-button,.search-trigger { min-height:42px; }
+.territory-toolbar strong { font-size:20px; }
+.territory-side-panel p,.side-stat-list dt,.territory-side-panel .primary-action,.secondary-action { font-size:16px; color:#c4b494; }
+.territory-side-panel .primary-action { color:#ffe0a1; }
+.province-index-grid button { font-size:16px; min-height:42px; }
+.territory-side-panel .territory-precision-note,.territory-map-footer,.board-caveat { color:#b7a889; font-size:14px; }
+.board-heading p,.fact-caveat,.source-link-card,.detail-section p { font-size:16px; line-height:1.85; color:#c2b399; }
+.county-map-block strong,.prefecture-map-block strong { font-size:20px; }
+.county-map-block small,.prefecture-map-block > span:not(.block-kind,.block-number),.prefecture-map-block small { font-size:15px; color:#b5a587; }
+.scene-title-plaque small { font-size:14px; }
+.scene-title-plaque strong { font-size:28px; }
+.yamen-scene .character-label b { font-size:18px; }
+.yamen-scene .character-label small { font-size:15px; color:#cdb994; }
+.yamen-roster-footer p,.school-officials,.scene-caption { font-size:15px; line-height:1.75; color:#beae8e; }
+.school-officials small { font-size:14px; }
+.detail-section h3 { font-size:19px; }
+.detail-rank-row { flex-wrap:wrap; font-size:15px; color:#bbaa8d; }
+.rank-badge { font-size:16px; padding:4px 10px; color:#e0c28c; }
+.rank-research blockquote { font-size:15px; color:#cbbb9b; }
+.rank-research a,.rank-research > small,.portrait-disclaimer { font-size:14px; line-height:1.8; color:#b7a787; }
+.portrait-caption { font-size:13px; color:#c5b493; }
+[data-slot='command-item'] { font-size:17px; }
+[data-slot='command-item'] small,[data-slot='command-shortcut'] { font-size:14px; color:#bfb094; }
+.atlas-workspace { min-width:0; }
+.court-game-shell { width:100%; max-width:1840px; }
+.court-game-stage { min-width:1440px; }
+.court-game-topbar { min-height:58px; }
+.court-game-topbar button,.court-game-topbar .court-date { font-size:15px; color:#cfbc98; }
+.court-game-topbar strong { font-size:22px; }
+.court-game-stage .court-character-label { top:auto; bottom:calc(100% + 7px); left:50%; right:auto; transform:translateX(-50%); padding:7px 10px; background:#171912ed; border-color:#ab8a526f; }
+.court-game-stage .court-character-label b { font-size:16px; line-height:1.35; }
+.court-game-stage .court-character-label small { font-size:14px; line-height:1.4; max-width:170px; color:#d0c19e; }
+.court-game-stage .court-character-civil.court-outer-column .court-character-label { left:87.5%; }
+.court-game-stage .court-character-military.court-outer-column .court-character-label { left:12.5%; }
+.court-character-civil .court-character-label b { color:#b3dcba; }
+.court-character-military .court-character-label b { color:#f0b28a; }
+.court-side-marker { font-size:16px; color:#d7c094; }
+.court-research-note { font-size:15px; line-height:1.85; color:#c4b598; }
+.court-official-index button { padding:13px; font-size:16px; }
+.court-official-index small { font-size:14px; color:#c6b596; }
+.throne-label { display:flex; gap:8px; align-items:center; padding:8px 12px; top:44%; background:linear-gradient(130deg,#77412b,#332518); border:1px solid #c9a464; color:#ffe2aa; font-size:21px; }
+.throne-label svg { width:52px; height:62px; }
+.throne-label small { font-size:14px; color:#dec591; }
+
+/* Names lead the existing plaques; bounded widths preserve the floor formation. */
+.court-game-stage { container-type:inline-size; }
+.court-game-stage .court-character-label { min-width:78px; width:5.5cqw; max-width:112px; padding-inline:6px; }
+.court-game-stage .court-character-label.is-cabinet { min-width:114px; width:114px; max-width:114px; }
+.yamen-scene .character-label { min-width:112px; max-width:148px; }
+.scene-person-names { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden; overflow-wrap:anywhere; margin:0 0 5px; padding-bottom:5px; border-bottom:1px solid #ad8a4a50; color:#ffe2a3; font-family:var(--font-display); font-size:18px; font-weight:600; line-height:1.4; white-space:normal; text-align:center; }
+.scene-person-names.is-unavailable { font-family:var(--font-ui); color:#c2b395; font-size:14px; font-weight:400; }
+.court-character-label .scene-person-names { font-size:17px; }
+.court-character-label .scene-person-names.is-unavailable { font-size:14px; }
+.throne-label .scene-person-names { max-width:160px; }
+.throne-label > span > b { display:block; font-size:16px; font-weight:500; }
+
+@media(max-width:1600px) {
+ .council-board { padding:24px; }
+ .council-peer-nodes { grid-template-columns:repeat(3,minmax(0,1fr)); }
+ .ministry-tree { gap:12px; }
+ .ministry-node { padding:12px 10px; gap:10px; }
+ .ministry-seal { width:32px; height:42px; font-size:23px; }
+ .ministry-chief { font-size:14px; }
+ .ministry-branches button { padding:9px 8px; font-size:15px; }
+}
+@media(max-width:1100px) {
+ .council-heading { align-items:start; flex-direction:column; }
+ .council-canopy { gap:5%; }
+ .council-adviser > svg:first-child,.council-court-entry > svg:first-child { display:none; }
+ .ministry-tree { min-width:1160px; }
+ .council-period-note { flex-wrap:wrap; }
+ .floating-official-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:650px) {
+ .council-board { padding:18px 14px; }
+ .council-actions { width:100%; flex-wrap:wrap; gap:10px; }
+ .council-actions [data-slot='tabs-trigger'] { font-size:14px; padding:10px 12px; }
+ .council-secondary { font-size:14px; }
+ .council-canopy { grid-template-columns:1fr 1fr; gap:16px; margin-top:24px; }
+ .council-sovereign { grid-row:1; grid-column:1/-1; width:200px; justify-self:center; }
+ .council-canopy::before { display:none; }
+ .council-adviser::after { display:none; }
+ .council-adviser,.council-court-entry { padding:12px; gap:6px; }
+ .council-adviser b,.council-court-entry b { font-size:21px; }
+ .council-adviser small,.council-court-entry small { font-size:13px; }
+ .council-peer-nodes { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+ .council-peer-nodes button { display:flex; flex-direction:column; gap:8px; padding:14px; }
+ .council-peer-nodes strong { font-size:18px; }
+ .council-peers header small { display:none; }
+ .institution-floating-card[data-slot='dialog-content'] { width:calc(100vw - 20px); max-height:calc(100dvh - 24px); }
+ .institution-floating-heading { padding:24px 60px 20px 18px; }
+ .institution-floating-heading [data-slot='dialog-title'] { font-size:27px; }
+ .institution-floating-scroll { padding:18px; }
+ .floating-official-grid { grid-template-columns:1fr; }
+ .floating-close { top:12px; right:12px; width:40px; height:40px; }
+ .floating-roster-heading input { width:100%; }
+ .official-detail-floating[data-slot='dialog-content'] { grid-template-columns:1fr; width:calc(100vw - 20px); }
+ .official-detail-floating .official-detail-portrait { position:relative; min-height:0; height:190px; }
+ .official-detail-floating .official-detail-portrait > img { height:360px; top:0; }
+ .official-detail-body { padding:24px 20px; }
+}
+
+@media (min-width: 1401px) { .council-peer-nodes.has-sili { grid-template-columns:repeat(7,minmax(0,1fr)); } }

@@ -1,0 +1,1076 @@
+{
+  "sources": [
+    {
+      "id": "ms18",
+      "title": "《明史》卷十八·世宗本纪二",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷18"
+    },
+    {
+      "id": "ms110",
+      "title": "《明史》卷一百十·宰辅年表二",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷110"
+    },
+    {
+      "id": "ms112",
+      "title": "《明史》卷一百十二·七卿年表二",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷112"
+    },
+    {
+      "id": "ms193",
+      "title": "《明史》卷一百九十三·李春芳传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷193"
+    },
+    {
+      "id": "ms205",
+      "title": "《明史》卷二百五·胡宗宪传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷205"
+    },
+    {
+      "id": "ms212",
+      "title": "《明史》卷二百十二·戚继光传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷212"
+    },
+    {
+      "id": "ms213",
+      "title": "《明史》卷二百十三·徐阶、高拱、郭朴、张居正传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷213"
+    },
+    {
+      "id": "ms222",
+      "title": "《明史》卷二百二十二·谭纶传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷222"
+    },
+    {
+      "id": "ms226",
+      "title": "《明史》卷二百二十六·海瑞传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷226"
+    },
+    {
+      "id": "ms308",
+      "title": "《明史》卷三百八·严嵩传（附严世蕃）",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷308"
+    },
+    {
+      "id": "szsl555",
+      "title": "《明世宗实录》卷五百五十五·嘉靖四十五年二月",
+      "url": "https://www.shidianguji.com/book/LS0026/chapter/1k6tolbeujmsl"
+    },
+    {
+      "id": "szsl557",
+      "title": "《明世宗实录》卷五百五十七·嘉靖四十五年四月癸酉",
+      "url": "https://www.shidianguji.com/book/LS0026/chapter/1k6tolcmjs182"
+    },
+    {
+      "id": "qingpu-xu",
+      "title": "青浦博物馆·青浦名人·徐阶",
+      "url": "https://museum.shqp.gov.cn/museum/qpmr/"
+    },
+    {
+      "id": "zhengzhou-gao",
+      "title": "郑州市文物局·高拱墓",
+      "url": "https://wwj.zhengzhou.gov.cn/province/3181251.jhtml"
+    },
+    {
+      "id": "hubei-zhang",
+      "title": "湖北省文化和旅游厅·旷代宰相之杰——张居正",
+      "url": "https://wlt.hubei.gov.cn/bmdt/ztzl/zshb/201912/t20191226_1799458.shtml"
+    },
+    {
+      "id": "huaian-li",
+      "title": "淮安政协文史网·李春芳生卒年资料",
+      "url": "https://zx.huaian.gov.cn/col/14067_717366/art/m/17013600/1702431765785sKyu3n40.html"
+    },
+    {
+      "id": "guo-bio",
+      "title": "河南纪检监察网站·清廉尚书郭朴（仅采生卒年）",
+      "url": "https://www.smxlz.gov.cn/sitesources/zmdjw/page_pc/xsqjw/pyx/xxgk/qt/article9bf9e94486b746d5bc9fc345f4e4fd0d.html"
+    },
+    {
+      "id": "xuancheng-hu",
+      "title": "宣城市委党史地方志室·胡宗宪（仅采生卒年）",
+      "url": "https://www.xuancheng.gov.cn/News/show/350131.html"
+    },
+    {
+      "id": "xingguo-hai",
+      "title": "兴国县人民政府·海瑞：兴国施政传佳话",
+      "url": "https://www.xingguo.gov.cn/xgzf/c114397/202206/0eef1200136449db99019f41997849a7.shtml"
+    },
+    {
+      "id": "taizhou-tan",
+      "title": "台州史志网·谭纶",
+      "url": "https://tzsz.zjtz.gov.cn/art/2013/6/19/art_1229142721_54206429.html"
+    },
+    {
+      "id": "linhai-tan",
+      "title": "临海新闻网·饱学知兵的台州知府谭纶（只作转迁月份辅助，日期待实录复核）",
+      "url": "https://lhnews.zjol.com.cn/lhnews/system/2023/12/15/034475135.shtml"
+    },
+    {
+      "id": "yantai-qi",
+      "title": "烟台市党史研究院·抗倭民族英雄戚继光（采早年任职、北调年与生卒年）",
+      "url": "https://dsyjy.yantai.gov.cn/art/2010/11/15/art_1324_377726.html"
+    },
+    {
+      "id": "miyun-qi",
+      "title": "北京市密云区委党史研究室·蓟镇总兵戚继光（召回年份对照）",
+      "url": "https://www.bjmy.gov.cn/stmy/zjmy/lsrw/202305/t20230531_97225.html"
+    }
+  ],
+  "people": [
+    {
+      "id": "xu-jie",
+      "name": "徐阶",
+      "birth_year": 1503,
+      "death_year": 1583,
+      "summary": "1566年在任内阁首辅。1562年严嵩罢后居首，1568年七月致仕；1566年阁衔为建极殿大学士。首辅是阁臣班序与主持政务的地位，不能另造一个定员宰相官。",
+      "source_ids": [
+        "ms110",
+        "ms213",
+        "qingpu-xu"
+      ]
+    },
+    {
+      "id": "gao-gong",
+      "name": "高拱",
+      "birth_year": 1512,
+      "death_year": 1578,
+      "summary": "1566年初任礼部尚书，嘉靖四十五年三月兼文渊阁大学士入阁。1567年五月罢，1569年十二月复入并兼掌吏部事；1566年不可称首辅。",
+      "source_ids": [
+        "ms18",
+        "ms110",
+        "ms112",
+        "ms213",
+        "zhengzhou-gao"
+      ]
+    },
+    {
+      "id": "zhang-juzheng",
+      "name": "张居正",
+      "birth_year": 1525,
+      "death_year": 1582,
+      "summary": "1566年初为右春坊右谕德兼翰林院侍读，四月癸酉升翰林院侍读学士、掌院事；当年尚未入阁。世宗崩后迁礼部右侍郎，隆庆元年二月才入阁。《明史》本传写侍讲学士，本批以任命当时《明世宗实录》的侍读学士为准。",
+      "source_ids": [
+        "ms213",
+        "ms110",
+        "szsl557",
+        "hubei-zhang"
+      ]
+    },
+    {
+      "id": "li-chunfang",
+      "name": "李春芳",
+      "birth_year": 1510,
+      "death_year": 1584,
+      "summary": "1566年在任阁臣，1565年四月入阁，至1568年徐阶归后才成为首辅。1566年三月所进吏部尚书为阁臣兼衔，不据此认定其掌吏部实务。",
+      "source_ids": [
+        "ms193",
+        "ms110",
+        "ms112",
+        "huaian-li"
+      ]
+    },
+    {
+      "id": "guo-pu",
+      "name": "郭朴",
+      "birth_year": 1511,
+      "death_year": 1593,
+      "summary": "1566年初任吏部尚书，嘉靖四十五年三月兼武英殿大学士入阁，1567年九月致仕。入阁后保有吏部尚书衔，但1566年四月胡松已接掌吏部，不能将郭朴继续显示为该部实际主官。",
+      "source_ids": [
+        "ms213",
+        "ms110",
+        "ms112",
+        "guo-bio"
+      ]
+    },
+    {
+      "id": "hu-zongxian",
+      "name": "胡宗宪",
+      "birth_year": 1512,
+      "death_year": 1565,
+      "summary": "1566年不在任：嘉靖四十一年（1562）十一月被逮后释令闲住；嘉靖四十四年（1565）再次入狱并死于狱中。不能把早年的浙直总督放入1566年现任名单。",
+      "source_ids": [
+        "ms205",
+        "ms18",
+        "xuancheng-hu"
+      ]
+    },
+    {
+      "id": "hai-rui",
+      "name": "海瑞",
+      "birth_year": null,
+      "death_year": 1587,
+      "summary": "1566年以户部云南清吏司主事上疏，随后系狱，当年不能概括为全年正常在署履职。获释及复职在世宗崩、穆宗立后；年号岁末跨公历1567，需按具体日期解释。早年兴国任职据县政府资料记为兴国知县；《明史》本传的兴国州判官记载另有出入，保留说明。",
+      "source_ids": [
+        "ms226",
+        "ms18",
+        "szsl555",
+        "xingguo-hai"
+      ]
+    },
+    {
+      "id": "qi-jiguang",
+      "name": "戚继光",
+      "birth_year": 1528,
+      "death_year": 1588,
+      "summary": "1566年在福建总兵任内，从事东南军务；并非蓟镇总兵。北召记载有1567年应召和1568年北调两个时点，福建任期终点本批暂不硬定；1568年五月总理蓟、昌、保三镇练兵可确证。",
+      "source_ids": [
+        "ms212",
+        "ms18",
+        "yantai-qi",
+        "miyun-qi"
+      ]
+    },
+    {
+      "id": "tan-lun",
+      "name": "谭纶",
+      "birth_year": 1520,
+      "death_year": 1577,
+      "summary": "1566年前段承接四川巡抚任职，年内转授兵部右侍郎、总督两广军务兼巡抚广西。《明史》仅给出先后顺序；临海机构资料记十月授官，本批未核到原始实录任命及抵任日，因此年内交接标作约略。1566年不能标为兵部尚书或蓟辽总督。",
+      "source_ids": [
+        "ms222",
+        "taizhou-tan",
+        "linhai-tan",
+        "ms112"
+      ]
+    },
+    {
+      "id": "yan-song",
+      "name": "严嵩",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "1566年不在任：嘉靖四十一年（1562）五月被勒令致仕，严世蕃伏诛后又削为民。死年在通行资料中有差异；本批不据《明史》又二年的相对叙事机械换算，留空待核。",
+      "source_ids": [
+        "ms308",
+        "ms18",
+        "ms110"
+      ]
+    },
+    {
+      "id": "yan-shifan",
+      "name": "严世蕃",
+      "birth_year": null,
+      "death_year": 1565,
+      "summary": "1566年已不在人世：嘉靖四十四年（1565）三月伏诛。其仕履含太常寺与工部名衔，但《明史》明载仍掌尚宝司事，不能据工部左侍郎衔就把他画成工部日常事务的实任主官；本批只收确知的尚宝司任职。",
+      "source_ids": [
+        "ms308",
+        "ms18"
+      ]
+    }
+  ],
+  "tenures": [
+    {
+      "id": "xu-bianxiu",
+      "person_id": "xu-jie",
+      "office_title": "翰林院编修",
+      "institution": "翰林院",
+      "start_year": 1523,
+      "end_year": null,
+      "date_note": "嘉靖二年进士后授编修，随后归娶、丁父忧、服除复职。本节点只确认初授年，不将中断段拼成连续任期。",
+      "status": "approximate",
+      "source_ids": [
+        "ms213"
+      ]
+    },
+    {
+      "id": "xu-yanping",
+      "person_id": "xu-jie",
+      "office_title": "延平府推官",
+      "institution": "延平府",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "本传载因孔子祀典争论被斥为延平府推官；起止年未由本批来源落实。",
+      "status": "approximate",
+      "source_ids": [
+        "ms213"
+      ]
+    },
+    {
+      "id": "xu-jijiu",
+      "person_id": "xu-jie",
+      "office_title": "国子监祭酒",
+      "institution": "国子监",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "本传载丁母忧服除后擢国子祭酒，后迁礼部右侍郎；不猜具体年月。",
+      "status": "approximate",
+      "source_ids": [
+        "ms213"
+      ]
+    },
+    {
+      "id": "xu-libu-shangshu",
+      "person_id": "xu-jie",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "start_year": 1549,
+      "end_year": 1552,
+      "date_note": "《七卿年表》嘉靖二十八年二月任；三十一年三月入阁仍管部事，同年十月欧阳德任礼部尚书。实掌部务范围止于该交接年，尚书名衔延续另计。",
+      "status": "attested",
+      "source_ids": [
+        "ms112",
+        "ms213"
+      ]
+    },
+    {
+      "id": "xu-grandsecretary",
+      "person_id": "xu-jie",
+      "office_title": "内阁大学士（参预机务）",
+      "institution": "内阁",
+      "start_year": 1552,
+      "end_year": 1562,
+      "date_note": "嘉靖三十一年三月入阁；本传作文渊阁，宰辅年表作东阁，故初入阁的殿名暂不判定。此段止于1562年升居首辅；1554年进武英殿大学士。",
+      "status": "attested",
+      "source_ids": [
+        "ms110",
+        "ms213"
+      ]
+    },
+    {
+      "id": "xu-chief",
+      "person_id": "xu-jie",
+      "office_title": "内阁首辅（建极殿大学士等衔）",
+      "institution": "内阁",
+      "start_year": 1562,
+      "end_year": 1568,
+      "date_note": "嘉靖四十一年五月严嵩罢，徐阶继为首辅；四十三年八月进建极殿大学士；隆庆二年七月致仕。首辅表地位，非另设的丞相官。1566年在任。",
+      "status": "attested",
+      "source_ids": [
+        "ms18",
+        "ms110",
+        "ms213"
+      ]
+    },
+    {
+      "id": "gao-bianxiu",
+      "person_id": "gao-gong",
+      "office_title": "翰林院编修",
+      "institution": "翰林院",
+      "start_year": 1542,
+      "end_year": null,
+      "date_note": "本传嘉靖二十年选庶吉士，逾年授编修；按原文明示次年记1542，终点未详。",
+      "status": "approximate",
+      "source_ids": [
+        "ms213"
+      ]
+    },
+    {
+      "id": "gao-jijiu",
+      "person_id": "gao-gong",
+      "office_title": "掌国子监祭酒事（太常卿衔）",
+      "institution": "国子监",
+      "start_year": null,
+      "end_year": 1562,
+      "date_note": "本传载拜太常卿、掌国子监祭酒事，四十一年迁礼部左侍郎；本批不把太常卿衔另作掌太常寺的实职。",
+      "status": "approximate",
+      "source_ids": [
+        "ms213"
+      ]
+    },
+    {
+      "id": "gao-libu-shilang",
+      "person_id": "gao-gong",
+      "office_title": "礼部左侍郎",
+      "institution": "礼部",
+      "start_year": 1562,
+      "end_year": null,
+      "date_note": "嘉靖四十一年擢礼部左侍郎，寻改吏部兼学士、掌詹事府；未落实各次改官月份。",
+      "status": "approximate",
+      "source_ids": [
+        "ms213"
+      ]
+    },
+    {
+      "id": "gao-libu-shangshu",
+      "person_id": "gao-gong",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "start_year": 1565,
+      "end_year": 1566,
+      "date_note": "《七卿年表》嘉靖四十四年七月任，四十五年三月入阁；四月高仪任礼部尚书。只把入阁前与交接期列为部务实任。",
+      "status": "attested",
+      "source_ids": [
+        "ms112",
+        "ms18"
+      ]
+    },
+    {
+      "id": "gao-cabinet-first",
+      "person_id": "gao-gong",
+      "office_title": "文渊阁大学士（入预机务）",
+      "institution": "内阁",
+      "start_year": 1566,
+      "end_year": 1567,
+      "date_note": "嘉靖四十五年三月己未入阁；隆庆元年五月养病去。该任内后续升殿阁及保傅属衔位变化，不另造部院实职。",
+      "status": "attested",
+      "source_ids": [
+        "ms18",
+        "ms110",
+        "ms213"
+      ]
+    },
+    {
+      "id": "gao-cabinet-return",
+      "person_id": "gao-gong",
+      "office_title": "内阁大学士兼掌吏部事",
+      "institution": "内阁、吏部",
+      "start_year": 1569,
+      "end_year": 1572,
+      "date_note": "隆庆三年十二月召还兼掌吏部事；六年六月罢。此处有兼掌部事明文，属于实际兼任；首辅地位在李春芳1571年去后形成。",
+      "status": "attested",
+      "source_ids": [
+        "ms110",
+        "ms112",
+        "ms213"
+      ]
+    },
+    {
+      "id": "zhang-bianxiu",
+      "person_id": "zhang-juzheng",
+      "office_title": "翰林院编修",
+      "institution": "翰林院",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "嘉靖二十六年进士、改庶吉士后授编修，曾请急归而复职。本传未明确初授及各中断年份，留空。",
+      "status": "approximate",
+      "source_ids": [
+        "ms213"
+      ]
+    },
+    {
+      "id": "zhang-siye",
+      "person_id": "zhang-juzheng",
+      "office_title": "右中允、领国子监司业事",
+      "institution": "右春坊、国子监",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "本传明载迁右中允、领国子司业事，与祭酒高拱共事；后还理坊事。起止年未落实，不按null推定1566在任。",
+      "status": "approximate",
+      "source_ids": [
+        "ms213"
+      ]
+    },
+    {
+      "id": "zhang-yude",
+      "person_id": "zhang-juzheng",
+      "office_title": "右春坊右谕德兼翰林院侍读",
+      "institution": "右春坊、翰林院",
+      "start_year": null,
+      "end_year": 1566,
+      "date_note": "实录卷557四月癸酉的升官令以此为原职，可确证其在该日以前任此职，开始年份本批未核。裕邸讲读不等于内阁辅政。",
+      "status": "approximate",
+      "source_ids": [
+        "szsl557",
+        "ms213"
+      ]
+    },
+    {
+      "id": "zhang-shidu",
+      "person_id": "zhang-juzheng",
+      "office_title": "翰林院侍读学士、掌院事",
+      "institution": "翰林院",
+      "start_year": 1566,
+      "end_year": 1567,
+      "date_note": "《明世宗实录》卷557：嘉靖四十五年四月癸酉升任。世宗崩后始迁礼部右侍郎；岁末事件跨公历1567。侍读学士据实录校正本传侍讲学士。",
+      "status": "attested",
+      "source_ids": [
+        "szsl557",
+        "ms213"
+      ]
+    },
+    {
+      "id": "zhang-cabinet",
+      "person_id": "zhang-juzheng",
+      "office_title": "内阁大学士（初兼东阁）",
+      "institution": "内阁",
+      "start_year": 1567,
+      "end_year": 1572,
+      "date_note": "隆庆元年二月入阁，初衔吏部左侍郎兼东阁大学士，四月进礼部尚书兼武英殿大学士；这些部衔不据此视为实际掌部。此段止于升居首辅。",
+      "status": "attested",
+      "source_ids": [
+        "ms110",
+        "ms213"
+      ]
+    },
+    {
+      "id": "zhang-chief",
+      "person_id": "zhang-juzheng",
+      "office_title": "内阁首辅",
+      "institution": "内阁",
+      "start_year": 1572,
+      "end_year": 1582,
+      "date_note": "隆庆六年六月高拱罢后居首，万历十年卒于任。夺情、归葬期间仍受命总理政务，不据归葬另造离任。",
+      "status": "attested",
+      "source_ids": [
+        "ms110",
+        "ms213",
+        "hubei-zhang"
+      ]
+    },
+    {
+      "id": "li-xiuzhuan",
+      "person_id": "li-chunfang",
+      "office_title": "翰林院修撰",
+      "institution": "翰林院",
+      "start_year": 1547,
+      "end_year": null,
+      "date_note": "嘉靖二十六年进士第一，除修撰；迁学士年月未在本批原始年表落实。",
+      "status": "approximate",
+      "source_ids": [
+        "ms193"
+      ]
+    },
+    {
+      "id": "li-xueshi",
+      "person_id": "li-chunfang",
+      "office_title": "翰林院学士、入直西苑",
+      "institution": "翰林院",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "本传载与严讷超擢翰林学士，后历太常少卿、礼部侍郎而俱兼学士入直；不给未知阶段猜年份。",
+      "status": "approximate",
+      "source_ids": [
+        "ms193"
+      ]
+    },
+    {
+      "id": "li-libu",
+      "person_id": "li-chunfang",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "start_year": 1563,
+      "end_year": 1565,
+      "date_note": "嘉靖四十二年三月任；四十四年四月入阁，同月董份接任礼部尚书。",
+      "status": "attested",
+      "source_ids": [
+        "ms112",
+        "ms193"
+      ]
+    },
+    {
+      "id": "li-cabinet",
+      "person_id": "li-chunfang",
+      "office_title": "武英殿大学士（入预机务）",
+      "institution": "内阁",
+      "start_year": 1565,
+      "end_year": 1568,
+      "date_note": "嘉靖四十四年四月入阁，1566年在任。四十五年三月进吏部尚书衔，但不记为兼掌吏部。此段止于徐阶致仕后的首辅阶段。",
+      "status": "attested",
+      "source_ids": [
+        "ms110",
+        "ms18",
+        "ms193"
+      ]
+    },
+    {
+      "id": "li-chief",
+      "person_id": "li-chunfang",
+      "office_title": "内阁首辅",
+      "institution": "内阁",
+      "start_year": 1568,
+      "end_year": 1571,
+      "date_note": "隆庆二年七月徐阶致仕后继为首辅；隆庆五年五月致仕。",
+      "status": "attested",
+      "source_ids": [
+        "ms110",
+        "ms193",
+        "ms213"
+      ]
+    },
+    {
+      "id": "guo-libu-shilang",
+      "person_id": "guo-pu",
+      "office_title": "礼部右侍郎、入直西苑",
+      "institution": "礼部、翰林院",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "本传载累官礼部右侍郎、入直西苑；未明具体年份。",
+      "status": "approximate",
+      "source_ids": [
+        "ms213"
+      ]
+    },
+    {
+      "id": "guo-libu-shangshu",
+      "person_id": "guo-pu",
+      "office_title": "礼部尚书衔、詹事府侍直",
+      "institution": "詹事府",
+      "start_year": null,
+      "end_year": 1561,
+      "date_note": "本传载拟擢南京礼部尚书，因辞不愿外赴而改以礼部尚书衔在詹事府侍直如故。不是南京礼部尚书实际赴任，也不作北京礼部掌部证据。终点依随后1561年掌吏部。",
+      "status": "approximate",
+      "source_ids": [
+        "ms213",
+        "ms112"
+      ]
+    },
+    {
+      "id": "guo-libupersonnel-first",
+      "person_id": "guo-pu",
+      "office_title": "吏部尚书（掌部事）",
+      "institution": "吏部",
+      "start_year": 1561,
+      "end_year": 1563,
+      "date_note": "《七卿年表》嘉靖四十年十一月任；四十二年父忧去，具体月未记。",
+      "status": "attested",
+      "source_ids": [
+        "ms112",
+        "ms213"
+      ]
+    },
+    {
+      "id": "guo-libupersonnel-return",
+      "person_id": "guo-pu",
+      "office_title": "吏部尚书（起复掌部）",
+      "institution": "吏部",
+      "start_year": 1565,
+      "end_year": 1566,
+      "date_note": "嘉靖四十四年四月召起原官；四十五年三月入阁，四月胡松接掌吏部。不能将保留的尚书衔延长成掌部任期。",
+      "status": "attested",
+      "source_ids": [
+        "ms112",
+        "ms213"
+      ]
+    },
+    {
+      "id": "guo-cabinet",
+      "person_id": "guo-pu",
+      "office_title": "武英殿大学士（入预机务）",
+      "institution": "内阁",
+      "start_year": 1566,
+      "end_year": 1567,
+      "date_note": "嘉靖四十五年三月己未与高拱并命；隆庆元年九月致仕。1566年三月后在阁。",
+      "status": "attested",
+      "source_ids": [
+        "ms18",
+        "ms110",
+        "ms213"
+      ]
+    },
+    {
+      "id": "hu-yidu",
+      "person_id": "hu-zongxian",
+      "office_title": "益都知县",
+      "institution": "益都县",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "嘉靖十七年进士后历知益都、余姚；本传不载分段年月，不把进士年份当成已核实的抵任年。",
+      "status": "approximate",
+      "source_ids": [
+        "ms205"
+      ]
+    },
+    {
+      "id": "hu-yuyao",
+      "person_id": "hu-zongxian",
+      "office_title": "余姚知县",
+      "institution": "余姚县",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "《明史》明载知余姚，起止年月本批未核实。",
+      "status": "approximate",
+      "source_ids": [
+        "ms205"
+      ]
+    },
+    {
+      "id": "hu-xuanda",
+      "person_id": "hu-zongxian",
+      "office_title": "监察御史、巡按宣大",
+      "institution": "都察院、宣府大同",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "本传载擢御史、巡按宣大；未载任免年月。",
+      "status": "approximate",
+      "source_ids": [
+        "ms205"
+      ]
+    },
+    {
+      "id": "hu-zhejiang-inspect",
+      "person_id": "hu-zongxian",
+      "office_title": "监察御史、巡按浙江",
+      "institution": "都察院、浙江",
+      "start_year": 1554,
+      "end_year": null,
+      "date_note": "本传明载嘉靖三十三年出按浙江；后超擢右佥都御史巡抚浙江。巡按终点未独立落实。",
+      "status": "approximate",
+      "source_ids": [
+        "ms205"
+      ]
+    },
+    {
+      "id": "hu-zhejiang-governor",
+      "person_id": "hu-zongxian",
+      "office_title": "浙江巡抚（右佥都御史）",
+      "institution": "浙江巡抚",
+      "start_year": null,
+      "end_year": 1556,
+      "date_note": "本传载取代李天宠为浙江巡抚；《明史》世宗本纪三十五年二月明载以巡抚侍郎身份转任总督。起任年未核；不把地方人物简介混写的巡抚按御史当成精确职名。",
+      "status": "approximate",
+      "source_ids": [
+        "ms205",
+        "ms18"
+      ]
+    },
+    {
+      "id": "hu-supreme",
+      "person_id": "hu-zongxian",
+      "office_title": "总督浙直等处军务",
+      "institution": "浙直总督",
+      "start_year": 1556,
+      "end_year": 1562,
+      "date_note": "《明史》世宗本纪：嘉靖三十五年二月，杨宜罢，巡抚侍郎胡宗宪总督军务讨倭；本传详其后加兵部尚书、节制巡抚操江及兼江西。嘉靖四十一年十一月被逮，释令闲住，实任止于1562；1566年不在任。",
+      "status": "attested",
+      "source_ids": [
+        "ms205",
+        "ms18"
+      ]
+    },
+    {
+      "id": "hai-nanping",
+      "person_id": "hai-rui",
+      "office_title": "署南平教谕",
+      "institution": "南平县儒学",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "《明史》明载署南平教谕；起止年未由本批原始材料确定。",
+      "status": "approximate",
+      "source_ids": [
+        "ms226"
+      ]
+    },
+    {
+      "id": "hai-chunan",
+      "person_id": "hai-rui",
+      "office_title": "淳安知县",
+      "institution": "淳安县",
+      "start_year": null,
+      "end_year": 1562,
+      "date_note": "《明史》记迁淳安知县；兴国县政府资料记嘉靖四十一年十二月转兴国，故终点记1562年号年，抵任公历日期未换算。",
+      "status": "approximate",
+      "source_ids": [
+        "ms226",
+        "xingguo-hai"
+      ]
+    },
+    {
+      "id": "hai-xingguo",
+      "person_id": "hai-rui",
+      "office_title": "兴国知县",
+      "institution": "江西兴国县",
+      "start_year": 1562,
+      "end_year": 1564,
+      "date_note": "兴国县政府转载人民日报客户端资料：嘉靖四十一年十二月任兴国知县，四十三年十月调户部。《明史》本传写兴国州判官，与此有异；本条采用地方机构明确的县职记载并保留异文。",
+      "status": "attested",
+      "source_ids": [
+        "xingguo-hai",
+        "ms226"
+      ]
+    },
+    {
+      "id": "hai-hubu",
+      "person_id": "hai-rui",
+      "office_title": "户部云南清吏司主事",
+      "institution": "户部",
+      "start_year": 1564,
+      "end_year": 1566,
+      "date_note": "嘉靖四十三年十月调任；四十五年二月癸亥上疏时的职名由实录卷555确认。终点表示该年入狱导致实际履职中断，不能显示为1566全年在署。拘捕、复官的具体日另待核。",
+      "status": "attested",
+      "source_ids": [
+        "xingguo-hai",
+        "szsl555",
+        "ms226",
+        "ms18"
+      ]
+    },
+    {
+      "id": "hai-yingtian",
+      "person_id": "hai-rui",
+      "office_title": "应天巡抚（右佥都御史）",
+      "institution": "应天巡抚",
+      "start_year": 1569,
+      "end_year": null,
+      "date_note": "本传明确隆庆三年夏巡抚应天十府，撫吴甫半岁后改督南京粮储；未直接将半岁推算为精确离任年。",
+      "status": "approximate",
+      "source_ids": [
+        "ms226"
+      ]
+    },
+    {
+      "id": "hai-nanjing",
+      "person_id": "hai-rui",
+      "office_title": "南京右都御史",
+      "institution": "南京都察院",
+      "start_year": null,
+      "end_year": 1587,
+      "date_note": "万历十三年先召南京右佥都御史，道改南京吏部右侍郎，其后迁南京右都御史；具体迁右都御史年月本批未核。万历十五年卒官。",
+      "status": "approximate",
+      "source_ids": [
+        "ms226"
+      ]
+    },
+    {
+      "id": "qi-dengzhou",
+      "person_id": "qi-jiguang",
+      "office_title": "登州卫指挥佥事",
+      "institution": "登州卫",
+      "start_year": 1544,
+      "end_year": null,
+      "date_note": "烟台党史机构资料载嘉靖二十三年袭世职；《明史》载嘉靖中嗣职。后继有署都指挥佥事任命，旧世职与新差遣关系不按单线强行截断。",
+      "status": "approximate",
+      "source_ids": [
+        "ms212",
+        "yantai-qi"
+      ]
+    },
+    {
+      "id": "qi-shandong",
+      "person_id": "qi-jiguang",
+      "office_title": "署都指挥佥事、备倭山东",
+      "institution": "山东都指挥使司",
+      "start_year": 1553,
+      "end_year": 1555,
+      "date_note": "烟台党史机构资料载1553年晋都指挥佥事、1555年调浙江；《明史》职称作署都指挥佥事。军事差遣写备倭山东，不误作山东巡抚。",
+      "status": "attested",
+      "source_ids": [
+        "ms212",
+        "yantai-qi"
+      ]
+    },
+    {
+      "id": "qi-zhejiang",
+      "person_id": "qi-jiguang",
+      "office_title": "浙江参将（宁绍台，后台金严）",
+      "institution": "浙江军镇",
+      "start_year": 1556,
+      "end_year": null,
+      "date_note": "机构资料载1556年任参将。《明史》载岑港失利曾免官戴罪，后复官改守台金严；中断与改守年月未核，不能把1556至入闽画成不中断的精确一段。",
+      "status": "approximate",
+      "source_ids": [
+        "ms212",
+        "yantai-qi"
+      ]
+    },
+    {
+      "id": "qi-fujian-deputy",
+      "person_id": "qi-jiguang",
+      "office_title": "福建副总兵",
+      "institution": "福建军镇",
+      "start_year": 1562,
+      "end_year": 1563,
+      "date_note": "本传将授副总兵置于兴化1562年陷落之前，1563年四月仍以副总兵参加平海战；其后以功代俞大猷为总兵。起始具体月份待核。",
+      "status": "attested",
+      "source_ids": [
+        "ms212",
+        "ms18"
+      ]
+    },
+    {
+      "id": "qi-fujian",
+      "person_id": "qi-jiguang",
+      "office_title": "福建总兵官",
+      "institution": "福建军镇",
+      "start_year": 1563,
+      "end_year": null,
+      "date_note": "嘉靖四十二年平海战后代俞大猷为总兵，1566年仍在该东南军务阶段。《明史》只言隆庆初召神机营副将；机构材料区分1567应召与1568北调，实际卸任点暂留空，不代表无限续任。",
+      "status": "approximate",
+      "source_ids": [
+        "ms212",
+        "ms18",
+        "miyun-qi",
+        "yantai-qi"
+      ]
+    },
+    {
+      "id": "qi-three-garrisons",
+      "person_id": "qi-jiguang",
+      "office_title": "总理蓟州、昌平、保定三镇练兵事",
+      "institution": "蓟州、昌平、保定",
+      "start_year": 1568,
+      "end_year": null,
+      "date_note": "《明史》明载隆庆二年五月任，总兵官以下悉受节制；后因事权不一又任蓟州等处总兵。精确兼任及交接月份尚未独立落实，不将后任总兵的终点直接套在本差遣。",
+      "status": "approximate",
+      "source_ids": [
+        "ms212"
+      ]
+    },
+    {
+      "id": "tan-taizhou",
+      "person_id": "tan-lun",
+      "office_title": "台州知府",
+      "institution": "台州府",
+      "start_year": 1555,
+      "end_year": 1558,
+      "date_note": "台州史志机构资料载嘉靖三十四年八月任，三十七年抗倭后升海道副使。",
+      "status": "attested",
+      "source_ids": [
+        "taizhou-tan",
+        "ms222"
+      ]
+    },
+    {
+      "id": "tan-fujian",
+      "person_id": "tan-lun",
+      "office_title": "福建巡抚（右佥都御史，后加右副都御史）",
+      "institution": "福建巡抚",
+      "start_year": 1563,
+      "end_year": null,
+      "date_note": "《明史》明确嘉靖四十二年春起复巡抚福建，仙游等战后请复行服；本批不猜归丧的具体年月。",
+      "status": "approximate",
+      "source_ids": [
+        "ms222"
+      ]
+    },
+    {
+      "id": "tan-sichuan",
+      "person_id": "tan-lun",
+      "office_title": "四川巡抚",
+      "institution": "四川巡抚",
+      "start_year": 1565,
+      "end_year": 1566,
+      "date_note": "《明史》载嘉靖四十四年冬起陕西巡抚但未上而改四川，因此陕西不列实任。临海机构材料记45年十月转授两广，本条终点只作转授年份的约略界标，非已核实抵离任日。",
+      "status": "approximate",
+      "source_ids": [
+        "ms222",
+        "linhai-tan"
+      ]
+    },
+    {
+      "id": "tan-liangguang",
+      "person_id": "tan-lun",
+      "office_title": "总督两广军务兼巡抚广西（兵部右侍郎、右佥都御史）",
+      "institution": "两广总督、广西巡抚",
+      "start_year": 1566,
+      "end_year": 1567,
+      "date_note": "《明史》确认四川后任总督两广兼巡抚广西，隆庆元年召还部；临海机构资料细记嘉靖45年十月授官。起年与年内月份属辅助资料，原始任命日及实际抵任待核，故标approximate。这里是外任军务差遣，不是北京兵部日常掌部。",
+      "status": "approximate",
+      "source_ids": [
+        "ms222",
+        "linhai-tan"
+      ]
+    },
+    {
+      "id": "tan-jiliao",
+      "person_id": "tan-lun",
+      "office_title": "总督蓟辽保定军务（兵部左侍郎、右佥都御史）",
+      "institution": "蓟辽保定总督",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "《明史》记隆庆元年召还后进左侍郎总督；机构材料将赴任定在隆庆二年。起年牵涉召授与到任区别，本批不取其中一个冒作精确任期。",
+      "status": "approximate",
+      "source_ids": [
+        "ms222",
+        "linhai-tan"
+      ]
+    },
+    {
+      "id": "tan-bingbu",
+      "person_id": "tan-lun",
+      "office_title": "兵部尚书（掌部事）",
+      "institution": "兵部",
+      "start_year": 1572,
+      "end_year": 1577,
+      "date_note": "《七卿年表》隆庆六年七月任，万历五年四月卒。本条是神宗初年实际掌部任期；前段以尚书衔协理戎政而告病的经历另有所属，未拼入。",
+      "status": "attested",
+      "source_ids": [
+        "ms112",
+        "ms222"
+      ]
+    },
+    {
+      "id": "yan-bianxiu",
+      "person_id": "yan-song",
+      "office_title": "翰林院编修",
+      "institution": "翰林院",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "弘治十八年进士改庶吉士后授编修，移疾归十年又还朝；无法以进士年填任职全程。",
+      "status": "approximate",
+      "source_ids": [
+        "ms308"
+      ]
+    },
+    {
+      "id": "yan-libu-shilang",
+      "person_id": "yan-song",
+      "office_title": "礼部右侍郎",
+      "institution": "礼部",
+      "start_year": 1528,
+      "end_year": null,
+      "date_note": "本传明载嘉靖七年历礼部右侍郎；后迁吏部左侍郎，具体转迁年未明。",
+      "status": "approximate",
+      "source_ids": [
+        "ms308"
+      ]
+    },
+    {
+      "id": "yan-nanjing",
+      "person_id": "yan-song",
+      "office_title": "南京礼部尚书，后改南京吏部尚书",
+      "institution": "南京礼部、南京吏部",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "本传确认先后任职并称居南京五年；两部各自年月未核，不把五年均摊为任期。",
+      "status": "approximate",
+      "source_ids": [
+        "ms308"
+      ]
+    },
+    {
+      "id": "yan-libu",
+      "person_id": "yan-song",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "start_year": null,
+      "end_year": 1543,
+      "date_note": "本传载留京以礼部尚书兼学士董修宋史，夏言入阁后还掌部；1542年入阁仍掌礼部。《七卿年表》嘉靖二十二年四月解部事，明确部务实任止点。",
+      "status": "approximate",
+      "source_ids": [
+        "ms308",
+        "ms112"
+      ]
+    },
+    {
+      "id": "yan-cabinet",
+      "person_id": "yan-song",
+      "office_title": "内阁大学士（历武英、谨身、华盖）",
+      "institution": "内阁",
+      "start_year": 1542,
+      "end_year": 1562,
+      "date_note": "嘉靖二十一年八月入阁；四十一年五月被勒致仕。其间曾在夏言之下，故不把1542—1562整段一律称首辅。1566年明确不在任。",
+      "status": "attested",
+      "source_ids": [
+        "ms308",
+        "ms110",
+        "ms18"
+      ]
+    },
+    {
+      "id": "yanshifan-shangbao-shaoqing",
+      "person_id": "yan-shifan",
+      "office_title": "尚宝司少卿",
+      "institution": "尚宝司",
+      "start_year": null,
+      "end_year": null,
+      "date_note": "本传记夏言复出时严世蕃方官尚宝少卿；只确认有此实任，不猜初授与离任年。",
+      "status": "approximate",
+      "source_ids": [
+        "ms308"
+      ]
+    },
+    {
+      "id": "yanshifan-shangbao-manager",
+      "person_id": "yan-shifan",
+      "office_title": "掌尚宝司事（工部左侍郎等衔）",
+      "institution": "尚宝司",
+      "start_year": null,
+      "end_year": 1562,
+      "date_note": "本传明载由太常卿进工部左侍郎，仍掌尚宝司事。仅以掌尚宝司为履职证据；不另列太常卿或工部左侍郎为独立部寺实职。嘉靖四十一年五月下狱并发遣，履职中断；四十四年三月伏诛。",
+      "status": "approximate",
+      "source_ids": [
+        "ms308",
+        "ms18"
+      ]
+    }
+  ]
+}

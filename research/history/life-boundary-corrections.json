@@ -1,0 +1,159 @@
+{
+  "sources": [
+    {
+      "id": "cbdb-life-ms131",
+      "title": "《明史》卷131：顾时、金朝兴传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷131"
+    },
+    {
+      "id": "cbdb-life-ms107",
+      "title": "《明史》卷107：功臣世表三·伏羌伯",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷107"
+    },
+    {
+      "id": "cbdb-life-ms156",
+      "title": "《明史》卷156：毛忠传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷156"
+    },
+    {
+      "id": "cbdb-life-ms150",
+      "title": "《明史》卷150：虞谦传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷150"
+    }
+  ],
+  "record_patches": [
+    {
+      "id": "cbdb-career-412571-72066",
+      "set": {
+        "office_title": "封宣德侯",
+        "record_kind": "event",
+        "record_role": "honorary_title",
+        "start_year": null,
+        "end_year": null,
+        "attested_year": 1379,
+        "institution_ids": [],
+        "office_ids": [],
+        "status": "attested",
+        "review_status": "primary_text_checked",
+        "date_precision": "preserved_primary_correction",
+        "membership_basis": "primary_attested_noble_grant_event_not_office_duty",
+        "correction_reason": "《明史》卷131记洪武十一年西征，次年封宣德侯；十五年征云南并卒，追封沂国公，十七年另有世侯券增禄。原库1379—1383不作连续实职，保留1379授爵事件及原始末年冲突。",
+        "date_note": "《明史》卷131记洪武十一年西征，次年封宣德侯；十五年征云南并卒，追封沂国公，十七年另有世侯券增禄。原库1379—1383不作连续实职，保留1379授爵事件及原始末年冲突。 原记录：CBDB记载任官起讫 1379—1383；原库未填日期限定精度，按所载起讫展示，不等于原典已核精确任期。除授：未詳；赴任：未详。原注：宣德侯(新校本明史;131卷)(CBDB_line_ID=114223)。出处：人名權威資料（中央研究院歷史語言研究所）；定位：9955。年号年度和月日原样保留，未作未证的逐日西历换算。"
+      },
+      "append_source_ids": [
+        "cbdb-life-ms131"
+      ],
+      "preserve_fields": [
+        "cbdb",
+        "person_id",
+        "rank_match"
+      ],
+      "reason": "《明史》卷131记洪武十一年西征，次年封宣德侯；十五年征云南并卒，追封沂国公，十七年另有世侯券增禄。原库1379—1383不作连续实职，保留1379授爵事件及原始末年冲突。"
+    },
+    {
+      "id": "cbdb-career-414601-71788",
+      "set": {
+        "office_title": "封伏羌伯",
+        "record_kind": "event",
+        "record_role": "honorary_title",
+        "start_year": null,
+        "end_year": null,
+        "attested_year": 1467,
+        "institution_ids": [],
+        "office_ids": [],
+        "status": "attested",
+        "review_status": "primary_text_checked",
+        "date_precision": "preserved_primary_correction",
+        "membership_basis": "primary_attested_noble_grant_event_not_office_duty",
+        "correction_reason": "《明史》卷107明确成化三年四月庚子封伏羌伯、四年十一月战没，追封侯；五年四月袭爵者为孙毛锐。卷156亦记成化四年战死。原库1467—1469不得当毛忠连续实职，本条保留1467封伯事件，不把毛锐嗣爵年算作毛忠在任。",
+        "date_note": "《明史》卷107明确成化三年四月庚子封伏羌伯、四年十一月战没，追封侯；五年四月袭爵者为孙毛锐。卷156亦记成化四年战死。原库1467—1469不得当毛忠连续实职，本条保留1467封伯事件，不把毛锐嗣爵年算作毛忠在任。 原记录：CBDB记载任官起讫 1467—1469；原库未填日期限定精度，按所载起讫展示，不等于原典已核精确任期。除授：未詳；赴任：未详。原注：伏羌伯(伏羗伯)(明實錄:憲宗實錄;40卷)(CBDB_line_ID=117923)。出处：人名權威資料（中央研究院歷史語言研究所）；定位：10464。年号年度和月日原样保留，未作未证的逐日西历换算。"
+      },
+      "append_source_ids": [
+        "cbdb-life-ms107",
+        "cbdb-life-ms156"
+      ],
+      "preserve_fields": [
+        "cbdb",
+        "person_id",
+        "rank_match"
+      ],
+      "reason": "《明史》卷107明确成化三年四月庚子封伏羌伯、四年十一月战没，追封侯；五年四月袭爵者为孙毛锐。卷156亦记成化四年战死。原库1467—1469不得当毛忠连续实职，本条保留1467封伯事件，不把毛锐嗣爵年算作毛忠在任。"
+    },
+    {
+      "id": "cbdb-career-412500-71855",
+      "set": {
+        "office_title": "封济宁侯",
+        "record_kind": "event",
+        "record_role": "honorary_title",
+        "start_year": null,
+        "end_year": null,
+        "attested_year": 1370,
+        "institution_ids": [],
+        "office_ids": [],
+        "status": "attested",
+        "review_status": "primary_text_checked",
+        "date_precision": "preserved_primary_correction",
+        "membership_basis": "primary_attested_noble_grant_event_not_office_duty",
+        "correction_reason": "《明史》卷131记洪武三年封济宁侯、十二年卒，身后追封的是滕国公。原库济宁侯1370—1380的末年与该传及卒年冲突。本条改为1370授爵事件，保留原库1380供复核，不能作为1380仍在任实职。",
+        "date_note": "《明史》卷131记洪武三年封济宁侯、十二年卒，身后追封的是滕国公。原库济宁侯1370—1380的末年与该传及卒年冲突。本条改为1370授爵事件，保留原库1380供复核，不能作为1380仍在任实职。 原记录：CBDB记载任官起讫 1370—1380；原库未填日期限定精度，按所载起讫展示，不等于原典已核精确任期。除授：未詳；赴任：未详。原注：濟寧侯(新校本明史;131卷)(CBDB_line_ID=114076)。出处：人名權威資料（中央研究院歷史語言研究所）；定位：9937。年号年度和月日原样保留，未作未证的逐日西历换算。"
+      },
+      "append_source_ids": [
+        "cbdb-life-ms131"
+      ],
+      "preserve_fields": [
+        "cbdb",
+        "person_id",
+        "rank_match"
+      ],
+      "reason": "《明史》卷131记洪武三年封济宁侯、十二年卒，身后追封的是滕国公。原库济宁侯1370—1380的末年与该传及卒年冲突。本条改为1370授爵事件，保留原库1380供复核，不能作为1380仍在任实职。"
+    },
+    {
+      "id": "cbdb-career-413660-71204",
+      "set": {
+        "review_status": "cbdb_interval_with_primary_death_correction",
+        "date_note": "CBDB记载任官起讫 1424—1427；原库未填日期限定精度，按所载起讫展示，不等于原典已核精确任期。除授：未詳；赴任：未详。原注：行在大理寺卿(國朝列卿紀;6冊76卷)(CBDB_line_ID=116298)。出处：人名權威資料（中央研究院歷史語言研究所）；定位：10286。年号年度和月日原样保留，未作未证的逐日西历换算。 原典复核：《明史》卷150明确虞谦在宣德二年三月卒于官，即1427年；CBDB BIOG_MAIN主字段1426与其自身备注所列1427异说冲突。本次据该传订正人物卒年为1427，不改变生年。该传亦记仁宗时曾降少卿而后复职，不能宣称1424—1427每一时段均连续任卿。",
+        "mapping_note": "任期仍为CBDB记载起讫；其间曾降少卿后复职，确切起落日期待核，不绑定连续大理卿实职槽。",
+        "institution_ids": [],
+        "office_ids": []
+      },
+      "append_source_ids": [
+        "cbdb-life-ms150"
+      ],
+      "reason": "《明史》卷150明确虞谦在宣德二年三月卒于官，即1427年；CBDB BIOG_MAIN主字段1426与其自身备注所列1427异说冲突。本次据该传订正人物卒年为1427，不改变生年。该传亦记仁宗时曾降少卿而后复职，不能宣称1424—1427每一时段均连续任卿。"
+    }
+  ],
+  "person_patches": [
+    {
+      "id": "cbdb-person-66704",
+      "set": {
+        "death_year": 1427
+      },
+      "append_source_ids": [
+        "cbdb-life-ms150"
+      ],
+      "append_biographical_notes": [
+        "《明史》卷150明确虞谦在宣德二年三月卒于官，即1427年；CBDB BIOG_MAIN主字段1426与其自身备注所列1427异说冲突。本次据该传订正人物卒年为1427，不改变生年。该传亦记仁宗时曾降少卿而后复职，不能宣称1424—1427每一时段均连续任卿。"
+      ],
+      "reason": "《明史》卷150明确虞谦在宣德二年三月卒于官，即1427年；CBDB BIOG_MAIN主字段1426与其自身备注所列1427异说冲突。本次据该传订正人物卒年为1427，不改变生年。该传亦记仁宗时曾降少卿而后复职，不能宣称1424—1427每一时段均连续任卿。",
+      "previous_value": {
+        "death_year": 1426
+      }
+    }
+  ],
+  "meta": {
+    "scope": "All 46,177 merged CBDB careers compared against current merged known birth/death years.",
+    "stats": {
+      "records": 46177,
+      "all_date_life_conflicts": 137,
+      "non_event_conflicts": 4,
+      "role_counts": {
+        "posthumous_or_honorary": 125,
+        "office_appointment": 4,
+        "honorary_title": 8
+      }
+    },
+    "verification_date": "2026-09-06",
+    "policy": "Apply set fields only and union append_source_ids; never replace raw cbdb metadata. Gift/honorary events after death remain events, not live office service.",
+    "finding": "No pre-birth service records. 137 after-death records: 133 already events; 3 noble-title spans converted to evidenced grant events; 1 biographical death-year conflict resolved from primary text."
+  }
+}

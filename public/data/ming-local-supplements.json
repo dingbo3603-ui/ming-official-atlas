@@ -1,0 +1,164 @@
+[
+  {
+    "record_id": "supplement-state-magistrate",
+    "institution": "州衙",
+    "title": "知州",
+    "rank": "从五品",
+    "headcount": "一人",
+    "department": "州衙",
+    "duty_notes": "掌一州治理；直隶州与属州品秩同。",
+    "sources": [
+      {
+        "sheet": "史料补录",
+        "row": 0,
+        "range": "《明史》职官志",
+        "region": "地方官制"
+      }
+    ],
+    "uncertainty_flags": []
+  },
+  {
+    "record_id": "supplement-state-vice",
+    "institution": "州衙",
+    "title": "同知",
+    "rank": "从六品",
+    "headcount": "一人（同知、判官或不设）",
+    "department": "州衙",
+    "duty_notes": "佐知州分掌粮马、巡捕等州事；各州设置员额不尽相同。",
+    "sources": [
+      {
+        "sheet": "史料补录",
+        "row": 0,
+        "range": "《明史》职官志",
+        "region": "地方官制"
+      }
+    ],
+    "uncertainty_flags": []
+  },
+  {
+    "record_id": "supplement-state-judge",
+    "institution": "州衙",
+    "title": "判官",
+    "rank": "从七品",
+    "headcount": "一人（同知、判官或不设）",
+    "department": "州衙",
+    "duty_notes": "佐知州分理州事；缺员或分职以地方志为准。",
+    "sources": [
+      {
+        "sheet": "史料补录",
+        "row": 0,
+        "range": "《明史》职官志",
+        "region": "地方官制"
+      }
+    ],
+    "uncertainty_flags": []
+  },
+  {
+    "record_id": "supplement-state-clerk",
+    "institution": "州衙",
+    "title": "吏目",
+    "rank": "从九品",
+    "headcount": "一人",
+    "department": "州衙",
+    "duty_notes": "佐理刑名文书及架阁事务。",
+    "sources": [
+      {
+        "sheet": "史料补录",
+        "row": 0,
+        "range": "《明史》职官志",
+        "region": "地方官制"
+      }
+    ],
+    "uncertainty_flags": []
+  },
+  {
+    "record_id": "supplement-state-school-head",
+    "institution": "州儒学",
+    "title": "学正",
+    "rank": "未入流",
+    "headcount": "一人",
+    "department": "州儒学",
+    "duty_notes": "掌本州生员教育；属于儒学系统，并非州衙堂上的佐贰。",
+    "sources": [
+      {
+        "sheet": "史料补录",
+        "row": 0,
+        "range": "《明史》职官志",
+        "region": "地方官制"
+      }
+    ],
+    "uncertainty_flags": []
+  },
+  {
+    "record_id": "supplement-state-school-assistant",
+    "institution": "州儒学",
+    "title": "训导",
+    "rank": "未入流",
+    "headcount": "三人",
+    "department": "州儒学",
+    "duty_notes": "掌本州生员教育；属于儒学系统，并非州衙堂上的佐贰。",
+    "sources": [
+      {
+        "sheet": "史料补录",
+        "row": 0,
+        "range": "《明史》职官志",
+        "region": "地方官制"
+      }
+    ],
+    "uncertainty_flags": []
+  },
+  {
+    "record_id": "supplement-capital-county-magistrate",
+    "institution": "京县",
+    "title": "知县",
+    "rank": "正六品",
+    "headcount": "一人",
+    "department": "京县",
+    "duty_notes": "京县长贰；适用于宛平、大兴及南京上元、江宁，不能推广至全府属县。",
+    "sources": [
+      {
+        "sheet": "史料补录",
+        "row": 0,
+        "range": "《明史》职官志",
+        "region": "地方官制"
+      }
+    ],
+    "uncertainty_flags": []
+  },
+  {
+    "record_id": "supplement-capital-county-vice",
+    "institution": "京县",
+    "title": "县丞",
+    "rank": "正七品",
+    "headcount": "一人",
+    "department": "京县",
+    "duty_notes": "京县长贰；适用于宛平、大兴及南京上元、江宁，不能推广至全府属县。",
+    "sources": [
+      {
+        "sheet": "史料补录",
+        "row": 0,
+        "range": "《明史》职官志",
+        "region": "地方官制"
+      }
+    ],
+    "uncertainty_flags": []
+  },
+  {
+    "record_id": "supplement-capital-county-registrar",
+    "institution": "京县",
+    "title": "主簿",
+    "rank": "正八品",
+    "headcount": "一人",
+    "department": "京县",
+    "duty_notes": "京县长贰；适用于宛平、大兴及南京上元、江宁，不能推广至全府属县。",
+    "sources": [
+      {
+        "sheet": "史料补录",
+        "row": 0,
+        "range": "《明史》职官志",
+        "region": "地方官制"
+      }
+    ],
+    "uncertainty_flags": []
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "sources": [
+    {"id":"ms-112-qiqing","title":"《明史》卷一百十二·七卿年表二（嘉靖三十七年至隆庆四年相关行）","url":"https://zh.wikisource.org/wiki/明史/卷112"},
+    {"id":"ms-202","title":"《明史》卷二百二·张永明、胡松、赵炳然传","url":"https://zh.wikisource.org/wiki/明史/卷202"},
+    {"id":"ms-214","title":"《明史》卷二百十四·杨博、王廷等传","url":"https://zh.wikisource.org/wiki/明史/卷214"},
+    {"id":"ms-213","title":"《明史》卷二百十三·高拱传附郭朴传","url":"https://zh.wikisource.org/wiki/明史/卷213"},
+    {"id":"ms-193-gaoyi","title":"《明史》卷一百九十三·高仪传（识典古籍原典录文）","url":"https://www.shidianguji.com/book/LS0024/chapter/LS0024_826"},
+    {"id":"ms-145","title":"《明史》卷一百四十五·朱能传附朱希忠、朱希孝","url":"https://zh.wikisource.org/wiki/明史/卷145"},
+    {"id":"szsl-557-1566-04-gengchen","title":"《明世宗实录》卷五百五十七·嘉靖四十五年四月庚辰条（掌卫事左都督朱希孝）","url":"https://www.shidianguji.com/mid-page/7396052343382376458"},
+    {"id":"dpm-corvee-exemption","title":"《明代徭役优免类型概说》，故宫博物院刊载，第71页及注2引《明世宗实录》卷557","url":"https://img.dpm.org.cn/Uploads/File/2020/02/16/u5e4921428f4e4.pdf"}
+  ],
+  "people": [
+    {"id":"guo-pu-anyang","name":"郭朴","birth_year":null,"death_year":null,"summary":"字质夫，安阳人，嘉靖十四年进士。历礼部、吏部侍郎，两任吏部尚书；嘉靖四十五年与高拱同入内阁，兼武英殿大学士。此人名在部分录文中写作郭樸。","source_ids":["ms-213","ms-112-qiqing"]},
+    {"id":"hu-song-chuzhou","name":"胡松","birth_year":null,"death_year":1566,"summary":"字汝茂，滁州人，嘉靖八年进士。曾知东平州、巡抚江西，历兵部与吏部侍郎、南京兵部尚书；嘉靖四十五年任北京吏部尚书，七个月后病卒，谥恭肃。与字茂卿、绩溪籍的工部尚书胡松不是同一人。","source_ids":["ms-202","ms-112-qiqing"]},
+    {"id":"yang-bo-puzhou","name":"杨博","birth_year":null,"death_year":1574,"summary":"字惟约，蒲州人，嘉靖八年进士。曾巡抚甘肃、总督蓟辽及宣大山西军务，长期参与边防；嘉靖四十五年由兵部尚书改吏部尚书。万历元年致仕，次年卒，谥襄毅。","source_ids":["ms-214","ms-112-qiqing"]},
+    {"id":"gao-yao-hubu","name":"高燿","birth_year":null,"death_year":null,"summary":"《明史·七卿年表二》记其嘉靖三十九年四月由仓场回户部，嘉靖四十五年仍为北京户部尚书，三月加太子太保，隆庆元年正月闲住。保留原典姓名用字“燿”。","source_ids":["ms-112-qiqing"]},
+    {"id":"gao-gong-xinzheng","name":"高拱","birth_year":null,"death_year":null,"summary":"字肃卿，新郑人，嘉靖二十年进士。曾长期在裕王府侍讲，历国子监祭酒、礼部与吏部侍郎；嘉靖四十四年任礼部尚书，四十五年兼文渊阁大学士入阁。","source_ids":["ms-213","ms-112-qiqing"]},
+    {"id":"gao-yi-qiantang","name":"高仪","birth_year":null,"death_year":1572,"summary":"字子象，钱塘人，嘉靖二十年进士。历翰林、国子监及礼部、吏部侍郎；嘉靖四十五年代高拱为礼部尚书。隆庆六年入阁，参与顾命，同年卒，谥文端。","source_ids":["ms-193-gaoyi","ms-112-qiqing"]},
+    {"id":"zhao-bingran-jianzhou","name":"赵炳然","birth_year":null,"death_year":null,"summary":"字子晦，剑州人，嘉靖十四年进士。历御史、湖广巡抚、浙江巡抚，曾以兵部尚书协理戎政并总督宣大山西军务；嘉靖四十五年末回部，代杨博主持兵部。","source_ids":["ms-202","ms-112-qiqing"]},
+    {"id":"huang-guangsheng-xingbu","name":"黄光升","birth_year":null,"death_year":null,"summary":"《明史·七卿年表二》以“黄光昇”记名：嘉靖四十一年十月任北京刑部尚书，嘉靖四十五年在任，隆庆元年四月致仕。","source_ids":["ms-112-qiqing"]},
+    {"id":"lei-li-gongbu","name":"雷礼","birth_year":null,"death_year":null,"summary":"嘉靖三十七年以工部尚书添注督大工，四十年三月回部管事。嘉靖四十五年仍掌工部，三月晋少保、十月晋太傅柱国，隆庆二年九月致仕。","source_ids":["ms-112-qiqing"]},
+    {"id":"zhang-yongming-wucheng","name":"张永明","birth_year":null,"death_year":1567,"summary":"字钟诚，乌程人，嘉靖十四年进士。历芜湖知县、南京给事中、河南巡抚及刑部尚书，后改左都御史；嘉靖四十五年致仕，次年卒，谥庄僖。","source_ids":["ms-202","ms-112-qiqing"]},
+    {"id":"wang-ting-nanchong","name":"王廷","birth_year":null,"death_year":1589,"summary":"字子正，南充人，嘉靖十一年进士。历户部主事、御史、苏州知府、总理河道、漕运总督及南京礼部尚书；嘉靖四十五年召为左都御史。万历十七年卒，谥恭节。","source_ids":["ms-214","ms-112-qiqing"]},
+    {"id":"zhu-xixiao-jinyi","name":"朱希孝","birth_year":null,"death_year":null,"summary":"成国公朱希忠之弟。《明史》记其至都督、加太保，卒赠太傅、谥忠僖；嘉靖四十五年四月的《明世宗实录》明确称其为掌卫事左都督，负责锦衣卫事务。","source_ids":["ms-145","szsl-557-1566-04-gengchen","dpm-corvee-exemption"]}
+  ],
+  "tenures": [
+    {"id":"guo-pu-libu-1561-1563","person_id":"guo-pu-anyang","office_title":"吏部尚书","institution":"吏部","start_year":1561,"end_year":1563,"date_note":"北京吏部。嘉靖四十年十一月任；四十二年丁忧去职。年表未载去职月份，本条不补月份。与1565年复任分列。","status":"attested","source_ids":["ms-112-qiqing","ms-213"]},
+    {"id":"guo-pu-libu-1565-1566","person_id":"guo-pu-anyang","office_title":"吏部尚书","institution":"吏部","start_year":1565,"end_year":1566,"date_note":"北京吏部实掌任期。嘉靖四十四年四月召复原官；四十五年三月入阁，四月胡松接任。入阁后所带尚书衔不据此延长吏部实掌任期。月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing","ms-213"]},
+    {"id":"hu-song-libu-1566","person_id":"hu-song-chuzhou","office_title":"吏部尚书","institution":"吏部","start_year":1566,"end_year":1566,"date_note":"北京吏部。嘉靖四十五年四月自南京兵部尚书改任；十月卒。《明史》本传称主铨七月后病卒。月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing","ms-202"]},
+    {"id":"yang-bo-libu-1566-1569","person_id":"yang-bo-puzhou","office_title":"吏部尚书","institution":"吏部","start_year":1566,"end_year":1569,"date_note":"北京吏部。嘉靖四十五年十月由兵部尚书改任；隆庆三年十二月致仕。月份均为原典旧历。其后复出及再次掌吏部不与此段合并。","status":"attested","source_ids":["ms-112-qiqing","ms-214"]},
+    {"id":"gao-yao-hubu-1560-1567","person_id":"gao-yao-hubu","office_title":"户部尚书","institution":"户部","start_year":1560,"end_year":1567,"date_note":"北京户部回部掌事段。嘉靖三十九年四月由仓场回部；四十五年在任、三月加太子太保；隆庆元年正月闲住。与南京户部、总督仓场任职分辨；月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing"]},
+    {"id":"gao-gong-libu-1565-1566","person_id":"gao-gong-xinzheng","office_title":"礼部尚书","institution":"礼部","start_year":1565,"end_year":1566,"date_note":"北京礼部实掌任期。嘉靖四十四年七月任；四十五年三月入阁，四月高仪接任。入阁后的尚书兼衔不视为继续主持礼部。月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing","ms-213"]},
+    {"id":"gao-yi-libu-1566-1569","person_id":"gao-yi-qiantang","office_title":"礼部尚书","institution":"礼部","start_year":1566,"end_year":1569,"date_note":"北京礼部。嘉靖四十五年四月任；隆庆三年十一月病免，加太子少保。月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing","ms-193-gaoyi"]},
+    {"id":"yang-bo-bingbu-1559-1566","person_id":"yang-bo-puzhou","office_title":"兵部尚书","institution":"兵部","start_year":1559,"end_year":1566,"date_note":"北京兵部回部掌事段。年表记嘉靖三十七年三月任兵部尚书但视师宣大；三十八年十月回部，故本段从1559年回部计；四十五年十月改吏部。此前外任及兼衔不与回部掌事混计。月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing","ms-214"]},
+    {"id":"zhao-bingran-bingbu-1566-1567","person_id":"zhao-bingran-jianzhou","office_title":"兵部尚书","institution":"兵部","start_year":1566,"end_year":1567,"date_note":"北京兵部回部掌事段。嘉靖四十五年闰十月回部，代杨博；隆庆元年四月告病，郭乾接任。此前以兵部尚书协理戎政、总督宣大是另一差遣段。月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing","ms-202"]},
+    {"id":"huang-guangsheng-xingbu-1562-1567","person_id":"huang-guangsheng-xingbu","office_title":"刑部尚书","institution":"刑部","start_year":1562,"end_year":1567,"date_note":"北京刑部。嘉靖四十一年十月任，四十五年在任；隆庆元年四月致仕。原典记名黄光昇；月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing"]},
+    {"id":"lei-li-gongbu-1561-1568","person_id":"lei-li-gongbu","office_title":"工部尚书","institution":"工部","start_year":1561,"end_year":1568,"date_note":"北京工部回部掌事段。嘉靖四十年三月回部管事；四十五年在任；隆庆二年九月致仕。1558年开始的添注督大工另属前段，不以之充作回部起点。月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing"]},
+    {"id":"zhang-yongming-duchayuan-1562-1566","person_id":"zhang-yongming-wucheng","office_title":"左都御史","institution":"都察院","start_year":1562,"end_year":1566,"date_note":"北京都察院。嘉靖四十一年九月由刑部尚书改任；四十五年十月致仕。月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing","ms-202"]},
+    {"id":"wang-ting-duchayuan-1566-1570","person_id":"wang-ting-nanchong","office_title":"左都御史","institution":"都察院","start_year":1566,"end_year":1570,"date_note":"北京都察院。嘉靖四十五年十月自南京礼部尚书召任；隆庆四年正月致仕。月份均为原典旧历。","status":"attested","source_ids":["ms-112-qiqing","ms-214"]},
+    {"id":"zhu-xixiao-jinyi-attested-1566","person_id":"zhu-xixiao-jinyi","office_title":"掌卫事（左都督）","institution":"锦衣卫","start_year":1566,"end_year":1566,"date_note":"当年在任证据片段，非完整任期。《明世宗实录》卷557嘉靖四十五年四月庚辰条明确称“掌卫事左都督朱希孝”。1566仅代表本次取得直接证据的年度；不得据此宣称其于1566年始任或离任，也不得把左都督差遣擅换为锦衣卫指挥使。","status":"attested","source_ids":["szsl-557-1566-04-gengchen","dpm-corvee-exemption"]}
+  ]
+}

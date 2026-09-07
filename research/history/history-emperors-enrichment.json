@@ -1,0 +1,149 @@
+[
+  {
+    "id": "zhu-yuanzhang",
+    "birth_year": 1328,
+    "death_year": 1398,
+    "summary": "明太祖，年号洪武。1368年于应天称帝，建立大明；1398年卒，皇太孙朱允炆继位。",
+    "source_ids": [
+      "eras-dpm-hongwu"
+    ]
+  },
+  {
+    "id": "zhu-yunwen",
+    "birth_year": 1377,
+    "death_year": null,
+    "summary": "建文皇帝。1398年即位，次年改元；1402年南京陷落后下落不明，卒年不可据即位终年推定。",
+    "source_ids": [
+      "eras-dpm-jianwen"
+    ]
+  },
+  {
+    "id": "zhu-di",
+    "birth_year": 1360,
+    "death_year": 1424,
+    "summary": "明成祖，年号永乐。1402年即位，次年改元；原庙号太宗，嘉靖十七年改为成祖。",
+    "source_ids": [
+      "eras-dpm-yongle"
+    ]
+  },
+  {
+    "id": "zhu-gaozhi",
+    "birth_year": 1378,
+    "death_year": 1425,
+    "summary": "明仁宗，年号洪熙。1424年即位，1425年改元；同年去世，朱瞻基继位。",
+    "source_ids": [
+      "eras-dpm-hongxi"
+    ]
+  },
+  {
+    "id": "zhu-zhanji",
+    "birth_year": null,
+    "death_year": 1435,
+    "summary": "明宣宗，年号宣德。1425年即位，次年改元；故宫不同页面所列生年不一致，暂待核。",
+    "source_ids": [
+      "eras-dpm-xuande"
+    ]
+  },
+  {
+    "id": "zhu-qizhen",
+    "birth_year": 1427,
+    "death_year": 1464,
+    "summary": "明英宗，两次在位，年号正统、天顺。1449年土木之变后为太上皇，1457年复位并当年改元天顺。",
+    "source_ids": [
+      "eras-dpm-zhengtong",
+      "eras-dpm-tianshun"
+    ]
+  },
+  {
+    "id": "zhu-qiyu",
+    "birth_year": 1428,
+    "death_year": 1457,
+    "summary": "明代宗，年号景泰。1449年即位，次年改元；1457年英宗复位后失去帝位，同年卒。",
+    "source_ids": [
+      "eras-dpm-jingtai"
+    ]
+  },
+  {
+    "id": "zhu-jianshen",
+    "birth_year": 1447,
+    "death_year": 1487,
+    "summary": "明宪宗，年号成化。1464年即位，次年改元；1487年卒，皇太子朱祐樘继位。",
+    "source_ids": [
+      "eras-dpm-chenghua"
+    ]
+  },
+  {
+    "id": "zhu-youtang",
+    "birth_year": 1470,
+    "death_year": 1505,
+    "summary": "明孝宗，年号弘治。1487年即位，次年改元；1505年卒，皇太子朱厚照继位。",
+    "source_ids": [
+      "eras-dpm-hongzhi"
+    ]
+  },
+  {
+    "id": "zhu-houzhao",
+    "birth_year": 1491,
+    "death_year": 1521,
+    "summary": "明武宗，年号正德。1505年即位，次年改元；1521年卒，无子，由朱厚熜入承皇位。",
+    "source_ids": [
+      "eras-dpm-zhengde",
+      "eras-dpm-jiajing"
+    ]
+  },
+  {
+    "id": "zhu-houcong",
+    "birth_year": 1507,
+    "death_year": 1567,
+    "summary": "明世宗，年号嘉靖。1521年即位，次年改元；卒于嘉靖四十五年十二月，此农历月底已跨入公历1567年。",
+    "source_ids": [
+      "eras-dpm-jiajing"
+    ]
+  },
+  {
+    "id": "zhu-zaihou",
+    "birth_year": 1537,
+    "death_year": 1572,
+    "summary": "明穆宗，年号隆庆。嘉靖四十五年十二月即位，农历次年改元；1572年卒，朱翊钧继位。",
+    "source_ids": [
+      "eras-dpm-longqing"
+    ]
+  },
+  {
+    "id": "zhu-yijun",
+    "birth_year": 1563,
+    "death_year": 1620,
+    "summary": "明神宗，年号万历。1572年即位，次年改元；1620年卒，该年神宗、光宗、熹宗先后在位。",
+    "source_ids": [
+      "eras-dpm-wanli"
+    ]
+  },
+  {
+    "id": "zhu-changluo",
+    "birth_year": 1582,
+    "death_year": 1620,
+    "summary": "明光宗，年号泰昌。1620年八月即位、九月去世；其后当年八月起改计泰昌，翌年才用天启年号。",
+    "source_ids": [
+      "eras-dpm-taichang"
+    ]
+  },
+  {
+    "id": "zhu-youxiao",
+    "birth_year": 1605,
+    "death_year": 1627,
+    "summary": "明熹宗，年号天启。1620年即位，次年改元；1627年卒，无存世皇子，由信王朱由检继位。",
+    "source_ids": [
+      "eras-dpm-tianqi",
+      "eras-dpm-chongzhen"
+    ]
+  },
+  {
+    "id": "zhu-youjian",
+    "birth_year": 1611,
+    "death_year": 1644,
+    "summary": "崇祯皇帝，后追尊思宗等庙号。生于万历三十八年十二月，公历已入1611年；1627年即位，次年改元。",
+    "source_ids": [
+      "eras-dpm-chongzhen"
+    ]
+  }
+]

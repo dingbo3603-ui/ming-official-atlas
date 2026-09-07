@@ -1,0 +1,1065 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-05",
+  "scope": "两束史料任职与现有官制record_id的保守映射；不改原始人物、任期或仓库文件。",
+  "record_sources": [
+    {
+      "path": "ming-official-atlas/public/data/ming-officials.json",
+      "role": "原始553条官职record_id与机构、职名"
+    },
+    {
+      "path": "ming-official-atlas/public/data/ming-official-rank-audit.json",
+      "role": "官名、机构、品秩审定；匹配采用verified_*等修订字段"
+    },
+    {
+      "path": "ming-official-atlas/app/page.tsx",
+      "role": "核对现有地方视图复用通用职制record_id的实现"
+    },
+    {
+      "path": "ming-official-atlas/public/data/ming-local-supplements.json",
+      "role": "补录地方职制文件；本映射未使用补录ID"
+    }
+  ],
+  "history_bundles": [
+    "history-1566-people.json",
+    "history-ministers-1566.json"
+  ],
+  "mapping_rules": [
+    "office_ids是对应官职类型的明确关联，仍须同时保留原tenure的任期、日期注释、具体左右、实际掌事与署任性质。它不独立证明某年在任。",
+    "未核起止年不能按负无穷或正无穷补齐；职名匹配不能把早年履历变成1566现任。",
+    "殿阁衔跨阶段而未拆分时，主office_ids留空；snapshot_1566_office_ids仅用于1566已证切片，严禁直接复制为原整段任期的office_ids。",
+    "阁臣兼带部衔不等于掌部；明文兼掌或仍掌部事才可映射实际部务。都御史外任衔不等于在京掌院。",
+    "当前record_id仅代表通用地方官制，前端不同地点复用同一record_id。没有具体地域实体或查询地域条件前，地方县府、都司卫所、军镇与督抚任职主映射留空。",
+    "北京与南京分开；左右合并的官制行必须保留史料所载实际一侧，不能推导兼任左右两职。",
+    "朱希孝掌锦衣卫的差遣与左都督本官组合，不能擅换为锦衣卫指挥使或五军都督府掌府实任。",
+    "郭朴、高拱须按下列alias及重复任职组归一，不能仅以不同person_id生成两个人或重复履历。"
+  ],
+  "person_aliases": [
+    {
+      "canonical_person_id": "guo-pu",
+      "alias_person_ids": [
+        "guo-pu-anyang"
+      ],
+      "name": "郭朴",
+      "mapping_note": "两束均为字质夫、安阳籍的郭朴；不同id不是同名异人。"
+    },
+    {
+      "canonical_person_id": "gao-gong",
+      "alias_person_ids": [
+        "gao-gong-xinzheng"
+      ],
+      "name": "高拱",
+      "mapping_note": "两束均为字肃卿、新郑籍的高拱；不同id不是同名异人。"
+    }
+  ],
+  "duplicate_tenure_groups": [
+    {
+      "preferred_tenure_id": "guo-libupersonnel-first",
+      "equivalent_tenure_ids": [
+        "guo-pu-libu-1561-1563"
+      ],
+      "mapping_note": "同一1561–1563吏部实掌段，可合并来源并保留原id别名。"
+    },
+    {
+      "preferred_tenure_id": "guo-libupersonnel-return",
+      "equivalent_tenure_ids": [
+        "guo-pu-libu-1565-1566"
+      ],
+      "mapping_note": "同一1565起复至1566入阁交接段，可合并来源并保留原id别名。"
+    },
+    {
+      "preferred_tenure_id": "gao-libu-shangshu",
+      "equivalent_tenure_ids": [
+        "gao-gong-libu-1565-1566"
+      ],
+      "mapping_note": "同一1565–1566礼部实掌段，可合并来源并保留原id别名。"
+    }
+  ],
+  "source_data_findings": [
+    {
+      "id": "li-chunfang-cabinet-title-overextended",
+      "severity": "correction_needed",
+      "bundle": "history-1566-people.json",
+      "tenure_ids": [
+        "li-cabinet",
+        "li-chief"
+      ],
+      "finding": "li-cabinet写武英殿大学士并覆盖1565至1568首辅前段，但《宰辅年表》载隆庆二年正月已进建极殿，早于同年七月成为首辅。",
+      "recommended_action": "把泛称阁臣任期与具体殿阁衔分开，或按1568正月拆分；本文件只给1566武英切片。",
+      "source_urls": [
+        "https://zh.wikisource.org/zh-hans/明史/卷110"
+      ]
+    },
+    {
+      "id": "duplicate-person-and-tenure",
+      "severity": "deduplicate",
+      "bundle": "both",
+      "tenure_ids": [
+        "guo-libupersonnel-first",
+        "guo-pu-libu-1561-1563",
+        "guo-libupersonnel-return",
+        "guo-pu-libu-1565-1566",
+        "gao-libu-shangshu",
+        "gao-gong-libu-1565-1566"
+      ],
+      "finding": "郭朴、高拱的不同person_id及三组任职跨束重复。",
+      "recommended_action": "按person_aliases与duplicate_tenure_groups归一，但保留两束证据链。",
+      "source_urls": []
+    },
+    {
+      "id": "era-year-not-precise-gregorian-date",
+      "severity": "display_constraint",
+      "bundle": "both",
+      "tenure_ids": [
+        "hai-chunan",
+        "hai-xingguo",
+        "zhang-shidu"
+      ],
+      "finding": "部分数值年为年号对应年，旧历岁末可能落在下一公历年；原date_note已经提示。",
+      "recommended_action": "月份统一保留旧历标签；未换算的任命日不得组成伪精确公历日期。嘉靖四十五年末的穆宗即位尤其不可显示为1566年二月。",
+      "source_urls": [
+        "https://zh.wikisource.org/zh-hans/明史/卷110",
+        "https://zh.wikisource.org/wiki/明史/卷112"
+      ]
+    },
+    {
+      "id": "null-date-is-not-continuous-tenure",
+      "severity": "display_constraint",
+      "bundle": "both",
+      "tenure_ids": [],
+      "finding": "多条早年履历起止年为空；这些是未知边界，不是长期持续在任的证据。",
+      "recommended_action": "仅凭职名和空年份不得进入1566在任名单，需已证年份或明确叙述；保留生平履历展示。",
+      "source_urls": []
+    },
+    {
+      "id": "hai-xingguo-conflicting-office",
+      "severity": "source_disagreement",
+      "bundle": "history-1566-people.json",
+      "tenure_ids": [
+        "hai-xingguo"
+      ],
+      "finding": "本束采用地方机构记载的江西兴国知县，但所引《明史》写兴国州判官；bundle已保留异文，status=attested不应在UI被解释为各来源完全一致。",
+      "recommended_action": "显式显示异文与采用依据，在地方官席位确定前不映射。",
+      "source_urls": [
+        "https://zh.wikisource.org/zh-hans/明史/卷226",
+        "https://www.xingguo.gov.cn/xgzf/c114397/202206/0eef1200136449db99019f41997849a7.shtml"
+      ]
+    },
+    {
+      "id": "zhu-xixiao-attestation-not-term",
+      "severity": "display_constraint",
+      "bundle": "history-ministers-1566.json",
+      "tenure_ids": [
+        "zhu-xixiao-jinyi-attested-1566"
+      ],
+      "finding": "start_year=end_year=1566是取得一次在任明文的证据年度，并非同年始任和离任；职名也不能擅换为指挥使。",
+      "recommended_action": "按已证年份片段显示，未来新增明确的掌卫差遣模型后再映射。",
+      "source_urls": [
+        "https://www.shidianguji.com/mid-page/7396052343382376458"
+      ]
+    }
+  ],
+  "counts": {
+    "tenures": 73,
+    "mapped": 41,
+    "unmapped": 32,
+    "snapshot_only_1566": 2
+  },
+  "mappings": [
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "xu-bianxiu",
+      "person_id": "xu-jie",
+      "office_title": "翰林院编修",
+      "institution": "翰林院",
+      "status": "approximate",
+      "office_ids": [
+        "official-0266"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "翰林院编修；仅关联已证官名，初授后的丁忧中断及未知终点仍按原履历处理。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "xu-yanping",
+      "person_id": "xu-jie",
+      "office_title": "延平府推官",
+      "institution": "延平府",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "延平府是具体地点，official-0428仅为通用府推官职制；当前前端按地点复用record_id，不能将其作为任意府的在任身份，留空。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "xu-jijiu",
+      "person_id": "xu-jie",
+      "office_title": "国子监祭酒",
+      "institution": "国子监",
+      "status": "approximate",
+      "office_ids": [
+        "official-0291"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京国子监祭酒；任期年份仍为空，不据官名匹配推定1566在任。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "xu-libu-shangshu",
+      "person_id": "xu-jie",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "status": "attested",
+      "office_ids": [
+        "official-0104"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京礼部实际掌部段；1552入阁后短期仍掌部依原履历保留，不延伸为长期阁衔。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "xu-grandsecretary",
+      "person_id": "xu-jie",
+      "office_title": "内阁大学士（参预机务）",
+      "institution": "内阁",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "本段初入阁殿名在本传与年表间有文渊阁、东阁异文，后又晋武英殿；未分段前不把泛称大学士映射到某一殿阁，更不能误用詹事府大学士official-0015。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "xu-chief",
+      "person_id": "xu-jie",
+      "office_title": "内阁首辅（建极殿大学士等衔）",
+      "institution": "内阁",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "首辅是内阁班序与主持政务地位，没有独立record_id。1562至1564八月前不宜用后来建极殿官衔覆盖；全段留空，1566切片另列。",
+      "snapshot_1566_office_ids": [
+        "official-0046"
+      ],
+      "snapshot_1566_note": "只用于1566年度已证建极殿大学士切片；依据嘉靖四十三年八月进建极及后续年表。不得覆盖1562至1564升殿前。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "gao-bianxiu",
+      "person_id": "gao-gong",
+      "office_title": "翰林院编修",
+      "institution": "翰林院",
+      "status": "approximate",
+      "office_ids": [
+        "official-0266"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "翰林院编修；未知离任年不作开放至1566的连续任期。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "gao-jijiu",
+      "person_id": "gao-gong",
+      "office_title": "掌国子监祭酒事（太常卿衔）",
+      "institution": "国子监",
+      "status": "approximate",
+      "office_ids": [
+        "official-0291"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "原文明确掌国子监祭酒事，可匹配祭酒职事；太常卿为本官衔，不另映射太常寺卿。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "gao-libu-shilang",
+      "person_id": "gao-gong",
+      "office_title": "礼部左侍郎",
+      "institution": "礼部",
+      "status": "approximate",
+      "office_ids": [
+        "official-0105"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京礼部左侍郎落入源数据左右侍郎合并条；只表示左侍郎，不推定兼右侍郎。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "gao-libu-shangshu",
+      "person_id": "gao-gong",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "status": "attested",
+      "office_ids": [
+        "official-0104"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京礼部实际掌部段；与另一束gao-gong-libu-1565-1566重复，导入须合并。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "gao-cabinet-first",
+      "person_id": "gao-gong",
+      "office_title": "文渊阁大学士（入预机务）",
+      "institution": "内阁",
+      "status": "attested",
+      "office_ids": [
+        "official-0049"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "文渊阁大学士入阁段。《宰辅年表》1567所载晋少保、少傅等不另映射六部实职；1566仅旧历三月入阁后适用。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "gao-cabinet-return",
+      "person_id": "gao-gong",
+      "office_title": "内阁大学士兼掌吏部事",
+      "institution": "内阁、吏部",
+      "status": "attested",
+      "office_ids": [
+        "official-0051"
+      ],
+      "mapping_status": "partial",
+      "mapping_note": "只映射原文明载兼掌吏部事的实际兼任。内阁大学士在本段内又升建极、中极殿，未拆分前不映射单一阁衔。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "zhang-bianxiu",
+      "person_id": "zhang-juzheng",
+      "office_title": "翰林院编修",
+      "institution": "翰林院",
+      "status": "approximate",
+      "office_ids": [
+        "official-0266"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "翰林院编修；任期有中断且年月未定，不据空年份推定1566在任。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "zhang-siye",
+      "person_id": "zhang-juzheng",
+      "office_title": "右中允、领国子监司业事",
+      "institution": "右春坊、国子监",
+      "status": "approximate",
+      "office_ids": [
+        "official-0018",
+        "official-0292"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "右中允和领国子监司业事均有明文，分别匹配右春坊所在的左右中允合并条及国子监司业。不可把左右合并条解释成兼任左中允；年份仍未核。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "zhang-yude",
+      "person_id": "zhang-juzheng",
+      "office_title": "右春坊右谕德兼翰林院侍读",
+      "institution": "右春坊、翰林院",
+      "status": "approximate",
+      "office_ids": [
+        "official-0017",
+        "official-0258"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "右谕德与兼翰林侍读均有实录明文，分别关联左右谕德合并条及翰林院侍读；不混同侍读学士。1566四月升官前有任职证据，起年未定。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "zhang-shidu",
+      "person_id": "zhang-juzheng",
+      "office_title": "翰林院侍读学士、掌院事",
+      "institution": "翰林院",
+      "status": "attested",
+      "office_ids": [
+        "official-0256"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "按实录所记侍读学士匹配，不使用侍讲学士official-0257；掌院事保留为职事说明。1566旧历四月癸酉后适用。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "zhang-cabinet",
+      "person_id": "zhang-juzheng",
+      "office_title": "内阁大学士（初兼东阁）",
+      "institution": "内阁",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "1567初兼东阁、同年四月进武英殿、1570十二月进建极殿，原段尚未拆分。不得把这些前后衔同时映射为整段兼任，也不得由礼部尚书、吏部侍郎阁衔映射部务。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "zhang-chief",
+      "person_id": "zhang-juzheng",
+      "office_title": "内阁首辅",
+      "institution": "内阁",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "首辅没有独立官制record_id。本段1572六月开始，八月才进中极殿，不能用单一阁衔覆盖整段。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "li-xiuzhuan",
+      "person_id": "li-chunfang",
+      "office_title": "翰林院修撰",
+      "institution": "翰林院",
+      "status": "approximate",
+      "office_ids": [
+        "official-0265"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "源记录史馆修撰在翰林院，审定证据为修撰，匹配翰林院修撰。未知终点不延长在任。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "li-xueshi",
+      "person_id": "li-chunfang",
+      "office_title": "翰林院学士、入直西苑",
+      "institution": "翰林院",
+      "status": "approximate",
+      "office_ids": [
+        "official-0255"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "翰林院学士匹配本官；入直西苑为职事，不据此另造内阁或太常寺实任。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "li-libu",
+      "person_id": "li-chunfang",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "status": "attested",
+      "office_ids": [
+        "official-0104"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京礼部掌部段；1565四月入阁及董份接任后不再以兼衔延续部务。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "li-cabinet",
+      "person_id": "li-chunfang",
+      "office_title": "武英殿大学士（入预机务）",
+      "institution": "内阁",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "《宰辅年表》载1568正月已升建极殿，早于本条1568七月首辅阶段的界线；原标题武英殿不能覆盖整段。主映射留空，1566武英殿切片另列。",
+      "snapshot_1566_office_ids": [
+        "official-0048"
+      ],
+      "snapshot_1566_note": "只用于1566年度已证武英殿大学士切片；1568正月已晋建极，不能扩展到原条1568七月结点。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "li-chief",
+      "person_id": "li-chunfang",
+      "office_title": "内阁首辅",
+      "institution": "内阁",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "首辅不是独立官制record_id；1568任首辅时为建极殿，1570十二月又进中极殿。未拆分前不把不同殿阁衔并作全段实任。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "guo-libu-shilang",
+      "person_id": "guo-pu",
+      "office_title": "礼部右侍郎、入直西苑",
+      "institution": "礼部、翰林院",
+      "status": "approximate",
+      "office_ids": [
+        "official-0105"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "只映射北京礼部右侍郎；入直西苑不等于具有可确定的翰林院学士官名。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "guo-libu-shangshu",
+      "person_id": "guo-pu",
+      "office_title": "礼部尚书衔、詹事府侍直",
+      "institution": "詹事府",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "本条是礼部尚书衔、詹事府侍直，拟任南京礼部尚书而未赴。没有可确认的詹事府具体官名，不映射北京或南京礼部掌部记录。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "guo-libupersonnel-first",
+      "person_id": "guo-pu",
+      "office_title": "吏部尚书（掌部事）",
+      "institution": "吏部",
+      "status": "attested",
+      "office_ids": [
+        "official-0051"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京吏部实际掌部段；与guo-pu-libu-1561-1563同一任职。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "guo-libupersonnel-return",
+      "person_id": "guo-pu",
+      "office_title": "吏部尚书（起复掌部）",
+      "institution": "吏部",
+      "status": "attested",
+      "office_ids": [
+        "official-0051"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京吏部起复掌部段；与guo-pu-libu-1565-1566同一任职，1566入阁后兼衔不延长掌部。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "guo-cabinet",
+      "person_id": "guo-pu",
+      "office_title": "武英殿大学士（入预机务）",
+      "institution": "内阁",
+      "status": "attested",
+      "office_ids": [
+        "official-0048"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "武英殿大学士入阁段；1566旧历三月入阁后适用，不由吏部尚书兼衔推导继续掌部。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hu-yidu",
+      "person_id": "hu-zongxian",
+      "office_title": "益都知县",
+      "institution": "益都县",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "益都县与其他县必须区分；official-0434审定后仍仅为通用知县职制，没有益都县具体席位，留空。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hu-yuyao",
+      "person_id": "hu-zongxian",
+      "office_title": "余姚知县",
+      "institution": "余姚县",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "余姚县与其他县必须区分；official-0434审定后仍仅为通用知县职制，没有余姚县具体席位，留空。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hu-xuanda",
+      "person_id": "hu-zongxian",
+      "office_title": "监察御史、巡按宣大",
+      "institution": "都察院、宣府大同",
+      "status": "approximate",
+      "office_ids": [
+        "official-0248"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "监察御史的通用中央本官记录可匹配；巡按宣府大同仅是本段外差地域，不推定任某一特定十三道。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hu-zhejiang-inspect",
+      "person_id": "hu-zongxian",
+      "office_title": "监察御史、巡按浙江",
+      "institution": "都察院、浙江",
+      "status": "approximate",
+      "office_ids": [
+        "official-0248"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "监察御史本官可匹配；巡按浙江不等于浙江道监察御史，源记录也未拆分十三道。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hu-zhejiang-governor",
+      "person_id": "hu-zongxian",
+      "office_title": "浙江巡抚（右佥都御史）",
+      "institution": "浙江巡抚",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "浙江巡抚是有地域限制的外差；official-0535只是通用巡抚类型，official-0241是都察院本官类型。未建立浙江席位及兼衔语义前不映射为中央院务实任。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hu-supreme",
+      "person_id": "hu-zongxian",
+      "office_title": "总督浙直等处军务",
+      "institution": "浙直总督",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "浙直等处军务总督的具体辖区不能仅以通用总督official-0534替代；不由兵部尚书或都御史外任兼衔推定北京部院在署。1566已不在任。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hai-nanping",
+      "person_id": "hai-rui",
+      "office_title": "署南平教谕",
+      "institution": "南平县儒学",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "南平县儒学署教谕须保持地点与署任性质；现有补录教谕为通用县儒学类型，没有南平具体席位，不直接映射。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hai-chunan",
+      "person_id": "hai-rui",
+      "office_title": "淳安知县",
+      "institution": "淳安县",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "淳安县知县须与兴国、益都、余姚等县区分；现有official-0434只是审定后的通用知县职制，未建立地点键前留空。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hai-xingguo",
+      "person_id": "hai-rui",
+      "office_title": "兴国知县",
+      "institution": "江西兴国县",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "本束采用江西兴国县知县，同时保留《明史》兴国州判官异文，不能当成无争议县职。无具体兴国县席位；也不映射通用知州或州判官。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hai-hubu",
+      "person_id": "hai-rui",
+      "office_title": "户部云南清吏司主事",
+      "institution": "户部",
+      "status": "attested",
+      "office_ids": [
+        "official-0079"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "源记录department确为户部云南清吏司、title为主事，可准确匹配。1566上疏后系狱，不能显示为全年正常在署。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hai-yingtian",
+      "person_id": "hai-rui",
+      "office_title": "应天巡抚（右佥都御史）",
+      "institution": "应天巡抚",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "应天十府巡抚须保持辖区；通用巡抚official-0535不能单独证明应天席位，右佥都御史兼衔不映射北京都察院实际掌院。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "hai-nanjing",
+      "person_id": "hai-rui",
+      "office_title": "南京右都御史",
+      "institution": "南京都察院",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "本条明确南京右都御史；official-0239是当前北京中央都察院的左右都御史条，不能混用。源官职库未独列南京都察院该席位。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "qi-dengzhou",
+      "person_id": "qi-jiguang",
+      "office_title": "登州卫指挥佥事",
+      "institution": "登州卫",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "登州卫世袭指挥佥事须保留卫所地点与世职性质；official-0475仅通用卫指挥佥事职制，不是登州卫具体席位。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "qi-shandong",
+      "person_id": "qi-jiguang",
+      "office_title": "署都指挥佥事、备倭山东",
+      "institution": "山东都指挥使司",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "署山东都指挥佥事须保留山东都司及署任限定；official-0466为通用都司类型，无山东实体，留空。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "qi-zhejiang",
+      "person_id": "qi-jiguang",
+      "office_title": "浙江参将（宁绍台，后台金严）",
+      "institution": "浙江军镇",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "浙江参将的宁绍台、台金严辖区及免官复任不能省略；official-0538只是通用参将类型，留空。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "qi-fujian-deputy",
+      "person_id": "qi-jiguang",
+      "office_title": "福建副总兵",
+      "institution": "福建军镇",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "福建副总兵是具体军镇差遣；official-0537没有福建辖区，不直接当作全国唯一副总兵在任席位。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "qi-fujian",
+      "person_id": "qi-jiguang",
+      "office_title": "福建总兵官",
+      "institution": "福建军镇",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "1566福建总兵任职有证据，但official-0536仅为通用总兵官类型，无福建军镇实体；不误指蓟镇总兵，不填全国通用在任席位。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "qi-three-garrisons",
+      "person_id": "qi-jiguang",
+      "office_title": "总理蓟州、昌平、保定三镇练兵事",
+      "institution": "蓟州、昌平、保定",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "总理三镇练兵是专门差遣，不能仅因节制总兵就映射成总兵官、总督或五军都督府主官；现有职制无准确对应。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "tan-taizhou",
+      "person_id": "tan-lun",
+      "office_title": "台州知府",
+      "institution": "台州府",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "台州知府需保留具体府名；official-0425只代表通用知府类型，不能在所有府显示谭纶在任。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "tan-fujian",
+      "person_id": "tan-lun",
+      "office_title": "福建巡抚（右佥都御史，后加右副都御史）",
+      "institution": "福建巡抚",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "福建巡抚须保留地域和复行服中断；通用巡抚类型不作为具体福建席位。副、佥都御史兼衔不映射北京院务实任。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "tan-sichuan",
+      "person_id": "tan-lun",
+      "office_title": "四川巡抚",
+      "institution": "四川巡抚",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "四川巡抚为地域差遣，转授与到任日期未完全落实；通用巡抚official-0535没有四川席位，留空。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "tan-liangguang",
+      "person_id": "tan-lun",
+      "office_title": "总督两广军务兼巡抚广西（兵部右侍郎、右佥都御史）",
+      "institution": "两广总督、广西巡抚",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "两广总督兼广西巡抚为两项明确外差；通用总督、巡抚没有相应辖区实体。兵部右侍郎、右佥都御史为外任兼衔，不能映射北京部院日常掌事。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "tan-jiliao",
+      "person_id": "tan-lun",
+      "office_title": "总督蓟辽保定军务（兵部左侍郎、右佥都御史）",
+      "institution": "蓟辽保定总督",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "蓟辽保定总督须保留辖区及召授、抵任区别；不映射全国通用总督席位，也不由兵部左侍郎兼衔推定在北京部务。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "tan-bingbu",
+      "person_id": "tan-lun",
+      "office_title": "兵部尚书（掌部事）",
+      "institution": "兵部",
+      "status": "attested",
+      "office_ids": [
+        "official-0118"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "1572–1577北京兵部实际掌部段；不得据此外推1566为兵部尚书。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "yan-bianxiu",
+      "person_id": "yan-song",
+      "office_title": "翰林院编修",
+      "institution": "翰林院",
+      "status": "approximate",
+      "office_ids": [
+        "official-0266"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "翰林院编修；本段年份未定且有归病中断，不推定1566在任。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "yan-libu-shilang",
+      "person_id": "yan-song",
+      "office_title": "礼部右侍郎",
+      "institution": "礼部",
+      "status": "approximate",
+      "office_ids": [
+        "official-0105"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京礼部右侍郎；源记录为左右合并条，不能显示兼任左右两职。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "yan-nanjing",
+      "person_id": "yan-song",
+      "office_title": "南京礼部尚书，后改南京吏部尚书",
+      "institution": "南京礼部、南京吏部",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "本段包括先后任南京礼部、南京吏部尚书，既未分任期，源记录也未区分南京六部；不得映射北京六部尚书。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "yan-libu",
+      "person_id": "yan-song",
+      "office_title": "礼部尚书（掌部事）",
+      "institution": "礼部",
+      "status": "approximate",
+      "office_ids": [
+        "official-0104"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京礼部实际掌部段；1542入阁仍掌部，1543解部事为已证终点。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "yan-cabinet",
+      "person_id": "yan-song",
+      "office_title": "内阁大学士（历武英、谨身、华盖）",
+      "institution": "内阁",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "1542–1562先后历武英、谨身、华盖，不应将三个殿名并作全段同时兼任；首辅地位也非全段一致。未分段前留空。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "yanshifan-shangbao-shaoqing",
+      "person_id": "yan-shifan",
+      "office_title": "尚宝司少卿",
+      "institution": "尚宝司",
+      "status": "approximate",
+      "office_ids": [
+        "official-0423"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "尚宝司少卿准确匹配；同名官署有原始表格错属的其他行，本条选官方源中明确属尚宝司的official-0423。"
+    },
+    {
+      "bundle": "history-1566-people.json",
+      "tenure_id": "yanshifan-shangbao-manager",
+      "person_id": "yan-shifan",
+      "office_title": "掌尚宝司事（工部左侍郎等衔）",
+      "institution": "尚宝司",
+      "status": "approximate",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "有掌尚宝司事明文，但本条未确定同段任尚宝司卿或少卿本官；工部左侍郎、太常卿属所带衔，不能误映射北京工部或太常寺实任。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "guo-pu-libu-1561-1563",
+      "person_id": "guo-pu-anyang",
+      "office_title": "吏部尚书",
+      "institution": "吏部",
+      "status": "attested",
+      "office_ids": [
+        "official-0051"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京吏部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "guo-pu-libu-1565-1566",
+      "person_id": "guo-pu-anyang",
+      "office_title": "吏部尚书",
+      "institution": "吏部",
+      "status": "attested",
+      "office_ids": [
+        "official-0051"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京吏部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "hu-song-libu-1566",
+      "person_id": "hu-song-chuzhou",
+      "office_title": "吏部尚书",
+      "institution": "吏部",
+      "status": "attested",
+      "office_ids": [
+        "official-0051"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京吏部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "yang-bo-libu-1566-1569",
+      "person_id": "yang-bo-puzhou",
+      "office_title": "吏部尚书",
+      "institution": "吏部",
+      "status": "attested",
+      "office_ids": [
+        "official-0051"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京吏部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "gao-yao-hubu-1560-1567",
+      "person_id": "gao-yao-hubu",
+      "office_title": "户部尚书",
+      "institution": "户部",
+      "status": "attested",
+      "office_ids": [
+        "official-0062"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京户部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "gao-gong-libu-1565-1566",
+      "person_id": "gao-gong-xinzheng",
+      "office_title": "礼部尚书",
+      "institution": "礼部",
+      "status": "attested",
+      "office_ids": [
+        "official-0104"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京礼部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "gao-yi-libu-1566-1569",
+      "person_id": "gao-yi-qiantang",
+      "office_title": "礼部尚书",
+      "institution": "礼部",
+      "status": "attested",
+      "office_ids": [
+        "official-0104"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京礼部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "yang-bo-bingbu-1559-1566",
+      "person_id": "yang-bo-puzhou",
+      "office_title": "兵部尚书",
+      "institution": "兵部",
+      "status": "attested",
+      "office_ids": [
+        "official-0118"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京兵部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "zhao-bingran-bingbu-1566-1567",
+      "person_id": "zhao-bingran-jianzhou",
+      "office_title": "兵部尚书",
+      "institution": "兵部",
+      "status": "attested",
+      "office_ids": [
+        "official-0118"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京兵部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "huang-guangsheng-xingbu-1562-1567",
+      "person_id": "huang-guangsheng-xingbu",
+      "office_title": "刑部尚书",
+      "institution": "刑部",
+      "status": "attested",
+      "office_ids": [
+        "official-0135"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京刑部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "lei-li-gongbu-1561-1568",
+      "person_id": "lei-li-gongbu",
+      "office_title": "工部尚书",
+      "institution": "工部",
+      "status": "attested",
+      "office_ids": [
+        "official-0165"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京工部尚书实际掌部段；按原date_note区分年内交接、回部及入阁，不延长到外任或阁臣兼衔阶段。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "zhang-yongming-duchayuan-1562-1566",
+      "person_id": "zhang-yongming-wucheng",
+      "office_title": "左都御史",
+      "institution": "都察院",
+      "status": "attested",
+      "office_ids": [
+        "official-0239"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京左都御史实际掌院段；源记录合并左、右都御史，只表示左都御史，不等于兼右都御史，也不包含南京院务。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "wang-ting-duchayuan-1566-1570",
+      "person_id": "wang-ting-nanchong",
+      "office_title": "左都御史",
+      "institution": "都察院",
+      "status": "attested",
+      "office_ids": [
+        "official-0239"
+      ],
+      "mapping_status": "mapped",
+      "mapping_note": "北京左都御史实际掌院段；源记录合并左、右都御史，只表示左都御史，不等于兼右都御史，也不包含南京院务。"
+    },
+    {
+      "bundle": "history-ministers-1566.json",
+      "tenure_id": "zhu-xixiao-jinyi-attested-1566",
+      "person_id": "zhu-xixiao-jinyi",
+      "office_title": "掌卫事（左都督）",
+      "institution": "锦衣卫",
+      "status": "attested",
+      "office_ids": [],
+      "mapping_status": "unmapped",
+      "mapping_note": "实录称掌卫事左都督，不能擅换为锦衣卫指挥使official-0514；亦无其掌五军某府的证据，不映射五军都督府左右都督official-0486。1566只为一次已证在任片段，非始任、离任同年。"
+    }
+  ]
+}

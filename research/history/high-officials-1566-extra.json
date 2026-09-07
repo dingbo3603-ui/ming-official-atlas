@@ -1,0 +1,486 @@
+{
+  "sources": [
+    {
+      "id": "extra-szsl555",
+      "title": "《明世宗实录》卷五百五十五，嘉靖四十五年二月",
+      "url": "https://m.dushu.com/guoxue/102090/1081364.html"
+    },
+    {
+      "id": "extra-szsl557",
+      "title": "《明世宗实录》卷五百五十七，嘉靖四十五年四月",
+      "url": "https://m.dushu.com/guoxue/102090/1081366.html"
+    },
+    {
+      "id": "extra-szsl558",
+      "title": "《明世宗实录》卷五百五十八，嘉靖四十五年五月",
+      "url": "https://m.dushu.com/guoxue/102090/1081367.html"
+    },
+    {
+      "id": "extra-szsl563",
+      "title": "《明世宗实录》卷五百六十三，嘉靖四十五年十月",
+      "url": "https://www.shidianguji.com/book/LS0026/chapter/1k6toleyeuyh5"
+    },
+    {
+      "id": "extra-szsl565",
+      "title": "《明世宗实录》卷五百六十五，嘉靖四十五年十一月",
+      "url": "https://m.dushu.com/guoxue/102090/1081374.html"
+    },
+    {
+      "id": "extra-szsl565-nlc",
+      "title": "《明世宗肃皇帝实录》卷五百六十五，另本录文（核署郎中字样）",
+      "url": "https://www.shidianguji.com/book/NGJ892411999010237104591/chapter/1lpq7820lb4f6"
+    },
+    {
+      "id": "extra-ms-lisui",
+      "title": "《明史》李遂传（核临淮侯李庭竹姓名）",
+      "url": "https://www.shidianguji.com/book/LS0024/chapter/LS0024_940"
+    }
+  ],
+  "people": [
+    {
+      "id": "mao-ruxian",
+      "name": "毛汝贤",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年二月，实录载其由吏部考功司郎中调刑部。",
+      "source_ids": [
+        "extra-szsl555"
+      ]
+    },
+    {
+      "id": "shi-duchen",
+      "name": "施笃臣",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年二月，由工部郎中升湖广副使。",
+      "source_ids": [
+        "extra-szsl555"
+      ]
+    },
+    {
+      "id": "luo-liang",
+      "name": "罗良",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年任吏部文选司郎中，十月升太常寺少卿、提督四夷馆。",
+      "source_ids": [
+        "extra-szsl558",
+        "extra-szsl563"
+      ]
+    },
+    {
+      "id": "zeng-xingwu",
+      "name": "曾省吾",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年实录以工部郎中记其工程叙功，后升陕西佥事、提调学校。",
+      "source_ids": [
+        "extra-szsl555",
+        "extra-szsl565"
+      ]
+    },
+    {
+      "id": "jiang-tingyao",
+      "name": "姜廷瑶",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年任兵部职方司署郎中，十月受劾留用，十一月升湖广按察司副使。",
+      "source_ids": [
+        "extra-szsl563",
+        "extra-szsl565-nlc"
+      ]
+    },
+    {
+      "id": "li-chenghua",
+      "name": "李承华",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年十月，由大理寺左寺丞升大理寺右少卿。",
+      "source_ids": [
+        "extra-szsl563"
+      ]
+    },
+    {
+      "id": "pei-tianyou",
+      "name": "裴天祐",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "嘉靖四十五年十月，由大理寺右少卿升光禄寺卿。",
+      "source_ids": [
+        "extra-szsl563"
+      ]
+    },
+    {
+      "id": "li-tingzhu",
+      "name": "李庭竹",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "临淮侯。嘉靖四十五年二月奉命掌左军都督府事。",
+      "source_ids": [
+        "extra-szsl555",
+        "extra-ms-lisui"
+      ]
+    },
+    {
+      "id": "zhang-rong-yingguogong",
+      "name": "张溶",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "英国公。嘉靖四十五年四月实录记其掌前军都督府事，因考察议令闲住。",
+      "source_ids": [
+        "extra-szsl557"
+      ]
+    },
+    {
+      "id": "chen-hui-sui-an",
+      "name": "陈鏸",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "遂安伯。嘉靖四十五年四月实录记其掌右军都督府事，因年老奉命致仕。",
+      "source_ids": [
+        "extra-szsl557"
+      ]
+    },
+    {
+      "id": "fang-bing",
+      "name": "方炳",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "南和伯。嘉靖四十五年四月由后军都督府佥书改掌右军都督府事。",
+      "source_ids": [
+        "extra-szsl557"
+      ]
+    },
+    {
+      "id": "sun-shizhong",
+      "name": "孙世忠",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "怀宁侯。嘉靖四十五年二月奉命佥书右军都督府事。",
+      "source_ids": [
+        "extra-szsl555"
+      ]
+    },
+    {
+      "id": "mao-deng",
+      "name": "毛登",
+      "birth_year": null,
+      "death_year": null,
+      "summary": "伏羌伯。嘉靖四十五年五月由五军营游击将军奉命佥书左军都督府事。",
+      "source_ids": [
+        "extra-szsl558"
+      ]
+    }
+  ],
+  "tenures": [
+    {
+      "id": "high-extra-1566-mao-kaogong",
+      "person_id": "mao-ruxian",
+      "office_title": "吏部考功司郎中",
+      "institution": "吏部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月卷载调吏部考功司郎中毛汝贤于刑部；本条仅确认迁出前考功司职事。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl555"
+      ],
+      "office_ids": [
+        "official-0057"
+      ],
+      "mapping_note": "考功清吏司明确，匹配0057。"
+    },
+    {
+      "id": "high-extra-1566-mao-xingbu",
+      "person_id": "mao-ruxian",
+      "office_title": "刑部郎中",
+      "institution": "刑部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月由吏部考功司郎中调刑部；原文未明刑部所隶清吏司，不分配到任一省司。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl555"
+      ],
+      "office_ids": [],
+      "mapping_note": "刑部十三司郎中行各有具体部门；司名未明，不能任取一行。"
+    },
+    {
+      "id": "high-extra-1566-shi-gongbu",
+      "person_id": "shi-duchen",
+      "office_title": "工部郎中",
+      "institution": "工部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月甲申由工部郎中升湖广副使；工部所隶清吏司未见明文，任职仅取迁出前片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl555"
+      ],
+      "office_ids": [],
+      "mapping_note": "原典只记工部郎中，具体司未明，不任意映射工部四司之一。"
+    },
+    {
+      "id": "high-extra-1566-luo-wenxuan",
+      "person_id": "luo-liang",
+      "office_title": "吏部文选司郎中",
+      "institution": "吏部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "五月己亥以吏部郎中考满礼仪事见于实录；十月辛酉升迁条明确原职为吏部文选司郎中。仅确认本年片段，未推全程连续。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl558",
+        "extra-szsl563"
+      ],
+      "office_ids": [
+        "official-0054"
+      ],
+      "mapping_note": "十月实录明确文选司，可以匹配0054；不能把同段追叙的张濂、陆光祖、胡汝桂一并当作1566新在任证据。"
+    },
+    {
+      "id": "high-extra-1566-luo-siyiguan",
+      "person_id": "luo-liang",
+      "office_title": "太常寺少卿（提督四夷馆）",
+      "institution": "四夷馆",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "十月辛酉由吏部文选司郎中升授并提督四夷馆，十月癸未受劾后留用。保留专门差遣，不按普通太常寺祭祀事务挂人。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl563"
+      ],
+      "office_ids": [],
+      "mapping_note": "提督四夷馆为明确差遣，不挂普通太常寺少卿；现表未见对应差遣行。"
+    },
+    {
+      "id": "high-extra-1566-zeng-gongbu",
+      "person_id": "zeng-xingwu",
+      "office_title": "工部郎中",
+      "institution": "工部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月甲子工程叙功条见郎中曾省吾；十一月丁丑升迁条明确工部郎中，升陕西佥事提调学校。具体清吏司未明，保留年内片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl555",
+        "extra-szsl565"
+      ],
+      "office_ids": [],
+      "mapping_note": "具体工部清吏司未核，不自动分配给四司任一郎中。"
+    },
+    {
+      "id": "high-extra-1566-jiang-zhifang",
+      "person_id": "jiang-tingyao",
+      "office_title": "兵部职方司署郎中",
+      "institution": "兵部",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "十月癸未以职方司郎中受劾而留用；十一月甲子升湖广按察司副使，另本该条明确为署郎中，故保留署任性质。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl563",
+        "extra-szsl565",
+        "extra-szsl565-nlc"
+      ],
+      "office_ids": [
+        "official-0122"
+      ],
+      "mapping_note": "职方司明确可挂0122，但职名须始终显示署任，不改为实授。"
+    },
+    {
+      "id": "high-extra-1566-li-dali-left-cheng",
+      "person_id": "li-chenghua",
+      "office_title": "大理寺左寺丞",
+      "institution": "大理寺",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "十月卷载由大理寺左寺丞升右少卿；仅据迁转条确认此前职事，不推完整任期。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl563"
+      ],
+      "office_ids": [
+        "official-0196-left"
+      ],
+      "mapping_note": "明文左寺丞，采用0196-left。"
+    },
+    {
+      "id": "high-extra-1566-li-dali-right-deputy",
+      "person_id": "li-chenghua",
+      "office_title": "大理寺右少卿",
+      "institution": "大理寺",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "十月卷载由大理寺左寺丞升大理寺右少卿；仅确认该次任命，不推到任日。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl563"
+      ],
+      "office_ids": [
+        "official-0195-right"
+      ],
+      "mapping_note": "明文右少卿，采用0195-right。"
+    },
+    {
+      "id": "high-extra-1566-pei-dali-right-deputy",
+      "person_id": "pei-tianyou",
+      "office_title": "大理寺右少卿",
+      "institution": "大理寺",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "十月丁丑以大理寺右少卿升光禄寺卿；本条仅确认迁出前片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl563"
+      ],
+      "office_ids": [
+        "official-0195-right"
+      ],
+      "mapping_note": "明文右少卿；与李承华后续升授并存是本年更替，不是同时占同一员缺。"
+    },
+    {
+      "id": "high-extra-1566-pei-guanglu-chief",
+      "person_id": "pei-tianyou",
+      "office_title": "光禄寺卿",
+      "institution": "光禄寺",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "十月丁丑由大理寺右少卿升授；未据此推定完整任期或到任日。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl563"
+      ],
+      "office_ids": [
+        "official-0213"
+      ],
+      "mapping_note": "官署职名吻合。"
+    },
+    {
+      "id": "high-extra-1566-li-leftfu-chief",
+      "person_id": "li-tingzhu",
+      "office_title": "掌左军都督府事（临淮侯）",
+      "institution": "左军都督府",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月庚辰由镇守湖广总兵官临淮侯奉命掌左军都督府事。实录录文作李廷竹，姓名据《明史》李遂传校为李庭竹。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl555",
+        "extra-ms-lisui"
+      ],
+      "office_ids": [],
+      "mapping_note": "左军都督府是府别；掌府是职事，不能据此改写为左都督或右都督本官。"
+    },
+    {
+      "id": "high-extra-1566-zhang-frontfu-chief",
+      "person_id": "zhang-rong-yingguogong",
+      "office_title": "掌前军都督府事（英国公）",
+      "institution": "前军都督府",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "四月辛巳考察条明记掌前府事英国公张溶，议令闲住获准；仅记录此前掌府片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl557"
+      ],
+      "office_ids": [],
+      "mapping_note": "明文掌前府，但未指明左/右都督本官；现有都督本官行不能代替掌府差遣。"
+    },
+    {
+      "id": "high-extra-1566-chen-rightfu-chief",
+      "person_id": "chen-hui-sui-an",
+      "office_title": "掌右军都督府事（遂安伯）",
+      "institution": "右军都督府",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "四月辛巳明记掌右府事遂安伯陈鏸，因衰老议令致仕获准；仅取迁出前片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl557"
+      ],
+      "office_ids": [],
+      "mapping_note": "右军府不是右都督职名，不能按右字匹配0486-right。"
+    },
+    {
+      "id": "high-extra-1566-fang-rightfu-chief",
+      "person_id": "fang-bing",
+      "office_title": "掌右军都督府事（南和伯）",
+      "institution": "右军都督府",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "四月乙酉由后军都督府佥书命于右府掌事。仅取本年四月已证片段，不推为全年；十月卷另见其南京任职，不纳入此北京片段。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl557",
+        "extra-szsl563"
+      ],
+      "office_ids": [],
+      "mapping_note": "掌右军府差遣与都督本官分开，不能映射为右都督。"
+    },
+    {
+      "id": "high-extra-1566-sun-rightfu-assistant",
+      "person_id": "sun-shizhong",
+      "office_title": "佥书右军都督府事（怀宁侯）",
+      "institution": "右军都督府",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "二月乙酉奉命佥书右军都督府事，仅确认该次任命。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl555"
+      ],
+      "office_ids": [],
+      "mapping_note": "佥书是所充职事，不等于都督佥事本官，也不能按右府匹配右都督。"
+    },
+    {
+      "id": "high-extra-1566-mao-leftfu-assistant",
+      "person_id": "mao-deng",
+      "office_title": "佥书左军都督府事（伏羌伯）",
+      "institution": "左军都督府",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1566,
+      "date_note": "五月戊戌由五军营游击将军奉命佥书左军都督府事。",
+      "status": "attested",
+      "record_kind": "attestation",
+      "source_ids": [
+        "extra-szsl558"
+      ],
+      "office_ids": [],
+      "mapping_note": "佥书不等于都督佥事；不据左府推左都督。"
+    }
+  ]
+}

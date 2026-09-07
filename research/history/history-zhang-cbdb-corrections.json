@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "scope": "仅覆盖现有张居正4条CBDB记录；按id浅合并record_patches，不新增人物、记录或任期。",
+    "source_file": "E:\\360MoveData\\Users\\Administrator\\Desktop\\小项目\\ming-official-atlas\\work\\history-import.json",
+    "checked_date": "2026-09-06",
+    "merge_instruction": "先按id合并sources，再对同id现有tenures执行Object.assign。source_ids/source_locators/office_ids/institution_ids均为完整替换数组。保留原cbdb_postings、cbdb_office_id等原始字段；ID中的旧年份是稳定标识，不用改名。",
+    "years": "attested_year为事件/见任的西元年度索引；native_date保留原纪年；nominal_regnal_year_ce只说明年号年度常规对应，不供年度筛选。起讫年月未从点证据外推。",
+    "ui_instruction": "部衔可在完整office_title中显示；不得用titular_office_ids充任机构掌部槽。year_office_ids仅用于指定年度，不构成连续任期。"
+  },
+  "record_patches": [
+    {
+      "id": "cbdb-point-71371-1562-5df4125f43f7",
+      "person_id": "zhang-juzheng",
+      "office_title": "右春坊右谕德兼翰林院侍读（充裕府讲官）",
+      "institution": "右春坊、翰林院（裕府讲官）",
+      "institution_ids": [
+        "hanlin"
+      ],
+      "office_ids": [
+        "official-0017-right",
+        "official-0258"
+      ],
+      "attested_year": 1564,
+      "record_kind": "attestation",
+      "native_date": "嘉靖四十三年七月己未",
+      "nominal_regnal_year_ce": 1564,
+      "date_note": "《世宗实录》卷536系嘉靖四十三年七月，己未条以现任右谕德兼侍读的张居正充裕府讲官，核作1564年见任。首次授右谕德之年未由此条证明，任期首尾仍为空。",
+      "mapping_note": "CBDB原导出1562（嘉靖四十一年）与所引实录卷536的嘉靖四十三年不合；按原典将见任年改1564。官职严格对应右春坊右谕德及翰林院侍读；不得推成1564年首次授官或连续任期。",
+      "correction_reason": "所引实录卷次与CBDB系年冲突；现任官衔充讲官的见任性质与首次升授不同。",
+      "start_year": null,
+      "end_year": null,
+      "status": "attested",
+      "review_status": "primary_text_checked",
+      "source_ids": [
+        "cbdb-release-20260829",
+        "cbdb-text-9602",
+        "cbdb-rank-official-0017",
+        "zhcbdb-szsl536",
+        "zhcbdb-calendar"
+      ],
+      "source_locators": [
+        {
+          "source_id": "zhcbdb-szsl536",
+          "notes": "卷首嘉靖四十三年七月辛丑朔；己未条"
+        },
+        {
+          "source_id": "zhcbdb-calendar",
+          "notes": "中历转西历：明世宗嘉靖43年7月己未；明穆宗隆庆1年1月壬午、2月乙未；隆庆4年12月17日及戊午"
+        }
+      ],
+      "cbdb_original_attested_year": 1562,
+      "original_cbdb_record_preserved": true
+    },
+    {
+      "id": "cbdb-point-70671-1567-6ac208532cba",
+      "person_id": "zhang-juzheng",
+      "office_title": "吏部左侍郎兼东阁大学士（入内阁办事）",
+      "institution": "内阁",
+      "institution_ids": [
+        "cabinet"
+      ],
+      "office_ids": [
+        "official-0050"
+      ],
+      "titular_office_ids": [
+        "official-0052-left"
+      ],
+      "attested_year": 1567,
+      "record_kind": "event",
+      "native_date": "隆庆元年二月乙未",
+      "nominal_regnal_year_ce": 1567,
+      "date_note": "隆庆元年二月乙未升吏部左侍郎兼东阁大学士，原典明确“内阁办事”。这里只登记1567年入阁升授事件，未由单条资料补全任期。",
+      "mapping_note": "办事机构为内阁，映射东阁大学士official-0050；吏部左侍郎保留在完整官衔与titular_office_ids中，不进入吏部左侍郎掌部在任槽。",
+      "correction_reason": "原典补足东阁大学士兼衔及内阁办事；纠正按吏部官名错误挂入吏部的映射。",
+      "start_year": null,
+      "end_year": null,
+      "status": "attested",
+      "review_status": "primary_text_checked",
+      "source_ids": [
+        "cbdb-release-20260829",
+        "cbdb-text-9602",
+        "cbdb-rank-official-0052",
+        "zhcbdb-mzsl4",
+        "zhcbdb-ms213",
+        "zhcbdb-calendar"
+      ],
+      "source_locators": [
+        {
+          "source_id": "zhcbdb-mzsl4",
+          "notes": "二月乙未，登极加恩侍从藩邸诸臣条"
+        },
+        {
+          "source_id": "zhcbdb-ms213",
+          "notes": "张居正传前段仕履"
+        },
+        {
+          "source_id": "zhcbdb-calendar",
+          "notes": "中历转西历：明世宗嘉靖43年7月己未；明穆宗隆庆1年1月壬午、2月乙未；隆庆4年12月17日及戊午"
+        }
+      ],
+      "cbdb_original_attested_year": 1567,
+      "original_cbdb_record_preserved": true
+    },
+    {
+      "id": "cbdb-point-70633-1567-4f6e84a92f7d",
+      "person_id": "zhang-juzheng",
+      "office_title": "礼部右侍郎兼翰林院学士（入阁前升授）",
+      "institution": "阁前升授（礼部右侍郎兼翰林院学士）",
+      "institution_ids": [],
+      "office_ids": [],
+      "titular_office_ids": [
+        "official-0105-right",
+        "official-0255"
+      ],
+      "attested_year": 1567,
+      "record_kind": "event",
+      "native_date": "隆庆元年正月壬午",
+      "nominal_regnal_year_ce": 1567,
+      "date_note": "隆庆元年正月壬午升礼部右侍郎兼翰林院学士，发生在同年二月入阁之前。同日殷士儋获授侍读学士掌院事，不得继续将掌翰林院事加给张居正。",
+      "mapping_note": "保留入阁前正式升授事件及兼衔；此条不证明实际掌礼部或继续掌翰林院事，机构在任槽不绑定office_ids。不得把这条提前归入内阁，也不得据兼学士推为掌院。",
+      "correction_reason": "补完整兼衔并区分阁前升授与入阁；对未证实的掌部、掌院职事停止自动映射。",
+      "start_year": null,
+      "end_year": null,
+      "status": "attested",
+      "review_status": "primary_text_checked",
+      "source_ids": [
+        "cbdb-release-20260829",
+        "cbdb-text-9602",
+        "cbdb-rank-official-0105",
+        "zhcbdb-mzsl3",
+        "zhcbdb-mzsl4",
+        "zhcbdb-ms213",
+        "zhcbdb-calendar"
+      ],
+      "source_locators": [
+        {
+          "source_id": "zhcbdb-mzsl3",
+          "notes": "正月壬午，升张居正及殷士儋条"
+        },
+        {
+          "source_id": "zhcbdb-mzsl4",
+          "notes": "二月乙未，登极加恩侍从藩邸诸臣条"
+        },
+        {
+          "source_id": "zhcbdb-ms213",
+          "notes": "张居正传前段仕履"
+        },
+        {
+          "source_id": "zhcbdb-calendar",
+          "notes": "中历转西历：明世宗嘉靖43年7月己未；明穆宗隆庆1年1月壬午、2月乙未；隆庆4年12月17日及戊午"
+        }
+      ],
+      "cbdb_original_attested_year": 1567,
+      "original_cbdb_record_preserved": true
+    },
+    {
+      "id": "cbdb-point-70658-1570-179f0543a239",
+      "person_id": "zhang-juzheng",
+      "office_title": "加吏部尚书、太子太傅；旋进建极殿大学士（内阁辅臣兼衔）",
+      "institution": "内阁",
+      "institution_ids": [
+        "cabinet"
+      ],
+      "office_ids": [],
+      "year_office_ids": {
+        "1571": [
+          "official-0048",
+          "official-0046"
+        ]
+      },
+      "titular_office_ids": [
+        "official-0051"
+      ],
+      "attested_year": 1571,
+      "record_kind": "event",
+      "native_date": "隆庆四年十二月庚戌；同月戊午",
+      "nominal_regnal_year_ce": 1570,
+      "date_note": "隆庆四年十二月庚戌，时任武英殿大学士的张居正加吏部尚书、太子太傅；同月戊午进少傅、建极殿大学士，尚书如故。中研院历表换算分别为西元1571年1月12日、20日（儒略历），故年度事件索引为1571；原纪年仍为隆庆四年。两殿衔为年内先后，不能解释为同时兼任。",
+      "mapping_note": "吏部尚书为内阁辅臣兼衔，不映射吏部掌部槽。原典同卷壬子明称掌吏部事大学士高拱。year_office_ids仅按1571年内先武英、后建极的明确事件对应，不能外推此前、此后全部任期。",
+      "correction_reason": "纠正部衔误挂吏部及按年号年份直接换算西元导致的跨年偏差；单条保留同月两次升衔，不新增重复内阁或首辅任期。",
+      "start_year": null,
+      "end_year": null,
+      "status": "attested",
+      "review_status": "primary_text_checked",
+      "source_ids": [
+        "cbdb-release-20260829",
+        "cbdb-text-9602",
+        "cbdb-rank-official-0051",
+        "zhcbdb-mzsl52",
+        "zhcbdb-ms213",
+        "zhcbdb-calendar"
+      ],
+      "source_locators": [
+        {
+          "source_id": "zhcbdb-mzsl52",
+          "notes": "十二月甲午朔；庚戌加吏部尚书条，戊午内阁辅臣加恩条；壬子条称掌吏部事大学士高拱"
+        },
+        {
+          "source_id": "zhcbdb-ms213",
+          "notes": "张居正传前段仕履"
+        },
+        {
+          "source_id": "zhcbdb-calendar",
+          "notes": "中历转西历：明世宗嘉靖43年7月己未；明穆宗隆庆1年1月壬午、2月乙未；隆庆4年12月17日及戊午"
+        }
+      ],
+      "cbdb_original_attested_year": 1570,
+      "original_cbdb_record_preserved": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "cbdb-release-20260829",
+      "title": "中国历代人物传记资料库（CBDB），2026-08-29 SQLite发布版",
+      "url": "https://huggingface.co/datasets/cbdb/cbdb-sqlite/resolve/main/history/cbdb_202608/cbdb_20260829.zip",
+      "license": "CC BY-NC-SA 4.0",
+      "sha256": "f620ca1a4c794411b81d5039adf5756df129fb9aa0f4509b4c843bb66e0caa2a"
+    },
+    {
+      "id": "cbdb-text-9602",
+      "title": "人名權威資料（中央研究院歷史語言研究所）",
+      "url": "https://github.com/cbdb-project/cbdb_sqlite",
+      "cbdb_text_id": 9602,
+      "locator_note": "原文献定位见逐条source_locators；本链接为数据发布方，不冒称原典全文。"
+    },
+    {
+      "id": "cbdb-rank-official-0017",
+      "title": "《明史》职官志：詹事府品级核查",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷73",
+      "evidence": "左谕德，从五品；右春坊，亦如之。",
+      "note": "按原文所列本职通常品秩；不将兼衔、加官与实际权势混为一项。"
+    },
+    {
+      "id": "cbdb-rank-official-0052",
+      "title": "《明史》职官志：吏部品级核查",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷72",
+      "evidence": "吏部：侍郎，正三品。",
+      "note": "按《明史》该部首段设官品秩，并与《会典》卷10六部各清吏司表互证。"
+    },
+    {
+      "id": "cbdb-rank-official-0105",
+      "title": "《明史》职官志：礼部品级核查",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷72",
+      "evidence": "礼部：侍郎，正三品。",
+      "note": "按《明史》该部首段设官品秩，并与《会典》卷10六部各清吏司表互证。"
+    },
+    {
+      "id": "cbdb-rank-official-0051",
+      "title": "《明史》职官志：吏部品级核查",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷72",
+      "evidence": "吏部：尚书，正二品。",
+      "note": "按《明史》该部首段设官品秩，并与《会典》卷10六部各清吏司表互证。"
+    },
+    {
+      "id": "zhcbdb-szsl536",
+      "title": "《明世宗实录》卷五百三十六，嘉靖四十三年七月己未",
+      "url": "https://m.guoxuedashi.com/a/5671ipaf/87392z.html",
+      "alternate_url": "https://m.guoxuedashi.com/a/5671ipaf/87941s.html",
+      "type": "primary_text",
+      "publisher": "明代实录馆纂修；国学大师公开转录",
+      "locator": "卷首嘉靖四十三年七月辛丑朔；己未条",
+      "evidence_excerpt": "以右春坊右谕德兼翰林院侍读张居正充裕府讲官。",
+      "note": "据所列原官充任裕府讲官，证明当日见任；不是首次授右谕德的诏令。原典核查基于公开文字转录，未声称核阅原刻影像。"
+    },
+    {
+      "id": "zhcbdb-mzsl3",
+      "title": "《明穆宗实录》卷三，隆庆元年正月壬午",
+      "url": "https://www.shidianguji.com/book/LS0026/chapter/1k6tolk07y78b",
+      "alternate_url": "https://simplelits.com/books/classical/classical-09844-%E6%98%8E%E7%A9%86%E5%AE%97%E5%AE%9E%E5%BD%95/5",
+      "type": "primary_text",
+      "publisher": "明代实录馆纂修；识典古籍及 SimpleLits 公开转录",
+      "locator": "正月壬午，升张居正及殷士儋条",
+      "evidence_excerpt": "升翰林院侍读学士张居正为礼部右侍郎兼翰林院学士。……升司经局洗马兼翰林院侍讲殷士儋为本院侍读学士掌院事。",
+      "note": "张居正此时尚未入阁；同日掌翰林院事授殷士儋。不能把张居正的兼学士写成继续掌院，更不能提前归入内阁。"
+    },
+    {
+      "id": "zhcbdb-mzsl4",
+      "title": "《明穆宗实录》卷四，隆庆元年二月乙未",
+      "url": "https://www.shidianguji.com/book/LS0026/chapter/1k6tolkjs817p",
+      "type": "primary_text",
+      "publisher": "明代实录馆纂修；识典古籍公开转录",
+      "locator": "二月乙未，登极加恩侍从藩邸诸臣条",
+      "evidence_excerpt": "礼部右侍郎兼翰林院学士张居正为吏部左侍郎，兼东阁大学士，俱内阁办事。",
+      "note": "原典明确内阁办事；吏部左侍郎衔不可当作在吏部掌部的证据。"
+    },
+    {
+      "id": "zhcbdb-mzsl52",
+      "title": "《明穆宗实录》卷五十二，隆庆四年十二月庚戌、戊午",
+      "url": "https://www.shidianguji.com/book/LS0026/chapter/1k6tomnw63kf9",
+      "alternate_url": "https://ctext.org/wiki.pl?chapter=555461&if=en",
+      "type": "primary_text",
+      "publisher": "明代实录馆纂修；识典古籍公开转录",
+      "locator": "十二月甲午朔；庚戌加吏部尚书条，戊午内阁辅臣加恩条；壬子条称掌吏部事大学士高拱",
+      "evidence_excerpt": "少保兼太子太保、礼部尚书、武英殿大学士张居正三年考满……加兼太子太傅、吏部尚书，授柱国。……戊午，谕吏部：内阁辅臣……居正少傅兼太子太傅、建极殿大学士、尚书如故。",
+      "note": "加吏部尚书时为内阁武英殿大学士；八日后进建极。掌吏部事另为高拱，不能把张居正兼衔套作吏部掌部实职。隆庆四年十二月这两日均已在西元1571年。"
+    },
+    {
+      "id": "zhcbdb-ms213",
+      "title": "《明史》卷二百十三·张居正传",
+      "url": "https://zh.wikisource.org/zh-hans/%E6%98%8E%E5%8F%B2/%E5%8D%B7213",
+      "type": "primary_text",
+      "publisher": "清张廷玉等纂；维基文库公开转录",
+      "locator": "张居正传前段仕履",
+      "evidence_excerpt": "寻迁礼部右侍郎兼翰林院学士。月余，与裕邸故讲官陈以勤俱入阁，而居正为吏部左侍郎兼东阁大学士。",
+      "note": "传记用于核对先后及兼衔性质；具体日期以实录和中研院历表为准，不以月余推算任期。"
+    },
+    {
+      "id": "zhcbdb-calendar",
+      "title": "中央研究院《两千年中西历转换》：本补丁五个原纪年日期查询",
+      "url": "https://sinocal.sinica.edu.tw/",
+      "type": "authoritative_calendar",
+      "publisher": "中央研究院数字文化中心",
+      "locator": "中历转西历：明世宗嘉靖43年7月己未；明穆宗隆庆1年1月壬午、2月乙未；隆庆4年12月17日及戊午",
+      "note": "2026-09-06 实际提交查询。采用工具默认1582-10-15改历，因此1582年前返回的是儒略历，不得标成逆推格里高利历。这里只以转换后的西元年份建立年度事件索引。",
+      "verified_conversions": [
+        {
+          "native_date": "嘉靖四十三年七月己未",
+          "western_date": "1564-08-25",
+          "western_calendar": "Julian"
+        },
+        {
+          "native_date": "隆庆元年正月壬午",
+          "western_date": "1567-03-06",
+          "western_calendar": "Julian"
+        },
+        {
+          "native_date": "隆庆元年二月乙未",
+          "western_date": "1567-03-19",
+          "western_calendar": "Julian"
+        },
+        {
+          "native_date": "隆庆四年十二月十七日庚戌",
+          "western_date": "1571-01-12",
+          "western_calendar": "Julian"
+        },
+        {
+          "native_date": "隆庆四年十二月戊午",
+          "western_date": "1571-01-20",
+          "western_calendar": "Julian"
+        }
+      ]
+    }
+  ],
+  "new_source_ids": [
+    "zhcbdb-szsl536",
+    "zhcbdb-mzsl3",
+    "zhcbdb-mzsl4",
+    "zhcbdb-mzsl52",
+    "zhcbdb-ms213",
+    "zhcbdb-calendar"
+  ],
+  "notes": [
+    "张居正1562年首次授右谕德是否另有材料成立，本次未证；卷536只能作1564年见任，不能以更正后的1564反过来断言首次授官。",
+    "礼部右侍郎条是入阁前的正式官衔升授，不是内阁任职事件。实际掌部未由本条证明，保守保留人物仕履而不挂机构任职槽。",
+    "本补丁独立于people-zhang-chief首辅任期及1573年中极殿大学士更正；不得新增重复首辅任期。",
+    "1570旧ID对应事件改系1571并非否定隆庆四年原纪年，而是原农历十二月与西元年度跨年；应在UI完整呈现date_note。"
+  ]
+}

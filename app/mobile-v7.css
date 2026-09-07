@@ -1,0 +1,264 @@
+/* A separate phone journey. Desktop scenes are not mounted in the phone shell. */
+.phone-app {
+  --phone-bg:#171510; --phone-panel:#262219; --phone-border:#705735;
+  --phone-text:#f0dfbd; --phone-muted:#c1af90; --phone-gold:#e4bd76;
+  display:block; width:100%; min-height:100dvh; padding:0 0 calc(82px + env(safe-area-inset-bottom));
+  background:radial-gradient(ellipse at 0 0,#40291e66,transparent 55%),var(--phone-bg); color:var(--phone-text);
+  font-family:var(--font-ui); font-size:16px; line-height:1.65;
+}
+.phone-app button,.phone-app summary,.phone-app a { -webkit-tap-highlight-color:transparent; touch-action:manipulation; }
+.phone-app button:focus-visible,.phone-app input:focus-visible,.phone-app select:focus-visible,.phone-app summary:focus-visible { outline:2px solid #f0c579; outline-offset:3px; }
+.phone-app button:disabled { opacity:.45; }
+.phone-app svg { flex-shrink:0; }
+.phone-header { display:flex; gap:10px; align-items:center; padding:calc(12px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 12px max(16px,env(safe-area-inset-left)); border-bottom:1px solid #74573155; }
+.phone-header h1 { font:700 21px/1.3 var(--font-display); letter-spacing:.06em; }
+.phone-brand-seal { display:grid; place-items:center; width:33px; height:37px; border:1px solid #b68a49; background:#6b2e22; color:#f4d693; font:700 23px var(--font-display); box-shadow:inset 0 0 0 3px #301b15; }
+.phone-icon-text { margin-left:auto; display:flex; gap:7px; align-items:center; min-height:44px; padding:0 9px; color:#dfc291; font-size:15px; }
+.phone-year-bar { display:flex; align-items:center; gap:6px; position:sticky; top:0; z-index:30; padding:6px 12px; background:#201c15; border-bottom:1px solid #a5834b66; box-shadow:0 4px 15px #0003; }
+.phone-year-step { width:44px; height:48px; display:grid; place-items:center; color:#e2be7d; }
+.phone-year-current { display:flex; justify-content:center; gap:12px; align-items:center; flex:1; min-height:50px; min-width:0; color:#e0ba78; }
+.phone-year-current span { display:flex; flex-direction:column; text-align:center; }
+.phone-year-current strong { font:700 17px/1.5 var(--font-display); color:#f1dfbd; }
+.phone-year-current small { font-size:13px; color:#bba684; }
+.phone-year-error { display:flex; justify-content:space-between; align-items:center; gap:10px; padding:4px 16px; font-size:14px; background:#493020; color:#e7c498; }
+.phone-year-error button { min-height:44px; text-decoration:underline; }
+.phone-back { display:flex; align-items:center; gap:8px; margin:4px 12px 0; padding:8px 4px; min-height:44px; color:#d3b685; text-align:left; font-size:15px; }
+.phone-page { padding:18px max(16px,env(safe-area-inset-right)) 20px max(16px,env(safe-area-inset-left)); max-width:760px; margin:auto; }
+.phone-back + .phone-page { padding-top:8px; }
+.phone-bottom-nav { position:fixed; z-index:40; bottom:0; left:0; width:100%; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); padding:5px max(8px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left)); background:#1e1b16; border-top:1px solid #705735; box-shadow:0 -8px 24px #0003; }
+.phone-bottom-nav button { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; min-height:56px; color:#b3a286; font-size:13px; border-radius:8px; }
+.phone-bottom-nav svg { width:22px; height:22px; }
+.phone-bottom-nav [aria-current='page'] { color:#f5cb82; background:#64412a44; }
+.phone-bottom-nav [aria-current='page'] svg { stroke-width:2.25; }
+.phone-page-heading { margin:0 0 20px; }
+.phone-page-heading > span { font-size:13px; color:#bb9861; letter-spacing:.16em; }
+.phone-page-heading h2 { margin:6px 0; font:700 29px/1.4 var(--font-display); color:#f1dfbd; }
+.phone-page-heading p { color:#beaf95; font-size:15px; line-height:1.7; }
+.phone-section-title { display:flex; flex-wrap:wrap; gap:5px 12px; align-items:baseline; margin:24px 0 12px; font:700 20px/1.5 var(--font-display); color:#efd8ac; }
+.phone-section-title small { font:400 13px/1.6 var(--font-ui); color:#b5a488; }
+.phone-footnote { margin:22px 0 0; padding-top:14px; border-top:1px solid #87653940; font-size:13px; color:#b9a88c; line-height:1.8; }
+.phone-search-field { display:flex; align-items:center; gap:10px; min-width:0; margin:18px 0; padding:0 13px; border:1px solid #7c613b; border-radius:9px; background:#110f0c; color:#bd9b66; }
+.phone-search-field input { width:100%; min-width:0; height:49px; background:transparent; color:#f3dfbc; font-size:16px; outline:none; }
+.phone-search-field input::placeholder { color:#ac9b7f; }
+.phone-notice { display:flex; flex-wrap:wrap; align-items:center; gap:12px; padding:18px 14px; margin:16px 0; border:1px solid #715b3e77; border-radius:9px; background:#32291d; color:#dcc6a0; font-size:15px; }
+.phone-notice button { min-height:44px; padding:4px 16px; border:1px solid #a28049; border-radius:6px; }
+.phone-notice.is-error { border-color:#b87b4c; }
+.phone-primary,.phone-outline { display:flex; align-items:center; justify-content:space-between; gap:8px; min-height:48px; width:100%; border:1px solid #b5844a; border-radius:8px; padding:10px 15px; font-size:16px; line-height:1.5; color:#f7dfb2; background:linear-gradient(110deg,#80412b,#603022); }
+.phone-outline { background:#343024; border-color:#84724c; }
+.phone-result-count { color:#baa88b; font-size:13px; margin:12px 0; }
+.phone-map-cover { display:flex; align-items:center; position:relative; width:100%; height:160px; overflow:hidden; border:1px solid #8c7047; border-radius:12px; background:radial-gradient(ellipse at 30% 50%,#4a5131,#252c22 70%); text-align:left; }
+.phone-map-cover > svg { position:absolute; height:190px; width:305px; top:-12px; left:-24px; opacity:.65; transform:rotate(-4deg); }
+.phone-map-cover path { fill:#998153; stroke:#e9d295; stroke-width:2; }
+.phone-map-cover > span { position:relative; margin-left:auto; width:54%; padding:16px; display:grid; gap:3px; color:#e8d4a7; background:linear-gradient(90deg,transparent,#293021b3 30%); }
+.phone-map-cover strong { font:700 22px/1.5 var(--font-display); }
+.phone-map-cover small { font-size:12px; color:#c7b791; }
+.phone-map-cover > span > svg:last-child { position:absolute; right:10px; top:20px; }
+.phone-province-grid,.phone-county-grid,.phone-ministry-grid,.phone-agency-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:11px; }
+.phone-province-grid > button { position:relative; min-height:107px; padding:16px 13px 12px; border:1px solid #705735; border-radius:10px; text-align:left; background:linear-gradient(135deg,#403123,#252219); }
+.phone-province-grid > button:nth-child(4n+2),.phone-province-grid > button:nth-child(4n+3) { background:linear-gradient(135deg,#303b2d,#24271e); border-color:#62705288; }
+.phone-province-order { position:absolute; top:6px; right:10px; color:#d8b16d44; font-size:22px; font-family:Georgia,serif; }
+.phone-province-grid strong { display:block; position:relative; font:700 22px/1.5 var(--font-display); color:#f0dbae; margin-bottom:11px; }
+.phone-province-grid button > span:last-child { display:flex; align-items:center; justify-content:space-between; gap:8px; font-size:13px; color:#c2ad89; }
+.phone-place-list,.phone-person-list,.phone-office-stack { display:grid; gap:10px; }
+.phone-place-list > button { display:flex; align-items:center; gap:12px; text-align:left; width:100%; min-height:80px; padding:14px; border:1px solid #745b3766; border-radius:10px; background:#29241b; }
+.phone-place-list > button > span:not(.phone-kind-mark) { flex:1; min-width:0; }
+.phone-place-list strong { display:block; color:#eed7af; font:700 21px/1.45 var(--font-display); }
+.phone-place-list small { display:block; color:#bcaa8c; font-size:13px; line-height:1.7; margin-top:4px; }
+.phone-place-list svg { color:#c0a06b; }
+.phone-kind-mark { min-width:37px; max-width:64px; padding:6px; color:#c9aa72; border:1px solid #7c664388; background:#50402b55; border-radius:5px; text-align:center; font-size:13px; }
+.phone-local-stats { display:flex; gap:24px; padding:12px 0; border-block:1px solid #74573577; }
+.phone-local-stats > span { color:#bca88a; font-size:14px; display:flex; gap:9px; align-items:baseline; }
+.phone-local-stats strong { color:#f1d399; font:700 25px/1.5 var(--font-display); }
+.phone-county-grid > button { display:flex; flex-direction:column; gap:8px; min-height:83px; padding:12px; background:#303226; border:1px solid #68704b88; border-radius:8px; text-align:left; }
+.phone-county-grid strong { color:#e3ddba; font:700 19px/1.45 var(--font-display); }
+.phone-county-grid button > span { display:flex; justify-content:space-between; gap:4px; font-size:13px; color:#b5bc9c; }
+.phone-state-list { display:grid; gap:12px; }
+.phone-state-list details { border:1px solid #59735e; border-radius:10px; background:#252c22; }
+.phone-state-list summary { display:flex; justify-content:space-between; align-items:center; gap:12px; min-height:76px; padding:14px; list-style:none; cursor:pointer; }
+.phone-state-list summary strong { display:block; font:700 21px/1.5 var(--font-display); color:#dbe7c8; }
+.phone-state-list summary small { display:block; font-size:13px; color:#b1bea5; }
+.phone-state-content { display:grid; gap:12px; border-top:1px solid #5c785b55; padding:14px; }
+.phone-disclosure-arrow { color:#c5b98c; }
+.phone-state-list details[open] .phone-disclosure-arrow { transform:rotate(90deg); }
+.phone-scene-cover { display:flex; flex-direction:column; justify-content:end; min-height:185px; margin-bottom:18px; padding:24px 20px; border:1px solid #86633b; border-radius:12px; background-size:cover; background-position:50% 50%; text-shadow:0 2px 6px #000; }
+.phone-yamen-cover { background-image:linear-gradient(0deg,#17130fee, #21181033 95%),url('/county-yamen-scene-v2.webp'); }
+.phone-court-cover { background-image:linear-gradient(0deg,#17130ff2, #21181022 95%),url('/court-game-scene-v2.webp'); }
+.phone-scene-cover h2 { font:700 28px/1.6 var(--font-display); color:#ffe2a6; }
+.phone-scene-cover > span,.phone-scene-cover p { font-size:14px; color:#e1c497; }
+.phone-office-card { display:flex; align-items:center; gap:13px; width:100%; min-height:102px; padding:16px; text-align:left; background:linear-gradient(125deg,#383023,#252219); border:1px solid #816441; border-radius:10px; }
+.phone-office-card.is-chief { background:linear-gradient(120deg,#653b29,#322419); border-color:#b08b4e; }
+.phone-office-icon { color:#c6a572; width:30px; }
+.phone-office-copy { display:flex; flex-direction:column; flex:1; min-width:0; }
+.phone-office-copy > strong { font:700 19px/1.5 var(--font-display); color:#e6d5b4; }
+.phone-office-copy .scene-person-names { display:block; color:#ffda92; font:700 24px/1.5 var(--font-display); overflow-wrap:anywhere; white-space:normal; margin:0 0 3px; }
+.phone-office-copy .scene-person-names.is-unavailable { font:400 14px/1.6 var(--font-ui); color:#bdaa8c; }
+.phone-office-copy small { font-size:14px; color:#c5b08a; }
+.phone-office-card > svg { color:#bda071; }
+.phone-segment { display:grid; grid-template-columns:1fr 1fr; padding:4px; margin:20px 0 16px; border:1px solid #685435; border-radius:10px; background:#14130f; }
+.phone-segment button { min-height:45px; padding:8px 5px; border-radius:7px; font-size:15px; color:#baaa8c; }
+.phone-segment [aria-pressed='true'] { color:#f3d39e; background:#70432e; box-shadow:0 2px 4px #0004; }
+.phone-disclosure { border:1px solid #6f593950; border-radius:9px; margin-top:22px; background:#211f18; }
+.phone-disclosure summary { display:flex; justify-content:space-between; align-items:center; gap:10px; padding:13px; min-height:50px; list-style:none; cursor:pointer; color:#dac295; font-size:15px; }
+.phone-disclosure[open] summary > svg { transform:rotate(90deg); }
+.phone-disclosure > p,.phone-disclosure > a,.phone-disclosure > .phone-office-stack { margin:0 13px 14px; font-size:14px; color:#bdaf92; line-height:1.8; }
+.phone-disclosure > a { display:flex; align-items:center; min-height:44px; color:#e2bd7d; text-decoration:underline; }
+.phone-sovereign-card { display:flex; align-items:center; gap:16px; width:100%; min-height:95px; border:1px solid #ac8149; border-radius:12px; padding:18px; background:linear-gradient(110deg,#72442d,#35261c); color:#eac587; text-align:left; }
+.phone-sovereign-card > span { flex:1; min-width:0; }
+.phone-sovereign-card strong { display:block; font:700 23px/1.5 var(--font-display); color:#f9dfad; }
+.phone-sovereign-card small { color:#d0b082; font-size:14px; }
+.phone-capital-entries { display:grid; grid-template-columns:1fr 1fr; gap:11px; margin-top:12px; }
+.phone-capital-entries button { display:flex; flex-direction:column; gap:7px; min-height:93px; padding:15px; background:#2e2b21; border:1px solid #7c6b4777; border-radius:10px; text-align:left; }
+.phone-capital-entries strong { font:700 21px/1.5 var(--font-display); color:#ead7b0; }
+.phone-capital-entries span { display:flex; align-items:center; gap:5px; font-size:13px; color:#bca889; }
+.phone-ministry-grid button { display:flex; gap:10px; align-items:center; min-height:86px; padding:12px 10px; text-align:left; border:1px solid #80613b; border-radius:9px; background:#342b1e; }
+.phone-ministry-seal { display:grid; place-items:center; width:33px; height:38px; background:#6a3123; border:1px solid #a87c44; font:700 23px var(--font-display); color:#efd291; }
+.phone-ministry-grid button > span:nth-child(2) { min-width:0; flex:1; }
+.phone-ministry-grid strong { font:700 21px/1.5 var(--font-display); display:block; }
+.phone-ministry-grid small { font-size:12px; color:#c4ae88; display:block; }
+.phone-ministry-grid button > svg { color:#b6a072; }
+.phone-agency-grid button { display:flex; align-items:center; justify-content:space-between; gap:7px; min-height:67px; padding:12px; text-align:left; background:#28281e; border:1px solid #766a4877; border-radius:8px; }
+.phone-agency-grid strong { font:700 18px/1.5 var(--font-display); color:#e3d5b4; }
+.phone-agency-grid svg { color:#bba574; }
+.phone-person-list > button { display:flex; gap:13px; align-items:center; padding:16px 13px; width:100%; text-align:left; border:1px solid #7d603e66; border-radius:10px; background:#2b251b; }
+.phone-person-initial { display:grid; align-self:start; place-items:center; width:41px; height:47px; flex:none; border:1px solid #957047; border-radius:6px; color:#dfbc7d; background:#4d3925; font:700 24px var(--font-display); }
+.phone-person-copy { flex:1; min-width:0; }
+.phone-person-copy strong { font:700 23px/1.4 var(--font-display); color:#f0d7ac; }
+.phone-person-copy small { display:block; font-size:13px; color:#ac9b7d; margin-top:3px; }
+.phone-person-copy > span { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; font-size:15px; color:#c7b497; margin-top:8px; line-height:1.7; }
+.phone-person-list > button > svg { color:#bda06e; }
+.phone-load-more { display:block; width:100%; min-height:48px; margin-top:18px; border:1px solid #8c6f43; border-radius:8px; color:#e2c28d; background:#32291c; font-size:15px; }
+
+@media (max-width:767px), (max-width:1023px) and (pointer:coarse) {
+  html { scroll-padding-top:80px; }
+  .phone-app .atlas-visit-footer { margin:12px 16px 0; padding:16px 0; }
+  :is(.history-dialog,.institution-floating-card,.official-detail-floating,.atlas-search-dialog,.phone-year-dialog,.phone-map-dialog)[data-slot='dialog-content'] {
+    display:flex; flex-direction:column; gap:0; width:100%; min-width:0; max-width:100%;
+    height:var(--phone-visible-height,100dvh); max-height:var(--phone-visible-height,100dvh); margin:0; padding:0; border:0; border-radius:0;
+    background:#211e17; color:#e9d7b6; overflow:hidden; animation:none;
+  }
+  :is(.history-dialog,.institution-floating-card,.atlas-search-dialog,.phone-year-dialog,.phone-map-dialog)[data-slot='dialog-content'] > [data-slot='dialog-header'] {
+    flex-shrink:0; padding:calc(19px + env(safe-area-inset-top)) 65px 17px max(18px,env(safe-area-inset-left)); border-bottom:1px solid #84613b88; background:linear-gradient(110deg,#493723,#2b251a); gap:5px; margin:0;
+  }
+  :is(.history-dialog,.institution-floating-card,.atlas-search-dialog,.phone-year-dialog,.phone-map-dialog) [data-slot='dialog-title'] { font:700 25px/1.45 var(--font-display); color:#f3dbae; }
+  :is(.history-dialog,.institution-floating-card,.atlas-search-dialog,.phone-year-dialog,.phone-map-dialog) [data-slot='dialog-description'] { font-size:14px; line-height:1.65; color:#c3b192; }
+  :is(.history-dialog,.institution-floating-card,.atlas-search-dialog,.phone-year-dialog,.phone-map-dialog) > [data-slot='dialog-close'] { position:absolute; top:calc(12px + env(safe-area-inset-top)); right:max(12px,env(safe-area-inset-right)); display:grid; place-items:center; width:44px; height:44px; min-width:44px; padding:0; margin:0; border:1px solid #8e704a88; border-radius:8px; background:#282217; color:#f0d7a7; z-index:5; }
+  .history-dialog-scroll,.institution-floating-scroll,.phone-sheet-scroll { flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain; padding:18px max(16px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left)); }
+  .phone-detail-toolbar { display:flex; align-items:center; justify-content:space-between; flex-shrink:0; min-height:65px; padding:calc(8px + env(safe-area-inset-top)) 12px 8px 18px; border-bottom:1px solid #8a673b; background:#30281d; font-size:15px; color:#ddc191; }
+  .phone-detail-toolbar button { display:flex; align-items:center; gap:8px; min-height:44px; }
+  .phone-detail-toolbar [data-slot='dialog-close'] { width:44px; justify-content:center; border:1px solid #82644077; border-radius:7px; }
+  .official-detail-floating .official-detail-body { flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain; padding:22px 18px calc(24px + env(safe-area-inset-bottom)); }
+  .official-detail-body .detail-section p,.official-detail-body .detail-section blockquote { font-size:16px; line-height:1.85; }
+  .detail-rank-row { flex-wrap:wrap; gap:10px; }
+  .atlas-source-drawer[data-slot='sheet-content'] { width:100%; max-width:100%; padding:18px; padding-top:calc(20px + env(safe-area-inset-top)); padding-bottom:calc(20px + env(safe-area-inset-bottom)); overscroll-behavior:contain; }
+  .atlas-source-drawer [data-slot='sheet-header'] { padding-right:48px; }
+  .atlas-source-drawer .detail-close { position:sticky; top:0; right:0; margin-left:auto; float:right; min-width:44px; min-height:44px; background:#33291d; z-index:5; }
+  .atlas-source-drawer .fact-caveat { font-size:15px; line-height:1.85; }
+  .phone-year-jump { margin-bottom:24px; }
+  .phone-year-jump label,.phone-regnal-select,.phone-branch-picker { display:grid; gap:8px; font-size:14px; color:#d2b88c; }
+  .phone-year-jump > div { display:flex; gap:10px; margin-top:8px; }
+  .phone-year-jump input,.phone-regnal-select select,.phone-branch-picker select,.phone-map-choice select { width:100%; min-width:0; min-height:48px; padding:10px 12px; border:1px solid #977649; border-radius:7px; color:#f1d6a7; background:#18160f; font-size:16px; }
+  .phone-year-jump button { flex:none; padding:0 22px; min-height:48px; border:1px solid #af874e; border-radius:7px; background:#72412a; color:#f5d69f; font-size:16px; }
+  .phone-year-jump > p { margin-top:8px; color:#f0c28e; font-size:14px; }
+  .phone-era-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:9px; margin-bottom:20px; }
+  .phone-era-grid button { padding:11px 4px; min-height:70px; border:1px solid #7e6541; border-radius:8px; background:#2c281e; color:#e4cc9f; }
+  .phone-era-grid strong { display:block; font:700 20px/1.5 var(--font-display); }
+  .phone-era-grid small { font-size:12px; color:#bdac8d; }
+  .phone-era-grid [aria-pressed='true'] { border-color:#edb96a; background:#6a3c28; }
+  .phone-year-confirm { flex-shrink:0; width:calc(100% - 32px); margin:12px 16px calc(16px + env(safe-area-inset-bottom)); }
+  .phone-map-tools { display:flex; gap:9px; align-items:center; padding:8px 14px; background:#262219; color:#e7c897; }
+  .phone-map-tools button { display:grid; place-items:center; min-width:44px; height:44px; border:1px solid #927142; border-radius:7px; padding:0 12px; font-size:14px; }
+  .phone-map-tools > button:last-child { margin-left:auto; }
+  .phone-map-tools > span { min-width:48px; text-align:center; font-size:14px; }
+  .phone-map-pan { flex:1; min-height:0; overflow:auto; overscroll-behavior:contain; background:#191d17; }
+  .phone-map-pan > svg { display:block; max-width:none; height:auto; }
+  .phone-map-pan path { fill:#9e7c3e22; stroke:#efd199bb; stroke-width:2; }
+  .phone-map-pan .is-selected path { fill:#c4532e88; stroke:#ffe7ad; stroke-width:4; }
+  .phone-map-pan text { pointer-events:none; fill:#fff0c1; font:700 25px var(--font-display); stroke:#302717; stroke-width:5; paint-order:stroke; }
+  .phone-map-choice { padding:13px 16px calc(15px + env(safe-area-inset-bottom)); border-top:1px solid #8b6a3e; flex-shrink:0; }
+  .phone-map-choice label { display:flex; gap:14px; align-items:center; font-size:14px; white-space:nowrap; margin-bottom:12px; }
+  .phone-map-choice small { display:block; font-size:12px; color:#b7a486; margin-top:9px; }
+  .phone-branch-picker { margin:20px 0 14px; }
+  .phone-branch-fold { border:1px solid #94724788; border-radius:9px; background:#30291e; overflow:hidden; min-width:0; }
+  .phone-branch-fold > summary { display:flex; align-items:center; justify-content:space-between; gap:10px; list-style:none; min-height:66px; padding:13px; cursor:pointer; }
+  .phone-branch-fold > summary strong { font:700 19px/1.5 var(--font-display); color:#ecd1a1; }
+  .phone-branch-fold > summary > span { display:flex; align-items:center; flex:none; gap:5px; font-size:13px; color:#c1a578; }
+  .phone-branch-fold[open] > summary > span > svg { transform:rotate(90deg); }
+  .phone-branch-fold > section { border:0; border-top:1px solid #7d623d; border-radius:0; }
+  summary::-webkit-details-marker { display:none; }
+  .institution-floating-heading .side-kicker { font-size:12px; }
+  .floating-roster-heading { display:grid; gap:14px; margin:22px 0 14px; }
+  .floating-roster-heading > span { font-size:19px; }
+  .floating-roster-heading input { width:100%; min-width:0; min-height:48px; font-size:16px; }
+  .official-org-chart { padding:0; }
+  .official-department-root { padding:14px; gap:10px; width:100%; }
+  .official-department-root strong { font-size:23px; }
+  .official-branches-tree,.central-hierarchy-tree,.hierarchy-record-nodes,.ministry-assistant .hierarchy-record-nodes,.is-focused .division-assistants .hierarchy-record-nodes { grid-template-columns:minmax(0,1fr); gap:12px; }
+  .ministry-leadership,.central-leadership { padding:12px; }
+  .central-hierarchy-branch,.official-division-branch { padding:13px; min-width:0; }
+  .central-hierarchy-children { padding-left:8px; margin-left:0; }
+  .central-hierarchy-children .central-hierarchy-branch { padding:9px; }
+  .division-assistants { padding-left:8px; margin-left:0; }
+  .hierarchy-official-node { gap:9px; padding:12px 10px 12px 0; min-height:100px; }
+  .hierarchy-official-avatar { width:48px; }
+  .hierarchy-official-copy > strong { font-size:19px; }
+  .hierarchy-official-copy .floating-rank,.hierarchy-official-copy > small { font-size:14px; }
+  .hierarchy-duty-assignments { grid-template-columns:1fr; }
+  .history-office-preview { font-size:14px; line-height:1.6; }
+  .history-institution-people { padding:15px; }
+  .history-institution-grid { grid-template-columns:1fr; }
+  .history-institution-person { padding:13px; min-height:75px; }
+  .history-institution-person strong { font-size:21px; }
+  .history-institution-duty { font-size:15px; }
+  .history-institution-person small { font-size:13px; }
+  .history-section-heading { flex-wrap:wrap; gap:6px 12px; }
+  .history-section-heading h3 { font-size:20px; }
+  .history-section-heading > span { font-size:13px; }
+  .history-footnote,.history-period-note { font-size:14px; line-height:1.8; }
+  .history-button,.history-text-button,.institution-history-toggle,.hierarchy-source,.hierarchy-extra-role a,.institution-evidence a,.history-inline-details summary,.history-source-details summary { min-height:44px; display:inline-flex; align-items:center; }
+  .history-name-button { font-size:23px; min-height:44px; }
+  .history-office-holders { padding:16px 12px; }
+  .history-office-person { padding:13px; }
+  .history-office-person p { font-size:15px; line-height:1.75; }
+  .history-person-summary { font-size:16px; line-height:1.85; }
+  .career-query-bar { display:grid; gap:10px; padding:12px; }
+  .career-query-bar > label { width:100%; min-width:0; }
+  .career-query-bar input { min-width:0; min-height:46px; font-size:16px; }
+  .career-query-bar > div { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto; gap:7px; }
+  .career-query-bar > div input { width:100%; }
+  .career-query-bar button { min-width:44px; min-height:46px; }
+  .career-table-heading { display:none; }
+  .career-table { border:0; background:none; }
+  .career-table-row { border:1px solid #7d633e88; border-radius:9px; margin-bottom:12px; overflow:hidden; background:#2b251c; }
+  .career-row-summary { display:grid; grid-template-columns:minmax(0,1fr); gap:12px; padding:16px; min-height:0; text-align:left; }
+  .career-date { border-bottom:1px solid #8f724955; padding-bottom:10px; }
+  .career-date strong { font:700 20px/1.5 var(--font-display); color:#e7c187; }
+  .career-date small { font-size:14px; }
+  .career-position strong { font:700 20px/1.6 var(--font-display); }
+  .career-position small { font-size:15px; line-height:1.75; }
+  .career-evidence-count { display:flex; align-items:center; justify-content:space-between; font-size:14px; }
+  .career-row-detail { padding:0 12px 14px; }
+  .history-record { padding:14px; }
+  .history-record p,.history-record-note { font-size:15px; line-height:1.8; }
+  .history-source-list { overflow-wrap:anywhere; }
+  .history-source-list a { display:inline-flex; align-items:center; min-height:44px; font-size:14px; }
+  .history-sili-offices { grid-template-columns:1fr; }
+  .atlas-search-command { display:flex; flex-direction:column; flex:1; min-height:0; background:#211e17; }
+  .atlas-search-command [data-slot='command-input-wrapper'] { flex-shrink:0; padding:6px 16px; }
+  .atlas-search-command input { font-size:16px; min-height:48px; }
+  .atlas-search-command [data-slot='input-group'] { height:50px !important; }
+  .atlas-search-results { flex:1; min-height:0; max-height:none; overflow-y:auto; overscroll-behavior:contain; padding:8px 12px calc(18px + env(safe-area-inset-bottom)); }
+  .atlas-search-result { padding:14px 8px; gap:10px; min-height:80px; }
+  .atlas-search-copy b { font-size:20px; }
+  .atlas-search-person-heading { display:flex; flex-direction:column; align-items:start; gap:3px; }
+  .atlas-search-person-heading small { font-size:13px; }
+  .atlas-search-summary { font-size:14px; line-height:1.75; }
+  .atlas-search-note { font-size:14px; padding:12px 18px; }
+  .atlas-search-more { min-height:48px; font-size:15px; }
+}
+@media (max-width:359px) {
+  .phone-page { padding-inline:12px; }
+  .phone-header h1 { font-size:19px; }
+  .phone-ministry-grid button { gap:7px; padding-inline:8px; }
+  .phone-ministry-grid button > svg { display:none; }
+  .phone-era-grid { gap:6px; }
+}

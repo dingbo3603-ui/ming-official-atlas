@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {"id":"life-review-weng","title":"翁正春生卒与仕履：非虚构人物条目，所引《福州市志》及《明史》卷216","url":"https://zh.wikipedia.org/wiki/翁正春"},
+    {"id":"life-review-li","title":"《明神宗实录》卷490：万历三十九年十二月李化龙卒","url":"https://www.mingbook.net/mingshilu/renwuzhuan/lihualong"},
+    {"id":"life-review-li-birth","title":"李化龙人物考证：赵南星碑文所载生卒，嘉靖甲寅至万历辛亥","url":"https://bkso.baidu.com/item/李化龙/29938"}
+  ],
+  "person_patches": [
+    {"id":"cbdb-person-123782","set":{"birth_year":1553,"death_year":1626,"biographical_date_note":"据非虚构人物条目所引福州市志订正：嘉靖三十二年生、天启六年卒。《明史》卷216亦记天启间再起礼部，排除原库1607卒的错误。","summary":"侯官人，万历二十年进士第一。历修撰、少詹事、礼部左侍郎，曾署礼部事，后任吏部左侍郎掌詹事府。天启间任礼部尚书，1626年卒。"},"append_source_ids":["life-review-weng"]},
+    {"id":"cbdb-person-125694","set":{"birth_year":1554,"death_year":1611,"biographical_date_note":"赵南星碑文所载嘉靖甲寅生；《神宗实录》卷490记万历三十九年十二月卒。年数依原年号年度折算，不将旧历十二月假定为公历十二月。原CBDB生1552、卒1607与其自存年号备注及原典不合。","summary":"长垣人，万历二年进士。历地方学政、辽东巡抚，总督川贵并主持平播，后督河开泇河，入掌兵部。万历三十九年十二月卒，生卒采用原年号年度对照。"},"append_source_ids":["life-review-li","life-review-li-birth"]}
+  ]
+}

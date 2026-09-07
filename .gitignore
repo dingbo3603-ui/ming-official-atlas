@@ -36,3 +36,13 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+/others/
+*.pfx
+*.p12
+*.key
+config.local.php
+
+/dist-nas/
+*.tsbuildinfo
+__pycache__/
+*.pyc

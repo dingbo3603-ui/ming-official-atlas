@@ -1,0 +1,26 @@
+[
+  {
+    "record_id": "supplement-county-confucian-instructor",
+    "institution": "县儒学",
+    "title": "教谕",
+    "original_rank": "未入流",
+    "verified_rank": "未入流",
+    "status": "verified",
+    "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+    "evidence": "未入流：各縣儒學教諭、訓導。",
+    "note": "《明史》卷75儒学补证教谕一人、训导二人；教官属于儒学，不是县衙同堂常设佐贰。",
+    "headcount": "一人"
+  },
+  {
+    "record_id": "supplement-county-confucian-assistant",
+    "institution": "县儒学",
+    "title": "训导",
+    "original_rank": "未入流",
+    "verified_rank": "未入流",
+    "status": "verified",
+    "source_url": "https://zh.wikisource.org/zh/大明會典/卷之十_稽勛_勛級_資格",
+    "evidence": "未入流：各縣儒學教諭、訓導。",
+    "note": "《明史》卷75儒学补证教谕一人、训导二人；教官属于儒学，不是县衙同堂常设佐贰。",
+    "headcount": "二人"
+  }
+]

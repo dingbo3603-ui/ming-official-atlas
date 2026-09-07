@@ -1,0 +1,34 @@
+/* Keep positioning on one transform property. Mixing Tailwind's individual
+   translate with transform lets CSS optimization drop the phone reset. */
+.atlas-dialog-popup[data-slot='dialog-content'] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 120ms ease;
+}
+.atlas-dialog-popup[data-starting-style],
+.atlas-dialog-popup[data-ending-style] { opacity: 0; }
+
+@media (max-width:767px), (max-width:1023px) and (pointer:coarse) {
+  .atlas-dialog-popup[data-slot='dialog-content'][role='dialog'] {
+    top: var(--phone-visible-top, 0px);
+    left: 0;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: var(--phone-visible-height, 100dvh);
+    min-height: 0;
+    max-height: var(--phone-visible-height, 100dvh);
+    margin: 0;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+  .atlas-dialog-popup[data-slot='dialog-content'][role='dialog']:is([data-starting-style],[data-ending-style]) { opacity: 1; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .atlas-dialog-popup[data-slot='dialog-content'] { transition: none; }
+}

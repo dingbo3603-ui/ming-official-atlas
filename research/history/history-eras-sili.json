@@ -1,0 +1,4209 @@
+{
+  "schema_version": "1.0.0",
+  "title": "明代年度年号、帝位交接与司礼监证据数据",
+  "researched_on": "2026-09-05",
+  "scope": {
+    "start_year": 1368,
+    "end_year": 1644,
+    "default_year": 1566,
+    "year_count": 277,
+    "polity": "大明中央朝廷：洪武南京起，止于1644北京明廷",
+    "excluded_polities": [
+      "1644年以后南明各政权",
+      "明郑"
+    ],
+    "end_scope_note": "1644是北京明廷终结的界线，不代表所有称明政权在该年消失；南明仍续存。",
+    "source_ids": [
+      "dpm-lineages",
+      "dpm-chongzhen"
+    ]
+  },
+  "calendar_policy": {
+    "annual_axis": "以公历数字作常用历史年度对照；era.start_year/end_year是年号年次对照索引，不是1月1日至12月31日的精确使用区间。",
+    "emperor_tenures": "皇帝start_year/end_year采用实际事件所在公历年，精度到年；允许交接年度多位先后在职，并保留原农历记录。",
+    "jiajing_boundary": "世宗卒、穆宗即位记于嘉靖四十五年十二月，属公历1567年初。故年号表1522—1566不能反推世宗实际在1522年即位或于公历1566年去世。",
+    "date_conversion_limit": "未提供完整逐日中西历转换；精确日期查询须另作历日校核。",
+    "posthumous_names": "庙号用于后世人物识别，不声称在任皇帝当时已使用这些庙号。"
+  },
+  "unknown_policy": {
+    "no_record": "未收录/任期待考",
+    "not_vacancy": "null或缺记录不表示职位空缺。",
+    "no_interpolation": "只具时代性记载不自动铺满每一年；只有完整且核实的起讫区间才可连线。",
+    "office_absence": "司礼监1384年前显示尚未设立；1384改革当年也不应显示自年初已存在。"
+  },
+  "eras": [
+    {
+      "id": "hongwu",
+      "name": "洪武",
+      "start_year": 1368,
+      "end_year": 1398,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-yuanzhang",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-hongwu"
+      ]
+    },
+    {
+      "id": "jianwen",
+      "name": "建文",
+      "start_year": 1399,
+      "end_year": 1402,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-yunwen",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-jianwen"
+      ],
+      "note": "建文四年（1402）六月朱棣即位，改该年称洪武三十五年；本表保留建文作为历史对照。"
+    },
+    {
+      "id": "yongle",
+      "name": "永乐",
+      "start_year": 1403,
+      "end_year": 1424,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-di",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-yongle"
+      ]
+    },
+    {
+      "id": "hongxi",
+      "name": "洪熙",
+      "start_year": 1425,
+      "end_year": 1425,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-gaozhi",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-hongxi"
+      ]
+    },
+    {
+      "id": "xuande",
+      "name": "宣德",
+      "start_year": 1426,
+      "end_year": 1435,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-zhanji",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-xuande"
+      ]
+    },
+    {
+      "id": "zhengtong",
+      "name": "正统",
+      "start_year": 1436,
+      "end_year": 1449,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-qizhen",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-zhengtong"
+      ]
+    },
+    {
+      "id": "jingtai",
+      "name": "景泰",
+      "start_year": 1450,
+      "end_year": 1457,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-qiyu",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-jingtai"
+      ],
+      "note": "1457年年初为景泰八年，英宗复位后当年改元天顺；年度标签同时保留二者。"
+    },
+    {
+      "id": "tianshun",
+      "name": "天顺",
+      "start_year": 1457,
+      "end_year": 1464,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-qizhen",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-tianshun"
+      ]
+    },
+    {
+      "id": "chenghua",
+      "name": "成化",
+      "start_year": 1465,
+      "end_year": 1487,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-jianshen",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-chenghua"
+      ]
+    },
+    {
+      "id": "hongzhi",
+      "name": "弘治",
+      "start_year": 1488,
+      "end_year": 1505,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-youtang",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-hongzhi"
+      ]
+    },
+    {
+      "id": "zhengde",
+      "name": "正德",
+      "start_year": 1506,
+      "end_year": 1521,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-houzhao",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-zhengde"
+      ]
+    },
+    {
+      "id": "jiajing",
+      "name": "嘉靖",
+      "start_year": 1522,
+      "end_year": 1566,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-houcong",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-jiajing"
+      ],
+      "note": "常用年度对照为1522—1566，不表示年号在1566年12月31日终止；嘉靖四十五年末延入公历1567年。"
+    },
+    {
+      "id": "longqing",
+      "name": "隆庆",
+      "start_year": 1567,
+      "end_year": 1572,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-zaihou",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-longqing"
+      ]
+    },
+    {
+      "id": "wanli",
+      "name": "万历",
+      "start_year": 1573,
+      "end_year": 1620,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-yijun",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-wanli"
+      ]
+    },
+    {
+      "id": "taichang",
+      "name": "泰昌",
+      "start_year": 1620,
+      "end_year": 1620,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-changluo",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-taichang"
+      ],
+      "note": "1620年光宗即位时原拟次年改元；光宗当年去世后，熹宗决定以当年八月以后为泰昌，次年才改天启。"
+    },
+    {
+      "id": "tianqi",
+      "name": "天启",
+      "start_year": 1621,
+      "end_year": 1627,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-youxiao",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-tianqi"
+      ]
+    },
+    {
+      "id": "chongzhen",
+      "name": "崇祯",
+      "start_year": 1628,
+      "end_year": 1644,
+      "first_regnal_year": 1,
+      "emperor_id": "zhu-youjian",
+      "calendar_basis": "traditional_annual_reference",
+      "source_ids": [
+        "dpm-lineages",
+        "dpm-chongzhen"
+      ]
+    }
+  ],
+  "emperors": [
+    {
+      "id": "zhu-yuanzhang",
+      "name": "朱元璋",
+      "type": "emperor",
+      "temple_name": "太祖",
+      "era_ids": [
+        "hongwu"
+      ],
+      "source_ids": [
+        "dpm-hongwu"
+      ]
+    },
+    {
+      "id": "zhu-yunwen",
+      "name": "朱允炆",
+      "type": "emperor",
+      "temple_name": "惠宗（后追尊）",
+      "era_ids": [
+        "jianwen"
+      ],
+      "source_ids": [
+        "dpm-jianwen"
+      ]
+    },
+    {
+      "id": "zhu-di",
+      "name": "朱棣",
+      "type": "emperor",
+      "temple_name": "成祖（嘉靖十七年改称；原太宗）",
+      "era_ids": [
+        "yongle"
+      ],
+      "source_ids": [
+        "dpm-yongle"
+      ]
+    },
+    {
+      "id": "zhu-gaozhi",
+      "name": "朱高炽",
+      "type": "emperor",
+      "temple_name": "仁宗",
+      "era_ids": [
+        "hongxi"
+      ],
+      "source_ids": [
+        "dpm-hongxi"
+      ]
+    },
+    {
+      "id": "zhu-zhanji",
+      "name": "朱瞻基",
+      "type": "emperor",
+      "temple_name": "宣宗",
+      "era_ids": [
+        "xuande"
+      ],
+      "source_ids": [
+        "dpm-xuande"
+      ]
+    },
+    {
+      "id": "zhu-qizhen",
+      "name": "朱祁镇",
+      "type": "emperor",
+      "temple_name": "英宗",
+      "era_ids": [
+        "zhengtong",
+        "tianshun"
+      ],
+      "source_ids": [
+        "dpm-zhengtong",
+        "dpm-tianshun"
+      ]
+    },
+    {
+      "id": "zhu-qiyu",
+      "name": "朱祁钰",
+      "type": "emperor",
+      "temple_name": "代宗（后追尊）",
+      "era_ids": [
+        "jingtai"
+      ],
+      "source_ids": [
+        "dpm-jingtai"
+      ]
+    },
+    {
+      "id": "zhu-jianshen",
+      "name": "朱见深",
+      "type": "emperor",
+      "temple_name": "宪宗",
+      "era_ids": [
+        "chenghua"
+      ],
+      "source_ids": [
+        "dpm-chenghua"
+      ]
+    },
+    {
+      "id": "zhu-youtang",
+      "name": "朱祐樘",
+      "type": "emperor",
+      "temple_name": "孝宗",
+      "era_ids": [
+        "hongzhi"
+      ],
+      "source_ids": [
+        "dpm-hongzhi"
+      ]
+    },
+    {
+      "id": "zhu-houzhao",
+      "name": "朱厚照",
+      "type": "emperor",
+      "temple_name": "武宗",
+      "era_ids": [
+        "zhengde"
+      ],
+      "source_ids": [
+        "dpm-zhengde"
+      ]
+    },
+    {
+      "id": "zhu-houcong",
+      "name": "朱厚熜",
+      "type": "emperor",
+      "temple_name": "世宗",
+      "era_ids": [
+        "jiajing"
+      ],
+      "source_ids": [
+        "dpm-jiajing"
+      ]
+    },
+    {
+      "id": "zhu-zaihou",
+      "name": "朱载垕",
+      "type": "emperor",
+      "temple_name": "穆宗",
+      "era_ids": [
+        "longqing"
+      ],
+      "source_ids": [
+        "dpm-longqing"
+      ]
+    },
+    {
+      "id": "zhu-yijun",
+      "name": "朱翊钧",
+      "type": "emperor",
+      "temple_name": "神宗",
+      "era_ids": [
+        "wanli"
+      ],
+      "source_ids": [
+        "dpm-wanli"
+      ]
+    },
+    {
+      "id": "zhu-changluo",
+      "name": "朱常洛",
+      "type": "emperor",
+      "temple_name": "光宗",
+      "era_ids": [
+        "taichang"
+      ],
+      "source_ids": [
+        "dpm-taichang"
+      ]
+    },
+    {
+      "id": "zhu-youxiao",
+      "name": "朱由校",
+      "type": "emperor",
+      "temple_name": "熹宗",
+      "era_ids": [
+        "tianqi"
+      ],
+      "source_ids": [
+        "dpm-tianqi"
+      ]
+    },
+    {
+      "id": "zhu-youjian",
+      "name": "朱由检",
+      "type": "emperor",
+      "temple_name": "思宗等后追尊庙号",
+      "era_ids": [
+        "chongzhen"
+      ],
+      "source_ids": [
+        "dpm-chongzhen"
+      ]
+    }
+  ],
+  "persons": [
+    {
+      "id": "huang-jin",
+      "name": "黄锦",
+      "type": "eunuch",
+      "summary": "嘉靖四十五年海瑞上疏时在世宗身侧；隆庆元年实录明确称司礼监太监。1566年具体掌印、秉笔或兼东厂职任，本次未取得足够证据。",
+      "source_ids": [
+        "ms226",
+        "muzong-sl4",
+        "ms305"
+      ]
+    },
+    {
+      "id": "feng-bao",
+      "name": "冯保",
+      "type": "eunuch",
+      "summary": "《明史》记嘉靖中为司礼秉笔太监，隆庆元年提督东厂兼掌御马监，穆宗崩后掌司礼。嘉靖中不是精确起任日期。",
+      "source_ids": [
+        "ms305",
+        "muzong-sl4"
+      ]
+    },
+    {
+      "id": "chen-hong",
+      "name": "陈洪",
+      "type": "eunuch",
+      "summary": "穆宗朝由御用监获高拱推荐掌司礼印；史料不能据此回填1566为司礼监掌印。",
+      "source_ids": [
+        "ms305"
+      ]
+    },
+    {
+      "id": "meng-chong",
+      "name": "孟冲",
+      "type": "eunuch",
+      "summary": "穆宗朝由尚膳监转掌司礼，接替陈洪；1572穆宗崩后被冯保取代。本次未核得精确起任年。",
+      "source_ids": [
+        "ms305"
+      ]
+    },
+    {
+      "id": "teng-xiang",
+      "name": "滕祥",
+      "type": "eunuch",
+      "summary": "《明史》李芳传将其列为隆庆初司礼诸阉，与孟冲、陈洪并称；具体职衔与起讫年不能由此确定。",
+      "source_ids": [
+        "ms305"
+      ]
+    },
+    {
+      "id": "li-fang",
+      "name": "李芳",
+      "type": "eunuch",
+      "summary": "《明史》与《明穆宗实录》均明称穆宗朝内官监太监。不得把他改写为虚构人物吕芳，也不得直接移作1566司礼监掌印。",
+      "source_ids": [
+        "ms305",
+        "muzong-sl4"
+      ]
+    }
+  ],
+  "tenures": [
+    {
+      "id": "emperor-hongwu",
+      "person_id": "zhu-yuanzhang",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 1,
+      "start_year": 1368,
+      "end_year": 1398,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "洪武元年正月初四",
+      "end_lunar_label": "洪武三十一年闰五月初十",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-hongwu"
+      ]
+    },
+    {
+      "id": "emperor-jianwen",
+      "person_id": "zhu-yunwen",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 2,
+      "start_year": 1398,
+      "end_year": 1402,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "洪武三十一年闰五月十六",
+      "end_lunar_label": "建文四年六月南京陷落；下落存在争议",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-jianwen"
+      ]
+    },
+    {
+      "id": "emperor-yongle",
+      "person_id": "zhu-di",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 3,
+      "start_year": 1402,
+      "end_year": 1424,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "建文四年六月十七",
+      "end_lunar_label": "永乐二十二年七月十八",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-yongle"
+      ]
+    },
+    {
+      "id": "emperor-hongxi",
+      "person_id": "zhu-gaozhi",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 4,
+      "start_year": 1424,
+      "end_year": 1425,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "永乐二十二年八月十五",
+      "end_lunar_label": "洪熙元年五月十二",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-hongxi"
+      ]
+    },
+    {
+      "id": "emperor-xuande",
+      "person_id": "zhu-zhanji",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 5,
+      "start_year": 1425,
+      "end_year": 1435,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "洪熙元年六月十二",
+      "end_lunar_label": "宣德十年正月初三",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-xuande"
+      ]
+    },
+    {
+      "id": "emperor-zhengtong",
+      "person_id": "zhu-qizhen",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 6,
+      "start_year": 1435,
+      "end_year": 1449,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "宣德十年正月",
+      "end_lunar_label": "正统十四年九月景帝即位；后为太上皇",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-zhengtong"
+      ]
+    },
+    {
+      "id": "emperor-jingtai",
+      "person_id": "zhu-qiyu",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 7,
+      "start_year": 1449,
+      "end_year": 1457,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "正统十四年九月",
+      "end_lunar_label": "景泰八年正月夺门之变",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-jingtai"
+      ]
+    },
+    {
+      "id": "emperor-tianshun",
+      "person_id": "zhu-qizhen",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 8,
+      "start_year": 1457,
+      "end_year": 1464,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "景泰八年正月复位；正月二十一改元天顺",
+      "end_lunar_label": "天顺八年正月十七",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-tianshun"
+      ]
+    },
+    {
+      "id": "emperor-chenghua",
+      "person_id": "zhu-jianshen",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 9,
+      "start_year": 1464,
+      "end_year": 1487,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "天顺八年正月二十二",
+      "end_lunar_label": "成化二十三年八月二十二",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-chenghua"
+      ]
+    },
+    {
+      "id": "emperor-hongzhi",
+      "person_id": "zhu-youtang",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 10,
+      "start_year": 1487,
+      "end_year": 1505,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "成化二十三年九月初六",
+      "end_lunar_label": "弘治十八年五月初七",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-hongzhi"
+      ]
+    },
+    {
+      "id": "emperor-zhengde",
+      "person_id": "zhu-houzhao",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 11,
+      "start_year": 1505,
+      "end_year": 1521,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "弘治十八年五月十八",
+      "end_lunar_label": "正德十六年三月",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-zhengde"
+      ]
+    },
+    {
+      "id": "emperor-jiajing",
+      "person_id": "zhu-houcong",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 12,
+      "start_year": 1521,
+      "end_year": 1567,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "正德十六年四月二十二",
+      "end_lunar_label": "嘉靖四十五年十二月十四（该月已跨入公历1567年）",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-jiajing"
+      ]
+    },
+    {
+      "id": "emperor-longqing",
+      "person_id": "zhu-zaihou",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 13,
+      "start_year": 1567,
+      "end_year": 1572,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "嘉靖四十五年十二月二十六（公历1567年）；次年号元年",
+      "end_lunar_label": "隆庆六年五月二十六",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-longqing"
+      ]
+    },
+    {
+      "id": "emperor-wanli",
+      "person_id": "zhu-yijun",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 14,
+      "start_year": 1572,
+      "end_year": 1620,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "隆庆六年六月初十",
+      "end_lunar_label": "万历四十八年七月二十一",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-wanli"
+      ]
+    },
+    {
+      "id": "emperor-taichang",
+      "person_id": "zhu-changluo",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 15,
+      "start_year": 1620,
+      "end_year": 1620,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "万历四十八年八月初一（后改计泰昌元年）",
+      "end_lunar_label": "泰昌元年九月初一",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-taichang"
+      ]
+    },
+    {
+      "id": "emperor-tianqi",
+      "person_id": "zhu-youxiao",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 16,
+      "start_year": 1620,
+      "end_year": 1627,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "泰昌元年九月初六",
+      "end_lunar_label": "天启七年八月二十二",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-tianqi"
+      ]
+    },
+    {
+      "id": "emperor-chongzhen",
+      "person_id": "zhu-youjian",
+      "office_id": "emperor",
+      "role": "皇帝",
+      "sequence": 17,
+      "start_year": 1627,
+      "end_year": 1644,
+      "year_basis": "CE_year_overlap",
+      "start_lunar_label": "天启七年八月二十四",
+      "end_lunar_label": "崇祯十七年三月十九，北京明廷终结",
+      "date_precision": "year_plus_source_lunar_label",
+      "completeness": "reign_sequence_complete_at_year_resolution",
+      "source_ids": [
+        "dpm-chongzhen"
+      ]
+    },
+    {
+      "id": "huang-jin-sili-1567-attestation",
+      "person_id": "huang-jin",
+      "office_id": "sili-taijian-unspecified",
+      "role": "司礼监太监（未细分职任）",
+      "start_year": null,
+      "end_year": null,
+      "attested_years": [
+        1567
+      ],
+      "attested_lunar_label": "隆庆元年二月辛丑",
+      "date_precision": "dated_attestation_only",
+      "completeness": "appointment_and_removal_unknown",
+      "auto_fill_interval": false,
+      "source_ids": [
+        "muzong-sl4"
+      ]
+    },
+    {
+      "id": "feng-bao-bingbi-jiajing",
+      "person_id": "feng-bao",
+      "office_id": "sili-bingbi",
+      "role": "司礼监秉笔太监",
+      "start_year": null,
+      "end_year": null,
+      "period_label": "嘉靖中",
+      "date_precision": "era_only",
+      "completeness": "appointment_and_removal_unknown",
+      "auto_fill_interval": false,
+      "source_ids": [
+        "ms305"
+      ]
+    },
+    {
+      "id": "chen-hong-zhangyin-longqing",
+      "person_id": "chen-hong",
+      "office_id": "sili-zhangyin",
+      "role": "司礼监掌印太监",
+      "start_year": null,
+      "end_year": null,
+      "period_label": "穆宗朝；冯保之后荐陈洪，后孟冲继任",
+      "date_precision": "relative_sequence_only",
+      "completeness": "appointment_and_removal_unknown",
+      "auto_fill_interval": false,
+      "exclude_from_years": [
+        1566
+      ],
+      "source_ids": [
+        "ms305"
+      ]
+    },
+    {
+      "id": "meng-chong-zhangyin-longqing",
+      "person_id": "meng-chong",
+      "office_id": "sili-zhangyin",
+      "role": "司礼监掌印太监",
+      "start_year": null,
+      "end_year": 1572,
+      "period_label": "穆宗朝，继陈洪；穆宗崩后罢",
+      "date_precision": "known_end_year_unknown_start",
+      "completeness": "appointment_unknown",
+      "auto_fill_interval": false,
+      "exclude_from_years": [
+        1566
+      ],
+      "source_ids": [
+        "ms305"
+      ]
+    },
+    {
+      "id": "feng-bao-zhangyin-1572",
+      "person_id": "feng-bao",
+      "office_id": "sili-zhangyin",
+      "role": "司礼监掌印太监",
+      "start_year": 1572,
+      "end_year": null,
+      "period_label": "穆宗崩后取代孟冲",
+      "date_precision": "known_start_year_unknown_end_in_this_dataset",
+      "completeness": "removal_not_encoded",
+      "auto_fill_interval": false,
+      "source_ids": [
+        "ms305"
+      ]
+    }
+  ],
+  "timeline_years": [
+    {
+      "year": 1368,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 1,
+          "label": "洪武元年"
+        }
+      ]
+    },
+    {
+      "year": 1369,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 2,
+          "label": "洪武二年"
+        }
+      ]
+    },
+    {
+      "year": 1370,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 3,
+          "label": "洪武三年"
+        }
+      ]
+    },
+    {
+      "year": 1371,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 4,
+          "label": "洪武四年"
+        }
+      ]
+    },
+    {
+      "year": 1372,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 5,
+          "label": "洪武五年"
+        }
+      ]
+    },
+    {
+      "year": 1373,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 6,
+          "label": "洪武六年"
+        }
+      ]
+    },
+    {
+      "year": 1374,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 7,
+          "label": "洪武七年"
+        }
+      ]
+    },
+    {
+      "year": 1375,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 8,
+          "label": "洪武八年"
+        }
+      ]
+    },
+    {
+      "year": 1376,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 9,
+          "label": "洪武九年"
+        }
+      ]
+    },
+    {
+      "year": 1377,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 10,
+          "label": "洪武十年"
+        }
+      ]
+    },
+    {
+      "year": 1378,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 11,
+          "label": "洪武十一年"
+        }
+      ]
+    },
+    {
+      "year": 1379,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 12,
+          "label": "洪武十二年"
+        }
+      ]
+    },
+    {
+      "year": 1380,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 13,
+          "label": "洪武十三年"
+        }
+      ]
+    },
+    {
+      "year": 1381,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 14,
+          "label": "洪武十四年"
+        }
+      ]
+    },
+    {
+      "year": 1382,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 15,
+          "label": "洪武十五年"
+        }
+      ]
+    },
+    {
+      "year": 1383,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 16,
+          "label": "洪武十六年"
+        }
+      ]
+    },
+    {
+      "year": 1384,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 17,
+          "label": "洪武十七年"
+        }
+      ]
+    },
+    {
+      "year": 1385,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 18,
+          "label": "洪武十八年"
+        }
+      ]
+    },
+    {
+      "year": 1386,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 19,
+          "label": "洪武十九年"
+        }
+      ]
+    },
+    {
+      "year": 1387,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 20,
+          "label": "洪武二十年"
+        }
+      ]
+    },
+    {
+      "year": 1388,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 21,
+          "label": "洪武二十一年"
+        }
+      ]
+    },
+    {
+      "year": 1389,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 22,
+          "label": "洪武二十二年"
+        }
+      ]
+    },
+    {
+      "year": 1390,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 23,
+          "label": "洪武二十三年"
+        }
+      ]
+    },
+    {
+      "year": 1391,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 24,
+          "label": "洪武二十四年"
+        }
+      ]
+    },
+    {
+      "year": 1392,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 25,
+          "label": "洪武二十五年"
+        }
+      ]
+    },
+    {
+      "year": 1393,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 26,
+          "label": "洪武二十六年"
+        }
+      ]
+    },
+    {
+      "year": 1394,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 27,
+          "label": "洪武二十七年"
+        }
+      ]
+    },
+    {
+      "year": 1395,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 28,
+          "label": "洪武二十八年"
+        }
+      ]
+    },
+    {
+      "year": 1396,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 29,
+          "label": "洪武二十九年"
+        }
+      ]
+    },
+    {
+      "year": 1397,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 30,
+          "label": "洪武三十年"
+        }
+      ]
+    },
+    {
+      "year": 1398,
+      "era_labels": [
+        {
+          "era_id": "hongwu",
+          "regnal_year": 31,
+          "label": "洪武三十一年"
+        }
+      ]
+    },
+    {
+      "year": 1399,
+      "era_labels": [
+        {
+          "era_id": "jianwen",
+          "regnal_year": 1,
+          "label": "建文元年"
+        }
+      ]
+    },
+    {
+      "year": 1400,
+      "era_labels": [
+        {
+          "era_id": "jianwen",
+          "regnal_year": 2,
+          "label": "建文二年"
+        }
+      ]
+    },
+    {
+      "year": 1401,
+      "era_labels": [
+        {
+          "era_id": "jianwen",
+          "regnal_year": 3,
+          "label": "建文三年"
+        }
+      ]
+    },
+    {
+      "year": 1402,
+      "era_labels": [
+        {
+          "era_id": "jianwen",
+          "regnal_year": 4,
+          "label": "建文四年"
+        }
+      ],
+      "alternative_contemporary_label": "洪武三十五年（朱棣即位后所改纪年）"
+    },
+    {
+      "year": 1403,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 1,
+          "label": "永乐元年"
+        }
+      ]
+    },
+    {
+      "year": 1404,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 2,
+          "label": "永乐二年"
+        }
+      ]
+    },
+    {
+      "year": 1405,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 3,
+          "label": "永乐三年"
+        }
+      ]
+    },
+    {
+      "year": 1406,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 4,
+          "label": "永乐四年"
+        }
+      ]
+    },
+    {
+      "year": 1407,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 5,
+          "label": "永乐五年"
+        }
+      ]
+    },
+    {
+      "year": 1408,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 6,
+          "label": "永乐六年"
+        }
+      ]
+    },
+    {
+      "year": 1409,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 7,
+          "label": "永乐七年"
+        }
+      ]
+    },
+    {
+      "year": 1410,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 8,
+          "label": "永乐八年"
+        }
+      ]
+    },
+    {
+      "year": 1411,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 9,
+          "label": "永乐九年"
+        }
+      ]
+    },
+    {
+      "year": 1412,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 10,
+          "label": "永乐十年"
+        }
+      ]
+    },
+    {
+      "year": 1413,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 11,
+          "label": "永乐十一年"
+        }
+      ]
+    },
+    {
+      "year": 1414,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 12,
+          "label": "永乐十二年"
+        }
+      ]
+    },
+    {
+      "year": 1415,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 13,
+          "label": "永乐十三年"
+        }
+      ]
+    },
+    {
+      "year": 1416,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 14,
+          "label": "永乐十四年"
+        }
+      ]
+    },
+    {
+      "year": 1417,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 15,
+          "label": "永乐十五年"
+        }
+      ]
+    },
+    {
+      "year": 1418,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 16,
+          "label": "永乐十六年"
+        }
+      ]
+    },
+    {
+      "year": 1419,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 17,
+          "label": "永乐十七年"
+        }
+      ]
+    },
+    {
+      "year": 1420,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 18,
+          "label": "永乐十八年"
+        }
+      ]
+    },
+    {
+      "year": 1421,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 19,
+          "label": "永乐十九年"
+        }
+      ]
+    },
+    {
+      "year": 1422,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 20,
+          "label": "永乐二十年"
+        }
+      ]
+    },
+    {
+      "year": 1423,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 21,
+          "label": "永乐二十一年"
+        }
+      ]
+    },
+    {
+      "year": 1424,
+      "era_labels": [
+        {
+          "era_id": "yongle",
+          "regnal_year": 22,
+          "label": "永乐二十二年"
+        }
+      ]
+    },
+    {
+      "year": 1425,
+      "era_labels": [
+        {
+          "era_id": "hongxi",
+          "regnal_year": 1,
+          "label": "洪熙元年"
+        }
+      ]
+    },
+    {
+      "year": 1426,
+      "era_labels": [
+        {
+          "era_id": "xuande",
+          "regnal_year": 1,
+          "label": "宣德元年"
+        }
+      ]
+    },
+    {
+      "year": 1427,
+      "era_labels": [
+        {
+          "era_id": "xuande",
+          "regnal_year": 2,
+          "label": "宣德二年"
+        }
+      ]
+    },
+    {
+      "year": 1428,
+      "era_labels": [
+        {
+          "era_id": "xuande",
+          "regnal_year": 3,
+          "label": "宣德三年"
+        }
+      ]
+    },
+    {
+      "year": 1429,
+      "era_labels": [
+        {
+          "era_id": "xuande",
+          "regnal_year": 4,
+          "label": "宣德四年"
+        }
+      ]
+    },
+    {
+      "year": 1430,
+      "era_labels": [
+        {
+          "era_id": "xuande",
+          "regnal_year": 5,
+          "label": "宣德五年"
+        }
+      ]
+    },
+    {
+      "year": 1431,
+      "era_labels": [
+        {
+          "era_id": "xuande",
+          "regnal_year": 6,
+          "label": "宣德六年"
+        }
+      ]
+    },
+    {
+      "year": 1432,
+      "era_labels": [
+        {
+          "era_id": "xuande",
+          "regnal_year": 7,
+          "label": "宣德七年"
+        }
+      ]
+    },
+    {
+      "year": 1433,
+      "era_labels": [
+        {
+          "era_id": "xuande",
+          "regnal_year": 8,
+          "label": "宣德八年"
+        }
+      ]
+    },
+    {
+      "year": 1434,
+      "era_labels": [
+        {
+          "era_id": "xuande",
+          "regnal_year": 9,
+          "label": "宣德九年"
+        }
+      ]
+    },
+    {
+      "year": 1435,
+      "era_labels": [
+        {
+          "era_id": "xuande",
+          "regnal_year": 10,
+          "label": "宣德十年"
+        }
+      ]
+    },
+    {
+      "year": 1436,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 1,
+          "label": "正统元年"
+        }
+      ]
+    },
+    {
+      "year": 1437,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 2,
+          "label": "正统二年"
+        }
+      ]
+    },
+    {
+      "year": 1438,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 3,
+          "label": "正统三年"
+        }
+      ]
+    },
+    {
+      "year": 1439,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 4,
+          "label": "正统四年"
+        }
+      ]
+    },
+    {
+      "year": 1440,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 5,
+          "label": "正统五年"
+        }
+      ]
+    },
+    {
+      "year": 1441,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 6,
+          "label": "正统六年"
+        }
+      ]
+    },
+    {
+      "year": 1442,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 7,
+          "label": "正统七年"
+        }
+      ]
+    },
+    {
+      "year": 1443,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 8,
+          "label": "正统八年"
+        }
+      ]
+    },
+    {
+      "year": 1444,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 9,
+          "label": "正统九年"
+        }
+      ]
+    },
+    {
+      "year": 1445,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 10,
+          "label": "正统十年"
+        }
+      ]
+    },
+    {
+      "year": 1446,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 11,
+          "label": "正统十一年"
+        }
+      ]
+    },
+    {
+      "year": 1447,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 12,
+          "label": "正统十二年"
+        }
+      ]
+    },
+    {
+      "year": 1448,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 13,
+          "label": "正统十三年"
+        }
+      ]
+    },
+    {
+      "year": 1449,
+      "era_labels": [
+        {
+          "era_id": "zhengtong",
+          "regnal_year": 14,
+          "label": "正统十四年"
+        }
+      ]
+    },
+    {
+      "year": 1450,
+      "era_labels": [
+        {
+          "era_id": "jingtai",
+          "regnal_year": 1,
+          "label": "景泰元年"
+        }
+      ]
+    },
+    {
+      "year": 1451,
+      "era_labels": [
+        {
+          "era_id": "jingtai",
+          "regnal_year": 2,
+          "label": "景泰二年"
+        }
+      ]
+    },
+    {
+      "year": 1452,
+      "era_labels": [
+        {
+          "era_id": "jingtai",
+          "regnal_year": 3,
+          "label": "景泰三年"
+        }
+      ]
+    },
+    {
+      "year": 1453,
+      "era_labels": [
+        {
+          "era_id": "jingtai",
+          "regnal_year": 4,
+          "label": "景泰四年"
+        }
+      ]
+    },
+    {
+      "year": 1454,
+      "era_labels": [
+        {
+          "era_id": "jingtai",
+          "regnal_year": 5,
+          "label": "景泰五年"
+        }
+      ]
+    },
+    {
+      "year": 1455,
+      "era_labels": [
+        {
+          "era_id": "jingtai",
+          "regnal_year": 6,
+          "label": "景泰六年"
+        }
+      ]
+    },
+    {
+      "year": 1456,
+      "era_labels": [
+        {
+          "era_id": "jingtai",
+          "regnal_year": 7,
+          "label": "景泰七年"
+        }
+      ]
+    },
+    {
+      "year": 1457,
+      "era_labels": [
+        {
+          "era_id": "jingtai",
+          "regnal_year": 8,
+          "label": "景泰八年"
+        },
+        {
+          "era_id": "tianshun",
+          "regnal_year": 1,
+          "label": "天顺元年"
+        }
+      ],
+      "note": "年初景泰八年，复辟后当年改元天顺。"
+    },
+    {
+      "year": 1458,
+      "era_labels": [
+        {
+          "era_id": "tianshun",
+          "regnal_year": 2,
+          "label": "天顺二年"
+        }
+      ]
+    },
+    {
+      "year": 1459,
+      "era_labels": [
+        {
+          "era_id": "tianshun",
+          "regnal_year": 3,
+          "label": "天顺三年"
+        }
+      ]
+    },
+    {
+      "year": 1460,
+      "era_labels": [
+        {
+          "era_id": "tianshun",
+          "regnal_year": 4,
+          "label": "天顺四年"
+        }
+      ]
+    },
+    {
+      "year": 1461,
+      "era_labels": [
+        {
+          "era_id": "tianshun",
+          "regnal_year": 5,
+          "label": "天顺五年"
+        }
+      ]
+    },
+    {
+      "year": 1462,
+      "era_labels": [
+        {
+          "era_id": "tianshun",
+          "regnal_year": 6,
+          "label": "天顺六年"
+        }
+      ]
+    },
+    {
+      "year": 1463,
+      "era_labels": [
+        {
+          "era_id": "tianshun",
+          "regnal_year": 7,
+          "label": "天顺七年"
+        }
+      ]
+    },
+    {
+      "year": 1464,
+      "era_labels": [
+        {
+          "era_id": "tianshun",
+          "regnal_year": 8,
+          "label": "天顺八年"
+        }
+      ]
+    },
+    {
+      "year": 1465,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 1,
+          "label": "成化元年"
+        }
+      ]
+    },
+    {
+      "year": 1466,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 2,
+          "label": "成化二年"
+        }
+      ]
+    },
+    {
+      "year": 1467,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 3,
+          "label": "成化三年"
+        }
+      ]
+    },
+    {
+      "year": 1468,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 4,
+          "label": "成化四年"
+        }
+      ]
+    },
+    {
+      "year": 1469,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 5,
+          "label": "成化五年"
+        }
+      ]
+    },
+    {
+      "year": 1470,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 6,
+          "label": "成化六年"
+        }
+      ]
+    },
+    {
+      "year": 1471,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 7,
+          "label": "成化七年"
+        }
+      ]
+    },
+    {
+      "year": 1472,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 8,
+          "label": "成化八年"
+        }
+      ]
+    },
+    {
+      "year": 1473,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 9,
+          "label": "成化九年"
+        }
+      ]
+    },
+    {
+      "year": 1474,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 10,
+          "label": "成化十年"
+        }
+      ]
+    },
+    {
+      "year": 1475,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 11,
+          "label": "成化十一年"
+        }
+      ]
+    },
+    {
+      "year": 1476,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 12,
+          "label": "成化十二年"
+        }
+      ]
+    },
+    {
+      "year": 1477,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 13,
+          "label": "成化十三年"
+        }
+      ]
+    },
+    {
+      "year": 1478,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 14,
+          "label": "成化十四年"
+        }
+      ]
+    },
+    {
+      "year": 1479,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 15,
+          "label": "成化十五年"
+        }
+      ]
+    },
+    {
+      "year": 1480,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 16,
+          "label": "成化十六年"
+        }
+      ]
+    },
+    {
+      "year": 1481,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 17,
+          "label": "成化十七年"
+        }
+      ]
+    },
+    {
+      "year": 1482,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 18,
+          "label": "成化十八年"
+        }
+      ]
+    },
+    {
+      "year": 1483,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 19,
+          "label": "成化十九年"
+        }
+      ]
+    },
+    {
+      "year": 1484,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 20,
+          "label": "成化二十年"
+        }
+      ]
+    },
+    {
+      "year": 1485,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 21,
+          "label": "成化二十一年"
+        }
+      ]
+    },
+    {
+      "year": 1486,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 22,
+          "label": "成化二十二年"
+        }
+      ]
+    },
+    {
+      "year": 1487,
+      "era_labels": [
+        {
+          "era_id": "chenghua",
+          "regnal_year": 23,
+          "label": "成化二十三年"
+        }
+      ]
+    },
+    {
+      "year": 1488,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 1,
+          "label": "弘治元年"
+        }
+      ]
+    },
+    {
+      "year": 1489,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 2,
+          "label": "弘治二年"
+        }
+      ]
+    },
+    {
+      "year": 1490,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 3,
+          "label": "弘治三年"
+        }
+      ]
+    },
+    {
+      "year": 1491,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 4,
+          "label": "弘治四年"
+        }
+      ]
+    },
+    {
+      "year": 1492,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 5,
+          "label": "弘治五年"
+        }
+      ]
+    },
+    {
+      "year": 1493,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 6,
+          "label": "弘治六年"
+        }
+      ]
+    },
+    {
+      "year": 1494,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 7,
+          "label": "弘治七年"
+        }
+      ]
+    },
+    {
+      "year": 1495,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 8,
+          "label": "弘治八年"
+        }
+      ]
+    },
+    {
+      "year": 1496,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 9,
+          "label": "弘治九年"
+        }
+      ]
+    },
+    {
+      "year": 1497,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 10,
+          "label": "弘治十年"
+        }
+      ]
+    },
+    {
+      "year": 1498,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 11,
+          "label": "弘治十一年"
+        }
+      ]
+    },
+    {
+      "year": 1499,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 12,
+          "label": "弘治十二年"
+        }
+      ]
+    },
+    {
+      "year": 1500,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 13,
+          "label": "弘治十三年"
+        }
+      ]
+    },
+    {
+      "year": 1501,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 14,
+          "label": "弘治十四年"
+        }
+      ]
+    },
+    {
+      "year": 1502,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 15,
+          "label": "弘治十五年"
+        }
+      ]
+    },
+    {
+      "year": 1503,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 16,
+          "label": "弘治十六年"
+        }
+      ]
+    },
+    {
+      "year": 1504,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 17,
+          "label": "弘治十七年"
+        }
+      ]
+    },
+    {
+      "year": 1505,
+      "era_labels": [
+        {
+          "era_id": "hongzhi",
+          "regnal_year": 18,
+          "label": "弘治十八年"
+        }
+      ]
+    },
+    {
+      "year": 1506,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 1,
+          "label": "正德元年"
+        }
+      ]
+    },
+    {
+      "year": 1507,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 2,
+          "label": "正德二年"
+        }
+      ]
+    },
+    {
+      "year": 1508,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 3,
+          "label": "正德三年"
+        }
+      ]
+    },
+    {
+      "year": 1509,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 4,
+          "label": "正德四年"
+        }
+      ]
+    },
+    {
+      "year": 1510,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 5,
+          "label": "正德五年"
+        }
+      ]
+    },
+    {
+      "year": 1511,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 6,
+          "label": "正德六年"
+        }
+      ]
+    },
+    {
+      "year": 1512,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 7,
+          "label": "正德七年"
+        }
+      ]
+    },
+    {
+      "year": 1513,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 8,
+          "label": "正德八年"
+        }
+      ]
+    },
+    {
+      "year": 1514,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 9,
+          "label": "正德九年"
+        }
+      ]
+    },
+    {
+      "year": 1515,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 10,
+          "label": "正德十年"
+        }
+      ]
+    },
+    {
+      "year": 1516,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 11,
+          "label": "正德十一年"
+        }
+      ]
+    },
+    {
+      "year": 1517,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 12,
+          "label": "正德十二年"
+        }
+      ]
+    },
+    {
+      "year": 1518,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 13,
+          "label": "正德十三年"
+        }
+      ]
+    },
+    {
+      "year": 1519,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 14,
+          "label": "正德十四年"
+        }
+      ]
+    },
+    {
+      "year": 1520,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 15,
+          "label": "正德十五年"
+        }
+      ]
+    },
+    {
+      "year": 1521,
+      "era_labels": [
+        {
+          "era_id": "zhengde",
+          "regnal_year": 16,
+          "label": "正德十六年"
+        }
+      ]
+    },
+    {
+      "year": 1522,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 1,
+          "label": "嘉靖元年"
+        }
+      ]
+    },
+    {
+      "year": 1523,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 2,
+          "label": "嘉靖二年"
+        }
+      ]
+    },
+    {
+      "year": 1524,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 3,
+          "label": "嘉靖三年"
+        }
+      ]
+    },
+    {
+      "year": 1525,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 4,
+          "label": "嘉靖四年"
+        }
+      ]
+    },
+    {
+      "year": 1526,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 5,
+          "label": "嘉靖五年"
+        }
+      ]
+    },
+    {
+      "year": 1527,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 6,
+          "label": "嘉靖六年"
+        }
+      ]
+    },
+    {
+      "year": 1528,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 7,
+          "label": "嘉靖七年"
+        }
+      ]
+    },
+    {
+      "year": 1529,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 8,
+          "label": "嘉靖八年"
+        }
+      ]
+    },
+    {
+      "year": 1530,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 9,
+          "label": "嘉靖九年"
+        }
+      ]
+    },
+    {
+      "year": 1531,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 10,
+          "label": "嘉靖十年"
+        }
+      ]
+    },
+    {
+      "year": 1532,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 11,
+          "label": "嘉靖十一年"
+        }
+      ]
+    },
+    {
+      "year": 1533,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 12,
+          "label": "嘉靖十二年"
+        }
+      ]
+    },
+    {
+      "year": 1534,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 13,
+          "label": "嘉靖十三年"
+        }
+      ]
+    },
+    {
+      "year": 1535,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 14,
+          "label": "嘉靖十四年"
+        }
+      ]
+    },
+    {
+      "year": 1536,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 15,
+          "label": "嘉靖十五年"
+        }
+      ]
+    },
+    {
+      "year": 1537,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 16,
+          "label": "嘉靖十六年"
+        }
+      ]
+    },
+    {
+      "year": 1538,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 17,
+          "label": "嘉靖十七年"
+        }
+      ]
+    },
+    {
+      "year": 1539,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 18,
+          "label": "嘉靖十八年"
+        }
+      ]
+    },
+    {
+      "year": 1540,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 19,
+          "label": "嘉靖十九年"
+        }
+      ]
+    },
+    {
+      "year": 1541,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 20,
+          "label": "嘉靖二十年"
+        }
+      ]
+    },
+    {
+      "year": 1542,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 21,
+          "label": "嘉靖二十一年"
+        }
+      ]
+    },
+    {
+      "year": 1543,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 22,
+          "label": "嘉靖二十二年"
+        }
+      ]
+    },
+    {
+      "year": 1544,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 23,
+          "label": "嘉靖二十三年"
+        }
+      ]
+    },
+    {
+      "year": 1545,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 24,
+          "label": "嘉靖二十四年"
+        }
+      ]
+    },
+    {
+      "year": 1546,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 25,
+          "label": "嘉靖二十五年"
+        }
+      ]
+    },
+    {
+      "year": 1547,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 26,
+          "label": "嘉靖二十六年"
+        }
+      ]
+    },
+    {
+      "year": 1548,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 27,
+          "label": "嘉靖二十七年"
+        }
+      ]
+    },
+    {
+      "year": 1549,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 28,
+          "label": "嘉靖二十八年"
+        }
+      ]
+    },
+    {
+      "year": 1550,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 29,
+          "label": "嘉靖二十九年"
+        }
+      ]
+    },
+    {
+      "year": 1551,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 30,
+          "label": "嘉靖三十年"
+        }
+      ]
+    },
+    {
+      "year": 1552,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 31,
+          "label": "嘉靖三十一年"
+        }
+      ]
+    },
+    {
+      "year": 1553,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 32,
+          "label": "嘉靖三十二年"
+        }
+      ]
+    },
+    {
+      "year": 1554,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 33,
+          "label": "嘉靖三十三年"
+        }
+      ]
+    },
+    {
+      "year": 1555,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 34,
+          "label": "嘉靖三十四年"
+        }
+      ]
+    },
+    {
+      "year": 1556,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 35,
+          "label": "嘉靖三十五年"
+        }
+      ]
+    },
+    {
+      "year": 1557,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 36,
+          "label": "嘉靖三十六年"
+        }
+      ]
+    },
+    {
+      "year": 1558,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 37,
+          "label": "嘉靖三十七年"
+        }
+      ]
+    },
+    {
+      "year": 1559,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 38,
+          "label": "嘉靖三十八年"
+        }
+      ]
+    },
+    {
+      "year": 1560,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 39,
+          "label": "嘉靖三十九年"
+        }
+      ]
+    },
+    {
+      "year": 1561,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 40,
+          "label": "嘉靖四十年"
+        }
+      ]
+    },
+    {
+      "year": 1562,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 41,
+          "label": "嘉靖四十一年"
+        }
+      ]
+    },
+    {
+      "year": 1563,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 42,
+          "label": "嘉靖四十二年"
+        }
+      ]
+    },
+    {
+      "year": 1564,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 43,
+          "label": "嘉靖四十三年"
+        }
+      ]
+    },
+    {
+      "year": 1565,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 44,
+          "label": "嘉靖四十四年"
+        }
+      ]
+    },
+    {
+      "year": 1566,
+      "era_labels": [
+        {
+          "era_id": "jiajing",
+          "regnal_year": 45,
+          "label": "嘉靖四十五年"
+        }
+      ],
+      "note": "嘉靖四十五年为常用年度对照；其农历年底延至公历1567年。"
+    },
+    {
+      "year": 1567,
+      "era_labels": [
+        {
+          "era_id": "longqing",
+          "regnal_year": 1,
+          "label": "隆庆元年"
+        }
+      ]
+    },
+    {
+      "year": 1568,
+      "era_labels": [
+        {
+          "era_id": "longqing",
+          "regnal_year": 2,
+          "label": "隆庆二年"
+        }
+      ]
+    },
+    {
+      "year": 1569,
+      "era_labels": [
+        {
+          "era_id": "longqing",
+          "regnal_year": 3,
+          "label": "隆庆三年"
+        }
+      ]
+    },
+    {
+      "year": 1570,
+      "era_labels": [
+        {
+          "era_id": "longqing",
+          "regnal_year": 4,
+          "label": "隆庆四年"
+        }
+      ]
+    },
+    {
+      "year": 1571,
+      "era_labels": [
+        {
+          "era_id": "longqing",
+          "regnal_year": 5,
+          "label": "隆庆五年"
+        }
+      ]
+    },
+    {
+      "year": 1572,
+      "era_labels": [
+        {
+          "era_id": "longqing",
+          "regnal_year": 6,
+          "label": "隆庆六年"
+        }
+      ]
+    },
+    {
+      "year": 1573,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 1,
+          "label": "万历元年"
+        }
+      ]
+    },
+    {
+      "year": 1574,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 2,
+          "label": "万历二年"
+        }
+      ]
+    },
+    {
+      "year": 1575,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 3,
+          "label": "万历三年"
+        }
+      ]
+    },
+    {
+      "year": 1576,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 4,
+          "label": "万历四年"
+        }
+      ]
+    },
+    {
+      "year": 1577,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 5,
+          "label": "万历五年"
+        }
+      ]
+    },
+    {
+      "year": 1578,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 6,
+          "label": "万历六年"
+        }
+      ]
+    },
+    {
+      "year": 1579,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 7,
+          "label": "万历七年"
+        }
+      ]
+    },
+    {
+      "year": 1580,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 8,
+          "label": "万历八年"
+        }
+      ]
+    },
+    {
+      "year": 1581,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 9,
+          "label": "万历九年"
+        }
+      ]
+    },
+    {
+      "year": 1582,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 10,
+          "label": "万历十年"
+        }
+      ]
+    },
+    {
+      "year": 1583,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 11,
+          "label": "万历十一年"
+        }
+      ]
+    },
+    {
+      "year": 1584,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 12,
+          "label": "万历十二年"
+        }
+      ]
+    },
+    {
+      "year": 1585,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 13,
+          "label": "万历十三年"
+        }
+      ]
+    },
+    {
+      "year": 1586,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 14,
+          "label": "万历十四年"
+        }
+      ]
+    },
+    {
+      "year": 1587,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 15,
+          "label": "万历十五年"
+        }
+      ]
+    },
+    {
+      "year": 1588,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 16,
+          "label": "万历十六年"
+        }
+      ]
+    },
+    {
+      "year": 1589,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 17,
+          "label": "万历十七年"
+        }
+      ]
+    },
+    {
+      "year": 1590,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 18,
+          "label": "万历十八年"
+        }
+      ]
+    },
+    {
+      "year": 1591,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 19,
+          "label": "万历十九年"
+        }
+      ]
+    },
+    {
+      "year": 1592,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 20,
+          "label": "万历二十年"
+        }
+      ]
+    },
+    {
+      "year": 1593,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 21,
+          "label": "万历二十一年"
+        }
+      ]
+    },
+    {
+      "year": 1594,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 22,
+          "label": "万历二十二年"
+        }
+      ]
+    },
+    {
+      "year": 1595,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 23,
+          "label": "万历二十三年"
+        }
+      ]
+    },
+    {
+      "year": 1596,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 24,
+          "label": "万历二十四年"
+        }
+      ]
+    },
+    {
+      "year": 1597,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 25,
+          "label": "万历二十五年"
+        }
+      ]
+    },
+    {
+      "year": 1598,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 26,
+          "label": "万历二十六年"
+        }
+      ]
+    },
+    {
+      "year": 1599,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 27,
+          "label": "万历二十七年"
+        }
+      ]
+    },
+    {
+      "year": 1600,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 28,
+          "label": "万历二十八年"
+        }
+      ]
+    },
+    {
+      "year": 1601,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 29,
+          "label": "万历二十九年"
+        }
+      ]
+    },
+    {
+      "year": 1602,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 30,
+          "label": "万历三十年"
+        }
+      ]
+    },
+    {
+      "year": 1603,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 31,
+          "label": "万历三十一年"
+        }
+      ]
+    },
+    {
+      "year": 1604,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 32,
+          "label": "万历三十二年"
+        }
+      ]
+    },
+    {
+      "year": 1605,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 33,
+          "label": "万历三十三年"
+        }
+      ]
+    },
+    {
+      "year": 1606,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 34,
+          "label": "万历三十四年"
+        }
+      ]
+    },
+    {
+      "year": 1607,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 35,
+          "label": "万历三十五年"
+        }
+      ]
+    },
+    {
+      "year": 1608,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 36,
+          "label": "万历三十六年"
+        }
+      ]
+    },
+    {
+      "year": 1609,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 37,
+          "label": "万历三十七年"
+        }
+      ]
+    },
+    {
+      "year": 1610,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 38,
+          "label": "万历三十八年"
+        }
+      ]
+    },
+    {
+      "year": 1611,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 39,
+          "label": "万历三十九年"
+        }
+      ]
+    },
+    {
+      "year": 1612,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 40,
+          "label": "万历四十年"
+        }
+      ]
+    },
+    {
+      "year": 1613,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 41,
+          "label": "万历四十一年"
+        }
+      ]
+    },
+    {
+      "year": 1614,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 42,
+          "label": "万历四十二年"
+        }
+      ]
+    },
+    {
+      "year": 1615,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 43,
+          "label": "万历四十三年"
+        }
+      ]
+    },
+    {
+      "year": 1616,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 44,
+          "label": "万历四十四年"
+        }
+      ]
+    },
+    {
+      "year": 1617,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 45,
+          "label": "万历四十五年"
+        }
+      ]
+    },
+    {
+      "year": 1618,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 46,
+          "label": "万历四十六年"
+        }
+      ]
+    },
+    {
+      "year": 1619,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 47,
+          "label": "万历四十七年"
+        }
+      ]
+    },
+    {
+      "year": 1620,
+      "era_labels": [
+        {
+          "era_id": "wanli",
+          "regnal_year": 48,
+          "label": "万历四十八年"
+        },
+        {
+          "era_id": "taichang",
+          "regnal_year": 1,
+          "label": "泰昌元年"
+        }
+      ],
+      "note": "同一公历年度内有神宗、光宗、熹宗三帝先后在位；年号只列万历和泰昌，天启自次年起。"
+    },
+    {
+      "year": 1621,
+      "era_labels": [
+        {
+          "era_id": "tianqi",
+          "regnal_year": 1,
+          "label": "天启元年"
+        }
+      ]
+    },
+    {
+      "year": 1622,
+      "era_labels": [
+        {
+          "era_id": "tianqi",
+          "regnal_year": 2,
+          "label": "天启二年"
+        }
+      ]
+    },
+    {
+      "year": 1623,
+      "era_labels": [
+        {
+          "era_id": "tianqi",
+          "regnal_year": 3,
+          "label": "天启三年"
+        }
+      ]
+    },
+    {
+      "year": 1624,
+      "era_labels": [
+        {
+          "era_id": "tianqi",
+          "regnal_year": 4,
+          "label": "天启四年"
+        }
+      ]
+    },
+    {
+      "year": 1625,
+      "era_labels": [
+        {
+          "era_id": "tianqi",
+          "regnal_year": 5,
+          "label": "天启五年"
+        }
+      ]
+    },
+    {
+      "year": 1626,
+      "era_labels": [
+        {
+          "era_id": "tianqi",
+          "regnal_year": 6,
+          "label": "天启六年"
+        }
+      ]
+    },
+    {
+      "year": 1627,
+      "era_labels": [
+        {
+          "era_id": "tianqi",
+          "regnal_year": 7,
+          "label": "天启七年"
+        }
+      ]
+    },
+    {
+      "year": 1628,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 1,
+          "label": "崇祯元年"
+        }
+      ]
+    },
+    {
+      "year": 1629,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 2,
+          "label": "崇祯二年"
+        }
+      ]
+    },
+    {
+      "year": 1630,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 3,
+          "label": "崇祯三年"
+        }
+      ]
+    },
+    {
+      "year": 1631,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 4,
+          "label": "崇祯四年"
+        }
+      ]
+    },
+    {
+      "year": 1632,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 5,
+          "label": "崇祯五年"
+        }
+      ]
+    },
+    {
+      "year": 1633,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 6,
+          "label": "崇祯六年"
+        }
+      ]
+    },
+    {
+      "year": 1634,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 7,
+          "label": "崇祯七年"
+        }
+      ]
+    },
+    {
+      "year": 1635,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 8,
+          "label": "崇祯八年"
+        }
+      ]
+    },
+    {
+      "year": 1636,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 9,
+          "label": "崇祯九年"
+        }
+      ]
+    },
+    {
+      "year": 1637,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 10,
+          "label": "崇祯十年"
+        }
+      ]
+    },
+    {
+      "year": 1638,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 11,
+          "label": "崇祯十一年"
+        }
+      ]
+    },
+    {
+      "year": 1639,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 12,
+          "label": "崇祯十二年"
+        }
+      ]
+    },
+    {
+      "year": 1640,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 13,
+          "label": "崇祯十三年"
+        }
+      ]
+    },
+    {
+      "year": 1641,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 14,
+          "label": "崇祯十四年"
+        }
+      ]
+    },
+    {
+      "year": 1642,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 15,
+          "label": "崇祯十五年"
+        }
+      ]
+    },
+    {
+      "year": 1643,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 16,
+          "label": "崇祯十六年"
+        }
+      ]
+    },
+    {
+      "year": 1644,
+      "era_labels": [
+        {
+          "era_id": "chongzhen",
+          "regnal_year": 17,
+          "label": "崇祯十七年"
+        }
+      ],
+      "note": "崇祯十七年三月北京明廷终结；同年南明弘光政权已建立，但弘光年号次年开始，不在本图谱政权覆盖内。"
+    }
+  ],
+  "sili_organization": {
+    "id": "sili-jian",
+    "name": "司礼监",
+    "institution_type": "内廷宦官机构",
+    "parent": "皇帝",
+    "established_year": 1384,
+    "establishment_precision": "year_and_lunar_month_from_museum_summary",
+    "availability_before_1384": "not_established",
+    "summary": "中后期承担内外章奏、御前勘合和代批朱等事务；内廷职掌随时代发展。",
+    "source_ids": [
+      "ms74",
+      "dpm-sili"
+    ],
+    "events": [
+      {
+        "year": 1384,
+        "kind": "established",
+        "title": "司礼监初设",
+        "text": "洪武十七年更定内官诸监品职，司礼监设令、丞；故宫资料进一步系于该年四月。",
+        "source_ids": [
+          "ms74",
+          "dpm-sili"
+        ]
+      },
+      {
+        "year": 1395,
+        "kind": "reorganized",
+        "title": "洪武二十八年重定内官官制",
+        "text": "司礼监太监正四品，左右少监、左右监丞、典簿等成为该次旧制的一部分。",
+        "source_ids": [
+          "ms74"
+        ]
+      },
+      {
+        "year": 1420,
+        "kind": "related_institution",
+        "title": "东厂设立",
+        "text": "永乐十八年置东厂；东厂是另一个机构，宦官兼掌不表示东厂等于司礼监。",
+        "source_ids": [
+          "ms304"
+        ]
+      },
+      {
+        "year": 1429,
+        "kind": "education",
+        "title": "设内书堂",
+        "text": "宣德四年设内书堂，培养识字宦官。",
+        "source_ids": [
+          "dpm-sili"
+        ]
+      },
+      {
+        "year": null,
+        "period_label": "宣德至正统间",
+        "kind": "function_change",
+        "title": "章奏批红职能发展",
+        "text": "伴随内阁票拟制度，司礼监宦官逐渐参与代批；确切制度形成不能据概述指定为某个未经核实的单一年。",
+        "source_ids": [
+          "dpm-sili",
+          "ms74"
+        ]
+      },
+      {
+        "year": null,
+        "period_label": "不早于嘉靖",
+        "kind": "title_development",
+        "title": "提督作为特定职级",
+        "text": "故宫学刊考证提督太监特定职级出现不早于嘉靖；不与兼提督东厂等差遣混同。",
+        "source_ids": [
+          "dpm-sili-tidu-2023"
+        ]
+      }
+    ]
+  },
+  "sili_offices": [
+    {
+      "id": "sili-ling",
+      "name": "司礼监令",
+      "organization_id": "sili-jian",
+      "rank": "正七品",
+      "count": 1,
+      "attested_from_year": 1384,
+      "valid_until_reorganization_year": 1395,
+      "chronology_basis": "洪武十七年旧制；洪武二十八年重定",
+      "source_ids": [
+        "ms74"
+      ]
+    },
+    {
+      "id": "sili-cheng",
+      "name": "司礼监丞",
+      "organization_id": "sili-jian",
+      "rank": "从七品",
+      "count": 1,
+      "attested_from_year": 1384,
+      "valid_until_reorganization_year": 1395,
+      "chronology_basis": "洪武十七年旧制；洪武二十八年重定",
+      "source_ids": [
+        "ms74"
+      ]
+    },
+    {
+      "id": "sili-taijian-old",
+      "name": "司礼监太监（洪武旧制）",
+      "organization_id": "sili-jian",
+      "rank": "正四品",
+      "count": 1,
+      "attested_from_year": 1395,
+      "duties": "冠婚丧祭礼仪、赏赐笔墨书画、宫廷筵宴供应等；后世章奏批红权不能全部倒推至洪武。",
+      "source_ids": [
+        "ms74",
+        "dpm-sili"
+      ]
+    },
+    {
+      "id": "sili-shaojian-old",
+      "name": "左、右少监（洪武旧制）",
+      "organization_id": "sili-jian",
+      "rank": "从四品",
+      "count_each": 1,
+      "attested_from_year": 1395,
+      "source_ids": [
+        "ms74"
+      ]
+    },
+    {
+      "id": "sili-jiancheng-old",
+      "name": "左、右监丞（洪武旧制）",
+      "organization_id": "sili-jian",
+      "rank": "正五品",
+      "count_each": 1,
+      "attested_from_year": 1395,
+      "source_ids": [
+        "ms74"
+      ]
+    },
+    {
+      "id": "sili-zhangyin",
+      "name": "司礼监掌印太监",
+      "organization_id": "sili-jian",
+      "count": 1,
+      "rank": null,
+      "rank_note": "太监品秩与掌印职任为不同层次；不另造高于太监的法定品级。",
+      "display_order": 1,
+      "duties": "掌理内外章奏、御前勘合，掌监印。",
+      "established_year": null,
+      "phase": "明中后期",
+      "source_ids": [
+        "ms74",
+        "ms305",
+        "dpm-sili-tidu-2023"
+      ]
+    },
+    {
+      "id": "sili-bingbi",
+      "name": "司礼监秉笔太监",
+      "organization_id": "sili-jian",
+      "count": null,
+      "count_note": "无定员",
+      "display_order": 2,
+      "duties": "掌章奏文书，依阁票代行批朱；具体依皇帝授权，不等同独立决策者。",
+      "established_year": null,
+      "phase": "宣德至正统间形成、明中后期见行；不能精确到本数据未核实的某年",
+      "source_ids": [
+        "ms74",
+        "dpm-sili",
+        "ms305"
+      ]
+    },
+    {
+      "id": "sili-suitang",
+      "name": "司礼监随堂太监",
+      "organization_id": "sili-jian",
+      "count": null,
+      "count_note": "无定员",
+      "display_order": 3,
+      "duties": "参与章奏文书办理；《明史》与秉笔并列照阁票批朱。",
+      "established_year": null,
+      "phase": "明中后期",
+      "source_ids": [
+        "ms74",
+        "dpm-sili-tidu-2023"
+      ]
+    },
+    {
+      "id": "sili-tidu",
+      "name": "司礼监提督太监",
+      "organization_id": "sili-jian",
+      "count": 1,
+      "display_order": 4,
+      "duties": "据故宫学刊考证，主要管理宫廷书籍、书画收藏，兼掌内书堂、经厂。",
+      "established_year": null,
+      "earliest_possible_era": "嘉靖",
+      "phase": "不早于嘉靖出现的特定职级",
+      "source_conflict": "《明史》职官志列提督于掌印之前，并将仪礼刑名等归入提督；故宫学刊2023据《酌中志》等指出误读。展示采用掌印、秉笔、随堂在前，提督在后；保留考证说明。",
+      "source_ids": [
+        "ms74",
+        "dpm-sili-tidu-2023"
+      ]
+    },
+    {
+      "id": "sili-zhangsi",
+      "name": "掌司",
+      "organization_id": "sili-jian",
+      "count": null,
+      "count_note": "无定员",
+      "duties": "各掌所司；涵盖书籍名画等库、内书堂、六科廊等具体事务。",
+      "established_year": null,
+      "source_ids": [
+        "ms74"
+      ]
+    },
+    {
+      "id": "sili-dianbu",
+      "name": "典簿",
+      "organization_id": "sili-jian",
+      "rank": "正六品（洪武旧制）",
+      "count": 1,
+      "count_note": "洪武二十八年一人；后期无定员",
+      "duties": "典记奏章及出纳号簿。",
+      "attested_from_year": 1395,
+      "source_ids": [
+        "ms74"
+      ]
+    },
+    {
+      "id": "sili-taijian-unspecified",
+      "name": "司礼监太监（职任未详）",
+      "organization_id": "sili-jian",
+      "data_placeholder_only": true,
+      "duties": "用于史料只给司礼太监或司礼监太监称谓的记录；不推定掌印、秉笔、随堂。",
+      "source_ids": [
+        "ms305",
+        "muzong-sl4"
+      ]
+    }
+  ],
+  "default_1566": {
+    "emperor_id": "zhu-houcong",
+    "era_id": "jiajing",
+    "regnal_year": 45,
+    "sili_status": "exists",
+    "institution_layout": "明中后期职能说明，可列掌印、秉笔、随堂、提督等；人物任职另按证据过滤。",
+    "people_context": [
+      {
+        "person_id": "huang-jin",
+        "display_label": "黄锦 · 嘉靖末御前近侍",
+        "status": "contemporary_presence_verified_specific_sili_post_unverified",
+        "source_ids": [
+          "ms226"
+        ],
+        "note": "可展示人物与1566事件的联系，不能据此挂到掌印/秉笔节点。"
+      }
+    ],
+    "unresolved_office_holders": [
+      "sili-zhangyin",
+      "sili-bingbi",
+      "sili-suitang",
+      "sili-tidu"
+    ],
+    "context_only_persons": [
+      {
+        "person_id": "feng-bao",
+        "label": "嘉靖中曾为司礼秉笔，任期起讫待考",
+        "source_ids": [
+          "ms305"
+        ]
+      }
+    ],
+    "do_not_present_as_1566_zhangyin": [
+      "chen-hong",
+      "meng-chong",
+      "li-fang"
+    ],
+    "empty_state_text": "本年任职人选尚待史料核实"
+  },
+  "source_conflicts": [
+    {
+      "id": "dpm-regnal-as-reign",
+      "sources": [
+        "dpm-lineages"
+      ],
+      "issue": "宫廷世系总表名为在位时间但多为年号区间。",
+      "resolution": "年号使用总表；皇帝即位另用大事年表和本纪。"
+    },
+    {
+      "id": "hairui-date",
+      "sources": [
+        "dpm-jiajing",
+        "ms226"
+      ],
+      "issue": "故宫嘉靖年表列海瑞上疏于嘉靖四十四年十月，《明史》海瑞传明确四十五年二月。",
+      "resolution": "1566相关叙述采用《明史》卷226。"
+    },
+    {
+      "id": "tidu-position",
+      "sources": [
+        "ms74",
+        "dpm-sili-tidu-2023"
+      ],
+      "issue": "《明史》职官志提督条的排序、职能归属被故宫学刊专论指出有误。",
+      "resolution": "不将提督画成掌印上级；展示考证后的职责并注明争议来源。"
+    },
+    {
+      "id": "initial-sili-name",
+      "sources": [
+        "ms74",
+        "dpm-sili"
+      ],
+      "issue": "故宫网页初设名称写礼监司，《明史》职官三写司礼监。",
+      "resolution": "采用《明史》名称司礼监。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dpm-lineages",
+      "title": "故宫博物院·宫廷世系",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineages.html",
+      "locator": "明朝帝王总表",
+      "supports": "17组年号常用对照区间、16位帝王姓名；总表题为在位时间，实与年号区间一致，不能直接作为登极任期。"
+    },
+    {
+      "id": "ms74",
+      "title": "《明史》卷七十四·职官三",
+      "type": "primary_historical_text",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷74",
+      "locator": "十二监；洪武十七年、二十八年内官建置条",
+      "supports": "1384司礼监令正七品、丞从七品；1395太监正四品等；后期掌印、秉笔、随堂等职掌。维基文库为古籍转录载体，依据为《明史》原文。"
+    },
+    {
+      "id": "ms304",
+      "title": "《明史》卷三百四·宦官一",
+      "type": "primary_historical_text",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷304",
+      "locator": "宦官总序、王振传",
+      "supports": "洪武禁内臣预政；永乐间扩展出使、监军等宦官差遣，1420置东厂；宣宗内书堂；王振掌司礼。"
+    },
+    {
+      "id": "ms305",
+      "title": "《明史》卷三百五·宦官二",
+      "type": "primary_historical_text",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷305",
+      "locator": "李芳、冯保、王体乾等传",
+      "supports": "黄锦称前司礼太监；李芳为穆宗朝内官监太监；冯保嘉靖中为司礼秉笔，隆庆元年督东厂兼御马监；陈洪、孟冲掌印发生在穆宗朝；1572冯保取代孟冲。"
+    },
+    {
+      "id": "ms226",
+      "title": "《明史》卷二百二十六·海瑞传",
+      "type": "primary_historical_text",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷226",
+      "locator": "嘉靖四十五年二月上疏及黄锦在侧段",
+      "supports": "1566黄锦在世宗身旁回应海瑞上疏一事；该段只称宦官黄锦，未给掌印或秉笔职名。"
+    },
+    {
+      "id": "ms19",
+      "title": "《明史》卷十九·穆宗本纪",
+      "type": "primary_historical_text",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷19",
+      "locator": "嘉靖四十五年十二月庚子、壬子条",
+      "supports": "世宗崩与穆宗即位均仍纪嘉靖四十五年，次年改隆庆。"
+    },
+    {
+      "id": "muzong-sl4",
+      "title": "《明穆宗庄皇帝实录》卷四",
+      "type": "primary_historical_text",
+      "url": "https://www.shidianguji.com/book/LS0026/chapter/1k6tolkjs817p",
+      "locator": "隆庆元年二月辛丑条",
+      "supports": "明确记录加恩司礼监太监黄锦，以及王本、冯保；同期李芳明称内官监太监。只证明记录时官称，不补造任免日期。"
+    },
+    {
+      "id": "dpm-sili",
+      "title": "故宫博物院·司礼监",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/system/236401.html",
+      "locator": "司礼监沿革全文",
+      "supports": "1384四月增设、1395调整、宣德四年1429内书堂、正统以后批红制度。网页把初设名称写作礼监司，与《明史》司礼监不一致；名称采用《明史》。"
+    },
+    {
+      "id": "dpm-sili-tidu-2023",
+      "title": "赵晶《明代司礼监提督太监小考》",
+      "type": "museum_scholarly_article",
+      "url": "https://www.dpm.org.cn/Uploads/File/2023/11/14/u655325cfe2bfd.pdf",
+      "locator": "《故宫学刊》第二十四辑，2023，页145—154；尤其摘要及147—150页",
+      "supports": "校正《明史》对提督地位和职掌的误读：掌印位尊；提督低于掌印、秉笔、随堂，主要掌藏书书画、内书堂、经厂；作为特定职级出现不早于嘉靖。"
+    },
+    {
+      "id": "dpm-hongwu",
+      "title": "故宫博物院·洪武皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226244.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-jianwen",
+      "title": "故宫博物院·建文皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226245.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-yongle",
+      "title": "故宫博物院·永乐皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226257.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-hongxi",
+      "title": "故宫博物院·洪熙皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226249.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-xuande",
+      "title": "故宫博物院·宣德皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226252.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-zhengtong",
+      "title": "故宫博物院·正统皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226258.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-jingtai",
+      "title": "故宫博物院·景泰皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226260.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-tianshun",
+      "title": "故宫博物院·天顺皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226253.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-chenghua",
+      "title": "故宫博物院·成化皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226261.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-hongzhi",
+      "title": "故宫博物院·弘治皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226266.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-zhengde",
+      "title": "故宫博物院·正德皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226240.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-jiajing",
+      "title": "故宫博物院·嘉靖皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226241.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-longqing",
+      "title": "故宫博物院·隆庆皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226264.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-wanli",
+      "title": "故宫博物院·万历皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226265.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-taichang",
+      "title": "故宫博物院·泰昌皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226242.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-tianqi",
+      "title": "故宫博物院·天启皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226243.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    },
+    {
+      "id": "dpm-chongzhen",
+      "title": "故宫博物院·崇祯皇帝",
+      "type": "museum_reference",
+      "url": "https://www.dpm.org.cn/court/lineage/226246.html",
+      "locator": "人物介绍与大事年表",
+      "supports": "即位、继承、改元及死亡/退位的纪年；采用原有农历表述，参照公历年需处理跨年。"
+    }
+  ],
+  "integration_notes": [
+    "同年多帝是交接年内先后任职，不能画成共治。",
+    "朱祁镇同一人物有正统、天顺两段皇帝任期。",
+    "1368—1644是277个可选年度；传统称276年国祚或其他首尾计算口径，不应混为年度按钮数量。",
+    "年份滑块覆盖全朝不等于人物数据库已逐年完整。",
+    "年度筛选不得把时代笼统记录的空边界当作无限开放任期。"
+  ]
+}

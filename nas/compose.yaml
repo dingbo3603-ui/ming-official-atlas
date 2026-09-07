@@ -1,0 +1,15 @@
+services:
+  atlas:
+    image: nginx:alpine
+    container_name: ming-official-atlas
+    restart: unless-stopped
+    ports:
+      - "8092:80"
+    volumes:
+      - ./dist-nas:/usr/share/nginx/html:ro
+      - ./nas/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "-", "http://127.0.0.1/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3

@@ -10,7 +10,11 @@
     "build": "vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "dev:nas": "vite --config vite.nas.config.ts",
+    "prebuild:nas": "node scripts/clean-build.mjs",
+    "build:nas": "vite build --config vite.nas.config.ts",
+    "preview:nas": "vite preview --config vite.nas.config.ts --host 127.0.0.1 --port 5174"
   },
   "dependencies": {
     "react": "19.2.6",

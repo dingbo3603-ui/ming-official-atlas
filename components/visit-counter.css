@@ -1,0 +1,14 @@
+.atlas-visit-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  padding: 18px 12px 7px;
+  color: #a39278;
+  font-size: 13px;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+}
+.atlas-visit-footer b { color: inherit; font-weight: 500; }
+.atlas-visit-footer .visit-separator { opacity: 0.6; }

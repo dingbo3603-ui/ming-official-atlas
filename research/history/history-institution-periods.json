@@ -1,0 +1,2073 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "scope": {
+      "min_year": 1368,
+      "max_year": 1644,
+      "institution_count": 15,
+      "description": "仅研究当前UI的15个中央机构节点，主轴为明中央主廷；1644以北京明廷终结为范围边界，不等于所有同名机构或南明均于1644废止。"
+    },
+    "date_semantics": "periods.start_year/end_year为包含端点的年度显示区间，不是假定公历1月1日至12月31日的精确法定存续。改制年用transition；改制确年未核用uncertain。原文农历日期另列native_date，不擅换公历。",
+    "states": {
+      "active": "当年机构或有据前身存在",
+      "transition": "当年发生设立、撤销、更名或重大改制",
+      "not_established": "当前机构尚未设置或尚未复置",
+      "abolished": "已确认此前裁罢",
+      "uncertain": "原始史料只能给时期或存在来源差异，不能精确落实至该年"
+    },
+    "render_rule": "按institution_id寻找唯一满足start_year<=year<=end_year的period；显示display_name、state和note。not_established/abolished时禁用当朝任职模板；use_current_office_template=false时不得照搬晚明品秩、员额与机关分工。",
+    "geographic_qualification": "这里display_name为主廷通称。1420定都、1425复称行在、1441去行在等涉及两京名号，另见capital_name_notes；不要把1399南京主廷画成北京既有宫城。",
+    "records_rule": "首辅职事必须独立于具体殿阁大学士本衔；年度官衔匹配用year_office_ids，不因office_ids全段留空而把有确证任期的人隐藏。",
+    "researched_at": "2026-09-06"
+  },
+  "institutions": [
+    {
+      "institution_id": "central-secretariat",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1379,
+          "display_name": "中书省",
+          "state": "active",
+          "note": "洪武元年改左右相国为左右丞相；六部隶中书省。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1380,
+          "end_year": 1380,
+          "display_name": "中书省（当年罢除）",
+          "state": "transition",
+          "note": "洪武十三年正月罢中书省、废丞相等官，政归六部；不能将全年视为已罢或仍存。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1644,
+          "display_name": "中书省（已罢）",
+          "state": "abolished",
+          "note": "1380年后不复置中书省；保留的中书舍人不是中书省存续。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        }
+      ],
+      "events": [
+        {
+          "year": 1380,
+          "native_date": "洪武十三年正月",
+          "kind": "abolition",
+          "note": "罢中书省，官属尽革，仅存中书舍人。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "cabinet",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1381,
+          "display_name": "内阁（尚未形成）",
+          "state": "not_established",
+          "note": "洪武十三年罢中书省；其后曾置四辅官，旋罢。四辅官不是内阁。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1382,
+          "end_year": 1382,
+          "display_name": "殿阁大学士（当年设置）",
+          "state": "transition",
+          "note": "洪武十五年置华盖、武英、文渊阁、东阁等大学士，另有辅导太子的文华殿大学士。仅备顾问，尚非后世内阁。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1383,
+          "end_year": 1398,
+          "display_name": "殿阁大学士（顾问职）",
+          "state": "active",
+          "note": "洪武制大学士正五品，备顾问，不宜套用嘉靖以后首辅权力及中极、建极称谓。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1399,
+          "end_year": 1401,
+          "display_name": "殿阁学士（建文改制）",
+          "state": "uncertain",
+          "note": "建文中改大学士为学士；本批未核各项改制确切年日，不能把该段边界当作任命日期。",
+          "source_ids": [
+            "inst-ms72",
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "殿阁学士 → 内阁参预机务",
+          "state": "transition",
+          "note": "成祖即位后恢复旧制；其年九月简讲读编检等官参预机务，谓之内阁。",
+          "source_ids": [
+            "inst-ms72",
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1423,
+          "display_name": "内阁（参预机务）",
+          "state": "active",
+          "note": "永乐时以编、检、讲读等官入直；不置官属，不得专制诸司，不能套后世完整阁衔座次。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1424,
+          "end_year": 1561,
+          "display_name": "内阁",
+          "state": "active",
+          "note": "仁宗以后阁臣常兼尚书、师保；谨身殿大学士自仁宗始置，华盖、谨身尚未改称中极、建极。首辅是主持阁务地位，不能视作固定殿阁官名。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1562,
+          "end_year": 1562,
+          "display_name": "内阁（华盖／谨身改称中极／建极）",
+          "state": "transition",
+          "note": "嘉靖四十一年九月三殿更名，大学士阁衔随之；年内应分别显示旧名与新名。",
+          "source_ids": [
+            "inst-ms72",
+            "inst-dpm-halls"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1563,
+          "end_year": 1644,
+          "display_name": "内阁",
+          "state": "active",
+          "note": "中极、建极、文华、武英、文渊阁、东阁为大学士阁衔；首辅为主持阁务职事，须独立于具体阁衔记录。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1382,
+          "native_date": "洪武十五年",
+          "kind": "creation",
+          "note": "设殿阁大学士，尚为顾问职。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1402,
+          "native_date": "成祖即位之年九月",
+          "kind": "functional_formation",
+          "note": "翰林讲读编检参预机务，内阁职事由此形成。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1562,
+          "native_date": "嘉靖四十一年九月",
+          "kind": "title_rename",
+          "note": "华盖殿→中极殿；谨身殿→建极殿，阁衔随改。",
+          "source_ids": [
+            "inst-ms72",
+            "inst-dpm-halls"
+          ],
+          "gregorian_date": null
+        }
+      ],
+      "role_model_note": "大学士本衔、尚书兼衔、师保加衔、首辅职事应分列；首辅任期不能要求固定殿阁官衔始终相同。"
+    },
+    {
+      "institution_id": "ministry-personnel",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1368,
+          "display_name": "吏部（六部当年定制）",
+          "state": "transition",
+          "note": "洪武元年始置六部，隶中书省；尚书正三品，侍郎正四品。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1369,
+          "end_year": 1379,
+          "display_name": "吏部（隶中书省）",
+          "state": "active",
+          "note": "六部属中书省；洪武六年尚书、侍郎均各二人，不能套后世一尚书、左右侍郎员额。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1380,
+          "end_year": 1380,
+          "display_name": "吏部（当年直属皇帝）",
+          "state": "transition",
+          "note": "罢中书省，六部升秩并直接分理政务；尚书、侍郎员额同时调整。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1398,
+          "display_name": "吏部",
+          "state": "active",
+          "note": "洪武十三年后六部直属皇帝，尚书正二品；属司及员额仍经调整。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1399,
+          "end_year": 1401,
+          "display_name": "吏部（建文官制）",
+          "state": "uncertain",
+          "note": "建文中尚书升正一品，增左右侍中，位在侍郎之上；名称仍为本部。具体改制日期本批未完全核定。",
+          "source_ids": [
+            "inst-ms4",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "吏部（当年恢复洪武旧制）",
+          "state": "transition",
+          "note": "成祖初悉复六部旧制，不能把建文品级沿用到永乐以后。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1644,
+          "display_name": "吏部",
+          "state": "active",
+          "note": "作为中央主廷机构的通称；北京行在、南京留都等地点限定应另外处理。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1368,
+          "native_date": "洪武元年八月丁丑",
+          "kind": "organization",
+          "note": "定六部官制。",
+          "source_ids": [
+            "inst-ms2"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1380,
+          "native_date": "洪武十三年正月",
+          "kind": "subordination_change",
+          "note": "罢中书省后六部直接对皇帝负责。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "ministry-revenue",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1368,
+          "display_name": "户部（六部当年定制）",
+          "state": "transition",
+          "note": "洪武元年始置六部，隶中书省；尚书正三品，侍郎正四品。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1369,
+          "end_year": 1379,
+          "display_name": "户部（隶中书省）",
+          "state": "active",
+          "note": "六部属中书省；洪武六年尚书、侍郎均各二人，不能套后世一尚书、左右侍郎员额。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1380,
+          "end_year": 1380,
+          "display_name": "户部（当年直属皇帝）",
+          "state": "transition",
+          "note": "罢中书省，六部升秩并直接分理政务；尚书、侍郎员额同时调整。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1398,
+          "display_name": "户部",
+          "state": "active",
+          "note": "洪武十三年后六部直属皇帝，尚书正二品；属司及员额仍经调整。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1399,
+          "end_year": 1401,
+          "display_name": "户部（建文官制）",
+          "state": "uncertain",
+          "note": "建文中尚书升正一品，增左右侍中，位在侍郎之上；名称仍为本部。具体改制日期本批未完全核定。",
+          "source_ids": [
+            "inst-ms4",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "户部（当年恢复洪武旧制）",
+          "state": "transition",
+          "note": "成祖初悉复六部旧制，不能把建文品级沿用到永乐以后。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1644,
+          "display_name": "户部",
+          "state": "active",
+          "note": "作为中央主廷机构的通称；北京行在、南京留都等地点限定应另外处理。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1368,
+          "native_date": "洪武元年八月丁丑",
+          "kind": "organization",
+          "note": "定六部官制。",
+          "source_ids": [
+            "inst-ms2"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1380,
+          "native_date": "洪武十三年正月",
+          "kind": "subordination_change",
+          "note": "罢中书省后六部直接对皇帝负责。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "ministry-rites",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1368,
+          "display_name": "礼部（六部当年定制）",
+          "state": "transition",
+          "note": "洪武元年始置六部，隶中书省；尚书正三品，侍郎正四品。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1369,
+          "end_year": 1379,
+          "display_name": "礼部（隶中书省）",
+          "state": "active",
+          "note": "六部属中书省；洪武六年尚书、侍郎均各二人，不能套后世一尚书、左右侍郎员额。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1380,
+          "end_year": 1380,
+          "display_name": "礼部（当年直属皇帝）",
+          "state": "transition",
+          "note": "罢中书省，六部升秩并直接分理政务；尚书、侍郎员额同时调整。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1398,
+          "display_name": "礼部",
+          "state": "active",
+          "note": "洪武十三年后六部直属皇帝，尚书正二品；属司及员额仍经调整。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1399,
+          "end_year": 1401,
+          "display_name": "礼部（建文官制）",
+          "state": "uncertain",
+          "note": "建文中尚书升正一品，增左右侍中，位在侍郎之上；名称仍为本部。具体改制日期本批未完全核定。",
+          "source_ids": [
+            "inst-ms4",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "礼部（当年恢复洪武旧制）",
+          "state": "transition",
+          "note": "成祖初悉复六部旧制，不能把建文品级沿用到永乐以后。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1644,
+          "display_name": "礼部",
+          "state": "active",
+          "note": "作为中央主廷机构的通称；北京行在、南京留都等地点限定应另外处理。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1368,
+          "native_date": "洪武元年八月丁丑",
+          "kind": "organization",
+          "note": "定六部官制。",
+          "source_ids": [
+            "inst-ms2"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1380,
+          "native_date": "洪武十三年正月",
+          "kind": "subordination_change",
+          "note": "罢中书省后六部直接对皇帝负责。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "ministry-war",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1368,
+          "display_name": "兵部（六部当年定制）",
+          "state": "transition",
+          "note": "洪武元年始置六部，隶中书省；尚书正三品，侍郎正四品。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1369,
+          "end_year": 1379,
+          "display_name": "兵部（隶中书省）",
+          "state": "active",
+          "note": "六部属中书省；洪武六年尚书、侍郎均各二人，不能套后世一尚书、左右侍郎员额。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1380,
+          "end_year": 1380,
+          "display_name": "兵部（当年直属皇帝）",
+          "state": "transition",
+          "note": "罢中书省，六部升秩并直接分理政务；尚书、侍郎员额同时调整。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1398,
+          "display_name": "兵部",
+          "state": "active",
+          "note": "洪武十三年后六部直属皇帝，尚书正二品；属司及员额仍经调整。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1399,
+          "end_year": 1401,
+          "display_name": "兵部（建文官制）",
+          "state": "uncertain",
+          "note": "建文中尚书升正一品，增左右侍中，位在侍郎之上；名称仍为本部。具体改制日期本批未完全核定。",
+          "source_ids": [
+            "inst-ms4",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "兵部（当年恢复洪武旧制）",
+          "state": "transition",
+          "note": "成祖初悉复六部旧制，不能把建文品级沿用到永乐以后。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1644,
+          "display_name": "兵部",
+          "state": "active",
+          "note": "作为中央主廷机构的通称；北京行在、南京留都等地点限定应另外处理。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1368,
+          "native_date": "洪武元年八月丁丑",
+          "kind": "organization",
+          "note": "定六部官制。",
+          "source_ids": [
+            "inst-ms2"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1380,
+          "native_date": "洪武十三年正月",
+          "kind": "subordination_change",
+          "note": "罢中书省后六部直接对皇帝负责。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "ministry-justice",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1368,
+          "display_name": "刑部（六部当年定制）",
+          "state": "transition",
+          "note": "洪武元年始置六部，隶中书省；尚书正三品，侍郎正四品。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1369,
+          "end_year": 1379,
+          "display_name": "刑部（隶中书省）",
+          "state": "active",
+          "note": "六部属中书省；洪武六年尚书、侍郎均各二人，不能套后世一尚书、左右侍郎员额。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1380,
+          "end_year": 1380,
+          "display_name": "刑部（当年直属皇帝）",
+          "state": "transition",
+          "note": "罢中书省，六部升秩并直接分理政务；尚书、侍郎员额同时调整。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1398,
+          "display_name": "刑部",
+          "state": "active",
+          "note": "洪武十三年后六部直属皇帝，尚书正二品；属司及员额仍经调整。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1399,
+          "end_year": 1401,
+          "display_name": "刑部（建文官制）",
+          "state": "uncertain",
+          "note": "建文中尚书升正一品，增左右侍中，位在侍郎之上；名称仍为本部。具体改制日期本批未完全核定。",
+          "source_ids": [
+            "inst-ms4",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "刑部（当年恢复洪武旧制）",
+          "state": "transition",
+          "note": "成祖初悉复六部旧制，不能把建文品级沿用到永乐以后。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1644,
+          "display_name": "刑部",
+          "state": "active",
+          "note": "作为中央主廷机构的通称；北京行在、南京留都等地点限定应另外处理。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1368,
+          "native_date": "洪武元年八月丁丑",
+          "kind": "organization",
+          "note": "定六部官制。",
+          "source_ids": [
+            "inst-ms2"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1380,
+          "native_date": "洪武十三年正月",
+          "kind": "subordination_change",
+          "note": "罢中书省后六部直接对皇帝负责。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "ministry-works",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1368,
+          "display_name": "工部（六部当年定制）",
+          "state": "transition",
+          "note": "洪武元年始置六部，隶中书省；尚书正三品，侍郎正四品。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1369,
+          "end_year": 1379,
+          "display_name": "工部（隶中书省）",
+          "state": "active",
+          "note": "六部属中书省；洪武六年尚书、侍郎均各二人，不能套后世一尚书、左右侍郎员额。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1380,
+          "end_year": 1380,
+          "display_name": "工部（当年直属皇帝）",
+          "state": "transition",
+          "note": "罢中书省，六部升秩并直接分理政务；尚书、侍郎员额同时调整。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1398,
+          "display_name": "工部",
+          "state": "active",
+          "note": "洪武十三年后六部直属皇帝，尚书正二品；属司及员额仍经调整。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1399,
+          "end_year": 1401,
+          "display_name": "工部（建文官制）",
+          "state": "uncertain",
+          "note": "建文中尚书升正一品，增左右侍中，位在侍郎之上；名称仍为本部。具体改制日期本批未完全核定。",
+          "source_ids": [
+            "inst-ms4",
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "工部（当年恢复洪武旧制）",
+          "state": "transition",
+          "note": "成祖初悉复六部旧制，不能把建文品级沿用到永乐以后。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1644,
+          "display_name": "工部",
+          "state": "active",
+          "note": "作为中央主廷机构的通称；北京行在、南京留都等地点限定应另外处理。",
+          "source_ids": [
+            "inst-ms72"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1368,
+          "native_date": "洪武元年八月丁丑",
+          "kind": "organization",
+          "note": "定六部官制。",
+          "source_ids": [
+            "inst-ms2"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1380,
+          "native_date": "洪武十三年正月",
+          "kind": "subordination_change",
+          "note": "罢中书省后六部直接对皇帝负责。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms72"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "censorate",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1379,
+          "display_name": "御史台",
+          "state": "active",
+          "note": "吴元年（1367）置御史台；御史大夫、中丞等构成早期监察机构。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1380,
+          "end_year": 1380,
+          "display_name": "御史台（当年罢除）",
+          "state": "transition",
+          "note": "洪武十三年五月罢御史台，不能提前改称都察院。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1381,
+          "display_name": "都察院（尚未设）",
+          "state": "not_established",
+          "note": "御史台已罢，都察院尚未设置；不把资料间隙解释为监察完全停止。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1382,
+          "end_year": 1382,
+          "display_name": "都察院（当年设置）",
+          "state": "transition",
+          "note": "洪武十五年十月丙子置都察院，初设监察都御史八人、正七品；监察御史正九品。",
+          "source_ids": [
+            "inst-ms3",
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1383,
+          "end_year": 1383,
+          "display_name": "都察院（正三品制）",
+          "state": "active",
+          "note": "洪武十六年院升正三品，置左右都御史、左右副都御史、左右佥都御史。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1384,
+          "end_year": 1398,
+          "display_name": "都察院",
+          "state": "active",
+          "note": "洪武十七年都御史正二品、副都御史正三品、佥都御史正四品；此时十二道，不能提前显示十三道。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1399,
+          "end_year": 1399,
+          "display_name": "都察院（建文改制）",
+          "state": "transition",
+          "note": "建文元年改设都御史一人，革佥都御史；尚未改称御史府。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1400,
+          "end_year": 1400,
+          "display_name": "都察院 → 御史府",
+          "state": "transition",
+          "note": "建文二年二月甲子改都察院为御史府，设御史大夫，十二道改左右两院。",
+          "source_ids": [
+            "inst-ms4",
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1401,
+          "end_year": 1401,
+          "display_name": "御史府",
+          "state": "active",
+          "note": "建文官制：御史大夫，左右两院；不能沿用成熟都察院六堂官模板。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "御史府 → 都察院",
+          "state": "transition",
+          "note": "成祖初恢复都察院旧制。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1434,
+          "display_name": "都察院",
+          "state": "active",
+          "note": "永乐元年北平道改北京道；十八年罢北京道，增贵州、云南、交阯道。不是始终十三道。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1435,
+          "end_year": 1435,
+          "display_name": "都察院（当年定十三道）",
+          "state": "transition",
+          "note": "宣德十年罢交阯道，始定为十三道。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1436,
+          "end_year": 1644,
+          "display_name": "都察院",
+          "state": "active",
+          "note": "十三道体系；嘉靖、隆庆间左右都御史等临时增置应据具体记录。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1380,
+          "native_date": "洪武十三年五月",
+          "kind": "abolition",
+          "note": "罢御史台。",
+          "source_ids": [
+            "inst-ms2"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1382,
+          "native_date": "洪武十五年十月丙子",
+          "kind": "creation",
+          "note": "置都察院。",
+          "source_ids": [
+            "inst-ms3"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1400,
+          "native_date": "建文二年二月甲子",
+          "kind": "rename",
+          "note": "都察院改御史府。",
+          "source_ids": [
+            "inst-ms4"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1402,
+          "native_date": "成祖初",
+          "kind": "restoration",
+          "note": "恢复都察院。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "gregorian_date": null
+        }
+      ],
+      "source_conflict": "故宫《建文新政》概述将都察院设年写作1380，与《明史》本纪、职官志不符；本包采用1382，1380只为罢御史台年。"
+    },
+    {
+      "institution_id": "five-commissions",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1379,
+          "display_name": "大都督府",
+          "state": "active",
+          "note": "此前已设。吴元年罢“大都督”长官，以左右都督为长；大都督一职不设，不等于大都督府被撤。",
+          "source_ids": [
+            "inst-ms76"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1380,
+          "end_year": 1380,
+          "display_name": "大都督府 → 五军都督府",
+          "state": "transition",
+          "note": "洪武十三年正月分为中、左、右、前、后五军都督府。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms76"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1644,
+          "display_name": "五军都督府",
+          "state": "active",
+          "note": "五府分掌军籍与卫所，调兵征发属兵部；锦衣等上直亲军不隶五府。北京行在、南京等地点限定另行处理。",
+          "source_ids": [
+            "inst-ms76"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1380,
+          "native_date": "洪武十三年正月",
+          "kind": "split",
+          "note": "大都督府分为五军都督府。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms76"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "jinyiwei",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1370,
+          "display_name": "锦衣卫前身（亲军、仪卫诸司）",
+          "state": "uncertain",
+          "note": "前身经拱卫司、拱卫指挥使司、都尉司至亲军都尉府；各更名不宜凭“明初”“寻”硬配年份。亲军都尉府《明史》记1370，故宫研究据实录记1369。",
+          "source_ids": [
+            "inst-ms76",
+            "inst-dpm-jinyi-study"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1371,
+          "end_year": 1381,
+          "display_name": "亲军都尉府（下辖仪鸾司）",
+          "state": "active",
+          "note": "亲军都尉府辖五卫，仪鸾司隶属其中；洪武四年定仪鸾司正五品。此为锦衣卫前身，不能套锦衣卫镇抚司员额。",
+          "source_ids": [
+            "inst-ms76"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1382,
+          "end_year": 1382,
+          "display_name": "亲军都尉府、仪鸾司 → 锦衣卫",
+          "state": "transition",
+          "note": "洪武十五年在亲军与仪卫机构基础上改置锦衣卫，初从三品。",
+          "source_ids": [
+            "inst-ms76",
+            "inst-dpm-jinyi-study"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1383,
+          "end_year": 1383,
+          "display_name": "锦衣卫（初制）",
+          "state": "active",
+          "note": "初秩从三品；洪武十七年指挥使才改正三品。",
+          "source_ids": [
+            "inst-ms76"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1384,
+          "end_year": 1386,
+          "display_name": "锦衣卫",
+          "state": "active",
+          "note": "指挥使正三品；尚不能套以后南北镇抚司分权制度。",
+          "source_ids": [
+            "inst-ms76"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1387,
+          "end_year": 1387,
+          "display_name": "锦衣卫（当年罢诏狱）",
+          "state": "transition",
+          "note": "洪武二十年焚刑具、出系囚交刑部，罢的是锦衣狱，不是锦衣卫机构。",
+          "source_ids": [
+            "inst-ms3",
+            "inst-ms76"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1388,
+          "end_year": 1401,
+          "display_name": "锦衣卫",
+          "state": "active",
+          "note": "机构继续存在；洪武二十年后禁其诏狱功能，不能把1387处理成撤销锦衣卫。",
+          "source_ids": [
+            "inst-ms76",
+            "inst-dpm-jinyi-study"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1424,
+          "display_name": "锦衣卫",
+          "state": "active",
+          "note": "成祖时恢复锦衣狱，后增北镇抚司专治诏狱；本批未核这两项确日，不能自动当作1402年第一日起生效。",
+          "source_ids": [
+            "inst-ms76"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1425,
+          "end_year": 1644,
+          "display_name": "锦衣卫",
+          "state": "active",
+          "note": "侍卫、缉捕、刑狱并存；北镇抚司独立印信与直达皇帝制度到成化间再发展。",
+          "source_ids": [
+            "inst-ms76"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1382,
+          "native_date": "洪武十五年",
+          "kind": "creation",
+          "note": "改置锦衣卫。",
+          "source_ids": [
+            "inst-ms76"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1387,
+          "native_date": "洪武二十年正月",
+          "kind": "functional_restriction",
+          "note": "罢锦衣狱；锦衣卫机构未罢。",
+          "source_ids": [
+            "inst-ms3",
+            "inst-ms76"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": null,
+          "year_min": 1402,
+          "year_max": 1424,
+          "native_date": "成祖时",
+          "kind": "functional_restoration",
+          "note": "恢复锦衣狱；本次未核到确切年日。",
+          "source_ids": [
+            "inst-ms76"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "transmission-office",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1369,
+          "display_name": "通政使司（尚未设）",
+          "state": "not_established",
+          "note": "尚未设置通政使司。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1370,
+          "end_year": 1370,
+          "display_name": "察言司（当年设立，旋罢）",
+          "state": "transition",
+          "note": "洪武三年三月置察言司受四方章奏，旋罢；裁罢确日未核。",
+          "source_ids": [
+            "inst-ms73",
+            "inst-dpm-transmission"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1371,
+          "end_year": 1376,
+          "display_name": "通政使司（尚未设）",
+          "state": "not_established",
+          "note": "察言司曾于1370年设置后旋罢；不将其不明的裁罢日伪装成连续1370—1376任期。",
+          "source_ids": [
+            "inst-ms73",
+            "inst-dpm-transmission"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1377,
+          "end_year": 1377,
+          "display_name": "通政使司（当年设置）",
+          "state": "transition",
+          "note": "洪武十年七月甲申置通政司。",
+          "source_ids": [
+            "inst-ms2",
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1378,
+          "end_year": 1398,
+          "display_name": "通政使司",
+          "state": "active",
+          "note": "掌内外章疏敷奏封驳。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1399,
+          "end_year": 1401,
+          "display_name": "通政使司／通政寺（建文改制）",
+          "state": "uncertain",
+          "note": "建文中改司为寺，通政使改通政卿；本批未核改名确年，1399—1401为待细化窗口，不断言该段每天都已更名。",
+          "source_ids": [
+            "inst-ms73",
+            "inst-dpm-transmission"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "通政寺 → 通政使司",
+          "state": "transition",
+          "note": "成祖初恢复旧制。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1644,
+          "display_name": "通政使司",
+          "state": "active",
+          "note": "成祖恢复后沿用通政使司；简称通政司。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1370,
+          "native_date": "洪武三年三月",
+          "kind": "predecessor_creation",
+          "note": "置察言司，旋罢。",
+          "source_ids": [
+            "inst-dpm-transmission"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1377,
+          "native_date": "洪武十年七月甲申",
+          "kind": "creation",
+          "note": "置通政使司。",
+          "source_ids": [
+            "inst-ms2"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": null,
+          "year_min": 1399,
+          "year_max": 1402,
+          "native_date": "建文中",
+          "kind": "rename",
+          "note": "改司为寺；具体年日未核。",
+          "source_ids": [
+            "inst-ms73",
+            "inst-dpm-transmission"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1402,
+          "native_date": "成祖初",
+          "kind": "restoration",
+          "note": "恢复通政使司旧称。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "grand-court",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1368,
+          "display_name": "大理司（当年罢除）",
+          "state": "transition",
+          "note": "吴元年已置大理司卿，洪武元年革。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1369,
+          "end_year": 1380,
+          "display_name": "大理寺（尚未复置）",
+          "state": "not_established",
+          "note": "原大理司已革；其间磨勘司另有设废，不等同大理寺。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1381,
+          "display_name": "大理寺（当年复置）",
+          "state": "transition",
+          "note": "洪武十四年复置，卿改正五品；另置审刑司复核大理寺所理刑狱。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1382,
+          "end_year": 1388,
+          "display_name": "大理寺（卿正五品）",
+          "state": "active",
+          "note": "洪武十九年罢审刑司，大理寺仍存；不得把此处读成罢大理寺。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1389,
+          "end_year": 1389,
+          "display_name": "大理寺（当年恢复正三品）",
+          "state": "transition",
+          "note": "洪武二十二年恢复卿正三品、少卿正四品、丞正五品；属于升复品秩。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1390,
+          "end_year": 1395,
+          "display_name": "大理寺",
+          "state": "active",
+          "note": "洪武二十二年恢复较高品秩后的大理寺。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1396,
+          "end_year": 1396,
+          "display_name": "大理寺（当年罢除）",
+          "state": "transition",
+          "note": "洪武二十九年罢大理寺，案牍移后湖。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1397,
+          "end_year": 1397,
+          "display_name": "大理寺（已罢）",
+          "state": "abolished",
+          "note": "洪武二十九年罢后尚未见恢复。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1398,
+          "end_year": 1401,
+          "display_name": "大理寺／大理司（建文初复置改制）",
+          "state": "uncertain",
+          "note": "《明史》记建文初复置，故宫记建文改称大理司；建文初可能涵盖1398年即位后，本批未核准确复置与改名年日，保留1398—1401窗口。",
+          "source_ids": [
+            "inst-ms73",
+            "inst-dpm-jianwen"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "大理司 → 大理寺",
+          "state": "transition",
+          "note": "成祖初仍置大理寺，左右寺设官复洪武旧制。",
+          "source_ids": [
+            "inst-ms73",
+            "inst-dpm-jianwen"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1644,
+          "display_name": "大理寺",
+          "state": "active",
+          "note": "掌审谳平反；各寺管辖地区、评事员额曾有调整，不能据机构存续推定每个职位始终有人。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1368,
+          "native_date": "洪武元年",
+          "kind": "abolition",
+          "note": "革大理司。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1381,
+          "native_date": "洪武十四年",
+          "kind": "restoration",
+          "note": "复置大理寺，卿正五品。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1386,
+          "native_date": "洪武十九年",
+          "kind": "related_office_abolition",
+          "note": "罢审刑司，大理寺未罢。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1389,
+          "native_date": "洪武二十二年",
+          "kind": "rank_change",
+          "note": "复卿秩正三品。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1396,
+          "native_date": "洪武二十九年",
+          "kind": "abolition",
+          "note": "罢大理寺。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": null,
+          "year_min": 1398,
+          "year_max": 1402,
+          "native_date": "建文初",
+          "kind": "restoration_and_rename",
+          "note": "复置及改大理司确年未核。",
+          "source_ids": [
+            "inst-ms73",
+            "inst-dpm-jianwen"
+          ],
+          "gregorian_date": null
+        }
+      ],
+      "textual_note": "《明史》网页“十九年罢审刑司。二十二年复，卿秩正三品”的断句容易误读；这里的复指恢复卿品秩，不列1386—1388大理寺裁罢。"
+    },
+    {
+      "institution_id": "hanlin",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1368,
+          "display_name": "翰林院（初制）",
+          "state": "active",
+          "note": "吴元年（1367）初置，院与学士正三品，不能套后期学士正五品。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1369,
+          "end_year": 1380,
+          "display_name": "翰林院（洪武早期制）",
+          "state": "active",
+          "note": "洪武二年置学士承旨正三品、学士从三品；此后增置官员。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1381,
+          "end_year": 1381,
+          "display_name": "翰林院（当年改制）",
+          "state": "transition",
+          "note": "洪武十四年学士改正五品，革承旨等官，置孔目、五经博士、侍书、待诏、检讨等。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1382,
+          "end_year": 1398,
+          "display_name": "翰林院",
+          "state": "active",
+          "note": "洪武十八年再定品员；后期院职大体由此发展。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1399,
+          "end_year": 1401,
+          "display_name": "翰林院（建文改制）",
+          "state": "uncertain",
+          "note": "建文时复承旨，侍读、侍讲学士改文学博士，设文翰、文史二馆；院本身仍称翰林院，具体改制年日未完全核定。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1402,
+          "end_year": 1402,
+          "display_name": "翰林院（当年恢复旧制）",
+          "state": "transition",
+          "note": "成祖初复旧，同年九月简讲读编检等入内阁。内阁与翰林职官密切相连但不能合成一个任期。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1403,
+          "end_year": 1644,
+          "display_name": "翰林院",
+          "state": "active",
+          "note": "机构沿置；内阁渐与院事分离，嘉隆以后文移始径称内阁。各官员额、品衔依年代及实授记录。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1367,
+          "native_date": "吴元年",
+          "kind": "creation",
+          "note": "初置翰林院。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1381,
+          "native_date": "洪武十四年",
+          "kind": "organization",
+          "note": "学士定正五品，革学士承旨等，重整院职。",
+          "source_ids": [
+            "inst-ms73"
+          ],
+          "gregorian_date": null
+        }
+      ]
+    },
+    {
+      "institution_id": "sili-jian",
+      "periods": [
+        {
+          "start_year": 1368,
+          "end_year": 1383,
+          "display_name": "司礼监（尚未设）",
+          "state": "not_established",
+          "note": "洪武十七年方增设司礼监；早期其他内官机构不能顶作司礼监。",
+          "source_ids": [
+            "inst-ms74",
+            "inst-dpm-sili"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1384,
+          "end_year": 1384,
+          "display_name": "司礼监（当年设置）",
+          "state": "transition",
+          "note": "洪武十七年四月增设；令正七品、丞从七品，不得回填后期掌印太监正四品。",
+          "source_ids": [
+            "inst-ms74",
+            "inst-dpm-sili"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1385,
+          "end_year": 1394,
+          "display_name": "司礼监（令、丞初制）",
+          "state": "active",
+          "note": "初设令、丞体制，尚非掌印、秉笔、随堂、提督的成熟分工。",
+          "source_ids": [
+            "inst-ms74"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1395,
+          "end_year": 1395,
+          "display_name": "司礼监（当年重定品制）",
+          "state": "transition",
+          "note": "洪武二十八年重定内官品制：太监正四品、少监从四品、监丞正五品、典簿正六品。",
+          "source_ids": [
+            "inst-ms74",
+            "inst-dpm-sili"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1396,
+          "end_year": 1428,
+          "display_name": "司礼监",
+          "state": "active",
+          "note": "品制已改；后世批朱与内书堂分工不可整体提前。",
+          "source_ids": [
+            "inst-ms74",
+            "inst-dpm-sili"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1429,
+          "end_year": 1429,
+          "display_name": "司礼监（内书堂当年设置）",
+          "state": "transition",
+          "note": "宣德四年置内书堂，选翰林官教授内使。此为内官教育制度发展，不是司礼监新设。",
+          "source_ids": [
+            "inst-dpm-sili"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1430,
+          "end_year": 1521,
+          "display_name": "司礼监",
+          "state": "active",
+          "note": "宣德、正统以后批朱等职权逐渐发展。研究认为“提督本监”职事不早于嘉靖，不能在早期展示成熟四类座次。",
+          "source_ids": [
+            "inst-dpm-sili",
+            "inst-dpm-sili-study"
+          ],
+          "use_current_office_template": false
+        },
+        {
+          "start_year": 1522,
+          "end_year": 1644,
+          "display_name": "司礼监",
+          "state": "active",
+          "note": "嘉靖以后分工仍依阶段。掌印、秉笔、随堂、提督是职事，不等同太监、少监等品秩；提督本监不是全监最高长官。",
+          "source_ids": [
+            "inst-ms74",
+            "inst-dpm-sili-study"
+          ],
+          "use_current_office_template": true
+        }
+      ],
+      "events": [
+        {
+          "year": 1384,
+          "native_date": "洪武十七年四月",
+          "kind": "creation",
+          "note": "增设司礼监。",
+          "source_ids": [
+            "inst-ms74",
+            "inst-dpm-sili"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1395,
+          "native_date": "洪武二十八年",
+          "kind": "rank_change",
+          "note": "重定内官品秩。",
+          "source_ids": [
+            "inst-ms74"
+          ],
+          "gregorian_date": null
+        },
+        {
+          "year": 1429,
+          "native_date": "宣德四年",
+          "kind": "related_office_creation",
+          "note": "设内书堂。",
+          "source_ids": [
+            "inst-dpm-sili"
+          ],
+          "gregorian_date": null
+        }
+      ],
+      "role_model_note": "成熟职事一般为掌印、秉笔、随堂、提督本监；赵晶对《明史》“提督为长”作有专门纠正。提督东厂、兼掌御马监等差遣另计。"
+    }
+  ],
+  "capital_name_notes": [
+    {
+      "institution_ids": [
+        "ministry-personnel",
+        "ministry-revenue",
+        "ministry-rites",
+        "ministry-war",
+        "ministry-justice",
+        "ministry-works",
+        "five-commissions"
+      ],
+      "year": 1420,
+      "native_date": "永乐十八年",
+      "note": "北京六部、五府去“行在”；留应天者加“南京”。这是官署名号调整，勿用它声称洪武主廷就在北京。",
+      "source_ids": [
+        "inst-ms72",
+        "inst-ms76"
+      ]
+    },
+    {
+      "institution_ids": [
+        "ministry-personnel",
+        "ministry-revenue",
+        "ministry-rites",
+        "ministry-war",
+        "ministry-justice",
+        "ministry-works",
+        "five-commissions",
+        "censorate"
+      ],
+      "year": 1425,
+      "native_date": "洪熙元年",
+      "note": "北京各部与五府复称“行在”，都察院同六部；南京六部去“南京”字。",
+      "source_ids": [
+        "inst-ms72",
+        "inst-ms73",
+        "inst-ms76"
+      ]
+    },
+    {
+      "institution_ids": [
+        "ministry-personnel",
+        "ministry-revenue",
+        "ministry-rites",
+        "ministry-war",
+        "ministry-justice",
+        "ministry-works",
+        "five-commissions"
+      ],
+      "year": 1441,
+      "native_date": "正统六年",
+      "note": "北京六部、五府再去“行在”，南京六部加“南京”；本批对都察院仅核得正统中，未独立核准1441日期。",
+      "source_ids": [
+        "inst-ms72",
+        "inst-ms76"
+      ]
+    }
+  ],
+  "record_patches": [
+    {
+      "id": "people-zhang-chief",
+      "office_title": "内阁首辅",
+      "institution": "内阁",
+      "start_year": 1572,
+      "end_year": 1582,
+      "office_ids": [],
+      "year_office_ids": {
+        "1573": [
+          "official-0046",
+          "official-0045"
+        ]
+      },
+      "mapping_status": "duty_with_year_specific_titles",
+      "mapping_note": "首辅为主持内阁政务的职事，不对应固定殿阁官衔。修正旧注“1572八月进中极”：实录确证为万历元年（1573）十一月辛卯进中极殿大学士；1573年内先建极（official-0046），后中极（official-0045）。不得把年度映射外推为全段同一阁衔。",
+      "date_note": "隆庆六年（1572）六月高拱罢后居首，至万历十年（1582）六月卒于任。1573年年内先为建极殿大学士，十一月辛卯进中极殿大学士；两个阁衔是年内先后。夺情、归葬期间仍受命总理政务，不另造离任。",
+      "source_ids": [
+        "inst-ms20",
+        "inst-ms213",
+        "inst-szsl2",
+        "inst-szsl19"
+      ],
+      "patch_instruction": "按id覆盖原people-zhang-chief字段并合并source_ids；不要新增第二条首辅tenure。year_office_ids仅在相应年度投影为office_ids；首辅职事在内阁职事名单独立展示。"
+    }
+  ],
+  "new_records": [
+    {
+      "id": "inst-zhang-juzheng-zhongji-1573",
+      "person_id": "zhang-juzheng",
+      "office_title": "进中极殿大学士",
+      "institution": "内阁",
+      "start_year": null,
+      "end_year": null,
+      "attested_year": 1573,
+      "status": "attested",
+      "record_kind": "event",
+      "office_ids": [
+        "official-0045"
+      ],
+      "date_note": "《明神宗实录》卷十九，万历元年十一月辛卯：张居正从一品俸六年考满，令支正一品俸，进中极殿大学士，荫一子中书舍人；甲午辞恩命不允。此前阁衔为建极殿大学士。此为阁衔与俸秩升进，非新任首辅。农历日未换算为公历日。",
+      "source_ids": [
+        "inst-szsl19",
+        "inst-ms213"
+      ],
+      "native_date": {
+        "era": "万历",
+        "regnal_year": 1,
+        "month": 11,
+        "sexagenary_day": "辛卯",
+        "gregorian_date": null
+      }
+    }
+  ],
+  "zhang_1573_title_note": {
+    "duty": "内阁首辅",
+    "before_change": "少师兼太子太师、吏部尚书、建极殿大学士",
+    "after_change": "少师兼太子太师、吏部尚书、中极殿大学士（支正一品俸）",
+    "change_native_date": "万历元年十一月辛卯",
+    "evidence_level": "官衔序列据《明史》本传，进中极与俸秩确日据《明神宗实录》卷十九；未将“支正一品俸”写成大学士本职升正一品。",
+    "source_ids": [
+      "inst-ms213",
+      "inst-szsl19"
+    ]
+  },
+  "sources": [
+    {
+      "id": "inst-ms2",
+      "title": "《明史》卷二·太祖本纪二",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷2",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-ms3",
+      "title": "《明史》卷三·太祖本纪三",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷3",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-ms4",
+      "title": "《明史》卷四·恭闵帝本纪",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷4",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-ms20",
+      "title": "《明史》卷二十·神宗本纪一",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷20",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-ms72",
+      "title": "《明史》卷七十二·职官一",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷72",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-ms73",
+      "title": "《明史》卷七十三·职官二",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷73",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-ms74",
+      "title": "《明史》卷七十四·职官三",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷74",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-ms76",
+      "title": "《明史》卷七十六·职官五",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷76",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-ms213",
+      "title": "《明史》卷二百十三·张居正传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷213",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-szsl2",
+      "title": "《明神宗实录》卷二·隆庆六年六月",
+      "url": "https://www.diancangwang.cn/lishizhuanji/24b7b9494de8/0ab7bff40bdb.html",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-szsl19",
+      "title": "《明神宗实录》卷十九·万历元年十一月辛卯、甲午",
+      "url": "https://www.diancangwang.cn/lishizhuanji/24b7b9494de8/056eb9a12276.html",
+      "source_type": "primary_historical_text",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-dpm-transmission",
+      "title": "故宫博物院·通政使司",
+      "url": "https://www.dpm.org.cn/court/system/236396.html",
+      "source_type": "official_museum",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-dpm-jianwen",
+      "title": "故宫博物院·建文新政（仅取改大理司等事实；都察院设年有误）",
+      "url": "https://www.dpm.org.cn/court/event/167597.html",
+      "source_type": "official_museum",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-dpm-sili",
+      "title": "故宫博物院·司礼监",
+      "url": "https://www.dpm.org.cn/court/system/236401.html",
+      "source_type": "official_museum",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-dpm-sili-study",
+      "title": "赵晶《明代司礼监提督太监小考》，故宫学刊第二十四辑，2023",
+      "url": "https://www.dpm.org.cn/Uploads/File/2023/11/14/u655325cfe2bfd.pdf",
+      "source_type": "official_museum",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-dpm-jinyi-study",
+      "title": "故宫博物院院刊·明代锦衣卫研究（洪武前身与诏狱变化）",
+      "url": "https://www.dpm.org.cn/Uploads/File/2018/06/04/u5b1500d7bab49.pdf",
+      "source_type": "official_museum",
+      "accessed_at": "2026-09-06"
+    },
+    {
+      "id": "inst-dpm-halls",
+      "title": "故宫博物院·三大殿修复与更名资料",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/5063/T00020_00.pdf",
+      "source_type": "official_museum",
+      "accessed_at": "2026-09-06"
+    }
+  ]
+}

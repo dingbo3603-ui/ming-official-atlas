@@ -1,0 +1,33 @@
+.atlas-search-dialog {
+  width: min(720px, calc(100vw - 2rem));
+  max-width: min(720px, calc(100vw - 2rem));
+  max-height: 85dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 12px 12px;
+  overflow: hidden;
+  background: #211d16;
+  color: #eadcc0;
+  border: 1px solid #826239;
+}
+.atlas-search-heading { padding: 0 32px 0 8px; }
+.atlas-search-heading [data-slot=dialog-title] { font-size: 22px; color: #ead9b8; }
+.atlas-search-heading [data-slot=dialog-description] { font-size: 14px; line-height: 1.6; color: #bbae95; }
+.atlas-search-command { flex: 1; min-height: 0; background: #191612; color: #eadcc0; }
+.atlas-search-command [data-slot=input-group] { height: 46px !important; border-color: #695133; }
+.atlas-search-command [data-slot=command-input] { font-size: 16px; }
+.atlas-search-results { min-height: 0; max-height: 55dvh; }
+.atlas-search-note { padding: 10px 12px; font-size: 14px; color: #bbae95; }
+.atlas-search-note button { margin-left: 8px; color: #e0b569; text-decoration: underline; }
+.atlas-search-command [cmdk-group-heading] { font-size: 14px; color: #c6a56e; padding-block: 10px; }
+.atlas-search-result { gap: 12px; padding: 12px 10px; cursor: pointer; }
+.atlas-search-result[data-selected=true], .atlas-search-more[data-selected=true] { background: #3b2d1f; color: #f1dfba; }
+.atlas-search-mark { display: grid; place-items: center; flex: 0 0 40px; height: 40px; border: 1px solid #725633; border-radius: 6px; color: #dbb876; font-size: 20px; background: #302519; }
+.atlas-search-copy { flex: 1; min-width: 0; }
+.atlas-search-copy b { font-size: 17px; color: #ead9b8; }
+.atlas-search-person-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
+.atlas-search-person-heading small { color: #bbae95; font-size: 13px; }
+.atlas-search-summary { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 4px; color: #bbae95; font-size: 14px; line-height: 1.6; }
+.atlas-search-result [data-slot=command-shortcut] { flex-shrink: 0; color: #d0ad73; font-size: 14px; letter-spacing: 0; }
+.atlas-search-more { padding: 12px; justify-content: center; cursor: pointer; color: #d0ad73; font-size: 14px; }
