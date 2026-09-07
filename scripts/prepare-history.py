@@ -132,6 +132,8 @@ for relative in ['cbdb/cabinet-duty-corrections.json', 'history-zhang-cbdb-corre
         by_tenure[patch['id']].update(patch)
 from history_expansions import apply_expansions
 apply_expansions(history, ASSETS, RESEARCH)
+from history_enrichment import apply_enrichment
+apply_enrichment(history, RESEARCH)
 from history_direct_links import apply_direct_links
 direct_links = apply_direct_links(history, offices, cbdb_mapping['mappings'] if mapping_path.exists() else [])
 (ROOT / 'work/history-direct-links.json').write_text(json.dumps(direct_links, ensure_ascii=False, indent=2), encoding='utf-8')
