@@ -45,6 +45,7 @@ const entries = [
   ['components/history/history-context.tsx','history-person-dialog'],['components/history/history-context.tsx','history-roster-dialog'],
   ['components/mobile/mobile-shell.tsx','phone-year-dialog'],['components/mobile/mobile-geography.tsx','phone-map-dialog'],
   ['components/site-feedback.tsx','site-feedback-dialog'],
+  ['components/institution-directory.tsx','institution-directory-dialog'],
 ];
 for(const [file,className] of entries){
   const source = await fs.readFile(path.join(root,file),'utf8');

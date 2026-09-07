@@ -1,0 +1,2829 @@
+{
+  "read_only_research": true,
+  "generated_on": "2026-09-07",
+  "input_sha256": "63e9da69acb508b1efe712a2e5d62f27a8a2d95b6655aa413628547e20386471",
+  "catalogue_count": 637,
+  "summary": {
+    "candidate_count": 46,
+    "by_kind": {
+      "service_staff_function": 4,
+      "eunuch_duty": 28,
+      "concurrent_or_delegated_duty": 4,
+      "historical_formal_office": 10
+    },
+    "mapping_gap_groups": 8,
+    "exact_institution_title_duplicates": 0
+  },
+  "source_policy": "依用户本轮要求，有非虚构来源的官职/职掌先展示；未核任职不冒充已核，未知品级和年代保留空值。",
+  "sources": {
+    "ms74-eunuchs": {
+      "title": "《明史》卷七十四·职官三·宦官",
+      "url": "https://zh.wikisource.org/zh/明史/卷74#宦官",
+      "kind": "primary_historical_text",
+      "scope": "十二监、四司、八局、内府库房、东厂与沿革；条目直接列名的职掌可显示，未据此假造任职人物。"
+    },
+    "ms74-taichang": {
+      "title": "《明史》卷七十四·职官三·太常寺",
+      "url": "https://zh.wikisource.org/zh/明史/卷74#太常寺",
+      "kind": "primary_historical_text"
+    },
+    "ms72-secretariat": {
+      "title": "《明史》卷七十二·职官一·内阁（中书省沿革）",
+      "url": "https://zh.wikisource.org/zh/明史/卷72#內閣",
+      "kind": "primary_historical_text"
+    },
+    "ms73-zhanshi": {
+      "title": "《明史》卷七十三·职官二·詹事府",
+      "url": "https://zh.wikisource.org/zh/明史/卷73#詹事府_附左右春坊_司經局",
+      "kind": "primary_historical_text"
+    },
+    "ms73-hanlin": {
+      "title": "《明史》卷七十三·职官二·翰林院",
+      "url": "https://zh.wikisource.org/zh/明史/卷73#翰林院",
+      "kind": "primary_historical_text"
+    }
+  },
+  "candidates": [
+    {
+      "candidate_id": "office-gap-east-zhangban",
+      "title": "东厂掌班",
+      "institution": "东厂",
+      "entry_kind": "service_staff_function",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·东厂",
+      "source_quote": "提督東廠，掌印太監一員，掌班、領班、司房無定員。",
+      "duties": "东厂条所列属员职名；本段只明确名称和无定员，不编造各职分工。",
+      "headcount": "无定员",
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "东厂",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "与 official-0524 提督／掌印太监、0525 千户、0526 百户不同；掌班、司房等并非统一文武流官品级。不要混入其他监或私臣的同名职任。",
+      "existing_related_ids": [
+        "official-0524",
+        "official-0525",
+        "official-0526"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-east-lingban",
+      "title": "东厂领班",
+      "institution": "东厂",
+      "entry_kind": "service_staff_function",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·东厂",
+      "source_quote": "提督東廠，掌印太監一員，掌班、領班、司房無定員。",
+      "duties": "东厂条所列属员职名；本段只明确名称和无定员，不编造各职分工。",
+      "headcount": "无定员",
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "东厂",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "与 official-0524 提督／掌印太监、0525 千户、0526 百户不同；掌班、司房等并非统一文武流官品级。不要混入其他监或私臣的同名职任。",
+      "existing_related_ids": [
+        "official-0524",
+        "official-0525",
+        "official-0526"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-east-sifang",
+      "title": "东厂司房",
+      "institution": "东厂",
+      "entry_kind": "service_staff_function",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·东厂",
+      "source_quote": "提督東廠，掌印太監一員，掌班、領班、司房無定員。",
+      "duties": "东厂条所列属员职名；本段只明确名称和无定员，不编造各职分工。",
+      "headcount": "无定员",
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "东厂",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "与 official-0524 提督／掌印太监、0525 千户、0526 百户不同；掌班、司房等并非统一文武流官品级。不要混入其他监或私臣的同名职任。",
+      "existing_related_ids": [
+        "official-0524",
+        "official-0525",
+        "official-0526"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-xixin-seal",
+      "title": "惜薪司掌印太监",
+      "institution": "惜薪司",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·惜薪司",
+      "source_quote": "惜薪司，掌印太監一員",
+      "duties": "掌宫内所用薪炭；其外、北、南、新南、新西诸厂是薪炭属厂，不能与东厂、西厂等侦缉机关混淆。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "惜薪司",
+        "parent_context": "内廷四司",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-zhonggu-seal",
+      "title": "钟鼓司掌印太监",
+      "institution": "钟鼓司",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·钟鼓司",
+      "source_quote": "鐘鼓司，掌印太監一員",
+      "duties": "掌出朝钟鼓及内乐、传奇、过锦、打稻等承应。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "钟鼓司",
+        "parent_context": "内廷四司",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-baochao-seal",
+      "title": "宝钞司掌印太监",
+      "institution": "宝钞司",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·宝钞司",
+      "source_quote": "寶鈔司，掌印太監一員",
+      "duties": "掌造粗细草纸。不要仅因宝钞之名误写为掌国家纸币发行。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "宝钞司",
+        "parent_context": "内廷四司",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-huntang-seal",
+      "title": "混堂司掌印太监",
+      "institution": "混堂司",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·混堂司",
+      "source_quote": "混堂司。掌印太監一員",
+      "duties": "掌宫内沐浴事务。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "混堂司",
+        "parent_context": "内廷四司",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-bingzhang-seal",
+      "title": "兵仗局掌印太监",
+      "institution": "兵仗局",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·兵仗局",
+      "source_quote": "兵仗局，掌印太監一員",
+      "duties": "掌制造军器，火药司属之。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "兵仗局",
+        "parent_context": "内廷八局",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "后期掌印职掌与旧制大使是不同制度表述；不可因同一机构就合并官名与品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-yinzuo-seal",
+      "title": "银作局掌印太监",
+      "institution": "银作局",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·银作局",
+      "source_quote": "銀作局，掌印太監一員",
+      "duties": "掌打造金银器饰。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "银作局",
+        "parent_context": "内廷八局",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "后期掌印职掌与旧制大使是不同制度表述；不可因同一机构就合并官名与品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-huanyi-seal",
+      "title": "浣衣局掌印太监",
+      "institution": "浣衣局",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·浣衣局",
+      "source_quote": "浣衣局，掌印太監一員",
+      "duties": "原条记年老、罢退宫人发此居住；不能仅凭局名扩写未经本条支持的洗衣业务。此局在皇城外。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "浣衣局",
+        "parent_context": "内廷八局",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "后期掌印职掌与旧制大使是不同制度表述；不可因同一机构就合并官名与品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-jinmao-seal",
+      "title": "巾帽局掌印太监",
+      "institution": "巾帽局",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·巾帽局",
+      "source_quote": "巾帽局，掌印太監一員",
+      "duties": "掌宫内使帽靴、驸马冠靴、藩王之国旗尉帽靴。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "巾帽局",
+        "parent_context": "内廷八局",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "后期掌印职掌与旧制大使是不同制度表述；不可因同一机构就合并官名与品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-zhengong-seal",
+      "title": "针工局掌印太监",
+      "institution": "针工局",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·针工局",
+      "source_quote": "針工局，員同巾帽局",
+      "duties": "掌造宫中衣服；掌印员额由员同巾帽局承接。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "针工局",
+        "parent_context": "内廷八局",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "后期掌印职掌与旧制大使是不同制度表述；不可因同一机构就合并官名与品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-neizhiran-seal",
+      "title": "内织染局掌印太监",
+      "institution": "内织染局",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·内织染局",
+      "source_quote": "內織染局，員同上",
+      "duties": "掌染造御用及宫内应用缎匹；城西蓝靛厂为外署。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "内织染局",
+        "parent_context": "内廷八局",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "后期掌印职掌与旧制大使是不同制度表述；不可因同一机构就合并官名与品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-jiucumian-seal",
+      "title": "酒醋面局掌印太监",
+      "institution": "酒醋面局",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·酒醋面局",
+      "source_quote": "酒醋面局，員同上",
+      "duties": "掌宫内食用酒醋、糖酱、面豆等；与御酒房不相统辖。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "酒醋面局",
+        "parent_context": "内廷八局",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "后期掌印职掌与旧制大使是不同制度表述；不可因同一机构就合并官名与品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-siyuan-seal",
+      "title": "司苑局掌印太监",
+      "institution": "司苑局",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·司苑局",
+      "source_quote": "司苑局。員同上",
+      "duties": "掌蔬菜瓜果；与外廷上林苑监分列，不自动视为同一机构。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "司苑局",
+        "parent_context": "内廷八局",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "后期掌印职掌与旧制大使是不同制度表述；不可因同一机构就合并官名与品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-yuma-supervisor",
+      "title": "御马监监督太监",
+      "institution": "御马监",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·御马监",
+      "source_quote": "御馬監，掌印、監督、提督太監各一員。",
+      "duties": "监督为御马监明确分列职掌，不与掌印或提督合为一个人。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "御马监",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [
+        "official-0037"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-yuma-tidu",
+      "title": "御马监提督太监",
+      "institution": "御马监",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·御马监",
+      "source_quote": "御馬監，掌印、監督、提督太監各一員。",
+      "duties": "提督为御马监明确分列职掌，腾骧四卫营、象房另有监官、掌司等。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "御马监",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "履历仅说掌御马监事仍不能推成特定提督或掌印；冯保现有 core-primary-20260907-05 应保持泛称。",
+      "existing_related_ids": [
+        "official-0037"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-shangshan-guanglu",
+      "title": "尚膳监提督光禄太监",
+      "institution": "尚膳监",
+      "entry_kind": "concurrent_or_delegated_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·尚膳监",
+      "source_quote": "尚膳監，掌印太監一員，提督光祿太監一員，總理一員。",
+      "duties": "尚膳监体系中提督光禄的职掌；不等于外廷光禄寺卿。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "尚膳监",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [
+        "official-0030"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-bingzhang-armory",
+      "title": "兵仗局提督军器库太监",
+      "institution": "兵仗局",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·兵仗局",
+      "source_quote": "兵仗局，掌印太監一員，提督軍器庫太監一員。",
+      "duties": "兵仗局体系中提督军器库的专门职掌。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "兵仗局",
+        "parent_context": "兵仗局／内廷八局",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-yuyong-bazong",
+      "title": "御用监里外监把总",
+      "institution": "御用监",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·御用监",
+      "source_quote": "御用監，掌印太監一員，裏外監把總二員。",
+      "duties": "御用监造办木器、玩器体系中的把总职任。",
+      "headcount": 2,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "御用监",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "按原条合列里外监把总二员，不自行拆出两个明文未分别定员的职位；也不把军事把总的本官品级照搬到宫内工役职掌。",
+      "existing_related_ids": [
+        "official-0036"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-renzhi-supervisor",
+      "title": "御用监仁智殿监工",
+      "institution": "御用监",
+      "entry_kind": "service_staff_function",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·御用监",
+      "source_quote": "又有仁智殿監工一員，掌武英殿中書承旨所寫書籍畫冊等，奏進御前。",
+      "duties": "办理原文所列武英殿中书书籍画册进御事务。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "御用监",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [
+        "official-0036"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-neiguan-general",
+      "title": "内官监总理",
+      "institution": "内官监",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·内官监",
+      "source_quote": "內官監，掌印太監一員，總理、管理、僉書、典簿、掌司、寫字、監工無定員。",
+      "duties": "内官监营造宫室陵墓等工作中的总理职掌；原条未细分其与管理的权限界线。",
+      "headcount": "无定员",
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "内官监",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [
+        "official-0027"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-wenshu-room",
+      "title": "文书房掌房",
+      "institution": "文书房",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·文书房",
+      "source_quote": "文書房，掌房十員。",
+      "duties": "收封进本章、保存内外票旨及御批底簿并发出。",
+      "headcount": 10,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "文书房",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "文书房不是内阁，也不是外廷中书科；不得把掌房自动等同司礼监秉笔。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-liyi-room",
+      "title": "礼仪房提督太监",
+      "institution": "礼仪房",
+      "entry_kind": "concurrent_or_delegated_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·礼仪房",
+      "source_quote": "禮儀房，提督太監一員，司禮、掌印或秉筆攝之。",
+      "duties": "负责选婚、选驸马、皇子女诞育、选择乳妇等吉礼。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "礼仪房",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "原文明言由司礼掌印或秉笔摄领，必须标兼摄职事；不能反向推断摄领者究竟为掌印还是秉笔。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-zhongshu-room",
+      "title": "中书房掌房",
+      "institution": "中书房",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·中书房",
+      "source_quote": "中書房，掌房一員，散官無定員。",
+      "duties": "管理文华殿中书所写书籍、对联、扇柄等，承旨发写并奏进。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "中书房",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "中书房与外廷中书科、中书省是不同机构。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-royal-wine",
+      "title": "御酒房提督太监",
+      "institution": "御酒房",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·御酒房",
+      "source_quote": "禦酒房，提督太監一員，僉書無定員。掌造御用酒。",
+      "duties": "掌造御用酒。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "御酒房",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "《明史》明确酒醋面局与御酒房不相统辖，不设置错误父子关系。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-qianqing-manager",
+      "title": "乾清宫管事",
+      "institution": "乾清宫近侍",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·乾清宫近侍",
+      "source_quote": "御前近侍，曰乾清宮管事，督理御用諸事。",
+      "duties": "御前近侍中督理御用事务的职掌。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "乾清宫近侍",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-supply-seal",
+      "title": "内府供用库掌印太监",
+      "institution": "内府供用库",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·内府供用库",
+      "source_quote": "內府供用庫，掌印太監一員",
+      "duties": "掌宫内及山陵内官食米、御用蜡香，油蜡诸库属之。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "内府供用库",
+        "parent_context": "内府库藏系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-siyue-seal",
+      "title": "司钥库掌印太监",
+      "institution": "司钥库",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·司钥库",
+      "source_quote": "司鑰庫，員同上",
+      "duties": "收贮制钱以备赏赐；官员配置承接内府供用库条。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "司钥库",
+        "parent_context": "内府库藏系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-neichengyun-seal",
+      "title": "内承运库掌印太监",
+      "institution": "内承运库",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·内承运库",
+      "source_quote": "內承運庫，掌印太監一員",
+      "duties": "掌大内库藏，金银及诸宝货总隶。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "内承运库",
+        "parent_context": "内府库藏系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-medicine-chief",
+      "title": "御药房正提督太监",
+      "institution": "御药房",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·御药房",
+      "source_quote": "禦藥房，提督太監正、副二員，分兩班。",
+      "duties": "掌御用药饵，与太医院官协作，不等同太医院院使。",
+      "headcount": "正、副合计二员，分两班",
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "御药房",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "目录拆分正副便于检索；本职掌无单列法定品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-medicine-deputy",
+      "title": "御药房副提督太监",
+      "institution": "御药房",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·御药房",
+      "source_quote": "禦藥房，提督太監正、副二員，分兩班。",
+      "duties": "掌御用药饵，与太医院官协作，不等同太医院院使。",
+      "headcount": "正、副合计二员，分两班",
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "御药房",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "目录拆分正副便于检索；本职掌无单列法定品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-tea-chief",
+      "title": "御茶房正提督太监",
+      "institution": "御茶房",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·御茶房",
+      "source_quote": "禦茶房，提督太監正、副二員，分兩班。",
+      "duties": "供奉茶酒瓜果及进御膳。",
+      "headcount": "正、副合计二员，分两班",
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "御茶房",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "目录拆分正副便于检索；本职掌无单列法定品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-tea-deputy",
+      "title": "御茶房副提督太监",
+      "institution": "御茶房",
+      "entry_kind": "eunuch_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·御茶房",
+      "source_quote": "禦茶房，提督太監正、副二員，分兩班。",
+      "duties": "供奉茶酒瓜果及进御膳。",
+      "headcount": "正、副合计二员，分两班",
+      "rank": {
+        "formal_rank": null,
+        "display": "职掌名称，未见独立品级",
+        "base_office_reference": "《明史》记十二监太监洪武旧制正四品；不能将此直接当成本职掌在整个明代的独立品级。"
+      },
+      "period": {
+        "phase": "明代后期职掌体系；《明史》职官志所叙",
+        "start_year": null,
+        "end_year": null,
+        "note": "原条未给设立、罢废的确年，不倒推至洪武，也不生成全朝连续任期。"
+      },
+      "institution_relation": {
+        "within": "御茶房",
+        "parent_context": "内廷职官系统",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "目录拆分正副便于检索；本职掌无单列法定品级。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-zhongshu-right-lang",
+      "title": "中书省右司郎中",
+      "institution": "中书省",
+      "entry_kind": "historical_formal_office",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms72-secretariat"
+      ],
+      "source_locator": "内阁·中书省沿革",
+      "source_quote": "置屬官左、右司郎中(正五品)",
+      "duties": "中书省右司属官。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": "正五品",
+        "display": "正五品（中书省旧制）"
+      },
+      "period": {
+        "phase": "洪武初中书省制度",
+        "start_year": 1368,
+        "end_year": 1380,
+        "boundary": "1380 年正月罢中书省；终年仅有部分时段",
+        "note": "1368 是本批明代展示起点，不冒称机构在该年首次设置。"
+      },
+      "institution_relation": {
+        "within": "中书省",
+        "parent_context": "早期中央行政",
+        "relation_type": "office_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [
+        "cbdb-career-468141-71555"
+      ],
+      "unbound_title_match_count": 1,
+      "unbound_examples": [
+        {
+          "id": "cbdb-career-413046-71555",
+          "person_id": "cbdb-person-66532",
+          "office_title": "中书省右司郎中",
+          "start_year": null,
+          "end_year": 1376,
+          "attested_year": 1376,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "茹太素"
+        }
+      ],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-zhongshu-duanshi",
+      "title": "中书省断事",
+      "institution": "中书省",
+      "entry_kind": "historical_formal_office",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms72-secretariat"
+      ],
+      "source_locator": "内阁·中书省沿革",
+      "source_quote": "參軍、斷事官(從三品)；斷事、經歷(正七品)",
+      "duties": "中书省断事职；与同段从三品断事官严格区分。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": "正七品",
+        "display": "正七品；不是从三品断事官"
+      },
+      "period": {
+        "phase": "洪武初中书省制度",
+        "start_year": 1368,
+        "end_year": null,
+        "boundary": "1380 年正月罢中书省；终年仅有部分时段",
+        "note": "原文洪武二年革断事官；断事与断事官分别有品秩，不能直接推断两个名称同年一起裁撤，具体止年待核。"
+      },
+      "institution_relation": {
+        "within": "中书省",
+        "parent_context": "早期中央行政",
+        "relation_type": "office_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "cbdb-career-136010-63952 明称断事官，不列入本候选映射；同一人物也不得将两个不同品级职名合并。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 2,
+      "unbound_examples": [
+        {
+          "id": "cbdb-career-412740-71551",
+          "person_id": "cbdb-person-66439",
+          "office_title": "中书省断事",
+          "start_year": 1368,
+          "end_year": 1369,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "李质"
+        },
+        {
+          "id": "cbdb-career-468614-71551",
+          "person_id": "cbdb-person-66439",
+          "office_title": "中书省断事",
+          "start_year": 1368,
+          "end_year": null,
+          "attested_year": 1368,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "李质"
+        }
+      ],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-zhongshu-guangou",
+      "title": "中书省管勾",
+      "institution": "中书省",
+      "entry_kind": "historical_formal_office",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms72-secretariat"
+      ],
+      "source_locator": "内阁·中书省沿革",
+      "source_quote": "照磨、管勾(從七品)",
+      "duties": "中书省文书属官。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": "从七品",
+        "display": "从七品（中书省旧制）"
+      },
+      "period": {
+        "phase": "洪武初中书省制度",
+        "start_year": 1368,
+        "end_year": 1380,
+        "boundary": "1380 年正月罢中书省；终年仅有部分时段",
+        "note": "1368 是本批明代展示起点，不冒称机构在该年首次设置。"
+      },
+      "institution_relation": {
+        "within": "中书省",
+        "parent_context": "早期中央行政",
+        "relation_type": "office_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [
+        "cbdb-career-468755-63953"
+      ],
+      "unbound_title_match_count": 1,
+      "unbound_examples": [
+        {
+          "id": "cbdb-career-413110-71552",
+          "person_id": "cbdb-person-66548",
+          "office_title": "中书省管勾",
+          "start_year": null,
+          "end_year": null,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "唐铎"
+        }
+      ],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-taichang-old-cheng",
+      "title": "太常司丞（初制）",
+      "institution": "太常司",
+      "entry_kind": "historical_formal_office",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-taichang"
+      ],
+      "source_locator": "太常寺·沿革",
+      "source_quote": "吳元年置太常司，設卿，正三品，少卿，正四品，丞，正五品",
+      "duties": "太常由司改寺前的丞职，初秩正五品。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": "正五品",
+        "display": "正五品（吴元年初制）；后改正六品"
+      },
+      "period": {
+        "phase": "吴元年至洪武二十年改寺前",
+        "start_year": 1367,
+        "end_year": 1387,
+        "note": "洪武二十年改司为寺；二十五年已定司丞正六品。1387 为更名年，不把旧制正五品用于所有后称司丞的履历。"
+      },
+      "institution_relation": {
+        "within": "太常司",
+        "parent_context": "早期中央礼制",
+        "relation_type": "office_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "可作为旧制版本／别名及品级沿革，不增加与太常寺平行共存的永久机构。",
+      "existing_related_ids": [
+        "official-0203"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 3,
+      "unbound_examples": [
+        {
+          "id": "cbdb-career-412675-70887",
+          "person_id": "cbdb-person-66418",
+          "office_title": "太常司丞",
+          "start_year": 1381,
+          "end_year": null,
+          "attested_year": 1381,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "吴佑"
+        },
+        {
+          "id": "cbdb-career-468586-70887",
+          "person_id": "cbdb-person-66418",
+          "office_title": "太常司丞",
+          "start_year": 1381,
+          "end_year": null,
+          "attested_year": 1381,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "吴佑"
+        },
+        {
+          "id": "cbdb-career-484242-70887",
+          "person_id": "cbdb-person-130374",
+          "office_title": "太常司丞",
+          "start_year": null,
+          "end_year": null,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "张羽"
+        }
+      ],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-early-zhanshi-right",
+      "title": "太子右詹事",
+      "institution": "早期东宫官属",
+      "entry_kind": "concurrent_or_delegated_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms73-zhanshi"
+      ],
+      "source_locator": "詹事府·洪武初东宫官属",
+      "source_quote": "有左、右詹事，同知詹事院事，副詹事……皆以勳舊大臣兼領其職。",
+      "duties": "洪武初以勋旧大臣兼领的东宫辅导官。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": null,
+        "display": "本段未标品秩；随兼领本官另记，不套用后制定品"
+      },
+      "period": {
+        "phase": "洪武初旧制",
+        "start_year": 1368,
+        "end_year": null,
+        "note": "洪武十五年起改春坊，二十二年置詹事院、二十五年改府。此段未逐官给明确裁撤年，不推定续至明末。"
+      },
+      "institution_relation": {
+        "within": "早期东宫官属",
+        "parent_context": "东宫",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "早期副詹事不是后来正四品少詹事的当然同义词。",
+      "existing_related_ids": [
+        "official-0009",
+        "official-0010"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 1,
+      "unbound_examples": [
+        {
+          "id": "cbdb-career-412146-70913",
+          "person_id": "cbdb-person-66271",
+          "office_title": "太子右詹事",
+          "start_year": 1368,
+          "end_year": null,
+          "attested_year": 1368,
+          "timeline_scope": "ming",
+          "record_role": "concurrent_title_or_duty",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "冯胜"
+        }
+      ],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-early-zhanshi-deputy",
+      "title": "副詹事（洪武初）",
+      "institution": "早期东宫官属",
+      "entry_kind": "concurrent_or_delegated_duty",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms73-zhanshi"
+      ],
+      "source_locator": "詹事府·洪武初东宫官属",
+      "source_quote": "有左、右詹事，同知詹事院事，副詹事……皆以勳舊大臣兼領其職。",
+      "duties": "洪武初以勋旧大臣兼领的东宫辅导官。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": null,
+        "display": "本段未标品秩；随兼领本官另记，不套用后制定品"
+      },
+      "period": {
+        "phase": "洪武初旧制",
+        "start_year": 1368,
+        "end_year": null,
+        "note": "洪武十五年起改春坊，二十二年置詹事院、二十五年改府。此段未逐官给明确裁撤年，不推定续至明末。"
+      },
+      "institution_relation": {
+        "within": "早期东宫官属",
+        "parent_context": "东宫",
+        "relation_type": "specific_duty_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "早期副詹事不是后来正四品少詹事的当然同义词。",
+      "existing_related_ids": [
+        "official-0009",
+        "official-0010"
+      ],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 2,
+      "unbound_examples": [
+        {
+          "id": "cbdb-career-412300-71438",
+          "person_id": "cbdb-person-66306",
+          "office_title": "詹事府副詹事",
+          "start_year": 1368,
+          "end_year": null,
+          "attested_year": 1368,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "王溥"
+        },
+        {
+          "id": "cbdb-career-432833-71438",
+          "person_id": "cbdb-person-66306",
+          "office_title": "詹事府副詹事",
+          "start_year": null,
+          "end_year": null,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "concurrent_title_or_duty",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-2066"
+          ],
+          "person_name": "王溥"
+        }
+      ],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-xixin-old-chief",
+      "title": "惜薪司司正（洪武旧制）",
+      "institution": "惜薪司",
+      "entry_kind": "historical_formal_office",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·沿革·洪武二十八年",
+      "source_quote": "司二：曰鐘鼓司，曰惜薪司，皆設司正一人，正五品。",
+      "duties": "该司在洪武二十八年定制的正式司正；后期掌印职掌另列。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": "正五品",
+        "display": "正五品（洪武二十八年旧制）"
+      },
+      "period": {
+        "phase": "洪武二十八年定制",
+        "attested_from_year": 1395,
+        "start_year": null,
+        "end_year": null,
+        "note": "1395 为明文定制年；改称掌印的确年本段未定，不造统一结束年。"
+      },
+      "institution_relation": {
+        "within": "惜薪司",
+        "parent_context": "内廷四司",
+        "relation_type": "office_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-zhonggu-old-chief",
+      "title": "钟鼓司司正（洪武旧制）",
+      "institution": "钟鼓司",
+      "entry_kind": "historical_formal_office",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms74-eunuchs"
+      ],
+      "source_locator": "宦官·沿革·洪武二十八年",
+      "source_quote": "司二：曰鐘鼓司，曰惜薪司，皆設司正一人，正五品。",
+      "duties": "该司在洪武二十八年定制的正式司正；后期掌印职掌另列。",
+      "headcount": 1,
+      "rank": {
+        "formal_rank": "正五品",
+        "display": "正五品（洪武二十八年旧制）"
+      },
+      "period": {
+        "phase": "洪武二十八年定制",
+        "attested_from_year": 1395,
+        "start_year": null,
+        "end_year": null,
+        "note": "1395 为明文定制年；改称掌印的确年本段未定，不造统一结束年。"
+      },
+      "institution_relation": {
+        "within": "钟鼓司",
+        "parent_context": "内廷四司",
+        "relation_type": "office_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 0,
+      "unbound_examples": [],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-hanlin-old-chengzhi",
+      "title": "翰林学士承旨",
+      "institution": "翰林院",
+      "entry_kind": "historical_formal_office",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms73-hanlin"
+      ],
+      "source_locator": "翰林院·吴元年／洪武二年及十四年沿革",
+      "source_quote": "洪武二年，置學士承旨，正三品",
+      "duties": "早期翰林院正式官职，供按原官名检索和分期展现。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": "正三品",
+        "display": "正三品（洪武初制）"
+      },
+      "period": {
+        "phase": "洪武初制",
+        "start_year": 1369,
+        "end_year": 1381,
+        "boundary": "洪武十四年裁革",
+        "later_note": "承旨在建文时复设；如展示复设期须另外记录，不将1369—1402连成一段。"
+      },
+      "institution_relation": {
+        "within": "翰林院",
+        "parent_context": "中央文翰系统",
+        "relation_type": "office_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "只列明制；元代翰林国史院同名职官不得自动导入该节点。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 4,
+      "unbound_examples": [
+        {
+          "id": "cbdb-career-409762-70401",
+          "person_id": "cbdb-person-66453",
+          "office_title": "翰林学士承旨",
+          "start_year": null,
+          "end_year": null,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-57941"
+          ],
+          "person_name": "詹同"
+        },
+        {
+          "id": "cbdb-career-412793-70401",
+          "person_id": "cbdb-person-66453",
+          "office_title": "翰林学士承旨",
+          "start_year": 1373,
+          "end_year": 1374,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "詹同"
+        },
+        {
+          "id": "cbdb-career-412794-70401",
+          "person_id": "cbdb-person-66453",
+          "office_title": "翰林学士承旨",
+          "start_year": 1374,
+          "end_year": null,
+          "attested_year": 1374,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "詹同"
+        },
+        {
+          "id": "cbdb-career-412091-70401",
+          "person_id": "cbdb-person-10097",
+          "office_title": "翰林学士承旨",
+          "start_year": 1376,
+          "end_year": 1377,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "宋濂"
+        }
+      ],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-hanlin-old-zhixueshi",
+      "title": "翰林直学士",
+      "institution": "翰林院",
+      "entry_kind": "historical_formal_office",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms73-hanlin"
+      ],
+      "source_locator": "翰林院·吴元年／洪武二年及十四年沿革",
+      "source_quote": "吳元年，初置翰林院……直學士，正五品",
+      "duties": "早期翰林院正式官职，供按原官名检索和分期展现。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": "正五品",
+        "display": "正五品（洪武初制）"
+      },
+      "period": {
+        "phase": "洪武初制",
+        "start_year": 1367,
+        "end_year": 1381,
+        "boundary": "洪武十四年裁革",
+        "later_note": null
+      },
+      "institution_relation": {
+        "within": "翰林院",
+        "parent_context": "中央文翰系统",
+        "relation_type": "office_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "只列明制；元代翰林国史院同名职官不得自动导入该节点。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 3,
+      "unbound_examples": [
+        {
+          "id": "cbdb-career-412422-70419",
+          "person_id": "cbdb-person-66347",
+          "office_title": "翰林直学士",
+          "start_year": 1368,
+          "end_year": null,
+          "attested_year": 1368,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "范常"
+        },
+        {
+          "id": "cbdb-career-409758-70419",
+          "person_id": "cbdb-person-66453",
+          "office_title": "翰林直学士",
+          "start_year": null,
+          "end_year": null,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-57941"
+          ],
+          "person_name": "詹同"
+        },
+        {
+          "id": "cbdb-career-412789-70419",
+          "person_id": "cbdb-person-66453",
+          "office_title": "翰林直学士",
+          "start_year": 1368,
+          "end_year": null,
+          "attested_year": 1368,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "詹同"
+        }
+      ],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-hanlin-old-daizhi",
+      "title": "翰林待制",
+      "institution": "翰林院",
+      "entry_kind": "historical_formal_office",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms73-hanlin"
+      ],
+      "source_locator": "翰林院·吴元年／洪武二年及十四年沿革",
+      "source_quote": "增設待制，從五品",
+      "duties": "早期翰林院正式官职，供按原官名检索和分期展现。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": "从五品",
+        "display": "从五品（洪武初制）"
+      },
+      "period": {
+        "phase": "洪武初制",
+        "start_year": 1369,
+        "end_year": 1381,
+        "boundary": "洪武十四年裁革",
+        "later_note": null
+      },
+      "institution_relation": {
+        "within": "翰林院",
+        "parent_context": "中央文翰系统",
+        "relation_type": "office_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "只列明制；元代翰林国史院同名职官不得自动导入该节点。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 2,
+      "unbound_examples": [
+        {
+          "id": "cbdb-career-425027-70392",
+          "person_id": "cbdb-person-66453",
+          "office_title": "翰林待制",
+          "start_year": null,
+          "end_year": null,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "詹同"
+        },
+        {
+          "id": "cbdb-career-418503-70392",
+          "person_id": "cbdb-person-67803",
+          "office_title": "翰林待制",
+          "start_year": null,
+          "end_year": null,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "吴云"
+        }
+      ],
+      "candidate_match_is_not_approval": true
+    },
+    {
+      "candidate_id": "office-gap-hanlin-old-yingfeng",
+      "title": "翰林应奉",
+      "institution": "翰林院",
+      "entry_kind": "historical_formal_office",
+      "priority": 1,
+      "catalogue_status": "not_found_as_specific_entry_in_637_catalogue",
+      "source_ids": [
+        "ms73-hanlin"
+      ],
+      "source_locator": "翰林院·吴元年／洪武二年及十四年沿革",
+      "source_quote": "應奉，正七品",
+      "duties": "早期翰林院正式官职，供按原官名检索和分期展现。",
+      "headcount": null,
+      "rank": {
+        "formal_rank": "正七品",
+        "display": "正七品（洪武初制）"
+      },
+      "period": {
+        "phase": "洪武初制",
+        "start_year": 1369,
+        "end_year": 1381,
+        "boundary": "洪武十四年裁革",
+        "later_note": null
+      },
+      "institution_relation": {
+        "within": "翰林院",
+        "parent_context": "中央文翰系统",
+        "relation_type": "office_within_institution",
+        "assignment_implies_other_office": false
+      },
+      "display_admission": "来源明确，可先展示官职／职掌说明；人物任职另据履历，未逐条考证者保留来源及待核标签。",
+      "mapping_rule": "不得仅因同机构、太监称谓或官品相近自动关联；须有该职名或明确同义职掌及相符时段。",
+      "notes": "只列明制；元代翰林国史院同名职官不得自动导入该节点。",
+      "existing_related_ids": [],
+      "excluded_foreign_career_title_matches": [],
+      "unbound_title_match_count": 4,
+      "unbound_examples": [
+        {
+          "id": "cbdb-career-430362-70402",
+          "person_id": "cbdb-person-66456",
+          "office_title": "翰林应奉",
+          "start_year": null,
+          "end_year": null,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "答禄与权"
+        },
+        {
+          "id": "cbdb-career-412809-70402",
+          "person_id": "cbdb-person-66457",
+          "office_title": "翰林应奉",
+          "start_year": 1371,
+          "end_year": null,
+          "attested_year": 1371,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "张筹"
+        },
+        {
+          "id": "cbdb-career-412830-70402",
+          "person_id": "cbdb-person-34415",
+          "office_title": "翰林应奉",
+          "start_year": null,
+          "end_year": null,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-9602"
+          ],
+          "person_name": "陶凯"
+        },
+        {
+          "id": "cbdb-career-334161-70402",
+          "person_id": "cbdb-person-131615",
+          "office_title": "翰林应奉",
+          "start_year": null,
+          "end_year": null,
+          "attested_year": null,
+          "timeline_scope": "ming",
+          "record_role": "office_appointment",
+          "source_ids": [
+            "cbdb-release-20260829",
+            "cbdb-sem-api",
+            "cbdb-sem-guide",
+            "cbdb-text-6339"
+          ],
+          "person_name": "傅藻"
+        }
+      ],
+      "candidate_match_is_not_approval": true
+    }
+  ],
+  "existing_catalogue_mapping_gaps": [
+    {
+      "title": "提督东厂",
+      "existing_office_ids": [
+        "official-0524"
+      ],
+      "unbound_records": 4,
+      "examples": [
+        {
+          "record_id": "core-primary-20260907-04",
+          "person_name": "冯保",
+          "title": "提督东厂",
+          "year": 1567
+        },
+        {
+          "record_id": "core-primary-20260907-11",
+          "person_name": "张诚",
+          "title": "提督东厂",
+          "year": 1590
+        },
+        {
+          "record_id": "core-primary-20260907-12",
+          "person_name": "张鲸",
+          "title": "提督东厂",
+          "year": 1590
+        },
+        {
+          "record_id": "core-primary-20260907-13",
+          "person_name": "陈矩",
+          "title": "提督东厂",
+          "year": 1598
+        }
+      ],
+      "action": "已有东厂掌印太监条，补提督东厂等有据别名及机构关系即可；不再次造一项厂公。任职条仍以原典和兼任性质匹配，不能据提督东厂反推司礼具体席位。",
+      "is_new_office": false
+    },
+    {
+      "title": "掌御马监事",
+      "existing_office_ids": [
+        "official-0037"
+      ],
+      "unbound_records": 1,
+      "examples": [
+        {
+          "record_id": "core-primary-20260907-05",
+          "person_name": "冯保",
+          "title": "掌御马监事",
+          "year": 1567
+        }
+      ],
+      "action": "已有御马监掌印条，但泛称掌监不能自动判定掌印、监督或提督；应保留未细分职掌，勿强制塞入新候选。",
+      "is_new_office": false
+    },
+    {
+      "title": "太常寺少卿",
+      "existing_office_ids": [
+        "official-0202"
+      ],
+      "unbound_records": 150,
+      "examples": [
+        {
+          "record_id": "cbdb-career-411863-70889",
+          "person_name": "谢陞",
+          "title": "太常寺少卿",
+          "year": 1626
+        },
+        {
+          "record_id": "cbdb-career-239454-70889",
+          "person_name": "雷礼",
+          "title": "太常寺少卿",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-435976-70889",
+          "person_name": "雷礼",
+          "title": "太常寺少卿",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-2101128-70889",
+          "person_name": "叶茂才",
+          "title": "太常寺少卿",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-412932-70889",
+          "person_name": "卢原质",
+          "title": "太常寺少卿",
+          "year": 1395
+        },
+        {
+          "record_id": "cbdb-career-413270-70889",
+          "person_name": "高逊志",
+          "title": "太常寺少卿",
+          "year": 1399
+        },
+        {
+          "record_id": "cbdb-career-417577-70889",
+          "person_name": "彭时",
+          "title": "太常寺少卿",
+          "year": 1456
+        },
+        {
+          "record_id": "cbdb-career-426229-70889",
+          "person_name": "潘府",
+          "title": "太常寺少卿",
+          "year": null
+        }
+      ],
+      "action": "官职已在目录；核机构和原官名后处理链接，不增同名条。",
+      "is_new_office": false
+    },
+    {
+      "title": "太常寺卿",
+      "existing_office_ids": [
+        "official-0201"
+      ],
+      "unbound_records": 66,
+      "examples": [
+        {
+          "record_id": "cbdb-career-412423-70888",
+          "person_name": "范常",
+          "title": "太常寺卿",
+          "year": 1368
+        },
+        {
+          "record_id": "cbdb-career-412616-70888",
+          "person_name": "吴琳",
+          "title": "太常寺卿",
+          "year": 1371
+        },
+        {
+          "record_id": "cbdb-career-494583-70888",
+          "person_name": "鲍应鳌",
+          "title": "太常寺卿",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-412943-70888",
+          "person_name": "黄湜",
+          "title": "太常寺卿",
+          "year": 1398
+        },
+        {
+          "record_id": "cbdb-career-413100-70888",
+          "person_name": "魏观",
+          "title": "太常寺卿",
+          "year": 1370
+        },
+        {
+          "record_id": "cbdb-career-413116-70888",
+          "person_name": "唐铎",
+          "title": "太常寺卿",
+          "year": 1374
+        },
+        {
+          "record_id": "cbdb-career-414341-70888",
+          "person_name": "刘俨",
+          "title": "太常寺卿",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-415498-70888",
+          "person_name": "王一居",
+          "title": "太常寺卿",
+          "year": null
+        }
+      ],
+      "action": "已有目录；未关联并不表示缺官职，也不代表这些原始记录全经实任核定。",
+      "is_new_office": false
+    },
+    {
+      "title": "翰林院侍读学士",
+      "existing_office_ids": [
+        "official-0256"
+      ],
+      "unbound_records": 39,
+      "examples": [
+        {
+          "record_id": "cbdb-career-411992-70411",
+          "person_name": "朱国祯",
+          "title": "翰林院侍读学士",
+          "year": 1621
+        },
+        {
+          "record_id": "cbdb-career-412790-70411",
+          "person_name": "詹同",
+          "title": "翰林院侍读学士",
+          "year": 1369
+        },
+        {
+          "record_id": "cbdb-career-413101-70411",
+          "person_name": "魏观",
+          "title": "翰林院侍读学士",
+          "year": 1370
+        },
+        {
+          "record_id": "cbdb-career-424825-70411",
+          "person_name": "陆树声",
+          "title": "翰林院侍读学士",
+          "year": 1569
+        },
+        {
+          "record_id": "cbdb-career-414340-70835",
+          "person_name": "刘俨",
+          "title": "侍读学士",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-408748-70835",
+          "person_name": "谢迁",
+          "title": "侍读学士",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-419012-70411",
+          "person_name": "王鏊",
+          "title": "翰林院侍读学士",
+          "year": 1498
+        },
+        {
+          "record_id": "cbdb-career-417647-70835",
+          "person_name": "刘定之",
+          "title": "侍读学士",
+          "year": 1464
+        }
+      ],
+      "action": "已有目录；需排除纯兼衔、跨朝代码与南京异制，不能自动全部实任关联。",
+      "is_new_office": false
+    },
+    {
+      "title": "詹事／少詹事",
+      "existing_office_ids": [
+        "official-0009",
+        "official-0010"
+      ],
+      "unbound_records": 165,
+      "examples": [
+        {
+          "record_id": "cbdb-career-470935-87247",
+          "person_name": "吴宽",
+          "title": "詹事府少詹事",
+          "year": 1491
+        },
+        {
+          "record_id": "cbdb-career-412236-71435",
+          "person_name": "李善长",
+          "title": "詹事",
+          "year": 1368
+        },
+        {
+          "record_id": "cbdb-career-426979-71442",
+          "person_name": "陈文",
+          "title": "詹事府詹事",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-468422-87251",
+          "person_name": "陈文",
+          "title": "詹事府詹事",
+          "year": 1458
+        },
+        {
+          "record_id": "cbdb-career-413123-71435",
+          "person_name": "唐铎",
+          "title": "詹事",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-413124-71435",
+          "person_name": "唐铎",
+          "title": "詹事",
+          "year": 1389
+        },
+        {
+          "record_id": "cbdb-career-413125-71435",
+          "person_name": "唐铎",
+          "title": "詹事",
+          "year": 1393
+        },
+        {
+          "record_id": "cbdb-career-475304-87247",
+          "person_name": "申时行",
+          "title": "詹事府少詹事",
+          "year": 1574
+        }
+      ],
+      "action": "已有目录；掌詹事府事与詹事本官仍分开。",
+      "is_new_office": false
+    },
+    {
+      "title": "掌詹事府事",
+      "existing_office_ids": [
+        "official-0009"
+      ],
+      "unbound_records": 39,
+      "examples": [
+        {
+          "record_id": "high-1566-qin-zhanshi",
+          "person_name": "秦鸣雷",
+          "title": "吏部左侍郎兼翰林院学士（掌詹事府事）",
+          "year": 1566
+        },
+        {
+          "record_id": "high-1566-chenyi-zhanshi",
+          "person_name": "陈以勤",
+          "title": "吏部左侍郎兼翰林院学士（掌詹事府事）",
+          "year": 1566
+        },
+        {
+          "record_id": "cbdb-career-470970-71454",
+          "person_name": "丘濬",
+          "title": "掌詹事府事",
+          "year": 1487
+        },
+        {
+          "record_id": "cbdb-career-424823-71454",
+          "person_name": "陆树声",
+          "title": "掌詹事府事",
+          "year": 1569
+        },
+        {
+          "record_id": "cbdb-career-469497-71454",
+          "person_name": "刘机",
+          "title": "掌詹事府事",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-469783-71454",
+          "person_name": "萨琦",
+          "title": "掌詹事府事",
+          "year": 1452
+        },
+        {
+          "record_id": "cbdb-career-471018-71454",
+          "person_name": "王鏊",
+          "title": "掌詹事府事",
+          "year": null
+        },
+        {
+          "record_id": "cbdb-career-470300-71454",
+          "person_name": "白钺",
+          "title": "掌詹事府事",
+          "year": 1509
+        }
+      ],
+      "action": "作为明确职掌可单列检索，但不是所有掌府大臣都实授詹事；不得将尚书、侍郎兼掌直接改为正三品詹事。",
+      "is_new_office": false
+    },
+    {
+      "title": "太常寺少卿提督四夷馆",
+      "existing_office_ids": [
+        "official-0212"
+      ],
+      "unbound_records": 10,
+      "examples": [
+        {
+          "record_id": "high-extra-1566-luo-siyiguan",
+          "person_name": "罗良",
+          "title": "太常寺少卿（提督四夷馆）",
+          "year": 1566
+        },
+        {
+          "record_id": "cbdb-career-416151-70875",
+          "person_name": "王佐",
+          "title": "四夷馆少卿",
+          "year": 1494
+        },
+        {
+          "record_id": "cbdb-career-421269-70934",
+          "person_name": "孙交",
+          "title": "提督四夷馆",
+          "year": 1501
+        },
+        {
+          "record_id": "cbdb-career-421716-70875",
+          "person_name": "杨一清",
+          "title": "四夷馆少卿",
+          "year": 1498
+        },
+        {
+          "record_id": "cbdb-career-424368-70415",
+          "person_name": "刘文",
+          "title": "翰林院提督四夷馆",
+          "year": 1465
+        },
+        {
+          "record_id": "cbdb-career-424364-70934",
+          "person_name": "刘文",
+          "title": "提督四夷馆",
+          "year": 1449
+        },
+        {
+          "record_id": "cbdb-career-424530-70934",
+          "person_name": "杨俊民",
+          "title": "提督四夷馆",
+          "year": 1577
+        },
+        {
+          "record_id": "cbdb-career-333300-70934",
+          "person_name": "潘希曾",
+          "title": "提督四夷馆",
+          "year": 1523
+        }
+      ],
+      "action": "已有少卿／提督四夷馆部门条；提督职掌要分1494前后组织变化，不能把提督者一律视为太常少卿。",
+      "is_new_office": false
+    }
+  ],
+  "structural_review": {
+    "eastern_factory_offices": [
+      {
+        "id": "official-0524",
+        "title": "东厂掌印太监（厂公）",
+        "institution_id": null
+      },
+      {
+        "id": "official-0525",
+        "title": "掌刑千户",
+        "institution_id": null
+      },
+      {
+        "id": "official-0526",
+        "title": "理刑百户",
+        "institution_id": null
+      }
+    ],
+    "twelve_monitor_heads": [
+      {
+        "id": "official-0026",
+        "title": "司礼监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0027",
+        "title": "内官监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0028",
+        "title": "司设监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0029",
+        "title": "神宫监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0030",
+        "title": "尚膳监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0031",
+        "title": "尚宝监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0032",
+        "title": "印绶监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0033",
+        "title": "直殿监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0034",
+        "title": "尚衣监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0035",
+        "title": "都知监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0036",
+        "title": "御用监掌印太监",
+        "institution_id": null
+      },
+      {
+        "id": "official-0037",
+        "title": "御马监掌印太监",
+        "institution_id": null
+      }
+    ],
+    "notes": [
+      "十二监掌印已占 official-0026—0037；本批不再新增这十二项。司礼另有14项细分目录，重复掌印需去重显示而非另造。",
+      "现有东厂3项与十二监12项 institution_id 皆空。应先给这些已存在条目确定机构节点；空值本身不等于历史隶属已核实。",
+      "尚宝监是内廷，尚宝司是外廷，女官尚宝司又是另一体系，三者不能仅靠尚宝关键词合并。",
+      "本批46项是可见目录候选，不是46名已考证官员，也不授权自动创建任何任职关系。"
+    ]
+  },
+  "recommended_order": [
+    "先修东厂、十二监已有项的机构节点与有据别名；避免新增重复提督或掌印。",
+    "先补四司八局掌印12项、东厂属员3项、御马等明确职掌；官职说明可显示，人物任职另审。",
+    "增加内府库房职掌；明确御酒房与酒醋面局互不统辖、内外尚宝系统不同。",
+    "补早期中书省和翰林旧官，按建置/裁革分期；不能显示为1566年的现制。"
+  ],
+  "limits": [
+    "引用据公开古籍文字本，未逐叶校勘底本；校注争议保留说明。",
+    "46项之外尚有各监管理、佥书、掌司、监工及八局旧制大使等缺项，本批未机械笛卡尔展开。",
+    "未编辑项目网页、官职JSON、脚本或数据库，未部署。"
+  ]
+}

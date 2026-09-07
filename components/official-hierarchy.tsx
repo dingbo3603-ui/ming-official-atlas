@@ -21,7 +21,7 @@ function DivisionBranch({ branch, officials, onSelect, onBranch, focused=false }
   const assistants=records.filter(item=>!chief.includes(item));
   const hasHead=chief.length>0;
   return <section className={`official-division-branch ${!branch.default_visible?'is-historical':''}`} data-branch-id={branch.id}>
-    <header><span className="hierarchy-group-kind">{branch.kind==='qinglisi'?'清吏司':branch.kind==='staff_office'?'本部附属机构':branch.default_visible?'直属衙署':'沿革机构'}</span>{focused?<h3>{branch.name}</h3>:<button onClick={()=>onBranch(branch.id)} aria-label={`展开${branch.name}职官层级`}><h3>{branch.name}</h3><ChevronRight size={17}/></button>}<p>{branch.display_note}</p></header>
+    <header><span className="hierarchy-group-kind">{branch.kind==='evidence_group'?'分司待核':branch.kind==='qinglisi'?'清吏司':branch.kind==='staff_office'?'本部附属机构':branch.default_visible?'直属衙署':'沿革机构'}</span>{focused?<h3>{branch.name}</h3>:<button onClick={()=>onBranch(branch.id)} aria-label={`展开${branch.name}职官层级`}><h3>{branch.name}</h3><ChevronRight size={17}/></button>}<p>{branch.display_note}</p></header>
     <div className="division-roles">
       {hasHead&&<div className="division-chief"><span className="hierarchy-role-label">司内主官</span><RecordNodes ids={chief.map(item=>item.record_id)} officials={officials} onSelect={onSelect}/></div>}
       {assistants.length>0&&<div className={hasHead?'division-assistants':'division-members'}><span className="hierarchy-role-label">{hasHead?'佐理司务':'本署职官'}</span><RecordNodes ids={assistants.map(item=>item.record_id)} officials={officials} onSelect={onSelect} shared={branch.shared_record_ids}/></div>}
@@ -51,14 +51,17 @@ function PhoneBranch({name,children}: {name:string;children:ReactNode}) {
   return <details className="phone-branch-fold" onToggle={event => setExpanded(event.currentTarget.open)}><summary><strong>{name}</strong><span>职官层级<ChevronRight size={18}/></span></summary>{expanded && children}</details>;
 }
 
-export function OfficialHierarchy({ institutionName, ministry, selectedBranch, central, officials: catalog, fallbackOfficials, onSelect, onBranch, showHistory, query, mobile = false }: {
-  institutionName:string;ministry?:Ministry;selectedBranch?:MinistryBranch;central?:CentralHierarchy;officials:SourceOfficial[];fallbackOfficials:SourceOfficial[];onSelect:(official:SourceOfficial)=>void;onBranch:(id:string)=>void;showHistory:boolean;query:string;mobile?:boolean;
+export function OfficialHierarchy({ institutionName, ministry, selectedBranch, central, officials: catalog, fallbackOfficials, onSelect, onBranch, showHistory, query, mobile = false, catalogMode = false }: {
+  institutionName:string;ministry?:Ministry;selectedBranch?:MinistryBranch;central?:CentralHierarchy;officials:SourceOfficial[];fallbackOfficials:SourceOfficial[];onSelect:(official:SourceOfficial)=>void;onBranch:(id:string)=>void;showHistory:boolean;query:string;mobile?:boolean;catalogMode?:boolean;
 }) {
   const {year,data}=useHistory();
-  const unavailable=new Set(data?.empty_slots_evidence?.filter(item=>item.year===year).map(item=>item.office_id));
+  const unavailable=new Set(catalogMode ? [] : data?.empty_slots_evidence?.filter(item=>item.year===year).map(item=>item.office_id));
   const officials=catalog.filter(item=>!unavailable.has(item.record_id));
   const matches=(official:SourceOfficial)=>!query||`${official.title} ${official.rank||''} ${official.department||''}`.includes(query.trim());
   const shownOfficials=query?officials.filter(matches):officials;
+  const indexedIds = new Set(ministry ? [...ministry.chief_record_ids,...ministry.branches.flatMap(branch=>branch.record_ids)] : central?.groups.flatMap(group=>group.record_ids) || []);
+  const extraIds = fallbackOfficials.filter(item=>!indexedIds.has(item.record_id)&&shownOfficials.some(row=>row.record_id===item.record_id)).map(item=>item.record_id);
+  const extraNodes = extraIds.length ? <section><h3 className="catalog-supplement-heading">其他已收录职官与职掌</h3><RecordNodes ids={extraIds} officials={officials} onSelect={onSelect}/></section> : null;
   if (ministry) {
     const chiefs=officialsByIds(ministry.chief_record_ids,officials);
     const principals=chiefs.filter(item=>item.title.includes('尚书'));
@@ -71,6 +74,7 @@ export function OfficialHierarchy({ institutionName, ministry, selectedBranch, c
       {query&&<p className="hierarchy-reading-note">已定位相关分支，并保留上下级职官。</p>}
       <div className={`official-branches-tree ${selectedBranch?'is-focused':''}`}>{branches.map(branch=>mobile&&!selectedBranch&&!query ? <PhoneBranch key={branch.id} name={branch.name}><DivisionBranch branch={branch} officials={officials} onSelect={onSelect} onBranch={onBranch}/></PhoneBranch> : <DivisionBranch key={branch.id} branch={branch} officials={officials} onSelect={onSelect} onBranch={onBranch} focused={Boolean(selectedBranch)}/>)}</div>
       {query&&!branches.length&&!chiefs.some(matches)&&<p className="floating-empty">没有匹配的官职或机构。</p>}
+      {!selectedBranch && extraNodes}
     </div>;
   }
   if (central) {
@@ -87,7 +91,13 @@ export function OfficialHierarchy({ institutionName, ministry, selectedBranch, c
       <p className="hierarchy-reading-note">实线表示所属关系；虚线框为同机构职务分组或并列机构。品阶仅标注官品。</p>
       <div className="central-hierarchy-tree">{departments.filter(hasMatch).map(group=>mobile&&!query ? <PhoneBranch key={group.id} name={group.name}><CentralBranch group={group} hierarchy={{...central,groups:visibleGroups}} officials={displayOfficials} onSelect={onSelect}/></PhoneBranch> : <CentralBranch key={group.id} group={group} hierarchy={{...central,groups:visibleGroups}} officials={displayOfficials} onSelect={onSelect}/>)}</div>
       {query&&!roots.some(hasMatch)&&<p className="floating-empty">没有匹配的官职或机构。</p>}
+      {extraNodes}
     </div>;
   }
-  return <div className="official-org-chart"><div className="official-department-root"><strong>{institutionName}</strong></div><p className="hierarchy-reading-note">机构关系资料正在载入。</p><RecordNodes ids={fallbackOfficials.filter(matches).map(item=>item.record_id)} officials={officials} onSelect={onSelect}/></div>;
+  const groups = new Map<string,string[]>();
+  for (const office of fallbackOfficials.filter(matches)) {
+    const name = office.department || office.institution;
+    groups.set(name,[...(groups.get(name)||[]),office.record_id]);
+  }
+  return <div className="official-org-chart"><div className="official-department-root"><Landmark size={22}/><strong>{institutionName}</strong></div><p className="hierarchy-reading-note">按资料所载机构与职务分组，具体品级、设置年代及职掌见各条详情。</p><div className="catalog-department-groups">{[...groups.entries()].map(([name,ids])=><section key={name} className="catalog-department-group"><h3>{name}</h3><RecordNodes ids={ids} officials={officials} onSelect={onSelect}/></section>)}</div>{!groups.size&&<p className="floating-empty">没有匹配的官职资料。</p>}</div>;
 }

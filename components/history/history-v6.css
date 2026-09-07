@@ -292,3 +292,23 @@
  .roster-table-person { grid-template-columns:1fr; gap:13px; padding:17px; }
  .roster-person-action { justify-content:flex-end; }
 }
+.history-other-evidence { margin-top:22px; padding-top:18px; border-top:1px solid #6f5838; }
+.evidence-tabs { display:flex; gap:8px; flex-wrap:wrap; margin:12px 0; }
+.evidence-tabs button { min-height:44px; padding:8px 12px; font-size:15px; border:1px solid #74613f; border-radius:6px; background:#26251b; color:#cfb885; }
+.evidence-tabs button[aria-pressed=true] { background:#66432b; color:#f3dba9; border-color:#c69b57; }
+.evidence-tabs button span { font-variant-numeric:tabular-nums; margin-left:5px; }
+.evidence-person-search { display:flex; align-items:center; gap:10px; background:#1d1e15; border:1px solid #77623c; padding:0 12px; border-radius:5px; max-width:360px; margin:12px 0; }
+.evidence-person-search input { min-height:44px; width:100%; min-width:0; background:transparent; font-size:16px; }
+.evidence-person-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,175px),1fr)); gap:9px; margin:12px 0; }
+.evidence-person-grid button { display:grid; grid-template-columns:1fr auto; text-align:left; column-gap:12px; row-gap:5px; border:1px solid #625438; border-radius:6px; padding:12px; background:#302d20; }
+.evidence-person-grid button strong { font-size:18px; color:#e7d1a5; }
+.evidence-person-grid button small { grid-row:2; color:#baa378; font-size:13px; }
+.evidence-person-grid button svg { grid-column:2; grid-row:1 / 3; align-self:center; }
+.evidence-person-grid button:hover { border-color:#b49a5d; }
+.evidence-person-grid button:focus-visible,.evidence-tabs button:focus-visible { outline:2px solid #e7be78; outline-offset:2px; }
+@media(max-width:767px) {
+  .evidence-tabs { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); }
+  .evidence-tabs button { padding:9px 6px; font-size:14px; }
+  .evidence-person-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .evidence-person-grid button { padding:10px; }
+}

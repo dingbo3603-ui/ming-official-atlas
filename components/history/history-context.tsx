@@ -12,7 +12,7 @@ import {
   Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle,
 } from '@/components/ui/dialog';
 import './history-v6.css';
-import { historyApiBase } from '@/lib/history-api';
+import { datasetUrl, historyApiBase } from '@/lib/history-api';
 import { readHistoryJson as requestJson } from '@/lib/history-reader';
 import { recordsForOffice, scenePersonIds, type OfficeScope } from '@/lib/office-people';
 import { usePhoneLayout } from '@/hooks/use-phone-layout';
@@ -297,6 +297,55 @@ export function useInstitutionPeriod(institutionId: string) {
 }
 
 /** Actual work and personal titles are independent of the reference office catalogue. */
+type EvidenceBucket = 'undated' | 'dated' | 'related';
+type EvidenceIndex = { offices: Record<string, Partial<Record<EvidenceBucket,string[]>>>; institutions: Record<string, Partial<Record<EvidenceBucket,string[]>>> };
+export function OtherEvidencePeople({ kind, identifier, currentIds = [] }: {kind:'offices'|'institutions';identifier:string;currentIds?:string[]}) {
+  const { data, openPerson } = useHistory();
+  const [index,setIndex] = useState<EvidenceIndex|null>(null);
+  const [loadError,setLoadError] = useState(false);
+  const [attempt,setAttempt] = useState(0);
+  const [tab,setTab] = useState<EvidenceBucket>('undated');
+  const [query,setQuery] = useState('');
+  const [limit,setLimit] = useState(8);
+  useEffect(() => {
+    const controller = new AbortController();
+    requestJson<EvidenceIndex>(datasetUrl('office-evidence-index'),controller.signal).then(result => {
+      if (!result.offices || !result.institutions) throw new Error('Missing evidence index');
+      if (!controller.signal.aborted) {setIndex(result);setLoadError(false);}
+    }).catch(() => {if (!controller.signal.aborted) setLoadError(true);});
+    return () => controller.abort();
+  },[attempt]);
+  const people = useMemo(() => new Map((data?.people || []).map(person => [person.id,person])),[data?.people]);
+  const references = index?.[kind][identifier];
+  const current = new Set(currentIds);
+  const buckets: Record<EvidenceBucket,string[]> = {
+    undated: references?.undated || [],
+    dated: (references?.dated || []).filter(id => !current.has(id)),
+    related: references?.related || [],
+  };
+  const tabs: EvidenceBucket[] = ['undated','dated','related'];
+  const active = buckets[tab].length ? tab : tabs.find(key => buckets[key].length) || tab;
+  const labels: Record<EvidenceBucket,string> = {undated:'未系年人物',dated:'其他年份人物',related:'关联待核人物'};
+  const notes: Record<EvidenceBucket,string> = {
+    undated:'已有来源，任职或授衔年份尚未明确。先展示人物，点开可查完整记载。',
+    dated:'其他年份有相关记载的人物。兼衔、赠衔和任免事件均保留原文说明。',
+    related:'按来源中的官名与机构对应，尚未逐条复核；可能涉及兼衔、外任或同名官职。点开查看原始履历。',
+  };
+  const filtered = buckets[active].map(id => people.get(id)).filter(person => person && (!query.trim() || [person.name,person.search_terms,person.summary].join(' ').includes(query.trim())));
+  if (!index && !loadError) return <output className="history-muted evidence-index-loading">正在读取历年相关人物…</output>;
+  if (loadError) return <p className="history-muted">相关人物索引暂未载入。<button className="history-text-button" onClick={() => {setLoadError(false);setAttempt(value => value+1);}}>重新加载</button></p>;
+  if (!tabs.some(key => buckets[key].length)) return null;
+  return <section className="history-other-evidence" aria-label="历年与待核人物资料">
+    <div className="history-section-heading"><h3>更多人物记载</h3><span>不限所选年份</span></div>
+    <div className="evidence-tabs" aria-label="人物资料分组">{tabs.filter(key => buckets[key].length).map(key => <button key={key} aria-pressed={active===key} onClick={() => {setTab(key);setLimit(8);setQuery('');}}>{labels[key]} <span>{buckets[key].length}</span></button>)}</div>
+    <p className="history-footnote">{notes[active]}此处名单不表示本年在任。</p>
+    {buckets[active].length>8 && <label className="evidence-person-search"><Search size={17}/><input type="search" aria-label="检索相关人物" placeholder="查找这组人物" value={query} onChange={event=>{setQuery(event.target.value);setLimit(8);}}/></label>}
+    <div className="evidence-person-grid">{filtered.slice(0,limit).map(person=>person&&<button key={person.id} onClick={()=>openPerson(person.id)}><strong>{person.name}</strong><small>{active==='undated'?'年份待核':active==='related'?'关联待核':'查看履历'}</small><ArrowRight size={16}/></button>)}</div>
+    {!filtered.length&&<p className="history-muted">没有匹配的人物。</p>}
+    {filtered.length>limit&&<button className="history-text-button" onClick={()=>setLimit(value=>value+24)}>再显示 {Math.min(24,filtered.length-limit)} 位 · 共 {filtered.length} 位</button>}
+  </section>;
+}
+
 export function InstitutionPeople({ institutionId, previewLimit = 12 }: {institutionId:string;previewLimit?:number}) {
   const { year, records, data, status, error, retry, openPerson } = useHistory();
   const [expanded, setExpanded] = useState(false);
@@ -320,6 +369,7 @@ export function InstitutionPeople({ institutionId, previewLimit = 12 }: {institu
     {entries.length>previewLimit&&<button className="history-text-button" onClick={()=>setExpanded(v=>!v)}>{expanded?'收起':'展开全部本署人物'}</button>}
     {status==='ready'&&!entries.length&&<p className="history-muted">本年人物仍待补录。</p>}
     <p className="history-footnote">按机构归属与实际职事显示；官衔未细分到具体殿阁或司署的记载仍保留在这里。年内先后任职、兼衔和任免事件请点开查看。</p>
+    <OtherEvidencePeople key={institutionId} kind="institutions" identifier={institutionId} currentIds={[...groups.keys()]}/>
   </section>;
 }
 
@@ -399,6 +449,7 @@ function RecordCard({ record, sources = false }: { record: HistoryRecord; source
     {record.date_note && <p className="history-record-note">{record.date_note}</p>}
     {current && <span className="history-tag">所选年内记载</span>}
     {record.status && knownStatusLabels[record.status] && <p className="history-muted">{knownStatusLabels[record.status]}</p>}
+    {record.review_status?.startsWith('cbdb') && <p className="history-muted">据资料库收录，尚未逐条复核。</p>}
     {record.record_kind === 'event' && <p className="history-muted">此条记一次任免或仕履事件，不代表全年在任。</p>}
     {record.record_kind === 'attestation' && <p className="history-muted">见载时间可考，完整起讫未必明确。</p>}
     {sources && <HistorySourceLinks ids={record.source_ids} />}
@@ -622,6 +673,7 @@ export function OfficeHolders({ officialId, officialTitle, placeName, provinceNa
         {record.record_kind === 'event' && <p className="history-muted">任职事件，不作全年在任判断。</p>}
       </article>;
     })}</div> : <div className="history-empty history-empty--compact"><p>{data?.empty_slots_evidence?.find(item=>item.year===year&&item.office_id===officialId)?.display_text||'本年人名尚待补录'}</p><span>{placeName ? '暂无能同时对应此官职、此地与本年的确切记载。' : '本年尚无与此官职明确对应的任职记录。'} 未收录不等于空缺。</span></div>)}
+    {!placeName && <OtherEvidencePeople key={officialId} kind="offices" identifier={officialId} currentIds={matches.map(row=>row.person_id)}/>}
   </section>;
 }
 

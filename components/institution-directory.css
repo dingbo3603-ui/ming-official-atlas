@@ -1,0 +1,32 @@
+.institution-directory-dialog[data-slot='dialog-content'] { width:min(1180px,94vw); max-width:min(1180px,94vw); }
+.institution-directory-content { color:#e8d5ae; }
+.directory-tools { display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap; }
+.directory-tools>span,.directory-reading-note { color:#bca988; font-size:14px; line-height:1.8; }
+.directory-search { display:flex; align-items:center; gap:10px; border:1px solid #80683e; border-radius:7px; padding:0 14px; background:#191910; min-width:280px; }
+.directory-search input { width:100%; min-width:0; min-height:46px; font-size:16px; background:transparent; outline:none; }
+.directory-categories { display:flex; flex-wrap:wrap; gap:8px; margin:20px 0 12px; }
+.directory-categories button { min-height:44px; padding:8px 14px; border:1px solid #665638; border-radius:6px; font-size:15px; }
+.directory-categories button[aria-pressed=true] { background:#713c2a; border-color:#bf9253; color:#f4dcaa; }
+.institution-directory-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr)); gap:14px; margin-top:18px; }
+.directory-institution { display:flex; flex-direction:column; text-align:left; gap:14px; min-width:0; border:1px solid #695838; border-radius:8px; padding:18px; background:linear-gradient(125deg,#382f20,#27271d); transition:border-color .15s,background .15s; }
+.directory-institution:hover { border-color:#b49557; background:#393221; }
+.directory-card-meta { display:flex; justify-content:space-between; gap:10px; color:#b39d70; font-size:13px; }
+.directory-institution strong { display:flex; align-items:center; gap:9px; font-family:var(--font-heading,serif); font-size:21px; line-height:1.5; }
+.directory-institution strong>svg:last-child { margin-left:auto; flex-shrink:0; }
+.directory-institution small { font-size:14px; line-height:1.7; color:#c2b498; overflow-wrap:anywhere; }
+.directory-card-link { padding-top:12px; margin-top:auto; border-top:1px solid #51472f; font-size:14px; color:#cbaa6d; }
+.directory-institution:focus-visible,.directory-categories button:focus-visible { outline:2px solid #e4bd75; outline-offset:3px; }
+.phone-catalog-entry { width:100%; display:flex; align-items:center; justify-content:center; gap:10px; min-height:48px; margin:16px 0; border:1px solid #8a6a3c; border-radius:8px; color:#ecd2a1; background:#35271c; font-size:16px; }
+.catalog-department-groups { display:grid; gap:20px; margin-top:20px; }
+.catalog-department-group { padding:18px; border:1px dashed #75613d; border-radius:8px; background:#2c291d; }
+.catalog-department-group>h3 { font-size:20px; color:#e5d1a8; margin-bottom:14px; }
+.catalog-supplement-heading { margin:22px 0 10px; font-size:17px; color:#d8bd89; }
+@media(max-width:767px) {
+  .directory-tools { display:grid; gap:10px; }
+  .directory-search { min-width:0; }
+  .directory-categories { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; }
+  .directory-categories button { padding:8px 4px; font-size:14px; }
+  .institution-directory-grid { grid-template-columns:1fr; gap:10px; }
+  .directory-institution { padding:15px; gap:10px; }
+  .catalog-department-group { padding:12px; }
+}

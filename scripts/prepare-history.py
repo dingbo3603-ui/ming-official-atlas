@@ -137,6 +137,10 @@ apply_enrichment(history, RESEARCH)
 from history_direct_links import apply_direct_links
 direct_links = apply_direct_links(history, offices, cbdb_mapping['mappings'] if mapping_path.exists() else [])
 (ROOT / 'work/history-direct-links.json').write_text(json.dumps(direct_links, ensure_ascii=False, indent=2), encoding='utf-8')
+from history_catalog_expansion import load_catalog, link_catalog_evidence, complete_catalog_datasets
+catalog_bundle = load_catalog(offices, RESEARCH)
+catalog_links = link_catalog_evidence(history, offices, catalog_bundle)
+(ROOT / 'work/history-catalog-links.json').write_text(json.dumps(catalog_links, ensure_ascii=False, indent=2), encoding='utf-8')
 
 office_ids = {row['record_id'] for row in offices}
 people_ids = {row['id'] for row in history['people']}
@@ -156,6 +160,7 @@ datasets = {path.stem: read(path) for path in (ROOT / 'public/data').glob('*.jso
 for name in ['ming-central-hierarchy', 'ming-ministry-branches']:
     datasets[name] = split_references(datasets[name], pairs)
 datasets['office-catalog'] = {'officials': offices}
+complete_catalog_datasets(history, offices, datasets, catalog_bundle)
 meta = {key: value for key, value in history['meta'].items() if key not in ['provenance', 'tenure_id_aliases', 'person_id_aliases']}
 datasets['history-meta'] = {'timeline_years': history['timeline_years'], 'sili_offices': history['sili_offices'],
     'institution_periods': periods['institutions'],

@@ -70,6 +70,9 @@ export type SourceOfficial = {
   rank_review?: RankReview;
   title_periods?: {from:number;until:number;name:string}[];
   institution_id?: string;
+  catalog_note?: string;
+  catalog_kind?: string;
+  historical_only?: boolean;
 };
 
 type RankReview = {
@@ -212,6 +215,7 @@ function OfficialDetail({ official, open, setOpen, onReturn, placeName, province
           <div className="detail-rank-row"><RankBadge rank={official.rank} /><span>底稿定员：{official.headcount || '未载'}</span></div>
           <OfficeHolders officialId={official.record_id} officialTitle={official.title} placeName={placeName} provinceName={provinceName} prefectureName={prefectureName} />
           <section className="detail-section"><h3>职掌</h3><p>{official.duty_notes || '原始底稿未附独立职责说明。'}</p></section>
+          {official.catalog_note && <p className="institution-context-note">{official.catalog_note}</p>}
           {official.rank_review && <section className="detail-section rank-research"><h3>品秩考证 · {({verified:'已核',corrected:'已修正',qualified:'有条件说明',unresolved:'待核'})[official.rank_review.status]}</h3><p>{official.rank_review.note}</p><blockquote>{official.rank_review.evidence}</blockquote><a href={official.rank_review.source_url} target="_blank" rel="noreferrer">查看原典 <ExternalLink size={13}/></a>{official.rank_review.original_rank !== official.rank && <small>原底稿记载：{official.rank_review.original_rank || '本次补录'}</small>}</section>}
           <section className="detail-section"><h3>资料定位</h3>{official.sources.map((source) => <p key={`${source.range}-${source.row}`}>{source.sheet} · {source.range}{source.row > 0 ? ` · 第 ${source.row} 行` : ''}</p>)}</section>
           {official.uncertainty_flags.length > 0 && <section className="detail-section warning"><h3>待核说明</h3><p>{official.uncertainty_flags.map(String).join('；')}</p></section>}
@@ -226,9 +230,9 @@ function SourceDrawer({ open, setOpen }: { open: boolean; setOpen: (open: boolea
   return (
     <Sheet open={open} onOpenChange={setOpen}><SheetContent showCloseButton={false} className="atlas-source-drawer w-[min(94vw,35rem)] overflow-y-auto border-l-[#8f6b3d]/45 bg-[#171512] text-[#e9dcc2] sm:max-w-[35rem]">
       <SheetClose className="detail-close" aria-label="关闭史料"><X size={18} /></SheetClose><SheetHeader className="text-left"><SheetTitle className="font-heading text-2xl text-[#f0dfbd]">史料口径与来源</SheetTitle><SheetDescription className="leading-6 text-[#9f927e]">人物按所选年份检索，默认嘉靖四十五年（1566）。地理与官制图仍是注明时代的参照，尚未逐年复原疆域及全部设官。</SheetDescription></SheetHeader>
-      <a href="/data/ming-official-rank-audit.html" target="_blank" rel="noreferrer" className="source-link-card mt-6"><BookOpenText size={18}/><span>朝班考证与全部 571 条官品核查</span><ExternalLink className="ml-auto size-4"/></a>
+      <a href="/data/ming-official-rank-audit.html" target="_blank" rel="noreferrer" className="source-link-card mt-6"><BookOpenText size={18}/><span>朝班考证与原始 571 条官品核查</span><ExternalLink className="ml-auto size-4"/></a>
       <div className="mt-6 space-y-3">{wikipediaSources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="source-link-card"><BookOpenText className="size-4" /><span>{source.title}</span><ExternalLink className="ml-auto size-3.5" /></a>)}</div>
-      <a className="source-link-card mt-4" href="/data/map-geography-sources.md" target="_blank" rel="noreferrer"><MapIcon className="size-4" /><span>舆图地理依据与省域范围说明</span><ExternalLink className="ml-auto size-3.5" /></a><div className="fact-caveat mt-6">地方树录入两京十三省、200 个府／直隶州／军民府等同级节点、1161 个县与 208 个属州；职官录入用户底稿 553 条，并据《明史》等补录中书省、县儒学、州官与京县官共 18 条；全部 571 条均有独立品秩审校记录，未能证实者明确标为待核。土府、土州、宣慰／宣抚／安抚／长官司体系尚未穷尽，页面会明确保留这一覆盖边界。</div>
+      <a className="source-link-card mt-4" href="/data/map-geography-sources.md" target="_blank" rel="noreferrer"><MapIcon className="size-4" /><span>舆图地理依据与省域范围说明</span><ExternalLink className="ml-auto size-3.5" /></a><div className="fact-caveat mt-6">地方树录入两京十三省、200 个府／直隶州／军民府等同级节点、1161 个县与 208 个属州；职官录入用户底稿 553 条，并据《明史》等补录中书省、县儒学、州官与京县官共 18 条；上述 571 条底稿有独立品秩审校记录；其后拆分左右职官，并继续补入六部分司、内廷、早期旧官及加衔，新增条目各附出处与年代说明。有非虚构来源、未经逐条复核的资料也先收录展示。土府、土州、宣慰／宣抚／安抚／长官司体系尚未穷尽，页面会明确保留这一覆盖边界。</div>
       <div className="fact-caveat mt-3">维基百科用于建立条目索引；府州县再与《明史·地理志》交叉核对，皇城布局另与故宫博物院研究资料交叉核对。府州县区块是层级导航。天下舆图的地形插画按经纬度骨架绘制，省域采用 Natural Earth 现代几何概略合并并作局部修正，不能视为1582年精确省界；黄河下游取夺淮入海方向。</div>
     </SheetContent></Sheet>
   );
