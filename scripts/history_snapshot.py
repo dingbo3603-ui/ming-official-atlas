@@ -27,7 +27,7 @@ def export_snapshot(connection, root):
     def project(row, fields):
         return {key: row[key] for key in fields if key in row}
     fields = ['id','person_id','office_title','institution','start_year','end_year','attested_year',
-              'date_note','status','record_kind','record_role','office_ids','institution_ids','source_ids','duty_title','review_status']
+              'date_note','status','record_kind','record_role','office_ids','institution_ids','source_ids','duty_title','review_status','local_scope','catalog_only_office_ids']
     search_terms = defaultdict(set)
     for row in records:
         search_terms[row['person_id']].update(filter(None,[row.get('office_title'),row.get('institution')]))

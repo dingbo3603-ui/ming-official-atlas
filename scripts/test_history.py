@@ -169,11 +169,14 @@ class SourceIntegrityTests(unittest.TestCase):
             "people-yan-nanjing", "people-qi-dengzhou", "people-qi-fujian",
             "people-tan-taizhou", "people-tan-liangguang",
             "people-guo-libu-shangshu", "people-yanshifan-shangbao-manager",
-            "ministers-zhu-xixiao-jinyi-attested-1566",
         ]
         for id_ in unmapped:
             with self.subTest(tenure=id_):
                 self.assertEqual(TENURES[id_]["office_ids"], [])
+        zhu = TENURES['ministers-zhu-xixiao-jinyi-attested-1566']
+        self.assertEqual(zhu['office_ids'],['official-0486-left'])
+        self.assertEqual(zhu['catalog_only_office_ids'],['official-0486-left'])
+        self.assertNotIn('five-commissions',zhu['institution_ids'])
         self.assertEqual(TENURES["people-hai-hubu"]["office_ids"], ["official-0079"])
         self.assertEqual(TENURES["people-zhang-shidu"]["office_ids"], ["official-0256"])
         self.assertEqual(TENURES["people-gao-jijiu"]["office_ids"], ["official-0291"])

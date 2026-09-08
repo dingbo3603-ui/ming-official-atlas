@@ -13,7 +13,7 @@ export const courtRoleMatchers = [
   { label: '都督同知', pattern: /都督同知/ },
   { label: '都督佥事', pattern: /都督佥事/ },
   { label: '锦衣卫指挥使', pattern: /锦衣卫指挥使|指挥使/, institution: /锦衣卫/ },
-  { label: '都指挥使', pattern: /^都指挥使$/, institution: /都指挥使司/ },
+  { label: '右都督', pattern: /^右都督$/, institution: /五军都督府/ },
 ];
 export function localYamenRoles(prefecture: GeographyPrefecture, county: GeographyCounty, officials: SourceOfficial[]) {
   const isState = county.kind === '州治';

@@ -98,10 +98,15 @@ class CatalogExpansionTests(unittest.TestCase):
         path=ROOT / 'work/history-before-catalog-20260907.json'
         if not path.exists(): self.skipTest('Private previous-release baseline unavailable')
         before=read(path)
-        self.assertEqual(before['people'],DATA['people'])
+        # This regression belongs to the 112-entry catalog release. Later sourced
+        # enrichment has its own frozen-baseline guard in test_history_high5.py.
+        catalog_release=ROOT / 'work/history-before-high5-gapfill-20260908.json'
+        current=read(catalog_release) if catalog_release.exists() else DATA
+        records={r['id']:r for r in current['tenures']}
+        self.assertEqual(before['people'],current['people'])
         old={r['id']:r for r in before['tenures']}
-        self.assertEqual(set(old),set(RECORDS))
-        for rid,row in RECORDS.items():
+        self.assertEqual(set(old),set(records))
+        for rid,row in records.items():
             previous=old[rid]
             if previous.get('office_ids'): self.assertEqual(previous['office_ids'],row['office_ids'],rid)
             allowed={'office_ids','catalog_link_basis'}

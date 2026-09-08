@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {createServer} from 'vite';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const data=JSON.parse(await fs.readFile(root+'work/history-import.json','utf8'));
+const server=await createServer({configFile:root+'vite.nas.config.ts',server:{middlewareMode:true},appType:'custom'});
+try {
+  const {recordsForOffice,scenePersonIds}=await server.ssrLoadModule('/lib/office-people.ts');
+  const {courtRoleMatchers}=await server.ssrLoadModule('/lib/scene-officials.ts');
+  const zhao=data.tenures.find(r=>r.id==='cbdb-career-331021-71506');
+  const state={officialId:'supplement-state-magistrate',officialTitle:'知州',placeName:'赵州',year:1435};
+  assert.equal(recordsForOffice([zhao],{...state,prefectureName:'真定府'}).length,1);
+  assert.equal(recordsForOffice([zhao],{...state,prefectureName:'大理府'}).length,0);
+  const bare={...zhao,local_scope:undefined};
+  assert.equal(recordsForOffice([bare],{...state,prefectureName:'大理府'}).length,0);
+  const generic=data.tenures.find(r=>r.id==='cbdb-career-432844-70306');
+  assert.equal(recordsForOffice([generic],{officialId:'official-0426'}).length,1);
+  assert.equal(recordsForOffice([generic],{officialId:'official-0426',placeName:'全州',prefectureName:'桂林府',scene:true}).length,0);
+  assert.equal(recordsForOffice([generic],{officialId:'official-0426',scene:true}).length,0);
+  const differentType={person_id:'test',institution:'历城县',office_title:'知县',office_ids:['supplement-capital-county-magistrate']};
+  assert.equal(recordsForOffice([differentType],{officialId:'official-0434',officialTitle:'知县',placeName:'历城县',prefectureName:'济南府'}).length,0);
+  assert.equal(scenePersonIds([data.tenures.find(r=>r.id==='cbdb-career-489426-85285')]).size,0);
+  assert.ok(!courtRoleMatchers.some(m=>m.label==='都指挥使'));
+  assert.ok(courtRoleMatchers.some(m=>m.label==='右都督'));
+  const jinyi=data.tenures.find(r=>r.id==='cbdb-career-413143-70571');
+  assert.equal(recordsForOffice([jinyi],{officialId:'official-0514',scene:true}).length,1);
+  const zhu=data.tenures.find(r=>r.id==='ministers-zhu-xixiao-jinyi-attested-1566');
+  assert.equal(recordsForOffice([zhu],{officialId:'official-0486-left'}).length,1);
+  assert.equal(recordsForOffice([zhu],{officialId:'official-0486-left',scene:true}).length,0);
+  console.log('13 office scope checks passed: same-name states, catalog-only roles, distinct office types, posthumous service and capital seats.');
+} finally {await server.close();}

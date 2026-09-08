@@ -141,6 +141,8 @@ from history_catalog_expansion import load_catalog, link_catalog_evidence, compl
 catalog_bundle = load_catalog(offices, RESEARCH)
 catalog_links = link_catalog_evidence(history, offices, catalog_bundle)
 (ROOT / 'work/history-catalog-links.json').write_text(json.dumps(catalog_links, ensure_ascii=False, indent=2), encoding='utf-8')
+from history_high5_gapfill import apply_high5_gapfill
+apply_high5_gapfill(history, RESEARCH)
 
 office_ids = {row['record_id'] for row in offices}
 people_ids = {row['id'] for row in history['people']}

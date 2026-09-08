@@ -14,7 +14,7 @@ import {
 import './history-v6.css';
 import { datasetUrl, historyApiBase } from '@/lib/history-api';
 import { readHistoryJson as requestJson } from '@/lib/history-reader';
-import { recordsForOffice, scenePersonIds, type OfficeScope } from '@/lib/office-people';
+import { recordsForOffice, scenePersonIds, type OfficeScope, type LocalOfficeScope } from '@/lib/office-people';
 import { usePhoneLayout } from '@/hooks/use-phone-layout';
 
 export interface HistorySource {
@@ -47,6 +47,8 @@ export interface HistoryRecord {
   record_role?: string;
   office_ids?: string[];
   institution_ids?: string[];
+  local_scope?: LocalOfficeScope;
+  catalog_only_office_ids?: string[];
   duty_title?: string;
   review_status?: string;
   source_ids?: string[];
@@ -658,7 +660,7 @@ export function HistoryRoster({ open, onClose }: { open: boolean; onClose: () =>
 /** No fuzzy office-title matching. With a place, institution must also name that exact place. */
 export function OfficeHolders({ officialId, officialTitle, placeName, provinceName, prefectureName }: OfficeScope) {
   const { records, data, year, status, error, retry, openPerson } = useHistory();
-  const matches = recordsForOffice(records, { officialId, officialTitle, placeName, provinceName, prefectureName });
+  const matches = recordsForOffice(records, { officialId, officialTitle, placeName, provinceName, prefectureName, year });
   return <section className="history-office-holders" aria-label={year + '年官职人物'}>
     <div className="history-section-heading"><h3><Users size={18} aria-hidden />{year}年相关记载</h3></div>
     <FetchNotice status={status} error={error} retry={retry} />
@@ -680,7 +682,7 @@ export function OfficeHolders({ officialId, officialTitle, placeName, provinceNa
 /** Text only, suitable inside an existing office button. */
 export function OfficePeopleLabel({ officialId, officialTitle, placeName, provinceName, prefectureName, scene = false }: OfficeScope & { scene?: boolean }) {
   const { records, data, year, status } = useHistory();
-  const ids = scenePersonIds(recordsForOffice(records, { officialId, officialTitle, placeName, provinceName, prefectureName }));
+  const ids = scenePersonIds(recordsForOffice(records, { officialId, officialTitle, placeName, provinceName, prefectureName, year, scene }));
   const names = data?.people.filter(person => ids.has(person.id)).map(person => person.name) || [];
   if (scene) {
     const label = status === 'loading' ? '人名载入中' : status === 'error' ? '人名暂不可用' : names.length ? names.join('、') : '本年暂无人名';

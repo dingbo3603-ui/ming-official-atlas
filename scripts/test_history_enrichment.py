@@ -18,7 +18,11 @@ class EnrichmentIntegrityTests(unittest.TestCase):
             with self.subTest(record=row['id']):
                 self.assertIsNone(raw['reported_first_year'])
                 self.assertIsNone(raw['reported_last_year'])
-                self.assertIsNone(row['end_year'])
+                if row['id']=='cbdb-career-468333-71554' and 'primary-high5-ms109' in row['source_ids']:
+                    self.assertEqual(row['end_year'],1377)
+                    self.assertTrue(any(v['end_year'] is None for v in row['source_record_versions']))
+                else:
+                    self.assertIsNone(row['end_year'])
                 self.assertEqual(conversion['era_dynasty'], 19)
                 self.assertLessEqual(1, conversion['regnal_year'])
                 self.assertLessEqual(conversion['regnal_year'], conversion['era_length'])
