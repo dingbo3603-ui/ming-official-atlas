@@ -1,0 +1,822 @@
+{
+  "schema_version": 1,
+  "researched_on": "2026-09-09",
+  "author_role": "research_only",
+  "scope": "补足两京十三省地图遗漏的军事建置入口，优先辽东；不建立全朝统一行政边界。",
+  "sources": {
+    "ms40": {
+      "title": "《明史》卷四十·地理一",
+      "url": "https://zh.wikisource.org/wiki/明史/卷40",
+      "kind": "primary_historical_text",
+      "quote": "宣德五年六月置司於此。",
+      "scope": "万全都司及诸卫、大宁1387—1403建置与迁治。"
+    },
+    "ms41": {
+      "title": "《明史》卷四十一·地理二",
+      "url": "https://zh.wikisource.org/wiki/明史/卷41",
+      "kind": "primary_historical_text",
+      "quote": "八年十月改都衛爲遼東都指揮使司。",
+      "scope": "辽东建置、25卫2州目录、各卫设置及迁治；为沿革汇纂，不等同任意年份同时存在。"
+    },
+    "ms42": {
+      "title": "《明史》卷四十二·地理三",
+      "url": "https://zh.wikisource.org/wiki/明史/卷42",
+      "kind": "primary_historical_text",
+      "quote": "二十六年，陝西行都指揮使司自莊浪徙置於此。",
+      "scope": "陕西行都司河州旧制、庄浪复设、1393甘州迁治及所属卫所。"
+    },
+    "ms21": {
+      "title": "《明史》卷二十一·神宗二",
+      "url": "https://zh.wikisource.org/wiki/明史/卷21",
+      "kind": "primary_historical_text",
+      "quote": "大清兵克開原，馬林敗沒。",
+      "scope": "1618抚顺与清河失守、1619开原失守。原书追称大清，网站叙述事件时用后金。"
+    },
+    "ms22": {
+      "title": "《明史》卷二十二·熹宗",
+      "url": "https://zh.wikisource.org/wiki/明史/卷22",
+      "kind": "primary_historical_text",
+      "quote": "壬戌，大清兵取遼陽。",
+      "scope": "1621辽沈、1622广宁溃退、1625旅顺失守、1626宁远战事。"
+    },
+    "ms24": {
+      "title": "《明史》卷二十四·庄烈帝二",
+      "url": "https://zh.wikisource.org/wiki/明史/卷24",
+      "kind": "primary_historical_text",
+      "quote": "己卯，祖大壽以錦州降於大清。",
+      "scope": "1642松山、锦州失守，1643年号十二月甘州陷落，1644宣府失守。"
+    },
+    "ms259": {
+      "title": "《明史》卷二百五十九·熊廷弼等传",
+      "url": "https://zh.wikisource.org/wiki/明史/卷259",
+      "kind": "primary_historical_text",
+      "quote": "內護廣寧，外扼鎮武、閭陽兩路。",
+      "scope": "1622广宁失败、孙承宗/袁崇焕重建宁锦防线；不能将1622—1641全部画成同时稳定实控。"
+    },
+    "qsg474": {
+      "title": "《清史稿》卷四百七十四·吴三桂",
+      "url": "https://zh.wikisource.org/wiki/清史稿/卷474",
+      "kind": "primary_historical_text",
+      "quote": "收兵仍守寧遠。",
+      "scope": "松锦败后吴三桂仍守宁远及1644撤防入关。"
+    },
+    "t91": {
+      "title": "《明太宗实录》卷九十一·永乐七年闰四月己酉",
+      "url": "https://www.shidianguji.com/mid-page/7395681284032512050",
+      "kind": "primary_historical_text",
+      "quote": "设奴儿干都指挥使司。",
+      "scope": "1409设奴儿干都司、康旺与王肇舟任命、岁贡与狗站。"
+    },
+    "x1435": {
+      "title": "《明宣宗实录》宣德十年正月甲戌",
+      "url": "https://www.shidianguji.com/book/7520211226773684224/chapter/1lb43t01wb7s9",
+      "kind": "primary_historical_text",
+      "quote": "凡采捕、造船、运粮等事，悉皆停止。",
+      "scope": "1435停止辽东采捕造船运粮及官员回京、官军归卫所。只证经营停止，不能擅改成1434正式废司诏书。"
+    },
+    "hlj": {
+      "title": "黑龙江史志网·数字方志明代编年",
+      "url": "https://www.hljszw.org.cn/home/book/info/get_id/102155.html",
+      "kind": "official_local_history",
+      "quote": "1435年（宣德十年）",
+      "scope": "1433奴儿干官员承袭、1435停罢经营的编年；与实录互核。"
+    },
+    "jl": {
+      "title": "吉林省地方志·奴儿干都司",
+      "url": "https://dfz.jl.gov.cn/zsjl/201104/t20110413_5216368.html",
+      "kind": "official_local_history_search_excerpt",
+      "quote": "该都司统辖这一地区的卫所称“羁縻”卫所",
+      "scope": "官方检索摘要可见，全文连接两次超时；仅作为羁縻性质辅证，不作独家年代依据。"
+    },
+    "sinica": {
+      "title": "《明代前期（洪武四年—正统十四年）辽东的边防》",
+      "url": "https://www11.ihp.sinica.edu.tw/storage/w2_file/4004qxQPgzA.pdf",
+      "kind": "academic_primary_research",
+      "quote": "此後即未見有關奴兒干地方經營活動之記載。",
+      "scope": "引永宁寺碑与辽东志记1411经营、1433重建，及1435停罢后未见远行经营。不是宣称1435后所有女真羁縻关系灭失。"
+    }
+  },
+  "map_rules": [
+    "省与都司可并列作为地图入口，但图例必须分民政区和军事卫所分布，不能据入口层级推定行政制度完全等同。",
+    "坐标均为今城镇/遗址一带的近似锚点，不是古城墙或边界测量；范围可作淡色虚线据点分布示意，不得称精确国界或全域实控。",
+    "按年份切换名称、治所、旧治/有效建置/战争变动；不能把1375名称放在1368。",
+    "建置年与失陷年均为年内事件。仅按年选择时应写“本年发生…”并显示事件前后，禁止默认为1月1日成立/全年已失陷。",
+    "辽东25卫2州、万全15卫等为《明史》汇纂目录计数；不宜硬编码显示为任何所选年份的现存数。",
+    "都司、总兵镇、督抚权限及治所不同，不强行以辽阳都司治所替代广宁总兵驻地。",
+    "默认1566显示辽东、万全、陕西行都司有效建置；大宁为保定侨治和原址沿革；奴儿干为旧治/东北羁縻关系专题而非连续涂色的现行普通省。",
+    "不把羁縻卫所的授职、朝贡记录自动等同于内地州县式实控，也不因为行遣活动终止就删除所有后来羁縻关系。",
+    "下列据点active_from_year只表示所列名称在该位置最早本轮可证的年，不是该城首次被明军占据的年；active_from不带已核实终止日期时不得作全朝持续驻守判断。"
+  ],
+  "regions": [
+    {
+      "id": "liaodong",
+      "label": "辽东",
+      "institution_name": "辽东都指挥使司",
+      "institution_kind": "军事都司",
+      "priority": 1,
+      "main_map": true,
+      "default_1566": {
+        "label": "辽东都司",
+        "seat": "辽阳·定辽中卫",
+        "mode": "garrison_distribution",
+        "summary": "东北边防的军政建置，应为可点击区域。显示辽阳、沈阳、开原、广宁、锦州、宁远、金州等卫所据点；与山东布政司的民政省界不混为一层。"
+      },
+      "evidence": [
+        {
+          "source_id": "ms41",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41",
+          "year_basis": "洪武四年(1371)七月定辽都卫；八年(1375)十月改辽东都司。"
+        },
+        {
+          "source_id": "ms21",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷21",
+          "year_basis": "万历四十六年(1618)四月抚顺、七月清河堡失守；四十七年(1619)六月开原失守。"
+        },
+        {
+          "source_id": "ms22",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷22",
+          "year_basis": "天启元年(1621)三月沈阳、辽阳先后失守；二年(1622)正月广宁方面溃退；五年(1625)旅顺失守；六年(1626)宁远仍守。"
+        },
+        {
+          "source_id": "ms24",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷24",
+          "year_basis": "崇祯十五年(1642)二月松山失守、三月锦州降。"
+        },
+        {
+          "source_id": "qsg474",
+          "source_url": "https://zh.wikisource.org/wiki/清史稿/卷474",
+          "year_basis": "松锦败后仍守宁远；1644吴三桂率宁远兵民入关。"
+        }
+      ],
+      "stages": [
+        {
+          "from": 1368,
+          "to": 1370,
+          "label": "辽东地区",
+          "status": "pre_institution",
+          "render": "context_only",
+          "note": "未到本轮可证的定辽都卫建置年，不显示辽东都司为已设。"
+        },
+        {
+          "from": 1371,
+          "to": 1374,
+          "label": "定辽都卫",
+          "status": "establishing_garrisons",
+          "render": "seat_and_dated_points",
+          "note": "1371年内设；后来的卫所不能提前展示成完整定制。"
+        },
+        {
+          "from": 1375,
+          "to": 1617,
+          "label": "辽东都司",
+          "status": "garrison_administration",
+          "render": "dated_garrison_distribution",
+          "note": "1375年内改名；按各卫设立/迁治年显示，本轮不复原逐年精确军事边界。"
+        },
+        {
+          "from": 1618,
+          "to": 1620,
+          "label": "辽东都司·战事变动",
+          "status": "contracting_frontier",
+          "render": "affected_points",
+          "note": "1618抚顺/清河、1619开原发生失陷；原辽东分布范围只作旧制参照。"
+        },
+        {
+          "from": 1621,
+          "to": 1621,
+          "label": "辽沈失守·本年变局",
+          "status": "transition_year",
+          "render": "before_after_event",
+          "note": "三月沈阳、辽阳失守；禁止将该年一整年处理为辽阳仍为有效治所，亦不称辽东全境同时失陷。"
+        },
+        {
+          "from": 1622,
+          "to": 1641,
+          "label": "辽西防线",
+          "status": "changing_defensive_corridor",
+          "render": "dated_defense_sites_not_full_liaodong_polygon",
+          "note": "1622广宁败退后，宁远、锦州防线经历恢复与弃守；需以事件展示，不将20年归为同一片稳定疆域。旅顺至1625仍有明军守备活动，东江海岛另成军事体系。"
+        },
+        {
+          "from": 1642,
+          "to": 1643,
+          "label": "松锦失守后·宁远",
+          "status": "retained_defense_site",
+          "render": "ningyuan_point_and_lost_sites",
+          "note": "1642为年内松锦失陷；宁远仍守。不能把1642当整个辽东军政机构统一撤销年，也不能继续给锦州实控填色。"
+        },
+        {
+          "from": 1644,
+          "to": 1644,
+          "label": "宁远撤防·本年变局",
+          "status": "transition_year",
+          "render": "historical_sites",
+          "note": "本年宁远兵民撤入关；用事件说明，年粒度不伪称全年同一局势。"
+        }
+      ],
+      "points": [
+        {
+          "id": "liaoyang",
+          "label": "辽阳·定辽中卫",
+          "lon": 123.17,
+          "lat": 41.27,
+          "modern_reference": "今辽宁辽阳",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1384,
+          "active_from_basis": "定辽中卫洪武十七年(1384)置；辽阳本地定辽都卫机构始于1371，应区分地点与后来卫名。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41"
+        },
+        {
+          "id": "shenyang",
+          "label": "沈阳中卫",
+          "lon": 123.45,
+          "lat": 41.8,
+          "modern_reference": "今辽宁沈阳旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1398,
+          "active_from_basis": "洪武三十一年(1398)闰五月设。1621年内失守。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41"
+        },
+        {
+          "id": "kaiyuan",
+          "label": "开原·三万卫",
+          "lon": 124.04,
+          "lat": 42.55,
+          "modern_reference": "今辽宁开原老城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1388,
+          "active_from_basis": "三万卫1387设，1388迁开元城；不是今开原新市区锚点。1619年内失守。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41"
+        },
+        {
+          "id": "guangning",
+          "label": "广宁卫",
+          "lon": 121.8,
+          "lat": 41.6,
+          "modern_reference": "今辽宁北镇",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1390,
+          "active_from_basis": "洪武二十三年(1390)五月设。1622广宁败退。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41"
+        },
+        {
+          "id": "jinzhou",
+          "label": "锦州·广宁中屯卫",
+          "lon": 121.13,
+          "lat": 41.1,
+          "modern_reference": "今辽宁锦州旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1391,
+          "active_from_basis": "洪武二十四年(1391)九月设；不能写作“锦州卫”。1642年内锦州降。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41"
+        },
+        {
+          "id": "ningyuan",
+          "label": "宁远卫",
+          "lon": 120.73,
+          "lat": 40.62,
+          "modern_reference": "今辽宁兴城古城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1430,
+          "active_from_basis": "宣德五年(1430)正月析广宁前屯、中屯二卫置。注意民间混称1405宁远卫不宜采用本轮数据。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41"
+        },
+        {
+          "id": "jinzhou_south",
+          "label": "金州卫",
+          "lon": 121.71,
+          "lat": 39.1,
+          "modern_reference": "今辽宁大连金州",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1375,
+          "active_from_basis": "洪武八年(1375)四月设。与辽西锦州不同地。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41"
+        },
+        {
+          "id": "haizhou",
+          "label": "海州卫",
+          "lon": 122.75,
+          "lat": 40.85,
+          "modern_reference": "今辽宁海城",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1376,
+          "active_from_basis": "洪武九年(1376)设。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41"
+        },
+        {
+          "id": "gaizhou",
+          "label": "盖州卫",
+          "lon": 122.35,
+          "lat": 40.41,
+          "modern_reference": "今辽宁盖州",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1376,
+          "active_from_basis": "洪武九年(1376)十月设。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41"
+        },
+        {
+          "id": "tieling",
+          "label": "铁岭卫",
+          "lon": 123.84,
+          "lat": 42.29,
+          "modern_reference": "今辽宁铁岭旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1393,
+          "active_from_basis": "卫1388在古铁岭置；1393年四月迁古嚚州即此处。不要用1388年即位于现铁岭的固定点。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷41"
+        }
+      ],
+      "point_status_note": "以上设卫时间有primary依据；本轮仅对开原、沈阳、辽阳、广宁、锦州、宁远的关键后期状态做事件确认。其他点1621后应作旧址参照，不可凭缺失终期继续填实控。"
+    },
+    {
+      "id": "wanquan",
+      "label": "万全",
+      "institution_name": "万全都指挥使司",
+      "institution_kind": "军事都司",
+      "priority": 2,
+      "main_map": true,
+      "default_1566": {
+        "label": "万全都司",
+        "seat": "宣府",
+        "mode": "garrison_distribution",
+        "summary": "宣府一带卫所的军事管辖入口。都司不同于北直隶的府县目录，不宜被省标签掩盖。"
+      },
+      "evidence": [
+        {
+          "source_id": "ms40",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40",
+          "year_basis": "宣德五年(1430)六月设；宣府左右卫同年返故治并属；开平卫1430迁独石堡。"
+        },
+        {
+          "source_id": "ms24",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷24",
+          "year_basis": "崇祯十七年(1644)三月宣府失守。"
+        }
+      ],
+      "stages": [
+        {
+          "from": 1368,
+          "to": 1429,
+          "label": "宣府诸卫·万全未设",
+          "status": "pre_institution",
+          "render": "dated_garrisons_only",
+          "note": "洪武已有部分卫所，但1430前不显示“万全都司”已设。"
+        },
+        {
+          "from": 1430,
+          "to": 1643,
+          "label": "万全都司",
+          "status": "garrison_administration",
+          "render": "garrison_distribution",
+          "note": "1430年内设立；该年需注明本年设。"
+        },
+        {
+          "from": 1644,
+          "to": 1644,
+          "label": "宣府失守·本年变局",
+          "status": "transition_year",
+          "render": "event_and_old_garrisons",
+          "note": "1644年内失守，不代表全年同一状态。"
+        }
+      ],
+      "points": [
+        {
+          "id": "xuanfu",
+          "label": "宣府·都司治",
+          "lon": 115.06,
+          "lat": 40.61,
+          "modern_reference": "今河北张家口宣化",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1430,
+          "active_from_basis": "宣府左、右、前三卫在此；都司1430年置。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        },
+        {
+          "id": "wanquan_right",
+          "label": "万全右卫",
+          "lon": 114.74,
+          "lat": 40.84,
+          "modern_reference": "今河北张家口万全古城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1404,
+          "active_from_basis": "永乐二年迁德胜口的万全右卫，不能把万全县现行政中心当都司治。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        },
+        {
+          "id": "chicheng",
+          "label": "赤城堡",
+          "lon": 115.83,
+          "lat": 40.91,
+          "modern_reference": "今河北赤城",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1430,
+          "active_from_basis": "宣德五年六月置堡。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        },
+        {
+          "id": "dushikou",
+          "label": "独石堡·开平卫",
+          "lon": 115.73,
+          "lat": 41.29,
+          "modern_reference": "今河北赤城独石口",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1430,
+          "active_from_basis": "1430开平卫从元上都故地迁独石堡。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        }
+      ]
+    },
+    {
+      "id": "daning",
+      "label": "大宁",
+      "institution_name": "大宁都指挥使司",
+      "institution_kind": "迁治军事都司",
+      "priority": 3,
+      "main_map": true,
+      "default_1566": {
+        "label": "大宁都司·侨治保定",
+        "seat": "保定",
+        "mode": "relocated_garrisons_and_old_seat",
+        "summary": "1566保定侨治、营州屯卫散在顺义等处；塞外大宁显示故址，不做现行完整辖区色块。"
+      },
+      "evidence": [
+        {
+          "source_id": "ms40",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40",
+          "year_basis": "洪武二十年(1387)九月设；二十一年(1388)七月改北平行都司；永乐元年(1403)三月复名迁保定。"
+        }
+      ],
+      "stages": [
+        {
+          "from": 1368,
+          "to": 1386,
+          "label": "大宁地区·都司未设",
+          "status": "pre_institution",
+          "render": "context_only"
+        },
+        {
+          "from": 1387,
+          "to": 1387,
+          "label": "大宁都司",
+          "status": "transition_year",
+          "render": "seat_and_dated_garrisons",
+          "note": "本年九月设。"
+        },
+        {
+          "from": 1388,
+          "to": 1402,
+          "label": "北平行都司",
+          "status": "garrison_administration",
+          "render": "old_daning_garrisons",
+          "note": "1388年内改名。"
+        },
+        {
+          "from": 1403,
+          "to": 1644,
+          "label": "大宁都司·侨治保定",
+          "status": "relocated_institution",
+          "render": "baoding_seat_relocated_points_daning_historic_point",
+          "note": "不能将宁城故地及其大块范围继续作为明廷普通都司实控。"
+        }
+      ],
+      "points": [
+        {
+          "id": "daning_old",
+          "label": "大宁故城",
+          "lon": 119.32,
+          "lat": 41.6,
+          "modern_reference": "今内蒙古宁城大明城遗址一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1387,
+          "active_from_basis": "1387—1403初治地；坐标仅遗址区域近似，1403后historic=true。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        },
+        {
+          "id": "baoding",
+          "label": "保定·大宁都司侨治",
+          "lon": 115.49,
+          "lat": 38.86,
+          "modern_reference": "今河北保定旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1403,
+          "active_from_basis": "永乐元年三月侨治保定。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        },
+        {
+          "id": "yingzhou_left",
+          "label": "营州左屯卫·顺义",
+          "lon": 116.65,
+          "lat": 40.13,
+          "modern_reference": "今北京顺义旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1403,
+          "active_from_basis": "1403迁顺义，属大宁都司。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        },
+        {
+          "id": "yingzhou_right",
+          "label": "营州右屯卫·蓟州",
+          "lon": 117.41,
+          "lat": 40.05,
+          "modern_reference": "今天津蓟州旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1403,
+          "active_from_basis": "1403迁蓟州，属大宁都司。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        },
+        {
+          "id": "yingzhou_mid",
+          "label": "营州中屯卫·平谷",
+          "lon": 117.11,
+          "lat": 40.14,
+          "modern_reference": "今北京平谷旧城西一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1403,
+          "active_from_basis": "1403迁平谷县西，属大宁都司。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        },
+        {
+          "id": "yingzhou_front",
+          "label": "营州前屯卫·香河",
+          "lon": 117,
+          "lat": 39.76,
+          "modern_reference": "今河北香河旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1403,
+          "active_from_basis": "1403迁香河，属大宁都司。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        },
+        {
+          "id": "yingzhou_rear",
+          "label": "营州后屯卫·三河",
+          "lon": 117.08,
+          "lat": 39.98,
+          "modern_reference": "今河北三河旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1403,
+          "active_from_basis": "1403迁三河，属大宁都司。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷40"
+        }
+      ]
+    },
+    {
+      "id": "shaanxi_xingdusi",
+      "label": "甘肃",
+      "institution_name": "陕西行都指挥使司",
+      "institution_kind": "军事行都司",
+      "priority": 4,
+      "main_map": true,
+      "default_1566": {
+        "label": "陕西行都司·甘肃",
+        "seat": "甘州",
+        "mode": "garrison_distribution",
+        "summary": "河西走廊与相关卫所，不是清代甘肃省，也不是西安陕西都司的另称。"
+      },
+      "evidence": [
+        {
+          "source_id": "ms42",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷42",
+          "year_basis": "1374西安行都卫在河州、1375改陕西行都司、1376废；1379在庄浪复设，1393迁甘州。"
+        },
+        {
+          "source_id": "ms24",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷24",
+          "year_basis": "崇祯十六年十二月甘州失陷是传统历年条目，不可未经历法转换当成公历1643年12月。"
+        }
+      ],
+      "stages": [
+        {
+          "from": 1368,
+          "to": 1373,
+          "label": "河西诸卫·行都司未设",
+          "status": "pre_institution",
+          "render": "dated_sites"
+        },
+        {
+          "from": 1374,
+          "to": 1374,
+          "label": "西安行都卫·河州",
+          "status": "transition_year",
+          "render": "hezhou_point",
+          "note": "本年七月设。"
+        },
+        {
+          "from": 1375,
+          "to": 1376,
+          "label": "陕西行都司·河州",
+          "status": "short_lived_institution",
+          "render": "hezhou_point",
+          "note": "1375改名；1376年十二月废。"
+        },
+        {
+          "from": 1377,
+          "to": 1378,
+          "label": "陕西行都司未设",
+          "status": "institution_gap",
+          "render": "dated_garrisons_only"
+        },
+        {
+          "from": 1379,
+          "to": 1392,
+          "label": "陕西行都司·庄浪",
+          "status": "garrison_administration",
+          "render": "zhuanglang_point",
+          "note": "1379年正月复设；这里的庄浪卫是今永登，不是今平凉庄浪县。"
+        },
+        {
+          "from": 1393,
+          "to": 1643,
+          "label": "陕西行都司·甘州",
+          "status": "garrison_administration",
+          "render": "garrison_distribution",
+          "note": "1393年内迁治甘州。崇祯十六年十二月城陷按年号事件显示。"
+        },
+        {
+          "from": 1644,
+          "to": 1644,
+          "label": "甘州战事后·旧制沿革",
+          "status": "changed_control",
+          "render": "historic_sites",
+          "note": "不得继续无提示保留1393—明末全部一致实控。"
+        }
+      ],
+      "points": [
+        {
+          "id": "ganzhou",
+          "label": "甘州·行都司治",
+          "lon": 100.45,
+          "lat": 38.93,
+          "modern_reference": "今甘肃张掖旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1393,
+          "active_from_basis": "1393行都司迁甘州；甘州左、右、中、前、后卫同城。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷42"
+        },
+        {
+          "id": "suzhou",
+          "label": "肃州卫",
+          "lon": 98.5,
+          "lat": 39.74,
+          "modern_reference": "今甘肃酒泉旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1394,
+          "active_from_basis": "洪武二十七年十一月置。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷42"
+        },
+        {
+          "id": "liangzhou",
+          "label": "凉州卫",
+          "lon": 102.64,
+          "lat": 37.93,
+          "modern_reference": "今甘肃武威旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1376,
+          "active_from_basis": "洪武九年十月置；最初属陕西都司，后来属行都司，不能用设卫年推定已隶行都司。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷42"
+        },
+        {
+          "id": "shandan",
+          "label": "山丹卫",
+          "lon": 101.09,
+          "lat": 38.78,
+          "modern_reference": "今甘肃山丹",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1390,
+          "active_from_basis": "1390设，最初属陕西都司，后来属行都司；转隶年本轮未证。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷42"
+        },
+        {
+          "id": "yongchang",
+          "label": "永昌卫",
+          "lon": 101.97,
+          "lat": 38.25,
+          "modern_reference": "今甘肃永昌",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1382,
+          "active_from_basis": "1382设，最初属陕西都司，后来属行都司；转隶年本轮未证。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷42"
+        },
+        {
+          "id": "zhuanglang",
+          "label": "庄浪卫·旧治",
+          "lon": 103.26,
+          "lat": 36.74,
+          "modern_reference": "今甘肃永登",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1372,
+          "active_from_basis": "1372设卫、1379行都司于此复设、1393迁甘州。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷42"
+        },
+        {
+          "id": "xining",
+          "label": "西宁卫",
+          "lon": 101.78,
+          "lat": 36.62,
+          "modern_reference": "今青海西宁旧城一带",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1373,
+          "active_from_basis": "1373设；1432升军民指挥使司；属陕西都司后转行都司，转隶年本轮未证。",
+          "source_url": "https://zh.wikisource.org/wiki/明史/卷42"
+        }
+      ]
+    },
+    {
+      "id": "nuergan",
+      "label": "奴儿干",
+      "institution_name": "奴儿干都指挥使司",
+      "institution_kind": "东北招抚与羁縻建置",
+      "priority": 5,
+      "main_map": false,
+      "inset": true,
+      "default_1566": {
+        "label": "奴儿干旧治·东北羁縻",
+        "seat": "特林一带旧治",
+        "mode": "historical_inset",
+        "summary": "设旧治及沿革入口，说明东北女真等羁縻卫所关系；不在1566把永乐都司经营范围填作普通省区或连续实控。"
+      },
+      "evidence": [
+        {
+          "source_id": "t91",
+          "source_url": "https://www.shidianguji.com/mid-page/7395681284032512050",
+          "year_basis": "1409正式设司的直接实录日期。"
+        },
+        {
+          "source_id": "sinica",
+          "source_url": "https://www11.ihp.sinica.edu.tw/storage/w2_file/4004qxQPgzA.pdf",
+          "year_basis": "1411遣使领军赴当地经营，1433《重建永宁寺记》在地碑证；1435之后未见同类远行经营。"
+        },
+        {
+          "source_id": "x1435",
+          "source_url": "https://www.shidianguji.com/book/7520211226773684224/chapter/1lb43t01wb7s9",
+          "year_basis": "停采捕造船运粮令在宣德十年正月，即1435，不是百科常误指的1434；亦不是文书明确说“正式废司”。"
+        },
+        {
+          "source_id": "hlj",
+          "source_url": "https://www.hljszw.org.cn/home/book/info/get_id/102155.html",
+          "year_basis": "官方编年列1433康福/王贵等承袭及1435停止经营。"
+        }
+      ],
+      "stages": [
+        {
+          "from": 1368,
+          "to": 1408,
+          "label": "奴儿干地区·都司未设",
+          "status": "pre_institution",
+          "render": "context_only"
+        },
+        {
+          "from": 1409,
+          "to": 1410,
+          "label": "奴儿干都司·设立",
+          "status": "established_by_decree",
+          "render": "seat_approx_and_event"
+        },
+        {
+          "from": 1411,
+          "to": 1434,
+          "label": "奴儿干都司·招抚经营",
+          "status": "periodic_missions_and_tributary_relations",
+          "render": "seat_and_mission_context",
+          "note": "驻治/差遣有断续，勿称持续军屯式普通省；经营与各羁縻卫所的具体统属须个案。"
+        },
+        {
+          "from": 1435,
+          "to": 1644,
+          "label": "奴儿干旧治·东北羁縻",
+          "status": "historical_seat_and_separate_relations",
+          "render": "historic_inset_only",
+          "note": "1435经营停止；不能据此说所有女真授官/朝贡随即终止。后期关系另录。"
+        }
+      ],
+      "points": [
+        {
+          "id": "tyr",
+          "label": "特林·奴儿干旧治",
+          "lon": 139.76,
+          "lat": 52.96,
+          "modern_reference": "今俄罗斯哈巴罗夫斯克边疆区蒂尔一带，黑龙江下游",
+          "coordinate_precision": "approximate_city_anchor_not_archaeological_survey",
+          "active_from_year": 1411,
+          "active_from_basis": "坐标为今特林/蒂尔一带近似锚点；不表示精确古都司建筑位置。旧永宁寺碑支持该地区的明代经营。",
+          "source_url": "https://www11.ihp.sinica.edu.tw/storage/w2_file/4004qxQPgzA.pdf"
+        }
+      ],
+      "cautions": [
+        "不采用1434“正式撤销”作为已核实事实。1435停罢经营的实录可直接引用；制度存废与各卫后续关系分别处理。",
+        "不使用满幅现代东北/外东北多边形充当某一年的精确统治疆界。"
+      ]
+    }
+  ],
+  "implementation_tests": [
+    "1368: 辽东/万全/大宁/奴儿干不得被标为已设都司。",
+    "1372: 辽东名定辽都卫，不能提前显示宁远卫。",
+    "1380: 陕西行都司治庄浪今永登；大宁/万全尚未设。",
+    "1389: 大宁名北平行都司；三万卫已迁开原；铁岭点尚不能固定在今铁岭。",
+    "1402与1403: 大宁治所及迁卫表现必须变化。",
+    "1430: 万全与宁远为本年设，不默认为全年已设。",
+    "1566: 辽东有效；大宁保定侨治；奴儿干旧治专题；中原15省数不因增加军事入口变为20省。",
+    "1618/1619/1621/1622/1642/1644: 显示年内事件，失守据点不再当现行实控；历史入口可保留。",
+    "金州(大连)和锦州(广宁中屯卫)不能同点或同名匹配。",
+    "陕西行都司与陕西都司人物关联须精确区别，不以“陕西”二字全盘匹配。"
+  ]
+}

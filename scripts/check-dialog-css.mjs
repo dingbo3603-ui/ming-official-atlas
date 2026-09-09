@@ -46,6 +46,7 @@ const entries = [
   ['components/mobile/mobile-shell.tsx','phone-year-dialog'],['components/mobile/mobile-geography.tsx','phone-map-dialog'],
   ['components/site-feedback.tsx','site-feedback-dialog'],
   ['components/institution-directory.tsx','institution-directory-dialog'],
+  ['components/frontier-regions.tsx','frontier-dialog'],
 ];
 for(const [file,className] of entries){
   const source = await fs.readFile(path.join(root,file),'utf8');
@@ -56,11 +57,15 @@ for(const [file,className] of entries){
 checks.push('year, map, search, institution, official, history, feedback and privacy use the shared primitive');
 const mobileSource = await fs.readFile(path.join(root,'app/mobile-v7.css'),'utf8');
 const feedbackSource = await fs.readFile(path.join(root,'components/site-feedback.css'),'utf8');
+const frontierSource = await fs.readFile(path.join(root,'components/frontier-regions.css'),'utf8');
 check('separate bodies keep scrolling while headers and close controls stay available',()=>{
   assert.match(mobileSource,/\.history-dialog-scroll,\.institution-floating-scroll,\.phone-sheet-scroll\s*\{[^}]*min-height:0;[^}]*overflow-y:auto/);
   assert.match(feedbackSource,/\.feedback-form-scroll\s*\{[^}]*min-height:0;[^}]*overflow-y:auto/);
   assert.match(mobileSource,/> \[data-slot='dialog-close'\][^{]*\{[^}]*width:44px;[^}]*height:44px/);
   assert.match(mobileSource,/\.phone-detail-toolbar \[data-slot='dialog-close'\]/);
+  assert.match(frontierSource,/\.frontier-detail-scroll\{[^}]*overflow-y:auto;[^}]*min-height:0/);
+  assert.match(frontierSource,/\.phone-northeast-row \.northeast-inset\{position:static/);
+  assert.match(frontierSource,/\.phone-map-body\{flex:1;min-height:0;overflow-y:auto/);
 });
 const report={passed:true,checked_at:new Date().toISOString(),css:cssPath,checks,scope:'Production CSS and shared component regression checks; not a browser or physical iPhone test'};
 await fs.writeFile(path.join(root,'work/dialog-css-checks.json'),JSON.stringify(report,null,2));

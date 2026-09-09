@@ -7,6 +7,9 @@ import { useRef, useState } from 'react';
 import { ChevronRight, Compass, Crown, Layers, Minus, Plus, RotateCcw, Map } from 'lucide-react';
 import { mapRegions } from '@/lib/atlas-geography';
 import { provinceHotspots, type GeographyData, type GeographyProvince } from '@/lib/ming-atlas-v2';
+import { useHistory } from '@/components/history/history-context';
+import { frontierRegions } from '@/lib/frontier-regions';
+import { FrontierDetail, FrontierIndex, FrontierMapLayer, FrontierSummary, NortheastInset } from '@/components/frontier-regions';
 
 const geographicLabels = [
   { text: '青 藏 高 原', x: 204, y: 452, kind: 'terrain' },
@@ -22,7 +25,6 @@ const geographicLabels = [
   { text: '黄 海', x: 1507, y: 371, kind: 'sea' },
   { text: '东 海', x: 1490, y: 595, kind: 'sea' },
   { text: '南 海', x: 1143, y: 929, kind: 'sea' },
-  { text: '辽 东', x: 1388, y: 93, kind: 'context' },
   { text: '台 湾', x: 1437, y: 746, kind: 'context' },
 ];
 
@@ -31,7 +33,13 @@ export function EmpireMap({ geography, onProvince, onCapital }: {
   onProvince: (province: GeographyProvince) => void;
   onCapital: () => void;
 }) {
+  const {year}=useHistory();
   const [selected, setSelected] = useState('beizhili');
+  const [frontierId,setFrontierId]=useState<string|null>(null);
+  const [frontierOpen,setFrontierOpen]=useState(false);
+  const frontier=frontierRegions.find(region=>region.id===frontierId);
+  const selectProvince=(id:string)=>{setSelected(id);setFrontierId(null);};
+  const openFrontier=(id:string)=>{setFrontierId(id);setFrontierOpen(true);};
   const [hovered, setHovered] = useState<string | null>(null);
   const [borders, setBorders] = useState(true);
   const [zoom, setZoom] = useState(1);
@@ -55,13 +63,13 @@ export function EmpireMap({ geography, onProvince, onCapital }: {
 
   return (
     <div className="scene-grid empire-layout">
-      <section className="territory-map-shell" aria-label="两京十三省交互舆图">
+      <section className="territory-map-shell" aria-label="州省与边区卫所交互舆图">
         <div className="territory-toolbar">
-          <div><span className="map-title-mark">舆</span><span><strong>大明山川舆图</strong><small>地理参照 · 万历前后两京十三省</small></span></div>
-          <button type="button" className="map-layer-button" aria-pressed={borders} onClick={() => setBorders(!borders)}><Layers size={15} />{borders ? '省域界线' : '山川底图'}</button>
+          <div><span className="map-title-mark">舆</span><span><strong>大明山川舆图</strong><small>州省 · 边区卫所 · {year} 年</small></span></div>
+          <button type="button" className="map-layer-button" aria-pressed={borders} onClick={() => setBorders(!borders)}><Layers size={15} />{borders ? '辖区范围' : '山川底图'}</button>
         </div>
         <div className={`territory-map-viewport ${zoom > 1 ? 'is-zoomed' : ''}`}>
-          <svg ref={svgRef} viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" className="territory-map" aria-label="明代两京十三省范围示意，可选择省份，放大后可拖动"
+          <svg ref={svgRef} viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" className="territory-map" aria-label="明代州省与辽东等边区示意，可选择区域，放大后可拖动"
             onPointerDown={(event) => {
               dragMoved.current = false;
               if (event.button !== 0 || zoom === 1) return;
@@ -83,18 +91,18 @@ export function EmpireMap({ geography, onProvince, onCapital }: {
             onPointerCancel={() => { drag.current = null; }}
           >
             <title>大明山川舆图</title>
-            <desc>省域为历史概略范围，山川按地理方位绘制。选择省域后可从右侧进入所属府州。</desc>
+            <desc>省域为万历前后概略范围，边区虚线表示主要卫所分布，旧辖不代表本年实际控制。可选择省域进入府州，或选择边区查看卫所与人物。</desc>
             <g transform={`translate(${800 + pan.x} ${500 + pan.y}) scale(${zoom}) translate(-800 -500)`}>
               <image href="/ming-terrain-v3.png" width="1600" height="1000" preserveAspectRatio="xMidYMid slice" />
               {mapRegions.map((region) => {
                 const accent = provinceHotspots.find((p) => p.id === region.id)?.accent ?? 'gold';
-                return <g key={region.id} role="button" tabIndex={0} aria-label={`选择${region.name}`} aria-pressed={selected === region.id}
-                  className={`map-region region-${accent} ${selected === region.id ? 'is-selected' : ''} ${hovered === region.id ? 'is-hovered' : ''} ${borders ? '' : 'hide-borders'}`}
+                return <g key={region.id} role="button" tabIndex={0} aria-label={`选择${region.name}`} aria-pressed={!frontierId && selected === region.id}
+                  className={`map-region region-${accent} ${!frontierId && selected === region.id ? 'is-selected' : ''} ${hovered === region.id ? 'is-hovered' : ''} ${borders ? '' : 'hide-borders'}`}
                   onPointerEnter={() => setHovered(region.id)} onPointerLeave={() => setHovered(null)}
                   onFocus={() => setHovered(region.id)} onBlur={() => setHovered(null)}
-                  onClick={() => { if (!dragMoved.current) setSelected(region.id); dragMoved.current = false; }}
+                  onClick={() => { if (!dragMoved.current) selectProvince(region.id); dragMoved.current = false; }}
                   onDoubleClick={() => openProvince(region.id)}
-                  onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setSelected(region.id); } }}>
+                  onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); selectProvince(region.id); } }}>
                   <path d={region.path} className="region-shape" vectorEffect="non-scaling-stroke" />
                   <text x={region.x} y={region.y} className="region-name" textAnchor="middle">{region.name}</text>
                 </g>;
@@ -104,8 +112,10 @@ export function EmpireMap({ geography, onProvince, onCapital }: {
                 <g transform="translate(1181 132)" className="capital-pin"><circle r="5" /><text y="-14" textAnchor="middle">京师</text></g>
                 <g transform="translate(1296 430)" className="capital-pin"><circle r="4" /><text x="12" y="6">南京</text></g>
               </g>
+              <FrontierMapLayer year={year} selected={frontierId} borders={borders} onSelect={id=>{if(!dragMoved.current)setFrontierId(id);dragMoved.current=false;}} onOpen={openFrontier}/>
             </g>
           </svg>
+          <NortheastInset year={year} onOpen={openFrontier}/>
           <div className="map-compass" aria-hidden="true"><span>北</span><Compass size={35} strokeWidth={1} /><small>南</small></div>
           <div className="map-zoom-controls" aria-label="地图缩放">
             <button type="button" aria-label="放大地图" title="放大地图" disabled={zoom >= 2.5} onClick={() => changeZoom(0.25)}><Plus size={17} /></button>
@@ -114,9 +124,10 @@ export function EmpireMap({ geography, onProvince, onCapital }: {
             <button type="button" aria-label="复位地图" title="复位地图" onClick={() => { setZoom(1); setPan({ x: 0, y: 0 }); }}><RotateCcw size={15} /></button>
           </div>
         </div>
-        <div className="territory-map-footer"><span><i /> 省域范围示意</span><span>单击选中 · 双击展开府州 · 放大后拖动</span></div>
+        <div className="territory-map-footer"><span><i /> 州省 <i className="frontier-legend"/> 卫所分布示意</span><span>单击选中 · 双击查看 · 放大后拖动</span></div>
       </section>
       <aside className="atlas-side-panel territory-side-panel">
+        {frontier ? <FrontierSummary region={frontier} year={year} onOpen={()=>setFrontierOpen(true)}/> : <>
         <div className="side-kicker">两京十三省 / {String(provinceHotspots.findIndex((p) => p.id === selected) + 1).padStart(2, '0')}</div>
         <h2>{province?.shortName ?? active.name}</h2>
         {province?.name !== province?.shortName && <p className="region-full-name">{province?.name}</p>}
@@ -128,9 +139,12 @@ export function EmpireMap({ geography, onProvince, onCapital }: {
         </dl>
         <button type="button" className="primary-action" disabled={!province} onClick={() => openProvince(selected)}>展开{province?.shortName}府州<ChevronRight size={17} /></button>
         {selected === 'beizhili' && <button type="button" className="secondary-action" onClick={onCapital}><Crown size={15} />进入京师皇城<ChevronRight size={15} /></button>}
-        <div className="province-index"><div className="province-index-title"><Map size={14} /> 省域速览</div><div className="province-index-grid">{mapRegions.map((region) => <button type="button" key={region.id} aria-pressed={selected === region.id} className={selected === region.id ? 'is-active' : ''} onClick={() => { setSelected(region.id); setZoom(1); setPan({ x: 0, y: 0 }); }}>{region.name}</button>)}</div></div>
-        <p className="side-note territory-precision-note">山川依地理方位绘制，省界为万历前后形势示意。详细依据见「史料」。</p>
+        </>}
+        <FrontierIndex year={year} selected={frontierId} onSelect={id=>{setFrontierId(id);setZoom(1);setPan({x:0,y:0});}}/>
+        <div className="province-index"><div className="province-index-title"><Map size={14} /> 两京十三省</div><div className="province-index-grid">{mapRegions.map((region) => <button type="button" key={region.id} aria-pressed={!frontierId && selected === region.id} className={!frontierId && selected === region.id ? 'is-active' : ''} onClick={() => { selectProvince(region.id); setZoom(1); setPan({ x: 0, y: 0 }); }}>{region.name}</button>)}</div></div>
+        <p className="side-note territory-precision-note">省界为万历前后参照；边区按年份标注建置与代表据点。虚线表示分布示意，不能作为精确疆界。</p>
       </aside>
+      {frontier && <FrontierDetail key={frontier.id} region={frontier} open={frontierOpen} onOpenChange={setFrontierOpen}/>}
     </div>
   );
 }

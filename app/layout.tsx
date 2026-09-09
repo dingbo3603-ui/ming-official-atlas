@@ -7,7 +7,7 @@ import './mobile-v7.css';
 
 export const metadata: Metadata = {
   title: '大明职官图｜明代府州县与皇城官署交互舆图',
-  description: '沿横向山川舆图进入两京十三省、府州、州县、县衙与京师皇城，查看带人物形象的明代职官。',
+  description: '沿山川舆图探索明代两京十三省、辽东等边区卫所、府州县与京师皇城，按年份查阅职官与人物履历。',
 };
 
 export default function RootLayout({

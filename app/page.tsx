@@ -335,7 +335,7 @@ function AtlasHome() {
       </MobileShell> : <>
       <header className="atlas-header">
         <div className="flex min-w-0 items-center gap-3"><BrandMark /><div className="min-w-0"><h1>大明职官图 <span>山河与庙堂</span></h1><p>{visibleTitle}</p></div></div>
-        <div className="header-stats"><span><MapIcon />两京十三省</span><span><Layers />{geography?.metadata.prefectureCount ?? '—'} 府州</span><span><Users />{officials.length || '—'} 职官</span></div>
+        <div className="header-stats"><span><MapIcon />州省与边区</span><span><Layers />{geography?.metadata.prefectureCount ?? '—'} 府州</span><span><Users />{officials.length || '—'} 职官</span></div>
         <div className="header-actions"><button type="button" onClick={() => setFeedbackOpen(true)} className="header-text-button"><MessageSquareText />反馈</button><button type="button" onClick={() => setSourceOpen(true)} className="header-text-button"><BookOpenText />史料</button><button type="button" onClick={() => setSearchOpen(true)} aria-label="搜索人物与官职（Ctrl K）" className="search-trigger"><Search /><span>搜索人物 / 官职</span><kbd>Ctrl K</kbd></button></div>
       </header>
       <HistoryTimeline />

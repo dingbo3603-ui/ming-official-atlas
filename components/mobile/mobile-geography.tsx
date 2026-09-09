@@ -7,6 +7,9 @@ import { mapRegions } from '@/lib/atlas-geography';
 import type { GeographyCounty, GeographyData, GeographyPrefecture, GeographyProvince } from '@/lib/ming-atlas-v2';
 import { MobileNotice } from './mobile-shell';
 import { prefectureKind } from '@/lib/local-geography';
+import { useHistory } from '@/components/history/history-context';
+import { frontierAtYear, frontierRegions } from '@/lib/frontier-regions';
+import { FrontierDetail, FrontierIndex, FrontierMapLayer, NortheastInset } from '@/components/frontier-regions';
 
 export const countyCount = (prefecture: GeographyPrefecture) => prefecture.directCounties.length + prefecture.subprefectures.reduce((n,state) => n + state.counties.length, 0);
 export function provincePlaces(province: GeographyProvince) {
@@ -24,35 +27,47 @@ export function MobileWorld({ geography, error, onProvince, onPlace }: {
   geography: GeographyData | null; error: boolean; onProvince: (province: GeographyProvince) => void;
   onPlace: (province: GeographyProvince, prefecture: GeographyPrefecture, county: GeographyCounty | null) => void;
 }) {
+  const {year}=useHistory();
   const [mapOpen,setMapOpen] = useState(false);
   const [query,setQuery] = useState('');
+  const [frontierId,setFrontierId]=useState<string|null>(null);
+  const [frontierOpen,setFrontierOpen]=useState(false);
+  const frontier=frontierRegions.find(region=>region.id===frontierId);
+  const openFrontier=(id:string)=>{setMapOpen(false);setFrontierId(id);setFrontierOpen(true);};
+  const frontierHits=query.trim()?frontierRegions.filter(region=>[region.shortName,...region.aliases,...region.sites.flatMap(site=>[site.name,site.modernPlace])].some(name=>name.includes(query.trim()))):[];
   const hits = query.trim() ? geography?.provinces.flatMap(province => provincePlaces(province).filter(item => item.name.includes(query.trim())).map(item => ({...item,province}))) || [] : [];
   return <section>
-    <div className="phone-page-heading"><span>山河与地方</span><h2>两京十三省</h2><p>选一处地方，逐级查阅府、州、县。</p></div>
+    <div className="phone-page-heading"><span>山河与地方</span><h2>州省与边区</h2><p>从府州县到辽东、河西，查看地方建置与人物。</p></div>
     <button className="phone-map-cover" onClick={() => setMapOpen(true)} aria-label="打开山川舆图">
       <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" aria-hidden>{mapRegions.map(region => <path key={region.id} d={region.path}/>)}</svg>
-      <span><Map size={20}/><strong>山川舆图</strong><small>万历前后概略省域</small><ChevronRight size={22}/></span>
+      <span><Map size={20}/><strong>山川舆图</strong><small>两京十三省 · 边区卫所</small><ChevronRight size={22}/></span>
     </button>
-    <label className="phone-search-field"><Search size={19}/><input type="search" aria-label="查找全国府州县" placeholder="直接查找府、州或县" value={query} onChange={event => setQuery(event.target.value)}/></label>
+    <label className="phone-search-field"><Search size={19}/><input type="search" aria-label="查找府州县与边区卫所" placeholder="查找府州县、辽东或卫所" value={query} onChange={event => setQuery(event.target.value)}/></label>
+    {query.trim() ? <div className="phone-place-list">{frontierHits.map(region=><button key={region.id} onClick={()=>openFrontier(region.id)}><span><strong>{region.shortName}</strong><small>{frontierAtYear(region,year).title} · 边区与卫所</small></span><ChevronRight size={18}/></button>)}</div> : <FrontierIndex mobile year={year} onSelect={openFrontier}/>}
     {!geography && <MobileNotice error={error}>{error ? '地方资料暂未载入，请刷新重试。' : '正在读取府州县目录…'}</MobileNotice>}
-    {query.trim() ? <><p className="phone-result-count">{hits.length} 个地点</p><div className="phone-place-list">{hits.slice(0,40).map(hit => <button key={hit.county?.id || hit.prefecture.id} onClick={() => onPlace(hit.province,hit.prefecture,hit.county)}><span><strong>{hit.name}</strong><small>{hit.path}</small></span><ChevronRight size={18}/></button>)}</div>{hits.length > 40 && <p className="phone-result-count">请输入更完整的地名，缩小结果范围。</p>}{!hits.length && geography && <MobileNotice>未找到相符的地点。</MobileNotice>}</>
+    {query.trim() ? <><p className="phone-result-count">{hits.length + frontierHits.length} 个地点</p><div className="phone-place-list">{hits.slice(0,40).map(hit => <button key={hit.county?.id || hit.prefecture.id} onClick={() => onPlace(hit.province,hit.prefecture,hit.county)}><span><strong>{hit.name}</strong><small>{hit.path}</small></span><ChevronRight size={18}/></button>)}</div>{hits.length > 40 && <p className="phone-result-count">请输入更完整的地名，缩小结果范围。</p>}{!hits.length && !frontierHits.length && geography && <MobileNotice>未找到相符的地点。</MobileNotice>}</>
       : <div className="phone-province-grid">{geography?.provinces.map((province,index) => <button key={province.id} onClick={() => onProvince(province)}><span className="phone-province-order">{String(index + 1).padStart(2,'0')}</span><strong>{province.shortName}</strong><span>{province.prefectures.length} 府州<ChevronRight size={15}/></span></button>)}</div>}
-    {mapOpen && <MobileMap geography={geography} onClose={() => setMapOpen(false)} onProvince={onProvince}/>}
+    {mapOpen && <MobileMap geography={geography} onClose={() => setMapOpen(false)} onProvince={onProvince} onFrontier={openFrontier}/>}
+    {frontier && <FrontierDetail key={frontier.id} region={frontier} open={frontierOpen} onOpenChange={setFrontierOpen}/>}
   </section>;
 }
 
-function MobileMap({ geography,onClose,onProvince }: {geography: GeographyData | null; onClose: () => void; onProvince: (province: GeographyProvince) => void}) {
+function MobileMap({ geography,onClose,onProvince,onFrontier }: {geography: GeographyData | null; onClose: () => void; onProvince: (province: GeographyProvince) => void;onFrontier:(id:string)=>void}) {
+  const {year}=useHistory();
   const [zoom,setZoom] = useState(1);
   const [selected,setSelected] = useState('beizhili');
   const province = geography?.provinces.find(item => item.id === selected);
+  const frontier=frontierRegions.find(region=>region.id===selected);
   return <Dialog open onOpenChange={value => {if (!value) onClose();}}><DialogContent className="phone-map-dialog">
-    <DialogHeader><DialogTitle>山川舆图</DialogTitle><DialogDescription>放大后可滑动查看，选择省份进入府州。</DialogDescription></DialogHeader>
+    <DialogHeader><DialogTitle>山川舆图</DialogTitle><DialogDescription>选择州省或边区，放大后可滑动查看。</DialogDescription></DialogHeader>
     <div className="phone-map-tools"><button aria-label="缩小舆图" disabled={zoom <= 1} onClick={() => setZoom(value => value - .5)}><Minus size={20}/></button><span>{Math.round(zoom * 100)}%</span><button aria-label="放大舆图" disabled={zoom >= 4} onClick={() => setZoom(value => value + .5)}><Plus size={20}/></button><button onClick={() => setZoom(1)}>全图</button></div>
-    <div className="phone-map-pan"><svg style={{width:`${zoom * 100}%`}} viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" aria-label="明代省域示意">
+    <div className="phone-map-body"><div className="phone-map-pan"><svg style={{width:`${zoom * 100}%`}} viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" aria-label="明代州省与边区示意">
       <image href="/ming-terrain-v3.png" width="1600" height="1000"/>
       {mapRegions.map(region => <g key={region.id} role="button" tabIndex={0} aria-label={`选择${region.name}`} aria-pressed={selected === region.id} className={selected === region.id ? 'is-selected' : ''} onClick={() => setSelected(region.id)} onKeyDown={event => {if (event.key === 'Enter' || event.key === ' ') {event.preventDefault();setSelected(region.id);}}}><path d={region.path}/><text x={region.x} y={region.y} textAnchor="middle">{region.name}</text></g>)}
+      <FrontierMapLayer year={year} selected={selected} onSelect={setSelected}/>
     </svg></div>
-    <div className="phone-map-choice"><label>选择省份<select value={selected} onChange={event => setSelected(event.target.value)}>{mapRegions.map(region => <option key={region.id} value={region.id}>{region.name}</option>)}</select></label><button className="phone-primary" disabled={!province} onClick={() => {if(province){onClose();onProvince(province);}}}>进入{province?.shortName || '所选省份'}<ChevronRight size={18}/></button><small>山川与省界为万历前后形势参照。</small></div>
+    <div className="phone-northeast-row"><NortheastInset year={year} onOpen={onFrontier}/><p>东北远部另见附图，奴儿干旧治与辽东卫所分别列示。</p></div></div>
+    <div className="phone-map-choice"><label>选择区域<select value={selected} onChange={event => setSelected(event.target.value)}><optgroup label="两京十三省">{mapRegions.map(region => <option key={region.id} value={region.id}>{region.name}</option>)}</optgroup><optgroup label="边区与卫所">{frontierRegions.map(region=><option key={region.id} value={region.id}>{region.shortName} · {frontierAtYear(region,year).title}</option>)}</optgroup></select></label><button className="phone-primary" disabled={!province&&!frontier} onClick={() => {if(frontier){onFrontier(frontier.id);}else if(province){onClose();onProvince(province);}}}>查看{frontier?.shortName || province?.shortName || '所选区域'}<ChevronRight size={18}/></button><small>省界为万历前后参照；边区虚线为卫所分布示意。</small></div>
   </DialogContent></Dialog>;
 }
 
