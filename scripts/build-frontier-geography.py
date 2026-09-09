@@ -127,5 +127,8 @@ for raw in research['regions']:
     footprint=svg(shapes[rid].intersection(land).intersection(box(91,17,125.5,43.5))) if rid in shapes else ''
     output.append(dict(id=rid,shortName=raw['label'],kind=raw['institution_kind'],aliases=aliases[rid],description=descriptions[rid],mapLabel=labels[rid],inset=bool(raw.get('inset')),footprint=footprint,footprintFrom={'liaodong':1430,'wanquan':1430,'daning':1388,'shaanxi_xingdusi':1394,'nuergan':1409}[rid],phases=final_phases,sites=sites,sources=[dict(id=k,title=research['sources'][k]['title'],url=research['sources'][k]['url'],supports=research['sources'][k]['scope']) for k in source_ids]))
 payload={'schemaVersion':1,'researchedOn':'2026-09-09','scope':'省域与军事建置分别组织；卫所分布范围不是精确疆界。','coordinateNote':'今城镇、遗址一带近似锚点；沿革年份为年内事件。','geometrySource':'Natural Earth public-domain coastline; hand-generalized reference envelopes, not historical boundary data.','regions':output,'northeastLand':svg(land.intersection(box(118,38,144,56)),True)}
-(ROOT/'public/data/ming-frontier-regions.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
+serialized=json.dumps(payload,ensure_ascii=False,indent=2)
+(ROOT/'public/data/ming-frontier-regions.json').write_text(serialized,encoding='utf-8')
+# Vite dev disallows importing public/ files as source modules; keep the compiled copy in lib/.
+(ROOT/'lib/frontier-geography.json').write_text(serialized,encoding='utf-8')
 print(json.dumps({'regions':len(output),'sites':sum(len(r['sites']) for r in output),'bytes':(ROOT/'public/data/ming-frontier-regions.json').stat().st_size}))

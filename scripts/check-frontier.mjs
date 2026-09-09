@@ -11,6 +11,7 @@ const server=await createServer({configFile:root+'vite.nas.config.ts',server:{mi
 const checks=[];
 const check=(name,fn)=>{fn();checks.push(name);};
 try {
+  assert.equal(await fs.readFile(root+'lib/frontier-geography.json','utf8'),await fs.readFile(root+'public/data/ming-frontier-regions.json','utf8'),'Compiled and public geography must agree');
   const {frontierRegions,frontierAtYear,frontierSites,frontierCaption,frontierXY,recordsForFrontier}=await server.ssrLoadModule('/lib/frontier-regions.ts');
   const {FrontierMapLayer,FrontierIndex}=await server.ssrLoadModule('/components/frontier-regions.tsx');
   const {HISTORY_REVISION}=await server.ssrLoadModule('/lib/history-revision.ts');

@@ -1,4 +1,4 @@
-import source from '@/public/data/ming-frontier-regions.json';
+import source from './frontier-geography.json';
 import type { HistoryRecord } from '@/components/history/history-context';
 
 export interface FrontierSource { id: string; title: string; url: string; supports: string }
